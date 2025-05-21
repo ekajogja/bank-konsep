@@ -2,7 +2,7 @@
 
 | No. | Judul | Tipe | Keterangan |
 | --- | ----- | ---- | ---------- |
-| 1 | Sekolah Berpikir / Mahad Pemikiran Islam | program edukasi | a. [konsep sekolah]([01-sekolah-berpikir/konsep-sekolah-berpikir.md](https://gist.github.com/ekajogja/e4c9c26098340f41a398d77c508354a6))<br />b. [konsep mahad](https://gist.github.com/ekajogja/4bf170fe3485ca43ca51223ed9962edb) |
+| 1 | Sekolah Berpikir / Mahad Pemikiran Islam | program edukasi | [konsep sekolah]([01-sekolah-berpikir/konsep-sekolah-berpikir.md](https://gist.github.com/ekajogja/e4c9c26098340f41a398d77c508354a6)) - [konsep mahad](https://gist.github.com/ekajogja/4bf170fe3485ca43ca51223ed9962edb) |
 | 2 | Pesantren Paripurna | model sistem | [konsep](https://gist.github.com/ekajogja/cc63f9d99746eaa8f09bb9b5b1ef0185) |
 | 3 | Manifesto Islamisasi AI: Prinsip Umum dan Rencana Kerja | buku & working group | [konsep](https://gist.github.com/ekajogja/714403137852ef4bf7c815fb9edfd95d) |
 | 4 | Etika Teknologi Emergen Islam: Kumpulan Esai | buku| [konsep](04-etika-teknologi-emergen-islam/konsep-buku-etika-teknologi-emergen-islam.md) |

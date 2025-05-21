@@ -1,6 +1,8 @@
 # Metode Pengembangan Knowledge Graph untuk Kitab-Kitab Islam
 
-## Pendahuluan
+## Tentang Knowledge Graph untuk Kitab
+
+### Pendahuluan
 
 Metode knowledge graph merupakan pendekatan holistik untuk mengelola dan mengaitkan informasi keilmuan dari kitab-kitab Islam. Dengan memanfaatkan struktur graf, sistem ini mengorganisasikan entitas–entitas utama seperti:
 
@@ -14,7 +16,7 @@ Pendekatan ini tidak hanya mengaitkan data secara struktural tetapi juga menyedi
 
 ---
 
-## Argumentasi dan Keunggulan Knowledge Graph
+### Argumentasi dan Keunggulan Knowledge Graph
 
 1. **Interkonektivitas Data**  
    Knowledge graph memetakan hubungan antar entitas (misal: kitab terhubung ke mushonif, yang pada gilirannya berasosiasi dengan mazhab dan bidang studi tertentu). Hal ini memungkinkan penelusuran lintas sumber yang kaya dan mendalam.
@@ -33,11 +35,12 @@ Pendekatan ini tidak hanya mengaitkan data secara struktural tetapi juga menyedi
 
 ---
 
-## Cara Kerja Sistem
+### Cara Kerja Sistem
 
-### Struktur Node Utama
+#### Struktur Node Utama
 
 **Node Kitab:**  
+
 - **Teks Asli:** Teks kitab dalam aksara asli (misalnya Arab, Pegon, Jawi).  
 - **Transliterasi:** Konversi teks ke huruf Latin.  
 - **Terjemahan:** Versi dalam bahasa Indonesia atau bahasa lain.  
@@ -45,18 +48,22 @@ Pendekatan ini tidak hanya mengaitkan data secara struktural tetapi juga menyedi
 - **Q&A:** Data pertanyaan dan jawaban yang telah tervalidasi.
 
 **Node Mushonif:**  
+
 - **Biografi:** Riwayat hidup dan latar belakang pendidikan.  
 - **Konteks Sosial:** Informasi mengenai kondisi sosial dan budaya pada masa penulisan.
 
 **Node Mazhab:**  
+
 - **Definisi & Prinsip:** Karakteristik dan metodologi masing-masing mazhab.  
 - **Relasi:** Hubungan dengan mushonif dan pengaruh terhadap kitab.
 
 **Node Bidang Studi dan Tematik:**  
+
 - **Kategori Utama:** Fiqh, ushul fiqh, tasawuf, nahwu, dll.  
 - **Sub-kategori:** Topik-topik lebih spesifik dalam setiap bidang studi.
 
 **Node Konteks Sosial:**  
+
 - **Historis:** Kondisi politik, ekonomi, dan sosial pada masa kitab ditulis.  
 - **Budaya:** Nilai-nilai dan norma yang mempengaruhi pemikiran keilmuan.
 
@@ -81,7 +88,7 @@ graph LR;
 
 ---
 
-## Alur Pengembangan Knowledge Graph
+### Alur Pengembangan Knowledge Graph
 
 1. **Koleksi Data:**  
    - **Pengumpulan Sumber Primer:** Mengumpulkan teks kitab, manuskrip, data biografi mushonif, referensi mazhab, dan metadata historis.
@@ -109,7 +116,7 @@ graph LR;
 
 ---
 
-## Contoh Pseudocode Pengembangan Node
+### Contoh Pseudocode Pengembangan Node
 
 ```python
 class Node:
@@ -145,7 +152,7 @@ kitab_node.add_relation("ditulis_oleh", mushonif_node)
 
 ---
 
-## Integrasi dengan Sistem AI dan Q&A
+### Integrasi dengan Sistem AI dan Q&A
 
 Setelah knowledge graph dibangun, sistem AI dapat menggunakannya untuk:
 
@@ -153,7 +160,7 @@ Setelah knowledge graph dibangun, sistem AI dapat menggunakannya untuk:
 - **Validasi Jawaban:** Menggunakan data Q&A dan anotasi untuk memastikan jawaban yang dihasilkan konsisten dengan otoritas keilmuan.
 - **Augmented Generation:** Menggabungkan teks asli, anotasi, dan metadata dari graph sebagai konteks dalam generative model untuk menghasilkan jawaban yang terverifikasi.
 
-### Alur Kerja Query-Response
+#### Alur Kerja Query-Response
 
 1. **Input Pertanyaan:**  
    Pengguna mengajukan pertanyaan melalui antarmuka sistem.
@@ -172,71 +179,97 @@ Setelah knowledge graph dibangun, sistem AI dapat menggunakannya untuk:
 
 ---
 
-## Kesimpulan
+### Catatan Tentang KG untuk Kitab
 
-Metode knowledge graph untuk kitab-kitab Islam ini menyediakan kerangka kerja yang komprehensif dan dinamis untuk mengelola serta mengaitkan berbagai sumber keilmuan. Dengan menggabungkan data teks asli, transliterasi, terjemahan, anotasi, dan Q&A yang tervalidasi, sistem mampu memberikan jawaban yang otentik dan kontekstual. Pendekatan ini tidak hanya meningkatkan keakuratan dan transparansi, tetapi juga mendukung integrasi dengan teknologi AI modern untuk menghasilkan output yang berkualitas dan adaptif terhadap perkembangan ilmu keislaman.
+Metode knowledge graph untuk kitab-kitab Islam ini menyediakan kerangka kerja yang komprehensif dan dinamis untuk mengelola serta mengaitkan berbagai sumber keilmuan.
+
+Dengan menggabungkan data teks asli, transliterasi, terjemahan, anotasi, dan Q&A yang tervalidasi, sistem mampu memberikan jawaban yang otentik dan kontekstual.
+
+Pendekatan ini tidak hanya meningkatkan keakuratan dan transparansi, tetapi juga mendukung integrasi dengan teknologi AI modern untuk menghasilkan output yang berkualitas dan adaptif terhadap perkembangan ilmu keislaman.
 
 ---
 
-# Proses Penyusunan Knowledge Graph: Peran Tim IT dan Tim Riset Data
+## Proses Penyusunan Knowledge Graph: Peran Tim IT dan Tim Riset Data
 
 Penyusunan knowledge graph untuk kitab-kitab Islam merupakan upaya kolaboratif yang melibatkan dua tim utama: **Tim IT** dan **Tim Riset Data**. Masing-masing tim memiliki peran spesifik dalam setiap tahap, mulai dari pengumpulan data hingga implementasi dan pemeliharaan sistem. Berikut adalah detil proses penyusunan secara teknis:
 
 ---
 
-## 1. Pengumpulan dan Ekstraksi Data
+### 1. Pengumpulan dan Ekstraksi Data
 
-### Tim Riset Data:
+#### Peran Tim Riset Data dalam Pengumpulan dan Ekstraksi Data
+
 - **Identifikasi Sumber**: Mengumpulkan data dari berbagai sumber primer dan sekunder, seperti manuskrip, edisi digital, katalog perpustakaan, database hadis, biografi mushonif, dan referensi fatwa.
+
 - **Kualifikasi Sumber**: Menentukan keabsahan dan relevansi data yang diperoleh dengan melakukan review literatur dan konsultasi dengan ahli keilmuan.
+
 - **Ekstraksi Informasi**: Menggunakan teknik NLP (Natural Language Processing) untuk mengekstrak entitas utama seperti:
   - Nama kitab, mushonif, mazhab, bidang studi, dan konteks historis.
   - Teks asli, transliterasi, dan terjemahan.
   - Anotasi, catatan kaki, dan Q&A dari ulama.
 
-### Tim IT:
+#### Peran Tim IT dalam Pengumpulan dan Ekstraksi Data
+
 - **Pengumpulan Digital**: Memastikan data yang dikumpulkan telah didigitalkan dengan format yang sesuai (misal: PDF, XML, JSON).
+
 - **Integrasi Data**: Menyusun pipeline untuk mengimpor data mentah ke dalam sistem basis data untuk proses selanjutnya.
 
 ---
 
-## 2. Pre-processing dan Normalisasi Data
+### 2. Pre-processing dan Normalisasi Data
 
-### Tim Riset Data:
+#### Peran Tim Riset Data dalam Pre-processing dan Normalisasi Data
+
 - **Pembersihan Data**: Membersihkan teks dari noise (kesalahan OCR, karakter yang tidak valid) dan melakukan normalisasi (misalnya konversi aksara Pegon/Jawi ke format standar).
+
 - **Standardisasi Metadata**: Menetapkan format metadata seperti tanggal penulisan, lokasi, dan kategori keilmuan agar konsisten antar sumber.
 
-### Tim IT:
+#### Peran Tim IT dalam Pre-processing dan Normalisasi Data
+
 - **Implementasi Pipeline ETL**: Merancang dan mengembangkan proses Extract, Transform, Load (ETL) untuk memproses data mentah menjadi data yang siap diintegrasikan ke dalam knowledge graph.
+
 - **Automasi Pre-processing**: Menggunakan skrip dan tools (misal: Python, Apache Spark) untuk mengotomatisasi pembersihan dan transformasi data.
 
 ---
 
-## 3. Ekstraksi Entitas dan Anotasi
+### 3. Ekstraksi Entitas dan Anotasi
 
-### Tim Riset Data:
+#### Peran Tim Riset Data dalam Ekstraksi Entitas dan Anotasi
+
 - **Named Entity Recognition (NER)**: Menggunakan model NLP untuk mengidentifikasi entitas seperti nama kitab, mushonif, mazhab, dan istilah keilmuan.
+
 - **Anotasi Manual dan Semi-Otomatis**: Melakukan validasi entitas hasil ekstraksi dengan melibatkan ahli (ulama) untuk memberikan anotasi dan validasi Q&A.
+
 - **Pemetaan Relasi Awal**: Menentukan hubungan antar entitas berdasarkan konteks historis, isi kitab, dan ulasan para ahli.
 
-### Tim IT:
+#### Peran Tim IT dalam Ekstraksi Entitas dan Anotasi
+
 - **Integrasi Model NLP**: Mengimplementasikan model machine learning untuk NER dan ekstraksi relasi dalam pipeline data.
+
 - **API dan Tools Anotasi**: Mengembangkan antarmuka untuk kolaborasi antara tim riset data dan ulama dalam menambahkan atau mengoreksi anotasi.
 
 ---
 
-## 4. Penyusunan Ontologi dan Struktur Graph
+### 4. Penyusunan Ontologi dan Struktur Graph
 
-### Tim Riset Data:
+#### Peran Tim Riset Data dalam Penyusunan Ontologi dan Struktur Graph
+
 - **Perancangan Ontologi**: Menyusun ontologi keilmuan Islam yang mendefinisikan kelas (kitab, mushonif, mazhab, dsb.) dan properti antar entitas. Ontologi ini menentukan:
+  
   - **Hierarki**: Misalnya, kategori utama seperti fiqh yang memiliki sub-kategori (ibadah, muamalah, dsb.).
+  
   - **Relasi**: Hubungan seperti "ditulis oleh", "terkait dengan", dan "dikutip dari".
 
-### Tim IT:
+#### Peran Tim IT dalam Penyusunan Ontologi dan Struktur Graph
+
 - **Modeling Graph**: Mengkonversi ontologi yang telah disusun menjadi skema graph. Tools seperti Neo4j, GraphDB, atau RDF store (misalnya, Apache Jena) digunakan untuk menyimpan dan mengelola data.
+
 - **Pembuatan Schema**: Menentukan node, edge, dan atribut yang akan digunakan. Contoh struktur node:
+
   - **Node Kitab**: Berisi teks asli, transliterasi, terjemahan, anotasi, dan Q&A.
+
   - **Node Mushonif**: Berisi biografi, konteks sosial, dan karya-karya lain.
+
   - **Node Mazhab & Bidang Studi**: Menjelaskan kategori dan prinsip keilmuan.
   
 **Diagram Sederhana Ontologi:**
@@ -252,59 +285,73 @@ graph LR;
 
 ---
 
-## 5. Implementasi dan Pengembangan Knowledge Graph
+### 5. Implementasi dan Pengembangan Knowledge Graph
 
-### Tim IT:
+#### Peran Tim IT dalam Implementasi dan Pengembangan Knowledge Graph
+
 - **Pembangunan Graph Database**: Menginstal dan mengkonfigurasi graph database (misalnya, Neo4j) dan mengimpor data menggunakan format yang disepakati (CSV, JSON, RDF).
+
 - **Integrasi API**: Mengembangkan API untuk akses, query, dan update knowledge graph oleh aplikasi front-end atau modul AI (misal: sistem Q&A dan RAG).
+
 - **Automasi Sinkronisasi Data**: Membuat sistem yang mengintegrasikan data terbaru dari pipeline ETL secara berkala agar graph selalu terbarui.
 
-### Tim Riset Data:
+#### Peran Tim Riset Data dalam Implementasi dan Pengembangan Knowledge Graph
+
 - **Validasi Konten**: Bekerja sama dengan tim IT untuk memastikan integritas data yang diimpor sesuai dengan ontologi dan relasi yang telah dirancang.
+
 - **Uji Coba dan Evaluasi**: Melakukan evaluasi kualitas graph dengan simulasi query dan feedback dari ahli untuk memastikan relevansi dan akurasi.
 
 ---
 
-## 6. Validasi, Umpan Balik, dan Iterasi
+### 6. Validasi, Umpan Balik, dan Iterasi
 
-### Kolaborasi Bersama:
+#### Kolaborasi Bersama
+
 - **Review Periodik**: Tim IT dan tim riset data secara berkala mengadakan review bersama dengan melibatkan para ulama untuk menilai keakuratan knowledge graph.
+
 - **Feedback Loop**: Umpan balik dari pengguna dan ahli diterima melalui sistem rating, komentar, dan sesi validasi langsung. Perubahan dan revisi diterapkan dalam iterasi berikutnya.
+
 - **Penyimpanan Versi**: Setiap perubahan direkam sehingga versi historis graph dapat diakses untuk keperluan audit dan analisis perkembangan.
 
 ---
 
-## 7. Dokumentasi dan Pemeliharaan
+### 7. Dokumentasi dan Pemeliharaan
 
-### Tim IT:
+#### Tim IT
+
 - **Dokumentasi Teknis**: Menyusun dokumentasi lengkap mengenai skema graph, API, pipeline ETL, dan integrasi sistem.
+
 - **Monitoring dan Maintenance**: Mengimplementasikan sistem monitoring untuk performa database dan melakukan backup serta pemeliharaan rutin.
 
-### Tim Riset Data:
+#### Tim Riset Data
+
 - **Dokumentasi Data**: Menyusun dokumentasi terkait sumber data, proses ekstraksi, metodologi anotasi, dan revisi konten.
+
 - **Pelatihan dan Sosialisasi**: Menyediakan training bagi pengguna internal dan ahli untuk memahami cara kerja knowledge graph dan bagaimana mengakses informasi.
 
 ---
 
-## Kesimpulan
+### Kesimpulan Proses Penyusunan KG
 
 Proses penyusunan knowledge graph untuk kitab-kitab Islam adalah inisiatif multidisipliner yang melibatkan:
+
 - **Tim Riset Data**: Fokus pada pengumpulan, ekstraksi, anotasi, dan validasi konten keilmuan.
+
 - **Tim IT**: Bertanggung jawab atas implementasi teknis, pengembangan pipeline, penyusunan database graph, dan integrasi sistem.
 
 Kolaborasi erat antara kedua tim, didukung oleh feedback dari para ulama dan pengguna, menjamin bahwa knowledge graph yang dibangun tidak hanya komprehensif dan terstruktur, tetapi juga akurat dan relevan dengan kebutuhan keilmuan Islam masa kini.
 
 ---
 
-# Logika Pemrosesan Query hingga Respons dengan Knowledge Graph
+## Logika Pemrosesan Query hingga Respons dengan Knowledge Graph
 
-Metode ini mengandalkan struktur knowledge graph untuk menyatukan berbagai entitas keilmuan, sehingga dapat menghasilkan jawaban yang kontekstual dan terverifikasi. Berikut adalah penjelasan lengkap mengenai algoritma dan logika pemrosesan query, beserta argumen mengenai efektivitas pendekatan ini.
+Metode ini mengandalkan struktur knowledge graph untuk menyatukan berbagai entitas keilmuan, sehingga dapat menghasilkan jawaban yang kontekstual dan terverifikasi. Berikut penjelasan lengkap mengenai algoritma dan logika pemrosesan query, beserta argumen mengenai efektivitas pendekatan ini.
 
 ---
 
-## 1. Alur Kerja Pemrosesan Query
+### 1. Alur Kerja Pemrosesan Query
 
-### Langkah-langkah Utama
+#### Langkah-langkah Utama
 
 1. **Input Query Pengguna**  
    Pengguna mengajukan pertanyaan melalui antarmuka sistem. Contoh: "Apa penjelasan tentang konsep ijtihad dalam kitab X?"
@@ -330,7 +377,7 @@ Metode ini mengandalkan struktur knowledge graph untuk menyatukan berbagai entit
 
 ---
 
-## 2. Diagram Alur Pemrosesan Query
+### 2. Diagram Alur Pemrosesan Query
 
 ```mermaid
 graph TD;
@@ -346,7 +393,7 @@ graph TD;
 
 ---
 
-## 3. Pseudocode Algoritma Pemrosesan Query
+### 3. Pseudocode Algoritma Pemrosesan Query
 
 ```python
 def process_query(query):
@@ -378,51 +425,70 @@ def process_query(query):
 
 ---
 
-## 4. Argumen dan Efektivitas Metode Knowledge Graph
+### 4. Argumen dan Efektivitas Metode Knowledge Graph
 
-### A. Akurasi dan Kontekstualitas
+#### A. Akurasi dan Kontekstualitas
+
 - **Keterkaitan Semantik:** Dengan mengaitkan entitas seperti kitab, mushonif, mazhab, dan bidang studi, sistem dapat menyajikan jawaban yang tidak hanya berdasarkan pencocokan kata, tetapi juga mempertimbangkan konteks historis dan keilmuan.
+
 - **Validasi Multi-Sumber:** Informasi yang diintegrasikan dari berbagai node meningkatkan akurasi karena jawaban didukung oleh data asli, terjemahan, dan anotasi dari para ulama.
 
-### B. Fleksibilitas dan Skalabilitas
+#### B. Fleksibilitas dan Skalabilitas
+
 - **Modularitas:** Struktur graph memungkinkan penambahan entitas atau relasi baru tanpa mengubah keseluruhan sistem.
+
 - **Adaptif Terhadap Revisi:** Sistem dapat diperbarui secara berkala melalui feedback loop dan revisi manual oleh ulama, sehingga tetap relevan dengan perkembangan ilmu keislaman.
 
-### C. Efisiensi Pencarian
+#### C. Efisiensi Pencarian
+
 - **Semantic Search:** Teknik pencarian berbasis semantik memungkinkan sistem menemukan node relevan meski terdapat variasi istilah atau bahasa.
+
 - **Graph Traversal Cepat:** Algoritma traversal yang dioptimalkan meminimalkan waktu pencarian dan memastikan respons yang cepat kepada pengguna.
 
-### D. Transparansi dan Auditabilitas
+#### D. Transparansi dan Auditabilitas
+
 - **Referensi Terintegrasi:** Jawaban yang dihasilkan dapat ditelusuri kembali ke node-node sumber, memberikan transparansi dan memudahkan audit keilmuan.
+
 - **Riwayat Revisi:** Sistem menyimpan versi jawaban sebelumnya, sehingga perubahan dan validasi dapat ditinjau kembali bila diperlukan.
 
 ---
 
-## Kesimpulan
+### Catatan Logika Pemrosesan Query
 
 Metode pemrosesan query menggunakan knowledge graph ini efektif karena:
+
 - **Menggabungkan konteks yang luas dan beragam entitas keilmuan**, sehingga jawaban yang dihasilkan lebih mendalam dan terverifikasi.
+
 - **Memanfaatkan teknologi semantic search dan graph traversal** untuk pencarian informasi yang cepat dan relevan.
+
 - **Menyediakan sistem validasi terintegrasi** yang memastikan jawaban selalu diperiksa oleh para ahli, meningkatkan kepercayaan dan transparansi.
+
 - **Bersifat modular dan adaptif**, memungkinkan integrasi data baru dan revisi berkelanjutan sesuai perkembangan ilmu keislaman.
 
 Dengan pendekatan ini, sistem tidak hanya mampu menjawab pertanyaan dengan tepat tetapi juga mendukung penelusuran keilmuan yang komprehensif, menjadikannya solusi yang efektif untuk pengembangan aplikasi AI keislaman yang otoritatif.
 
 ---
 
-# **Pseudocode Metode Knowledge Graph untuk Kitab Islam**
+## **Pseudocode Metode Knowledge Graph untuk Kitab Islam**
 
-## **1. Struktur Knowledge Graph**
-Metode ini menggunakan **Knowledge Graph (KG)** dengan node utama:  
-✅ **Kitab** (berisi teks asli, transliterasi, terjemahan, anotasi, dan Q&A)  
-✅ **Mushonif (Penulis Kitab)**  
-✅ **Mazhab dan Bidang Studi**  
-✅ **Konteks Sosial Kitab**  
-✅ **Relasi antar kitab** (kitab syarah, mukhtashar, dll.)
+### **1. Struktur Knowledge Graph**
+
+Metode ini menggunakan **Knowledge Graph (KG)** dengan node utama:
+
+1. **Kitab** (berisi teks asli, transliterasi, terjemahan, anotasi, dan Q&A)  
+
+2. **Mushonif (Penulis Kitab)**  
+
+3. **Mazhab dan Bidang Studi**  
+
+4. **Konteks Sosial Kitab**  
+
+5. **Relasi antar kitab** (kitab syarah, mukhtashar, dll.)
 
 ---
 
-## **2. Pseudocode untuk Penyusunan Knowledge Graph**
+### **2. Pseudocode untuk Penyusunan Knowledge Graph**
+
 ```python
 class KnowledgeGraph:
     def __init__(self):
@@ -484,11 +550,16 @@ pprint.pprint(kg.graph)
 
 ---
 
-## **3. Proses Query dan Generasi Jawaban dalam Knowledge Graph**
+### **3. Proses Query dan Generasi Jawaban dalam Knowledge Graph**
+
 Ketika pengguna bertanya, sistem akan:  
+
 1. **Mencari di database Q&A** apakah pertanyaan sudah memiliki jawaban tervalidasi.  
+
 2. **Jika tidak ditemukan, mencari teks kitab yang relevan** untuk dikirim ke LLM.  
+
 3. **Jika jawaban dihasilkan model, diberi label "Autogenerated & Belum Ditashih".**  
+
 4. **Jawaban ini masuk backlog untuk dikoreksi dan ditashih oleh ulama.**  
 
 ```python
@@ -537,13 +608,15 @@ print(process_query("Apa makna 'bismillah' dalam fiqh?"))
 
 ---
 
-## **4. Keunggulan Metode Knowledge Graph**
+### **4. Keunggulan Metode Knowledge Graph**
+
 ✅ **Memetakan relasi antar kitab** (misal kitab syarah, kitab muqarrin, dll.)  
 ✅ **Struktur data lebih eksplisit**, memungkinkan penelusuran sanad keilmuan  
 ✅ **Mudah diperluas** untuk memasukkan kitab baru & anotasi tambahan  
 ✅ **Sistem validasi & backlog otomatis** untuk pertanyaan yang belum ditashih  
 
-### **Kesimpulan**
+### Catatan Pseudocode KG
+
 Metode Knowledge Graph lebih sistematis untuk mengelola kitab dan Q&A, terutama untuk **memastikan sanad keilmuan tetap utuh**. Namun, secara komputasi lebih kompleks dibandingkan metode **Q&A+RAG**.  
 
 Jika sumber daya memadai, **Knowledge Graph adalah pilihan terbaik untuk sistem yang akurat dan terpercaya** dalam penyajian ilmu Islam.

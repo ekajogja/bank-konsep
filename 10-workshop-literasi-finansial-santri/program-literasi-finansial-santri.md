@@ -1,6 +1,4 @@
-# Proposal Inovasi Pemberdayaan Berbasis Zakat Infak Sedekah untuk Kesejahteraan Umat melalui Lima Pilar NU CARE-LAZISNU
-
-**NU Care Cerdas** dengan bangga mempersembahkan **Roadshow Workshop Literasi Finansial Syariah untuk Santri** di 15 pesantren terpilih:
+# Roadshow Workshop Literasi Finansial Syariah untuk Santri** di 15 pesantren terpilih
 
 ## *Ma'had Tsaqafah Maaliyah* - Membangun Kemandirian Finansial Santri
 
@@ -9,7 +7,7 @@
 Pesantren sebagai institusi pendidikan Islam memiliki peran strategis dalam pembentukan karakter dan keterampilan santri. Namun, beberapa tantangan yang dihadapi dalam konteks literasi keuangan antara lain:
 
 1. Keterbatasan akses pesantren terhadap pendidikan keuangan yang komprehensif dan sesuai syariah
-   
+
 2. Minimnya *exposure* santri terhadap praktisi keuangan dan UMKM profesional
 
 3. Format pendidikan keuangan konvensional yang kurang *engaging* untuk generasi Z dan Alfa (kelahiran 1997 dan selanjutnya)
@@ -24,7 +22,7 @@ Urgensi program ini didukung oleh data riil sebagai berikut:
 
 - Riset BRIN tahun 2022 mengungkapkan bahwa hanya 27,2% pesantren yang secara khusus memberikan edukasi keuangan syariah bagi santri. ([Policy Paper BRIN](http://snki.go.id/wp-content/uploads/2023/10/Policy-Paper-BRIN.pdf))
 
-- Dalam laporan riset yang sama, informasi yang diperoleh santri mengenai produk keuangan syariah sebanyak 45,97% hanya berasal dari kiai atau ustadz di pesantren. Dan tidak ditemukan persentase pengajaran dari profesional keuangan baik syariah maupun non-syariah.([Policy Paper BRIN](http://snki.go.id/wp-content/uploads/2023/10/Policy-Paper-BRIN.pdf)) 
+- Dalam laporan riset yang sama, informasi yang diperoleh santri mengenai produk keuangan syariah sebanyak 45,97% hanya berasal dari kiai atau ustadz di pesantren. Dan tidak ditemukan persentase pengajaran dari profesional keuangan baik syariah maupun non-syariah.([Policy Paper BRIN](http://snki.go.id/wp-content/uploads/2023/10/Policy-Paper-BRIN.pdf))
 
 Kondisi ini menunjukkan adanya kesenjangan yang signifikan dalam pemahaman dan implementasi keuangan syariah di lingkungan pesantren, yang merupakan basis pendidikan Islam terbesar di Indonesia.
 
@@ -54,7 +52,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 ##### Hari 1: Keuangan Pribadi & Keluarga
 
-**Sesi 1 (08.00-10.00): Revolusi Pola Pikir Finansial**
+a. **Sesi 1 (08.00-10.00): Revolusi Pola Pikir Finansial**
 
 - *Ice breaking* finansial berbasis nilai-nilai pesantren
 
@@ -64,7 +62,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 - *Goal setting workshop* dengan pendekatan *maqashid syariah*
 
-**Sesi 2 (10.15-12.15): Fundamental Keuangan Syariah**
+b. **Sesi 2 (10.15-12.15): Fundamental Keuangan Syariah**
 
 - Prinsip dasar muamalah dalam Islam
 
@@ -74,7 +72,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 - Studi kasus: Implementasi keuangan syariah dalam kehidupan sehari-hari
 
-**Sesi 3 (13.30-15.30): Perencanaan Keuangan Islami**
+c. **Sesi 3 (13.30-15.30): Perencanaan Keuangan Islami**
 
 - Konsep anggaran dalam perspektif Islam
 
@@ -84,7 +82,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 - Praktik: Menyusun rencana keuangan pribadi
 
-**Sesi 4 (15.45-17.45): Investasi dan Zakat**
+d. **Sesi 4 (15.45-17.45): Investasi dan Zakat**
 
 - Prinsip investasi dalam Islam
 
@@ -96,7 +94,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 ##### Hari 2: Bisnis UMKM & Implementasi
 
-**Sesi 1 (08.00-10.00): Kewirausahaan Berbasis Pesantren**
+a. **Sesi 1 (08.00-10.00): Kewirausahaan Berbasis Pesantren**
 
 - Konsep barokah dalam bisnis
 
@@ -106,7 +104,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 - *Brainstorming*: Ide bisnis syariah di lingkungan pesantren
 
-**Sesi 2 (10.15-12.15): Manajemen UMKM Syariah**
+b. **Sesi 2 (10.15-12.15): Manajemen UMKM Syariah**
 
 - Prinsip-prinsip manajemen bisnis dalam Islam
 
@@ -116,7 +114,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 - Praktik: Menyusun rencana bisnis sederhana
 
-**Sesi 3 (13.30-15.30): Digital Marketing untuk UMKM Pesantren**
+c. **Sesi 3 (13.30-15.30): Digital Marketing untuk UMKM Pesantren**
 
 - Pemanfaatan teknologi dalam pemasaran syariah
 
@@ -126,7 +124,7 @@ Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Ind
 
 - Diskusi: Etika pemasaran dalam Islam
 
-**Sesi 4 (15.45-17.45): Aksi dan Komitmen**
+d. **Sesi 4 (15.45-17.45): Aksi dan Komitmen**
 
 - Presentasi rencana aksi peserta
 
@@ -174,7 +172,7 @@ Seluruh materi dan metode penyampaian dirancang untuk mematuhi prinsip-prinsip s
 
 Untuk memastikan efektivitas dan keberlanjutan program, pelaksanaan akan dibagi menjadi beberapa fase:
 
-**Fase 0: *Pilot Project* (1 bulan)**
+#### 1. **Fase 0: *Pilot Project* (1 bulan)**
 
 - Pekan 1-2: Implementasi di pesantren salaf terpilih
 
@@ -184,7 +182,7 @@ Untuk memastikan efektivitas dan keberlanjutan program, pelaksanaan akan dibagi 
 
 Fase pilot ini bertujuan untuk menguji *feasibilitas* program dan melakukan penyesuaian yang diperlukan sebelum implementasi skala besar.
 
-**Fase 1: Persiapan (1 bulan)**
+#### 2. **Fase 1: Persiapan (1 bulan)**
 
 - Pekan 1: Penyusunan materi dan modul final
 
@@ -196,7 +194,7 @@ Fase pilot ini bertujuan untuk menguji *feasibilitas* program dan melakukan peny
 
 Dalam fase ini, tim akan memastikan bahwa seluruh materi telah direvisi berdasarkan hasil *pilot project* dan sesuai dengan prinsip syariah serta nilai-nilai NU.
 
-**Fase 2: Implementasi (6 bulan)**
+#### 3. **Fase 2: Implementasi (6 bulan)**
 
 - Bulan 1-2: *Roadshow batch 1* (5 pesantren)
 
@@ -206,7 +204,7 @@ Dalam fase ini, tim akan memastikan bahwa seluruh materi telah direvisi berdasar
 
 Setiap *batch* akan diikuti oleh periode *follow-up* selama 3 bulan untuk memastikan implementasi dan memberikan dukungan berkelanjutan.
 
-**Fase 3: Evaluasi & Pengembangan (3 bulan)**
+#### 4. **Fase 3: Evaluasi & Pengembangan (3 bulan)**
 
 - Evaluasi bulanan: Analisis hasil dan dampak program
 
@@ -220,7 +218,7 @@ Setiap *batch* akan diikuti oleh periode *follow-up* selama 3 bulan untuk memast
 
 Program ini dirancang untuk memberikan dampak positif yang komprehensif, tidak hanya bagi peserta langsung tetapi juga bagi komunitas pesantren dan masyarakat luas.
 
-**1. Dampak Sosial**
+#### 1. **Dampak Sosial**
 
 - Peningkatan literasi keuangan syariah: Target 80% peserta mengalami peningkatan skor literasi
 
@@ -230,7 +228,7 @@ Program ini dirancang untuk memberikan dampak positif yang komprehensif, tidak h
 
 - *Transfer knowledge* antar generasi: Program mentoring santri-alumni
 
-**2. Dampak Ekonomi**
+#### 2. **Dampak Ekonomi**
 
 *Manfaat Langsung:*
 
@@ -260,7 +258,7 @@ Program ini dirancang untuk memberikan dampak positif yang komprehensif, tidak h
 
 - *Multiplier effect* pada ekonomi lokal: Penyerapan tenaga kerja dan peningkatan transaksi ekonomi syariah
 
-**3. Dampak Lingkungan**
+#### 3. **Dampak Lingkungan**
 
 - Efisiensi penggunaan sumber daya: Penerapan prinsip tidak mubazir dalam UMKM
 
@@ -306,25 +304,25 @@ Catatan:
 
 ### G. Sumber Pendanaan dan Sustainabilitas
 
-1. Sumber Pendanaan:
-   
-   - Dana utama dari NU Care-LAZISNU melalui program pemberdayaan zakat, infaq, dan sedekah
-   
-   - Kontribusi pesantren (in-kind: tempat, sebagian konsumsi)
-   
-   - Kemitraan dengan lembaga keuangan syariah untuk *sponsorship* program
+#### 1. Sumber Pendanaan
 
-2. Rencana Keberlanjutan:
-   
-   - Pengembangan modul daring yang dapat diakses secara luas
-   
-   - Pelatihan fasilitator lokal di setiap pesantren untuk replikasi program
-   
-   - Pembentukan koperasi syariah antar pesantren untuk mendukung UMKM santri
-   
-   - Kerjasama dengan Perguruan Tinggi NU untuk riset dan pengembangan program
-   
-   - Potensi pendapatan dari layanan konsultasi keuangan syariah jangka panjang
+- Dana utama dari NU Care-LAZISNU melalui program pemberdayaan zakat, infaq, dan sedekah
+
+- Kontribusi pesantren (in-kind: tempat, sebagian konsumsi)
+
+- Kemitraan dengan lembaga keuangan syariah untuk *sponsorship* program
+
+#### 2. Rencana Keberlanjutan
+
+- Pengembangan modul daring yang dapat diakses secara luas
+
+- Pelatihan fasilitator lokal di setiap pesantren untuk replikasi program
+
+- Pembentukan koperasi syariah antar pesantren untuk mendukung UMKM santri
+
+- Kerjasama dengan Perguruan Tinggi NU untuk riset dan pengembangan program
+
+- Potensi pendapatan dari layanan konsultasi keuangan syariah jangka panjang
 
 ### H. Penutup
 

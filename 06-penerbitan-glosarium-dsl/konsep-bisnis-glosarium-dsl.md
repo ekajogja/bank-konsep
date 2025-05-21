@@ -50,6 +50,7 @@ Produk tersedia dalam format cetak dan digital, dengan model bisnis berbasis pen
 ## **7. Rencana Pengembangan & Trayektori Bisnis**
 
 ### **Timeline Tahun Pertama**
+
 | Bulan | Aktivitas |
 |-------|----------|
 | 1-2   | Riset awal, perekrutan akademisi, dan kurasi istilah |
@@ -62,6 +63,7 @@ Produk tersedia dalam format cetak dan digital, dengan model bisnis berbasis pen
 ## **8. Perhitungan Finansial**
 
 ### **Modal Awal & Biaya Operasional**
+
 | Komponen | Estimasi Biaya |
 |----------|----------------|
 | Honor penulis & editor (4 glosarium) | Rp 80.000.000 |
@@ -103,4 +105,3 @@ Produk tersedia dalam format cetak dan digital, dengan model bisnis berbasis pen
 
 **Persentase Profit dari Modal Awal:**
 **(Rp 370.000.000 / Rp 240.000.000) × 100% = 154%**
-
