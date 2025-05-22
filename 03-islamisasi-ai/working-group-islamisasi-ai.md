@@ -1,5 +1,20 @@
 # **Working Group & Proposal Strategis Islamisasi AI**
 
+## Daftar Isi
+
+- [**Working Group \& Proposal Strategis Islamisasi AI**](#working-group--proposal-strategis-islamisasi-ai)
+  - [Daftar Isi](#daftar-isi)
+  - [**1. Pembentukan Working Group**](#1-pembentukan-working-group)
+    - [**A. Tujuan Working Group**](#a-tujuan-working-group)
+    - [**B. Struktur Tim dan Peran**](#b-struktur-tim-dan-peran)
+  - [**2. Proposal Strategis Islamisasi AI**](#2-proposal-strategis-islamisasi-ai)
+    - [**A. Judul Proposal**](#a-judul-proposal)
+    - [**B. Latar Belakang**](#b-latar-belakang)
+    - [**C. Tujuan**](#c-tujuan)
+    - [**D. Metode \& Pendekatan**](#d-metode--pendekatan)
+    - [**E. Hasil yang Diharapkan**](#e-hasil-yang-diharapkan)
+    - [**F. Rencana Tindak Lanjut**](#f-rencana-tindak-lanjut)
+
 ## **1. Pembentukan Working Group**  
 
 ### **A. Tujuan Working Group**  
@@ -12,34 +27,46 @@
 ### **B. Struktur Tim dan Peran**  
 
 1. **Tim Teknologi AI & Data Science**  
-   - Mengembangkan model AI berbasis nilai Islam.  
-   - Mengkaji bias algoritma dan mitigasinya.  
-   - Merancang sistem verifikasi halal dalam AI.  
+   - Mengembangkan model AI berbasis nilai Islam (LLM, computer vision, NLP)  
+   - Mengkaji dan mitigasi bias algoritma dalam dataset pelatihan  
+   - Merancang sistem verifikasi halal untuk konten generatif AI  
+   - Mengembangkan framework evaluasi AI dari perspektif Islam  
 
 2. **Tim Syariah dan Etika Islam**  
-   - Menentukan batasan halal-haram dalam AI.  
-   - Menyusun pedoman etika AI sesuai syariah.  
-   - Berperan sebagai dewan pengawas syariah AI.  
+   - Menentukan fatwa dan panduan halal-haram untuk aplikasi AI  
+   - Menyusun pedoman etika AI sesuai maqashid syariah  
+   - Membentuk dewan pengawas syariah untuk produk AI  
+   - Mengembangkan framework nilai Islam untuk pengambilan keputusan algoritmik  
 
 3. **Tim Hukum dan Regulasi**  
-   - Mengkaji hukum Islam terkait AI dan teknologi digital.  
-   - Menyusun rekomendasi kebijakan dan regulasi AI Islami.  
-   - Berkolaborasi dengan lembaga legislatif dan eksekutif.  
+   - Merumuskan regulasi AI Islami yang adaptif terhadap perkembangan teknologi  
+   - Menyusun standar sertifikasi AI syariah  
+   - Berkolaborasi dengan otoritas global untuk harmonisasi regulasi  
+   - Mengkaji implikasi GDPR dan regulasi global dari perspektif Islam  
 
 4. **Tim Ekonomi dan Industri**  
-   - Menganalisis dampak AI Islami pada ekonomi syariah.  
-   - Mendorong investasi dalam startup AI berbasis Islam.  
-   - Mengembangkan model bisnis AI yang sesuai dengan nilai Islam.  
+   - Menganalisis dampak ekonomi dari AI Islami  
+   - Mengembangkan model bisnis syariah untuk startup AI  
+   - Membangun ekosistem investasi halal di bidang AI  
+   - Menciptakan platform matching antara developer AI dan industri syariah  
 
 5. **Tim Sosial dan Budaya**  
-   - Meneliti dampak sosial AI terhadap komunitas Muslim.  
-   - Merancang kampanye edukasi dan advokasi AI Islami.  
-   - Mengawal penerapan AI dalam media dan dakwah digital.  
+   - Meneliti dampak sosial AI terhadap komunitas Muslim  
+   - Mengembangkan program literasi AI berbasis nilai Islam  
+   - Membangun sistem pemantauan dampak AI terhadap akidah dan moral  
+   - Merancang kampanye kesadaran publik tentang AI Islami  
 
-6. **Tim Koordinasi & Publikasi**  
-   - Menyusun laporan, buku putih, dan manifesto Islamisasi AI.  
-   - Mengelola komunikasi dengan pemangku kepentingan.  
-   - Mengadakan seminar, lokakarya, dan diskusi publik.  
+6. **Tim Pendidikan dan Riset**  
+   - Mengembangkan kurikulum AI Islami untuk berbagai jenjang  
+   - Membangun pusat penelitian AI Islami  
+   - Menyelenggarakan program fellowship untuk peneliti muda  
+   - Menerbitkan jurnal akademik tentang Islamisasi AI  
+
+7. **Tim Koordinasi & Implementasi**  
+   - Menyusun roadmap implementasi Islamisasi AI  
+   - Mengelola kolaborasi antar pemangku kepentingan  
+   - Memantau dan evaluasi proyek-proyek AI Islami  
+   - Mengadakan kompetisi dan hackathon pengembangan AI Islami  
 
 ---
 
@@ -64,10 +91,12 @@
 
 ### **D. Metode & Pendekatan**  
 
-- **Riset Multidisiplin:** Kolaborasi antara pakar AI, ulama, dan akademisi.  
-- **Analisis Komparatif:** Studi perbandingan AI Islami dengan standar AI global.  
-- **Eksperimen Teknologi:** Pengembangan model AI yang sesuai dengan syariah.  
-- **Kajian Regulasi:** Penyusunan kebijakan AI berbasis nilai Islam.  
+- **Riset Terapan:** Pengembangan prototipe AI Islami (chatbot dakwah, sistem deteksi konten haram, dll)
+- **Benchmarking Global:** Analisis kritis terhadap standar etika AI Barat dan alternatif Islam
+- **Pengembangan Kapasitas:** Pelatihan ulama tentang AI dan pelatihan engineer tentang syariah
+- **Regulasi Dinamis:** Penyusunan kebijakan yang adaptif terhadap perkembangan teknologi
+- **Ekosistem Terbuka:** Membangun komunitas developer AI Muslim global
+- **Implementasi Bertahap:** Pilot project di sektor pendidikan, keuangan, dan media
 
 ### **E. Hasil yang Diharapkan**  
 
