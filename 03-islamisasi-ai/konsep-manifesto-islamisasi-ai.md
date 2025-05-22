@@ -1,5 +1,22 @@
 # Manifesto Islamisasi AI: Prinsip Umum dan Rencana Kerja
 
+## Daftar Isi
+
+- [Manifesto Islamisasi AI: Prinsip Umum dan Rencana Kerja](#manifesto-islamisasi-ai-prinsip-umum-dan-rencana-kerja)
+  - [Daftar Isi](#daftar-isi)
+  - [Kata Pengantar](#kata-pengantar)
+  - [Bab 1: Pendahuluan](#bab-1-pendahuluan)
+  - [Bab 2: Landasan Teologis dan Filosofis](#bab-2-landasan-teologis-dan-filosofis)
+  - [Bab 3: Prinsip Umum Islamisasi AI](#bab-3-prinsip-umum-islamisasi-ai)
+  - [Bab 4: Kerangka Hukum dan Regulasi](#bab-4-kerangka-hukum-dan-regulasi)
+  - [Bab 5: Strategi Implementasi Islamisasi AI](#bab-5-strategi-implementasi-islamisasi-ai)
+  - [Bab 6: Aplikasi dan Studi Kasus](#bab-6-aplikasi-dan-studi-kasus)
+  - [Bab 7: Tantangan dan Prospek Masa Depan](#bab-7-tantangan-dan-prospek-masa-depan)
+  - [Bab 8: Rencana Kerja dan Implementasi Praktis](#bab-8-rencana-kerja-dan-implementasi-praktis)
+  - [Bab 9: Kesimpulan dan Rekomendasi](#bab-9-kesimpulan-dan-rekomendasi)
+  - [Lampiran](#lampiran)
+  - [Indeks](#indeks)
+
 ## Kata Pengantar
 
 ## Bab 1: Pendahuluan  
