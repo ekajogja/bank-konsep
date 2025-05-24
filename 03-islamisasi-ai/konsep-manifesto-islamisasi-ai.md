@@ -71,7 +71,7 @@ Sebagai *living document*, manifesto ini akan terus berkembang mengikuti dinamik
       - [2.4.2. Bias kultural dalam sistem AI global](#242-bias-kultural-dalam-sistem-ai-global)
       - [2.4.3. Solusi Islam sebagai alternatif komprehensif](#243-solusi-islam-sebagai-alternatif-komprehensif)
   - [Bab 3: Prinsip Umum Islamisasi AI](#bab-3-prinsip-umum-islamisasi-ai)
-    - [3.1. Prinsip keadilan dan keberpihakan (adalah, keadilan sosial)](#31-prinsip-keadilan-dan-keberpihakan-adalah-keadilan-sosial)
+    - [3.1. Prinsip keadilan dan keberpihakan (*adalah*, keadilan sosial)](#31-prinsip-keadilan-dan-keberpihakan-adalah-keadilan-sosial)
     - [3.2. Kepatuhan terhadap hukum Islam dan nilai moral](#32-kepatuhan-terhadap-hukum-islam-dan-nilai-moral)
     - [3.3. Transparansi, akuntabilitas, dan tanggung jawab](#33-transparansi-akuntabilitas-dan-tanggung-jawab)
     - [3.4. Keseimbangan antara inovasi dan konservatisme nilai](#34-keseimbangan-antara-inovasi-dan-konservatisme-nilai)
@@ -504,103 +504,497 @@ Pendekatan ini mengatasi keterbatasan teori Barat dengan menyediakan sistem nila
 
 ## Bab 3: Prinsip Umum Islamisasi AI  
 
-### 3.1. Prinsip keadilan dan keberpihakan (adalah, keadilan sosial)  
+### 3.1. Prinsip keadilan dan keberpihakan (*adalah*, keadilan sosial)
 
-### 3.2. Kepatuhan terhadap hukum Islam dan nilai moral  
+Prinsip keadilan dalam Islamisasi AI mencakup tiga dimensi utama: distributif, prosedural, dan interaksional.
 
-### 3.3. Transparansi, akuntabilitas, dan tanggung jawab  
+Implementasinya memerlukan pengembangan algoritma yang tidak hanya bebas dari bias statistik tetapi juga aktif memperjuangkan keadilan sosial (*al-'adl al-ijtima'i*).
 
-### 3.4. Keseimbangan antara inovasi dan konservatisme nilai  
+Ini termasuk mekanisme afirmatif untuk kelompok marginal, sistem pengambilan keputusan yang mempertimbangkan konteks sosio-kultural, dan transparansi dalam kriteria algoritmik.
 
-### 3.5. Peran komunitas dan pemangku kepentingan dalam pengawasan  
+Keadilan Islami juga menekankan keseimbangan antara hak individu dan kemaslahatan umum, serta pertanggungjawaban akhirat sebagai pengendali moral.
+
+### 3.2. Kepatuhan terhadap hukum Islam dan nilai moral
+
+Kepatuhan syariah dalam AI bukan sekadar *compliance* teknis tetapi internalisasi nilai-nilai Islam dalam arsitektur sistem.
+
+Ini mencakup:
+
+1. integrasi filter syariah dalam pemrosesan konten,
+
+2. mekanisme sertifikasi halal untuk model AI, dan
+
+3. audit reguler oleh lembaga yang kompeten.
+
+Pendekatan ini menghindari legalisme sempit dengan memadukan fiqh klasik dan kebutuhan kontemporer, serta memperhatikan *maqashid syariah* sebagai kerangka evaluasi.
+
+Kepatuhan juga mencakup aspek akhlak seperti kejujuran, amanah, dan ihsan dalam pengembangan teknologi.
+
+### 3.3. Transparansi, akuntabilitas, dan tanggung jawab
+
+Transparansi dalam AI Islami melampaui keterbukaan kode (*open source*) menuju keterbukaan nilai (*open values*).
+
+Sistem harus menjelaskan bukan hanya "bagaimana" ia bekerja tetapi juga "mengapa" ia dirancang demikian.
+
+Akuntabilitas mencakup pertanggungjawaban horizontal (kepada masyarakat) dan vertikal (kepada Allah). 
+
+Mekanisme yang dikembangkan antara lain: registrasi dampak algoritma, hak banding manusiawi, dan dewan pengawas kepatuhan syariah.
+
+Tanggung jawab kolektif (*fard kifayah*) dalam pengawasan teknologi menjadi ciri khas pendekatan Islam, berbeda dengan individualisme dalam etika teknologi Barat.
+
+### 3.4. Keseimbangan antara inovasi dan konservatisme nilai
+
+Islamisasi AI menolak dikotomi inovasi versus tradisi dengan mengembangkan kerangka *wasathiyah* (moderasi) teknologi.
+
+Prinsipnya:
+
+1. inovasi terbuka dalam metode (*wasail*) selama tujuan (*maqashid*) tetap terjaga,
+
+2. adaptasi kreatif terhadap perkembangan baru tanpa mengorbankan nilai dasar, dan
+
+3. filtrasi kritis terhadap tren teknologi berdasarkan pertimbangan *maslahah-mafsadah*.
+
+Pendekatan ini menghasilkan perkembangan teknologi yang dinamis namun tetap berakar pada nilai-nilai Islam yang abadi, dengan ruang untuk ijtihad kontemporer.
+
+### 3.5. Peran komunitas dan pemangku kepentingan dalam pengawasan
+
+Model pengawasan AI Islami bersifat partisipatif dan *multistakeholder*.
+
+Forum ulama berperan dalam memberikan panduan syariah, akademisi mengembangkan kerangka teknis etika teknologi Islam, praktisi industri menerapkan prinsip-prinsip Islam dalam produk, sementara masyarakat umum memberikan umpan balik melalui mekanisme syura digital.
+
+Lembaga seperti *bayt al-mal wa at-tamwil* dapat mengelola dana pengembangan AI syariah, sementara organisasi masyarakat memantau dampak sosial.
+
+Sistem ini menciptakan ekosistem *checks and balances* yang khas, berbeda dengan model pengawasan *top-down* Barat atau kontrol negara otoriter, dengan tetap mengedepankan prinsip *amar ma'ruf nahi munkar*.
 
 ## Bab 4: Kerangka Hukum dan Regulasi  
 
-### 4.1. Kajian hukum Islam dan penerapannya pada teknologi  
+### 4.1. Kajian hukum Islam dan penerapannya pada teknologi
 
-### 4.2. Model regulasi nasional dan internasional terkait AI  
+Kajian fiqh kontemporer terhadap teknologi AI melibatkan analisis mendalam terhadap beberapa aspek:
 
-### 4.3. Implikasi hukum dari pengintegrasian prinsip hukum Islam dalam AI  
+1. status hukum pengembangan dan penggunaan AI dalam perspektif ushul fiqh,
 
-### 4.4. Studi perbandingan: negara-negara dengan pendekatan serupa  
+2. klasifikasi aplikasi AI berdasarkan kategori hukum (wajib, sunnah, mubah, makruh, haram), dan
+
+3. penyelesaian masalah hukum baru yang muncul seperti tanggung jawab atas keputusan algoritmik.
+
+Pendekatan ini menggunakan metode istinbath modern yang memadukan pemahaman tekstual dengan analisis kontekstual, serta mempertimbangkan maqashid syariah sebagai kerangka evaluasi.
+
+Kajian ini melibatkan berbagai mazhab fiqh untuk mendapatkan pandangan yang komprehensif dan inklusif.
+
+### 4.2. Model regulasi nasional dan internasional terkait AI
+
+Analisis komparatif terhadap berbagai model regulasi AI menunjukkan kebutuhan akan pendekatan khas yang berbasis nilai-nilai Islam.
+
+Studi ini mencakup:
+
+1. evaluasi terhadap regulasi Uni Eropa (AI Act),
+
+2. kebijakan AS dan China, serta
+
+3. inisiatif negara-negara Muslim seperti UAE dan Malaysia.
+
+Temuan utama menunjukkan bahwa regulasi Islami harus menyeimbangkan antara inovasi dan perlindungan nilai, dengan mekanisme khusus seperti dewan pengawas syariah dan sertifikasi halal untuk sistem AI.
+
+Model hybrid yang mengombinasikan best practice global dengan prinsip syariah menjadi rekomendasi utama.
+
+### 4.3. Implikasi hukum dari pengintegrasian prinsip hukum Islam dalam AI
+
+Integrasi prinsip syariah dalam AI menimbulkan implikasi hukum yang kompleks, termasuk:
+
+1. pertanggungjawaban hukum atas keputusan algoritmik (*al-dhaman*),
+
+2. keabsahan kontrak cerdas (*smart contract*) dalam fiqh muamalat, dan
+
+3. status data pribadi dalam konsep hijab dan aurat digital.
+
+Analisis ini juga mencakup masalah kekayaan intelektual model AI, tanggung jawab produsen (*dhaman al-muntij*), serta mekanisme penyelesaian sengketa terkait teknologi.
+
+Pendekatan *fiqh maqashidi* diperlukan untuk menjawab tantangan ini secara komprehensif, dengan tetap mempertahankan fleksibilitas untuk perkembangan teknologi masa depan.
+
+### 4.4. Studi perbandingan: negara-negara dengan pendekatan serupa
+
+Studi terhadap negara-negara seperti Iran dengan kebijakan AI Islami-nya dan Arab Saudi dengan inisiatif *Vision 2030*-nya memberikan wawasan berharga. Temuan menunjukkan tiga pola utama:
+
+1. model regulatoris ketat dengan kontrol negara,
+
+2. pendekatan kolaboratif dengan sektor swasta, dan
+
+3. model berbasis masyarakat sipil.
+
+Rekomendasi untuk implementasi meliputi: pembentukan badan regulator independen, pengembangan standar sertifikasi syariah untuk AI, serta program edukasi publik tentang etika teknologi Islami.
+
+Studi ini juga mengidentifikasi tantangan khusus dalam harmonisasi hukum nasional dan internasional.
 
 ## Bab 5: Strategi Implementasi Islamisasi AI  
 
-### 5.1. Analisis kebutuhan dan tantangan di masyarakat  
+### 5.1. Analisis kebutuhan dan tantangan di masyarakat
+
+Implementasi AI Islami memerlukan pemetaan komprehensif terhadap kebutuhan riil masyarakat Muslim, meliputi:
+
+1. identifikasi masalah spesifik di bidang ekonomi, pendidikan, dan kesehatan yang dapat diatasi dengan AI,
+
+2. analisis kesenjangan digital dan literasi teknologi di berbagai lapisan masyarakat, serta
+
+3. pemetaan tantangan kultural dalam adopsi teknologi.
+
+Pendekatan partisipatif dengan melibatkan tokoh masyarakat, ulama, dan generasi muda diperlukan untuk mendapatkan gambaran utuh.
+
+Tantangan utama termasuk resistensi terhadap perubahan, keterbatasan infrastruktur, dan kekhawatiran akan sekularisasi nilai yang harus diantisipasi melalui program sosialisasi yang tepat.
 
 ### 5.2. Rencana kerja: pendekatan jangka pendek, menengah, dan panjang  
 
-### 5.3. Keterlibatan lembaga pendidikan, riset, dan industri  
+Kerangka waktu implementasi dibagi dalam tiga fase:
 
-### 5.4. Strategi kolaborasi antara pemerintah, swasta, dan ulama  
+- Jangka pendek (1-2 tahun)
+  
+  Penyusunan standar dan regulasi, pelatihan SDM dasar, proyek percontohan di sektor fintech syariah dan pendidikan agama
 
-### 5.5. Mekanisme monitoring dan evaluasi penerapan  
+- Jangka menengah (3-5 tahun)
+  
+  Pengembangan platform AI skala nasional, integrasi kurikulum AI Islami di pesantren dan PTKI, serta pembentukan pusat riset khusus
+
+- Jangka panjang (5-10 tahun)
+  
+  Transformasi ekosistem digital berbasis nilai Islam, kemandirian teknologi, dan kontribusi global dalam etika AI Setiap fase dilengkapi indikator pencapaian yang terukur dan mekanisme evaluasi berkala.
+
+### 5.3. Keterlibatan lembaga pendidikan, riset, dan industri
+
+Strategi kolaborasi tridharma meliputi:
+
+1. Pendidikan: Pengintegrasian AI Islami dalam kurikulum pesantren dan perguruan tinggi Islam melalui pendekatan tematik dan interdisipliner
+
+2. Riset: Pembentukan konsorsium riset yang menghubungkan PTKI, LIPI, dan industri untuk pengembangan produk berbasis syariah
+
+3. Industri: Program insentif bagi startup teknologi syariah dan skema pendampingan UMKM dalam adopsi AI
+
+Model triple helix ini didukung oleh skema pendanaan wakaf teknologi dan kemitraan publik-swasta yang mengedepankan prinsip bagi hasil (*mudharabah*).
+
+### 5.4. Strategi kolaborasi antara pemerintah, swasta, dan ulama
+
+Kerangka kolaborasi multipihak dirancang dengan pembagian peran jelas:
+
+- Pemerintah: Regulasi dan infrastruktur pendukung
+
+- Swasta: Inovasi dan implementasi teknologi
+
+- Ulama: Pengawasan syariah dan legitimasi sosial Mekanisme koordinasi meliputi dewan pengarah nasional, forum berkala, dan platform digital untuk konsultasi fatwa.
+
+Pendekatan ini memastikan sinergi antara kemajuan teknologi dan penjagaan nilai-nilai dasar, dengan prinsip musyawarah dan transparansi sebagai landasan utama.
+
+### 5.5. Mekanisme monitoring dan evaluasi penerapan
+
+Sistem evaluasi komprehensif mencakup:
+
+1. Aspek syariah: Audit berkala oleh dewan pengawas syariah
+
+2. Aspek teknis: Pengukuran kinerja dan dampak algoritma
+
+3. Aspek sosial: Survei kepuasan masyarakat dan tokoh agama Mekanisme ini dilengkapi dengan platform pelaporan publik, sistem pemantauan real-time, dan proses iterasi perbaikan berkelanjutan.
+
+Indikator keberhasilan tidak hanya bersifat kuantitatif tetapi juga memperhatikan dampak spiritual dan sosial terhadap kehidupan beragama.
 
 ## Bab 6: Aplikasi dan Studi Kasus  
 
-### 6.1. Implementasi prinsip Islamisasi dalam sistem AI: contoh nyata  
+### 6.1. Implementasi prinsip Islamisasi dalam sistem AI: contoh nyata
 
 #### 6.1.1. Sistem NLP untuk analisis teks keagamaan yang sesuai dengan hukum Islam
 
+Sistem *Natural Language Processing* (NLP) ini dirancang khusus untuk memahami dan menganalisis teks-teks keagamaan Islam dengan mempertimbangkan konteks *fiqh* dan *ushul fiqh*.
+
+Teknologi ini mampu mengidentifikasi tingkat validitas hadis, melacak referensi silang dalam kitab kuning, serta memberikan penafsiran yang sesuai dengan manhaj *ahlussunnah wal jamaah*.
+
+Sistem ini dilengkapi filter syariah untuk mencegah penyebaran penafsiran menyimpang.
+
 #### 6.1.2. Model computer vision untuk identifikasi konten halal-haram
+
+Model *computer vision* ini dikembangkan untuk mendeteksi konten visual yang bertentangan dengan nilai-nilai Islam, seperti gambar tidak senonoh atau unsur haram dalam produk konsumsi.
+
+Teknologi ini menggunakan dataset khusus yang dikurasi ulama dan pakar halal, dengan akurasi tinggi dalam mengenali objek, aktivitas, atau simbol-simbol yang perlu dihindari menurut pandangan Islam yang moderat.
 
 #### 6.1.3. Chatbot dakwah dengan pemfilteran konten otomatis
 
+Chatbot ini dirancang sebagai asisten virtual dakwah yang mampu memberikan jawaban sesuai prinsip Islam, sekaligus memfilter konten yang tidak sesuai.
+
+Sistem ini mengintegrasikan database fatwa resmi, tanya jawab keagamaan, dan mekanisme verifikasi berbasis AI sebelum memberikan respons.
+
+Fitur unggulannya termasuk deteksi pertanyaan kritis dan pengalihan ke ahli manusia ketika diperlukan.
+
 #### 6.1.4. Sistem rekomendasi produk keuangan syariah
+
+Platform AI ini memberikan rekomendasi produk keuangan syariah yang disesuaikan dengan profil risiko dan kebutuhan pengguna, sambil memastikan kepatuhan terhadap prinsip muamalat Islam.
+
+Sistem ini mampu menganalisis ribuan produk keuangan dan menyaring yang tidak memenuhi kriteria syariah, seperti mengandung unsur *riba*, *gharar*, atau *maysir*.
 
 ### 6.2. Studi kasus di bidang kesehatan, pendidikan, dan ekonomi  
 
 #### 6.2.1. AI diagnostik yang mempertimbangkan hukum thibbun nabawi
 
+Sistem AI ini mengintegrasikan kedokteran modern dengan prinsip *thibbun nabawi* dalam proses diagnosis.
+
+Algoritmanya dirancang untuk mempertimbangkan pengobatan alami (seperti madu, *habbatussauda*) sebagai alternatif pertama sebelum obat kimia, sesuai indikasi medis.
+
+Sistem ini juga menyertakan filter syariah untuk menghindari rekomendasi pengobatan yang menggunakan bahan haram atau metode yang bertentangan dengan nilai Islam, sambil tetap mengutamakan efektivitas medis berdasarkan *evidence-based medicine*.
+
 #### 6.2.2. Platform pembelajaran adaptif berbasis nilai Islam
 
+Platform edukasi ini menggunakan AI untuk menyusun konten pembelajaran yang disesuaikan dengan kebutuhan individu, sekaligus memastikan materi yang disampaikan selaras dengan nilai-nilai Islam.
+
+Fitur unggulannya mencakup:
+
+1. penyaringan konten yang bertentangan dengan akidah,
+
+2. penyesuaian metode pembelajaran berdasarkan gaya belajar santri, dan
+
+3. integrasi ilmu dunia-akhirat dalam kurikulum.
+
+Sistem ini khususnya dikembangkan untuk lingkungan pesantren dan madrasah dengan antarmuka bilingual (Arab-Indonesia).
+
 #### 6.2.3. Sistem deteksi transaksi riba dalam fintech
+
+Aplikasi ini memanfaatkan *machine learning* untuk menganalisis pola transaksi keuangan digital dan mengidentifikasi potensi praktik riba yang tersembunyi.
+
+Sistem ini mampu memindai kontrak-kontrak digital, skema pembiayaan, dan struktur produk keuangan untuk mendeteksi unsur *gharar*, *maysir*, atau *riba* yang mungkin tidak terlihat jelas.
+
+Hasil analisis dilengkapi dengan penjelasan fiqh sederhana untuk edukasi pengguna.
 
 ### 6.3. Evaluasi dampak sosial dan keagamaan  
 
 #### 6.3.1. Pengaruh AI terhadap pola ibadah masyarakat
 
+Studi ini mengkaji dampak teknologi AI terhadap praktik ibadah sehari-hari, termasuk:
+
+1. perubahan pola shalat akibat aplikasi jadwal otomatis,
+
+2. penggunaan robot untuk azan dan iqamah, serta
+
+3. efek media sosial keagamaan terhadap kualitas ibadah.
+
+Temuan menunjukkan perlu adanya panduan etis untuk memastikan teknologi memperdalam makna ibadah bukan sekadar mempermudah secara teknis, sambil menjaga kekhusyukan dan keikhlasan.
+
 #### 6.3.2. Dampak algoritma rekomendasi terhadap akidah
 
+Penelitian mendalam tentang bagaimana algoritma platform digital membentuk pemahaman keagamaan masyarakat, khususnya dalam hal akidah.
+
+Analisis mencakup:
+
+1. mekanisme filter bubble yang memperkuat pandangan tertentu,
+
+2. penyebaran konten ekstrem, serta
+
+3. bias algoritmik terhadap mazhab tertentu.
+
+Rekomendasi utamanya adalah pengembangan standar konten keagamaan berbasis AI yang mengedepankan manhaj ahlussunnah wal jamaah yang moderat.
+
 #### 6.3.3. Analisis bias kultural dalam dataset pelatihan AI
+
+Kajian kritis terhadap representasi nilai-nilai Islam dalam dataset AI global, mengungkap ketidakseimbangan dalam penggambaran Muslim dan praktik keagamaan. 
+
+Penelitian ini mengembangkan metode evaluasi dataset berbasis *maqashid syariah* dan merekomendasikan pembuatan korpus data alternatif yang lebih representatif, serta teknik debiasing yang sesuai dengan perspektif Islam.
 
 ### 6.4. Pembelajaran dan perbaikan berkelanjutan  
 
 #### 6.4.1. Mekanisme umpan balik dari ulama dan masyarakat
 
+Sistem ini menyediakan platform kolaboratif bagi ulama dan masyarakat untuk memberikan masukan tentang penerapan AI Islami.
+
+Fiturnya mencakup saluran pelaporan masalah syariah, forum diskusi kebijakan teknologi, dan mekanisme verifikasi fatwa digital.
+
+Umpan balik ini menjadi dasar penyempurnaan sistem secara berkala, memastikan perkembangan teknologi tetap sejalan dengan nilai-nilai Islam dan kebutuhan riil umat.
+
 #### 6.4.2. Pembaruan model berdasarkan fatwa terkini
+
+Protokol pembaruan AI dirancang untuk mengakomodasi perkembangan fatwa kontemporer melalui integrasi database otoritatif dari lembaga fatwa terpercaya.
+
+Sistem ini mampu melakukan penyesuaian otomatis terhadap perubahan hukum, seperti penemuan baru dalam bidang kedokteran atau ekonomi syariah, sambil mempertahankan konsistensi dengan prinsip dasar yang telah ditetapkan.
 
 #### 6.4.3. Adaptasi terhadap perkembangan teknologi baru
 
+Kerangka adaptasi ini memungkinkan integrasi teknologi emerging seperti quantum computing atau AGI ke dalam sistem AI Islami dengan tetap mempertahankan prinsip syariah.
+
+Prosesnya meliputi tiga tahap: evaluasi dampak syariah, pengembangan protokol pengamanan, dan sosialisasi bertahap.
+
+Pendekatan ini menjembatani antara kecepatan inovasi teknologi dengan kehati-hatian dalam menjaga nilai-nilai Islam.
+
 ## Bab 7: Tantangan dan Prospek Masa Depan  
 
-### 7.1. Tantangan teknis dan non-teknis dalam Islamisasi AI  
+### 7.1. Tantangan teknis dan non-teknis dalam Islamisasi AI 
 
-### 7.2. Risiko penyalahgunaan dan mitigasinya  
+Implementasi AI berbasis nilai Islam menghadapi tantangan kompleks di berbagai bidang.
 
-### 7.3. Inovasi dan tren global: bagaimana menyeimbangkan tradisi dan modernitas  
+Secara teknis, kesulitan utama meliputi:
 
-### 7.4. Visi jangka panjang untuk AI yang beretika dan berkeadaban  
+1. pengembangan dataset yang representatif dengan perspektif Islam,
+
+2. integrasi prinsip syariah dalam arsitektur algoritma, dan
+
+3. pembuatan metrik evaluasi yang mencakup dimensi spiritual.
+
+Di sisi non-teknis, tantangan mencakup resistensi budaya, keterbatasan SDM yang menguasai kedua bidang (fiqh dan AI), serta kesenjangan infrastruktur digital di komunitas Muslim.
+
+Solusi komprehensif diperlukan melalui pendekatan multidisiplin dan kolaborasi berbagai pemangku kepentingan.
+
+### 7.2. Risiko penyalahgunaan dan mitigasinya
+
+Potensi penyalahgunaan AI Islami mencakup tiga level risiko:
+
+1. level individu (misalnya manipulasi fatwa digital),
+
+2. level komunitas (seperti polarisasi mazhab melalui algoritma rekomendasi), dan
+
+3. level global (termasuk *weaponization of Islamic AI*).
+
+Strategi mitigasi meliputi:
+
+1. pembentukan dewan pengawas syariah-teknis hybrid,
+
+2. pengembangan protokol keamanan berbasis blockchain untuk verifikasi konten, dan
+
+3. pendidikan literasi AI bagi masyarakat Muslim.
+
+Kerangka *governance* yang diusulkan menggabungkan prinsip syura dengan *best practice cybersecurity*, menciptakan sistem *checks and balances* yang unik.
+
+### 7.3. Inovasi dan tren global: bagaimana menyeimbangkan tradisi dan modernitas
+
+Menghadapi perkembangan pesat teknologi global, AI Islami perlu menemukan titik keseimbangan antara adaptasi inovasi dan pelestarian nilai.
+
+Strateginya meliputi:
+
+1. filter kritis terhadap tren teknologi berdasarkan analisis *maslahah-mafsadah*,
+
+2. pengembangan varian Islami dari teknologi emerging (seperti fintech syariah berbasis AI), dan
+
+3. kontribusi aktif dalam standarisasi global dengan membawa perspektif Islam. 
+
+Pendekatan "*al-muhafazah 'ala al-qadim as-shalih wal akhdzu bil-jadid al-aslah*" menjadi panduan dalam menyeleksi inovasi yang sesuai.
+
+### 7.4. Visi jangka panjang untuk AI yang beretika dan berkeadaban
+
+Visi 2045 untuk AI Islami mencakup tiga pilar utama:
+
+1. terciptanya ekosistem teknologi yang secara intrinsik islami dari level infrastruktur hingga aplikasi,
+
+2. kemandirian teknologi dunia Muslim dengan penguasaan penuh atas rantai nilai AI, dan
+
+3. kontribusi global dalam membentuk etika teknologi yang manusiawi dan berkeadilan.
+
+Pencapaiannya memerlukan roadmap jelas dengan milestone seperti pusat riset unggulan, standar industri syariah, dan generasi baru ilmuwan Muslim yang menguasai AI.
+
+Visi ini bertujuan menjadikan AI sebagai alat untuk mencapai tujuan luhur peradaban Islam, bukan sekadar produk konsumsi teknologi.
 
 ## Bab 8: Rencana Kerja dan Implementasi Praktis  
 
-### 8.1. Peta jalan pengembangan kebijakan dan regulasi  
+### 8.1. Peta jalan pengembangan kebijakan dan regulasi
 
-### 8.2. Rencana pelatihan dan peningkatan kapasitas SDM  
+Peta jalan kebijakan AI Islami dirancang dalam tiga fase utama:
 
-### 8.3. Roadmap pengembangan riset dan inovasi AI berbasis nilai Islam  
+1. Fase konsolidasi (2025-2027): Penyusunan standar dasar dan kerangka regulasi
 
-### 8.4. Strategi pendanaan dan kemitraan strategis  
+2. Fase implementasi (2028-2032): Peluncuran kebijakan di tingkat nasional dan regional
 
-### 8.5. Timeline dan indikator keberhasilan  
+3. Fase globalisasi (2033-2035): Kontribusi aktif dalam standar internasional 
+
+Setiap fase mencakup penyempurnaan aspek hukum syariah dan teknis, dengan mekanisme evaluasi tahunan oleh dewan ahli multidisiplin.
+
+Regulasi dirancang fleksibel untuk mengakomodasi perkembangan teknologi namun tetap menjaga prinsip dasar syariah.
+
+### 8.2. Rencana pelatihan dan peningkatan kapasitas SDM
+
+Program pengembangan SDM mencakup:
+
+- Pelatihan intensif bagi ulama tentang dasar-dasar AI
+
+- Pendidikan spesialisasi AI syariah untuk insinyur Muslim
+
+- Kursus sertifikasi bagi profesional di industri halal
+
+- Beasiswa riset di bidang etika teknologi Islam
+
+Kerangka kompetensi dirancang untuk menghasilkan tenaga ahli yang menguasai baik aspek fiqh maupun teknis, dengan sistem mentoring yang menghubungkan generasi muda dengan pakar senior.
+
+### 8.3. Roadmap pengembangan riset dan inovasi AI berbasis nilai Islam
+
+Roadmap riset 10 tahun difokuskan pada:
+
+1. Tahun 1-3: Penelitian dasar dan pengembangan dataset Islami
+
+2. Tahun 4-6: Pembuatan prototipe sistem inti (NLP syariah, fintech AI, dll)
+
+3. Tahun 7-10: Implementasi skala penuh dan komersialisasi
+
+Prioritas riset ditentukan berdasarkan analisis kebutuhan umat dan potensi dampak, dengan alokasi dana khusus untuk proyek strategis.
+
+Pusat riset unggulan akan dibentuk sebagai hub inovasi, bekerja sama dengan industri dan lembaga pendidikan.
+
+### 8.4. Strategi pendanaan dan kemitraan strategis
+
+Model pendanaan berkelanjutan meliputi:
+
+- Skema wakaf teknologi dan investasi sosial syariah
+
+- Kemitraan publik-swasta dengan skema bagi hasil
+
+- Pendanaan kompetitif untuk startup AI syariah
+
+- Hibah riset dari organisasi Islam internasional
+
+Kemitraan strategis dijalin dengan berbagai pihak termasuk pemerintah, universitas, perusahaan teknologi, dan organisasi masyarakat, dengan prinsip transparansi dan akuntabilitas syariah.
+
+### 8.5. Timeline dan indikator keberhasilan
+
+Timeline implementasi menggunakan sistem milestone dengan indikator kunci:
+
+- Output: Jumlah produk, regulasi, dan SDM terlatih
+
+- Outcome: Tingkat adopsi dan dampak sosial
+
+- Impact: Kontribusi terhadap kemajuan peradaban Islam
+
+Evaluasi dilakukan setiap 6 bulan dengan mekanisme koreksi jalur (*course correction*) yang fleksibel, memastikan pencapaian tujuan jangka panjang Islamisasi AI.
 
 ## Bab 9: Kesimpulan dan Rekomendasi  
 
-### 9.1. Ringkasan temuan dan analisis utama  
+### 9.1. Ringkasan temuan dan analisis utama
 
-### 9.2. Rekomendasi strategis untuk pemangku kepentingan  
+Manifesto ini mengidentifikasi tiga temuan kunci:
 
-### 9.3. Harapan dan prospek masa depan untuk AI yang Islami  
+1. AI kontemporer mengandung bias epistemologis yang bertentangan dengan nilai Islam,
+
+2. kerangka Islamisasi pengetahuan al-Faruqi dapat diadaptasi secara kreatif untuk menjawab tantangan teknologi modern, dan
+
+3. pendekatan integratif antara fiqh dan rekayasa AI memungkinkan terciptanya sistem yang secara intrinsik islami.
+
+Analisis menunjukkan bahwa transformasi diperlukan mulai dari level filosofis hingga teknis, dengan maqashid syariah sebagai kompas utama.
+
+Implementasi berhasil memerlukan kolaborasi erat antara ulama, ilmuwan, dan praktisi teknologi.
+
+### 9.2. Rekomendasi strategis untuk pemangku kepentingan
+
+Untuk berbagai pemangku kepentingan, manifesto ini merekomendasikan:
+
+- Pemerintah: Membentuk badan regulasi AI syariah nasional
+
+- Lembaga pendidikan: Mengintegrasikan kurikulum AI Islami di pesantren dan PTKI
+
+- Industri: Mengembangkan standar sertifikasi halal untuk produk AI
+
+- Ulama: Membentuk dewan pengawas syariah bidang teknologi
+
+- Masyarakat: Meningkatkan literasi digital Islami secara menyeluruh
+
+Rekomendasi operasional mencakup pendanaan wakaf teknologi, riset terapan, dan program *capacity building* untuk menciptakan ekosistem yang mendukung.
+
+### 9.3. Harapan dan prospek masa depan untuk AI yang Islami
+
+Ke depan, AI Islami diharapkan dapat:
+
+1. menjadi alternatif etis yang berkontribusi pada peradaban global,
+
+2. meningkatkan kualitas kehidupan umat melalui solusi teknologi berbasis nilai, dan
+
+3. memulihkan peran ilmuwan Muslim dalam kemajuan sains-teknologi.
+
+Dengan implementasi yang konsisten, visi AI sebagai alat mencapai *maqashid syariah* dapat terwujud, menciptakan teknologi yang tidak hanya cerdas tetapi juga beradab dan berkah.
 
 ## Lampiran  
 
