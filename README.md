@@ -9,7 +9,7 @@
 | 5 | Etika Nusantara: Teroka dan Rekonstruksi Nilai Moral Manusia Indonesia | buku | [konsep](05-etika-nusantara/konsep-buku-etika-nusantara.md) |
 | 6 | Glosarium *Domain Specific Language* | seri buku | [konsep bisnis](06-penerbitan-glosarium-dsl/konsep-bisnis-glosarium-dsl.md) |
 | 7 | Metode Pengembangan Knowledge Graph untuk Kitab-kitab Islam | proyek platform | [konsep](07-knowledge-graph-kitab/konsep-pengembangan-kg-kitab.md) // [mockup](https://mahadsiber.github.io/mockup-kg-ulama.html) |
-| 8 | *SIMaNah* - Sistem Informasi Madrasah Nahdliyyah | proyek platform | [proposal](08-sistem-informasi-madrasah-nahdliyah/simanah.md) // [mockup](08-sistem-informasi-madrasah-nahdliyah/simanah.html) |
+| 8 | *SIMaNah* - Sistem Informasi Madrasah Nahdliyyah | proyek platform | [proposal](08-sistem-informasi-madrasah-nahdliyah/konsep-simanah.md) // [mockup](08-sistem-informasi-madrasah-nahdliyah/simanah.html) |
 | 9 | *Saku Santri* - Sistem Pengelolaan Uang Saku Santri | proyek platform | [konsep + mockup](https://jarinabi.github.io/) |
 | 10 | *Ma'had Tsaqafah Maaliyah* - Membangun Kemandirian Finansial Santri | program edukasi | [proposal](10-workshop-literasi-finansial-santri/program-literasi-finansial-santri.md) |
 | 11 | Implementasi AI & Knowledge Graph untuk Peningkatan Sistem Belajar Mengajar di Madrasah Ma'arif | proyek platform & sistem | [konsep](11-ai-knowledge-graph-maarif/konsep-ai-kg-untuk-madrasah-maarif.md) |
