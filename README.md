@@ -15,4 +15,4 @@
 | 11 | Implementasi AI & Knowledge Graph untuk Peningkatan Sistem Belajar Mengajar di Madrasah Ma'arif | proyek platform & sistem | [konsep](11-ai-knowledge-graph-maarif/konsep-ai-kg-untuk-madrasah-maarif.md) |
 | 12 | Video Etika & Etiket AI | seri video | [konsep](12-video-etika-etiket-ai/konsep-seri-video-etika-etiket-ai.md) |
 | 13 | CitaMaya | MMORPG edukasi dengan 99 program studi |[konsep + mockup](https://ekajogja.github.io/citamaya/mockup/index.html) |
-| 14 | Budayanesia | duolingo untuk budaya Nusantara | [konsep + mockup](https://ekajogja.github.io/budayanesia/index.html) |
+| 14 | Budayanesia | duolingo untuk budaya Nusantara | [konsep + mockup](https://ekajogja.github.io/budayanesia/) |
