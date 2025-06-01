@@ -8,6 +8,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function() {
+            const $toggleBtn = $('#toggleTable');
+            const $table = $('#comparisonTable');
+            
+            // Load saved state
+            if(localStorage.getItem('tableVisible') === 'true') {
+                $table.removeClass('hidden');
+                $toggleBtn.text('Sembunyikan Tabel Perbandingan');
+            }
+            
+            $toggleBtn.on('click', function() {
+                $table.toggleClass('hidden');
+                const is/* Visible  */= !$table.hasClass('hidden');
+                $toggleBtn.text(isVisible 
+                    ? 'Sembunyikan Tabel Perbandingan' 
+                    : 'Tampilkan Tabel Perbandingan');
+                
+                localStorage.setItem('tableVisible', isVisible);
+            });
+        });
+    </script>
     <style>
         .card {
             transition: transform 0.2s;
@@ -19,7 +43,172 @@
 </head>
 <body class="bg-gray-200 min-h-screen">
     <div class="container mx-auto px-4 py-10">
-        <h1 class="text-4xl font-bold text-center mb-12 text-blue-600 py-4">Bank Konsep MHS</h1>
+        <h1 class="text-4xl font-bold text-center mb-6 text-blue-600 py-4">Bank Konsep MHS</h1>
+        
+        <!-- Tabel Komparasi -->
+        <div class="mb-12">
+            <button id="toggleTable" class="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors">
+                Tampilkan Tabel Perbandingan
+            </button>
+            <div id="comparisonTable" class="hidden overflow-x-auto mb-12">
+                <table class="min-w-full bg-white rounded-lg shadow-md">
+                    <thead>
+                        <tr class="bg-gray-800 text-white">
+                            <th class="px-4 py-2">No</th>
+                            <th class="px-4 py-2">Konsep</th>
+                            <th class="px-4 py-2">Skala</th>
+                            <th class="px-4 py-2">Peluang Pasar</th>
+                            <th class="px-4 py-2">Peluang Monetisasi</th>
+                            <th class="px-4 py-2">Kebutuhan Modal</th>
+                            <th class="px-4 py-2">Kebutuhan SDM</th>
+                            <th class="px-4 py-2">Durasi ROI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">1</td>
+                            <td class="border px-4 py-2">Sekolah Berpikir / Mahad Pemikiran Islam</td>
+                            <td class="border px-4 py-2">Menengah</td>
+                            <td class="border px-4 py-2">5.000-20.000 peserta/tahun</td>
+                            <td class="border px-4 py-2">Program berbayar (Rp 5jt/peserta)</td>
+                            <td class="border px-4 py-2">300 juta</td>
+                            <td class="border px-4 py-2">4 orang</td>
+                            <td class="border px-4 py-2">18 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">2</td>
+                            <td class="border px-4 py-2">Pesantren Paripurna</td>
+                            <td class="border px-4 py-2">Besar</td>
+                            <td class="border px-4 py-2">100-500 institusi</td>
+                            <td class="border px-4 py-2">Langganan sistem (Rp 10jt/institusi/tahun)</td>
+                            <td class="border px-4 py-2">1.5M</td>
+                            <td class="border px-4 py-2">8 orang</td>
+                            <td class="border px-4 py-2">30 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">3</td>
+                            <td class="border px-4 py-2">Manifesto Islamisasi AI</td>
+                            <td class="border px-4 py-2">Kecil</td>
+                            <td class="border px-4 py-2">10.000-50.000 pembeli</td>
+                            <td class="border px-4 py-2">Penjualan buku (Rp 150rb/eksemplar)</td>
+                            <td class="border px-4 py-2">150 juta</td>
+                            <td class="border px-4 py-2">2 orang</td>
+                            <td class="border px-4 py-2">9 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">4</td>
+                            <td class="border px-4 py-2">Etika Teknologi Emergen Islam</td>
+                            <td class="border px-4 py-2">Kecil</td>
+                            <td class="border px-4 py-2">10.000-50.000 pembeli</td>
+                            <td class="border px-4 py-2">Penjualan buku (Rp 150rb/eksemplar)</td>
+                            <td class="border px-4 py-2">150 juta</td>
+                            <td class="border px-4 py-2">2 orang</td>
+                            <td class="border px-4 py-2">9 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">5</td>
+                            <td class="border px-4 py-2">Etika Nusantara</td>
+                            <td class="border px-4 py-2">Kecil</td>
+                            <td class="border px-4 py-2">10.000-50.000 pembeli</td>
+                            <td class="border px-4 py-2">Penjualan buku (Rp 150rb/eksemplar)</td>
+                            <td class="border px-4 py-2">150 juta</td>
+                            <td class="border px-4 py-2">2 orang</td>
+                            <td class="border px-4 py-2">9 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">6</td>
+                            <td class="border px-4 py-2">Glosarium Domain Specific Language</td>
+                            <td class="border px-4 py-2">Kecil</td>
+                            <td class="border px-4 py-2">10.000-50.000 pengguna</td>
+                            <td class="border px-4 py-2">Langganan premium (Rp 100rb/bulan)</td>
+                            <td class="border px-4 py-2">200 juta</td>
+                            <td class="border px-4 py-2">3 orang</td>
+                            <td class="border px-4 py-2">12 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">7</td>
+                            <td class="border px-4 py-2">Knowledge Graph Kitab</td>
+                            <td class="border px-4 py-2">Besar</td>
+                            <td class="border px-4 py-2">100-500 institusi</td>
+                            <td class="border px-4 py-2">Langganan sistem (Rp 15jt/institusi/tahun)</td>
+                            <td class="border px-4 py-2">1.8M</td>
+                            <td class="border px-4 py-2">9 orang</td>
+                            <td class="border px-4 py-2">36 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">8</td>
+                            <td class="border px-4 py-2">SIMaNah</td>
+                            <td class="border px-4 py-2">Besar</td>
+                            <td class="border px-4 py-2">5.000+ madrasah</td>
+                            <td class="border px-4 py-2">Iuran per santri (Rp 5.000/bulan)</td>
+                            <td class="border px-4 py-2">2M</td>
+                            <td class="border px-4 py-2">10 orang</td>
+                            <td class="border px-4 py-2">24 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">9</td>
+                            <td class="border px-4 py-2">Saku Santri</td>
+                            <td class="border px-4 py-2">Menengah</td>
+                            <td class="border px-4 py-2">500.000+ santri</td>
+                            <td class="border px-4 py-2">Fee transaksi (Rp 500/transaksi)</td>
+                            <td class="border px-4 py-2">800 juta</td>
+                            <td class="border px-4 py-2">6 orang</td>
+                            <td class="border px-4 py-2">18 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">10</td>
+                            <td class="border px-4 py-2">Ma'had Tsaqafah Maaliyah</td>
+                            <td class="border px-4 py-2">Menengah</td>
+                            <td class="border px-4 py-2">15 pesantren/tahun</td>
+                            <td class="border px-4 py-2">Program berbayar (Rp 10jt/pesantren)</td>
+                            <td class="border px-4 py-2">500 juta</td>
+                            <td class="border px-4 py-2">5 orang</td>
+                            <td class="border px-4 py-2">15 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">11</td>
+                            <td class="border px-4 py-2">AI & Knowledge Graph Madrasah</td>
+                            <td class="border px-4 py-2">Besar</td>
+                            <td class="border px-4 py-2">1.000+ madrasah</td>
+                            <td class="border px-4 py-2">Langganan sistem (Rp 8jt/madrasah/tahun)</td>
+                            <td class="border px-4 py-2">2.5M</td>
+                            <td class="border px-4 py-2">12 orang</td>
+                            <td class="border px-4 py-2">30 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">12</td>
+                            <td class="border px-4 py-2">Video Etika & Etiket AI</td>
+                            <td class="border px-4 py-2">Menengah</td>
+                            <td class="border px-4 py-2">500.000-1.000.000 penonton</td>
+                            <td class="border px-4 py-2">Iklan, sponsor</td>
+                            <td class="border px-4 py-2">400 juta</td>
+                            <td class="border px-4 py-2">4 orang</td>
+                            <td class="border px-4 py-2">12 bulan</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">13</td>
+                            <td class="border px-4 py-2">CitaMaya</td>
+                            <td class="border px-4 py-2">Besar</td>
+                            <td class="border px-4 py-2">100.000+ pengguna</td>
+                            <td class="border px-4 py-2">Premium subscription, iklan</td>
+                            <td class="border px-4 py-2">1.2M</td>
+                            <td class="border px-4 py-2">8 orang</td>
+                            <td class="border px-4 py-2">24 bulan</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="border px-4 py-2">14</td>
+                            <td class="border px-4 py-2">Budayanesia</td>
+                            <td class="border px-4 py-2">Menengah</td>
+                            <td class="border px-4 py-2">500.000+ pengguna</td>
+                            <td class="border px-4 py-2">Premium content, merchandise</td>
+                            <td class="border px-4 py-2">700 juta</td>
+                            <td class="border px-4 py-2">6 orang</td>
+                            <td class="border px-4 py-2">18 bulan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Card 1 -->
