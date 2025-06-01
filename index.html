@@ -10,25 +10,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
+    <!-- DataTables JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
     <script>
         $(function() {
             const $toggleBtn = $('#toggleTable');
             const $table = $('#comparisonTable');
-            
+            let dataTable = null;
+
+            // Custom sorting for Skala column
+            $.fn.dataTable.ext.type.detect.unshift(function(d) {
+                return d.match(/^(Kecil|Menengah|Besar)$/) ? 'skala' : null;
+            });
+
+            $.fn.dataTable.ext.type.order['skala-pre'] = function(d) {
+                switch(d) {
+                    case 'Kecil': return 1;
+                    case 'Menengah': return 2;
+                    case 'Besar': return 3;
+                    default: return 0;
+                }
+            };
+
+            // Custom sorting for Kebutuhan Modal column
+            $.fn.dataTable.ext.type.order['modal-pre'] = function(d) {
+                const value = d.toLowerCase();
+                if (value.includes('m')) {
+                    return parseFloat(value.replace(/[^0-9.]/g, '')) * 1000000;
+                } else if (value.includes('juta')) {
+                    return parseFloat(value.replace(/[^0-9.]/g, '')) * 1000000;
+                }
+                return parseFloat(value.replace(/[^0-9.]/g, '')) || 0;
+            };
+
+            // Initialize DataTable
+            function initDataTable() {
+                dataTable = $('table', $table).DataTable({
+                    columnDefs: [
+                        { targets: 2, type: 'skala' },   // Kolom Skala
+                        { targets: 5, type: 'modal' },    // Kolom Modal
+                        { targets: 6, type: 'num' },      // Kolom SDM
+                        { targets: 7, type: 'num' }       // Kolom ROI
+                    ],
+                    paging: false,
+                    searching: false,
+                    info: false
+                });
+            }
+
             // Load saved state
             if(localStorage.getItem('tableVisible') === 'true') {
                 $table.removeClass('hidden');
                 $toggleBtn.text('Sembunyikan Tabel Perbandingan');
+                initDataTable();
             }
             
             $toggleBtn.on('click', function() {
                 $table.toggleClass('hidden');
-                const is/* Visible  */= !$table.hasClass('hidden');
+                const isVisible = !$table.hasClass('hidden');
                 $toggleBtn.text(isVisible 
                     ? 'Sembunyikan Tabel Perbandingan' 
                     : 'Tampilkan Tabel Perbandingan');
                 
                 localStorage.setItem('tableVisible', isVisible);
+
+                if (isVisible && !dataTable) {
+                    initDataTable();
+                }
             });
         });
     </script>
@@ -57,11 +107,11 @@
                             <th class="px-4 py-2">No</th>
                             <th class="px-4 py-2">Konsep</th>
                             <th class="px-4 py-2">Skala</th>
-                            <th class="px-4 py-2">Peluang Pasar</th>
-                            <th class="px-4 py-2">Peluang Monetisasi</th>
-                            <th class="px-4 py-2">Kebutuhan Modal</th>
-                            <th class="px-4 py-2">Kebutuhan SDM</th>
-                            <th class="px-4 py-2">Durasi ROI</th>
+                            <th class="px-4 py-2">Pasar</th>
+                            <th class="px-4 py-2">Monetisasi</th>
+                            <th class="px-4 py-2">Modal (juta)</th>
+                            <th class="px-4 py-2">SDM (org)</th>
+                            <th class="px-4 py-2">ROI (bulan)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -71,9 +121,9 @@
                             <td class="border px-4 py-2">Menengah</td>
                             <td class="border px-4 py-2">5.000-20.000 peserta/tahun</td>
                             <td class="border px-4 py-2">Program berbayar (Rp 5jt/peserta)</td>
-                            <td class="border px-4 py-2">300 juta</td>
-                            <td class="border px-4 py-2">4 orang</td>
-                            <td class="border px-4 py-2">18 bulan</td>
+                            <td class="border px-4 py-2">300</td>
+                            <td class="border px-4 py-2">4</td>
+                            <td class="border px-4 py-2">18</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">2</td>
@@ -81,9 +131,9 @@
                             <td class="border px-4 py-2">Besar</td>
                             <td class="border px-4 py-2">100-500 institusi</td>
                             <td class="border px-4 py-2">Langganan sistem (Rp 10jt/institusi/tahun)</td>
-                            <td class="border px-4 py-2">1.5M</td>
-                            <td class="border px-4 py-2">8 orang</td>
-                            <td class="border px-4 py-2">30 bulan</td>
+                            <td class="border px-4 py-2">1500</td>
+                            <td class="border px-4 py-2">8</td>
+                            <td class="border px-4 py-2">30</td>
                         </tr>
                         <tr>
                             <td class="border px-4 py-2">3</td>
@@ -91,9 +141,9 @@
                             <td class="border px-4 py-2">Kecil</td>
                             <td class="border px-4 py-2">10.000-50.000 pembeli</td>
                             <td class="border px-4 py-2">Penjualan buku (Rp 150rb/eksemplar)</td>
-                            <td class="border px-4 py-2">150 juta</td>
-                            <td class="border px-4 py-2">2 orang</td>
-                            <td class="border px-4 py-2">9 bulan</td>
+                            <td class="border px-4 py-2">150</td>
+                            <td class="border px-4 py-2">2</td>
+                            <td class="border px-4 py-2">9</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">4</td>
@@ -101,9 +151,9 @@
                             <td class="border px-4 py-2">Kecil</td>
                             <td class="border px-4 py-2">10.000-50.000 pembeli</td>
                             <td class="border px-4 py-2">Penjualan buku (Rp 150rb/eksemplar)</td>
-                            <td class="border px-4 py-2">150 juta</td>
-                            <td class="border px-4 py-2">2 orang</td>
-                            <td class="border px-4 py-2">9 bulan</td>
+                            <td class="border px-4 py-2">150</td>
+                            <td class="border px-4 py-2">2</td>
+                            <td class="border px-4 py-2">9</td>
                         </tr>
                         <tr>
                             <td class="border px-4 py-2">5</td>
@@ -111,9 +161,9 @@
                             <td class="border px-4 py-2">Kecil</td>
                             <td class="border px-4 py-2">10.000-50.000 pembeli</td>
                             <td class="border px-4 py-2">Penjualan buku (Rp 150rb/eksemplar)</td>
-                            <td class="border px-4 py-2">150 juta</td>
-                            <td class="border px-4 py-2">2 orang</td>
-                            <td class="border px-4 py-2">9 bulan</td>
+                            <td class="border px-4 py-2">150</td>
+                            <td class="border px-4 py-2">2</td>
+                            <td class="border px-4 py-2">9</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">6</td>
@@ -121,9 +171,9 @@
                             <td class="border px-4 py-2">Kecil</td>
                             <td class="border px-4 py-2">10.000-50.000 pengguna</td>
                             <td class="border px-4 py-2">Langganan premium (Rp 100rb/bulan)</td>
-                            <td class="border px-4 py-2">200 juta</td>
-                            <td class="border px-4 py-2">3 orang</td>
-                            <td class="border px-4 py-2">12 bulan</td>
+                            <td class="border px-4 py-2">200</td>
+                            <td class="border px-4 py-2">3</td>
+                            <td class="border px-4 py-2">12</td>
                         </tr>
                         <tr>
                             <td class="border px-4 py-2">7</td>
@@ -131,9 +181,9 @@
                             <td class="border px-4 py-2">Besar</td>
                             <td class="border px-4 py-2">100-500 institusi</td>
                             <td class="border px-4 py-2">Langganan sistem (Rp 15jt/institusi/tahun)</td>
-                            <td class="border px-4 py-2">1.8M</td>
-                            <td class="border px-4 py-2">9 orang</td>
-                            <td class="border px-4 py-2">36 bulan</td>
+                            <td class="border px-4 py-2">1800</td>
+                            <td class="border px-4 py-2">9</td>
+                            <td class="border px-4 py-2">36</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">8</td>
@@ -141,9 +191,9 @@
                             <td class="border px-4 py-2">Besar</td>
                             <td class="border px-4 py-2">5.000+ madrasah</td>
                             <td class="border px-4 py-2">Iuran per santri (Rp 5.000/bulan)</td>
-                            <td class="border px-4 py-2">2M</td>
-                            <td class="border px-4 py-2">10 orang</td>
-                            <td class="border px-4 py-2">24 bulan</td>
+                            <td class="border px-4 py-2">2000</td>
+                            <td class="border px-4 py-2">10</td>
+                            <td class="border px-4 py-2">24</td>
                         </tr>
                         <tr>
                             <td class="border px-4 py-2">9</td>
@@ -151,9 +201,9 @@
                             <td class="border px-4 py-2">Menengah</td>
                             <td class="border px-4 py-2">500.000+ santri</td>
                             <td class="border px-4 py-2">Fee transaksi (Rp 500/transaksi)</td>
-                            <td class="border px-4 py-2">800 juta</td>
-                            <td class="border px-4 py-2">6 orang</td>
-                            <td class="border px-4 py-2">18 bulan</td>
+                            <td class="border px-4 py-2">800</td>
+                            <td class="border px-4 py-2">6</td>
+                            <td class="border px-4 py-2">18</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">10</td>
@@ -161,9 +211,9 @@
                             <td class="border px-4 py-2">Menengah</td>
                             <td class="border px-4 py-2">15 pesantren/tahun</td>
                             <td class="border px-4 py-2">Program berbayar (Rp 10jt/pesantren)</td>
-                            <td class="border px-4 py-2">500 juta</td>
-                            <td class="border px-4 py-2">5 orang</td>
-                            <td class="border px-4 py-2">15 bulan</td>
+                            <td class="border px-4 py-2">500</td>
+                            <td class="border px-4 py-2">5</td>
+                            <td class="border px-4 py-2">15</td>
                         </tr>
                         <tr>
                             <td class="border px-4 py-2">11</td>
@@ -171,9 +221,9 @@
                             <td class="border px-4 py-2">Besar</td>
                             <td class="border px-4 py-2">1.000+ madrasah</td>
                             <td class="border px-4 py-2">Langganan sistem (Rp 8jt/madrasah/tahun)</td>
-                            <td class="border px-4 py-2">2.5M</td>
-                            <td class="border px-4 py-2">12 orang</td>
-                            <td class="border px-4 py-2">30 bulan</td>
+                            <td class="border px-4 py-2">2500</td>
+                            <td class="border px-4 py-2">12</td>
+                            <td class="border px-4 py-2">30</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">12</td>
@@ -181,9 +231,9 @@
                             <td class="border px-4 py-2">Menengah</td>
                             <td class="border px-4 py-2">500.000-1.000.000 penonton</td>
                             <td class="border px-4 py-2">Iklan, sponsor</td>
-                            <td class="border px-4 py-2">400 juta</td>
-                            <td class="border px-4 py-2">4 orang</td>
-                            <td class="border px-4 py-2">12 bulan</td>
+                            <td class="border px-4 py-2">400</td>
+                            <td class="border px-4 py-2">4</td>
+                            <td class="border px-4 py-2">12</td>
                         </tr>
                         <tr>
                             <td class="border px-4 py-2">13</td>
@@ -191,9 +241,9 @@
                             <td class="border px-4 py-2">Besar</td>
                             <td class="border px-4 py-2">100.000+ pengguna</td>
                             <td class="border px-4 py-2">Premium subscription, iklan</td>
-                            <td class="border px-4 py-2">1.2M</td>
-                            <td class="border px-4 py-2">8 orang</td>
-                            <td class="border px-4 py-2">24 bulan</td>
+                            <td class="border px-4 py-2">1200</td>
+                            <td class="border px-4 py-2">8</td>
+                            <td class="border px-4 py-2">24</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="border px-4 py-2">14</td>
@@ -201,9 +251,9 @@
                             <td class="border px-4 py-2">Menengah</td>
                             <td class="border px-4 py-2">500.000+ pengguna</td>
                             <td class="border px-4 py-2">Premium content, merchandise</td>
-                            <td class="border px-4 py-2">700 juta</td>
-                            <td class="border px-4 py-2">6 orang</td>
-                            <td class="border px-4 py-2">18 bulan</td>
+                            <td class="border px-4 py-2">700</td>
+                            <td class="border px-4 py-2">6</td>
+                            <td class="border px-4 py-2">18</td>
                         </tr>
                     </tbody>
                 </table>
