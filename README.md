@@ -16,3 +16,4 @@
 | 12 | Video Etika & Etiket AI | seri video | [konsep](12-video-etika-etiket-ai/konsep-seri-video-etika-etiket-ai.md) |
 | 13 | CitaMaya | MMORPG edukasi dengan 99 program studi |[konsep + mockup](https://ekajogja.github.io/citamaya/mockup/index.html) |
 | 14 | Budayanesia | duolingo untuk budaya Nusantara | [konsep + mockup](https://ekajogja.github.io/budayanesia/) |
+| 15 | WG Mitigasi Kejahatan siber | komunitas pencegahan & pendampingan korban kejahatan siber | [konsep](15-mitigasi-serangan-siber/konsep-working-group-mitigasi-serangan-siber.md) |
