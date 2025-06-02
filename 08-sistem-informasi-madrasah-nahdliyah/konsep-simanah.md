@@ -262,16 +262,16 @@ Wassalamu'alaikum warahmatullahi wabarakatuh.
 
 ---
 
-# Rancangan Sumber Daya dan Anggaran SiMaNah (1 Tahun)
+## Rancangan Sumber Daya dan Anggaran SiMaNah (1 Tahun)
 
-## Asumsi Dasar
+### Asumsi Dasar
 
 - Jumlah minimal santri: 100.000
 - Jumlah minimal madrasah: 500 (rata-rata 200 santri per madrasah)
 - Periode pengembangan: 3 bulan
 - Periode implementasi dan operasional: 9 bulan
 
-## Komponen Biaya Sistem (Pusat)
+### Komponen Biaya Sistem (Pusat)
 
 | Kategori | Item | Biaya (Rp) | Keterangan |
 |----------|------|------------|------------|
@@ -286,7 +286,7 @@ Wassalamu'alaikum warahmatullahi wabarakatuh.
 | | Biaya Operasional Pusat | 50.000.000 | Per tahun |
 | **Total Biaya Sistem** | | **735.500.000** | |
 
-## Komponen Biaya per Madrasah
+### Komponen Biaya per Madrasah
 
 | Kategori | Item | Biaya (Rp) | Keterangan |
 |----------|------|------------|------------|
@@ -295,7 +295,7 @@ Wassalamu'alaikum warahmatullahi wabarakatuh.
 | Operasional | Internet & Listrik | 3.000.000 | Per tahun per madrasah |
 | **Total Biaya per Madrasah** | | **9.000.000** | |
 
-## Kalkulasi Total Biaya (1 Tahun)
+### Kalkulasi Total Biaya (1 Tahun)
 
 | Kategori | Total (Rp) | Keterangan |
 |----------|------------|------------|
@@ -305,14 +305,14 @@ Wassalamu'alaikum warahmatullahi wabarakatuh.
 | Kontingensi (10%) | 523.550.000 | |
 | **Total Keseluruhan** | **5.759.050.000** | |
 
-## Analisis Biaya per Santri
+### Analisis Biaya per Santri
 
 - Total biaya 1 tahun: Rp 5.759.050.000
 - Jumlah santri: 100.000
 - Periode: 12 bulan
 - Biaya per santri per bulan = Rp 5.759.050.000 / (100.000 x 12) = Rp 4.799 per santri per bulan
 
-## Kesimpulan
+### Kesimpulan
 
 Dengan rancangan anggaran ini, biaya per santri per bulan adalah Rp 4.799, yang sudah memenuhi target di bawah Rp 5.000 per santri per bulan. Beberapa catatan:
 

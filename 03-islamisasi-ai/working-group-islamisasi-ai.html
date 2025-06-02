@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>working-group-islamisasi-ai.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="working-group--proposal-strategis-islamisasi-ai"><strong>Working Group &amp; Proposal Strategis Islamisasi AI</strong></h1>
+<h2 id="daftar-isi">Daftar Isi</h2>
+<ul>
+<li><a href="#working-group--proposal-strategis-islamisasi-ai"><strong>Working Group &amp; Proposal Strategis Islamisasi AI</strong></a>
+<ul>
+<li><a href="#daftar-isi">Daftar Isi</a></li>
+<li><a href="#1-pembentukan-working-group"><strong>1. Pembentukan Working Group</strong></a>
+<ul>
+<li><a href="#a-tujuan-working-group"><strong>A. Tujuan Working Group</strong></a></li>
+<li><a href="#b-struktur-tim-dan-peran"><strong>B. Struktur Tim dan Peran</strong></a></li>
+</ul>
+</li>
+<li><a href="#2-proposal-strategis-islamisasi-ai"><strong>2. Proposal Strategis Islamisasi AI</strong></a>
+<ul>
+<li><a href="#a-judul-proposal"><strong>A. Judul Proposal</strong></a></li>
+<li><a href="#b-latar-belakang"><strong>B. Latar Belakang</strong></a></li>
+<li><a href="#c-tujuan"><strong>C. Tujuan</strong></a></li>
+<li><a href="#d-metode--pendekatan"><strong>D. Metode &amp; Pendekatan</strong></a></li>
+<li><a href="#e-hasil-yang-diharapkan"><strong>E. Hasil yang Diharapkan</strong></a></li>
+<li><a href="#f-rencana-tindak-lanjut"><strong>F. Rencana Tindak Lanjut</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-pembentukan-working-group"><strong>1. Pembentukan Working Group</strong></h2>
+<h3 id="a-tujuan-working-group"><strong>A. Tujuan Working Group</strong></h3>
+<ol>
+<li>Mengembangkan konsep Islamisasi AI secara sistematis.</li>
+<li>Menyusun standar etika dan regulasi AI berbasis nilai Islam.</li>
+<li>Menghasilkan rekomendasi bagi pemerintah, akademisi, dan industri.</li>
+<li>Mendorong riset dan inovasi AI yang sesuai dengan maqashid syariah.</li>
+</ol>
+<h3 id="b-struktur-tim-dan-peran"><strong>B. Struktur Tim dan Peran</strong></h3>
+<ol>
+<li>
+<p><strong>Tim Teknologi AI &amp; Data Science</strong></p>
+<ul>
+<li>Mengembangkan model AI berbasis nilai Islam (LLM, computer vision, NLP)</li>
+<li>Mengkaji dan mitigasi bias algoritma dalam dataset pelatihan</li>
+<li>Merancang sistem verifikasi halal untuk konten generatif AI</li>
+<li>Mengembangkan framework evaluasi AI dari perspektif Islam</li>
+</ul>
+</li>
+<li>
+<p><strong>Tim Syariah dan Etika Islam</strong></p>
+<ul>
+<li>Menentukan fatwa dan panduan halal-haram untuk aplikasi AI</li>
+<li>Menyusun pedoman etika AI sesuai maqashid syariah</li>
+<li>Membentuk dewan pengawas syariah untuk produk AI</li>
+<li>Mengembangkan framework nilai Islam untuk pengambilan keputusan algoritmik</li>
+</ul>
+</li>
+<li>
+<p><strong>Tim Hukum dan Regulasi</strong></p>
+<ul>
+<li>Merumuskan regulasi AI Islami yang adaptif terhadap perkembangan teknologi</li>
+<li>Menyusun standar sertifikasi AI syariah</li>
+<li>Berkolaborasi dengan otoritas global untuk harmonisasi regulasi</li>
+<li>Mengkaji implikasi GDPR dan regulasi global dari perspektif Islam</li>
+</ul>
+</li>
+<li>
+<p><strong>Tim Ekonomi dan Industri</strong></p>
+<ul>
+<li>Menganalisis dampak ekonomi dari AI Islami</li>
+<li>Mengembangkan model bisnis syariah untuk startup AI</li>
+<li>Membangun ekosistem investasi halal di bidang AI</li>
+<li>Menciptakan platform matching antara developer AI dan industri syariah</li>
+</ul>
+</li>
+<li>
+<p><strong>Tim Sosial dan Budaya</strong></p>
+<ul>
+<li>Meneliti dampak sosial AI terhadap komunitas Muslim</li>
+<li>Mengembangkan program literasi AI berbasis nilai Islam</li>
+<li>Membangun sistem pemantauan dampak AI terhadap akidah dan moral</li>
+<li>Merancang kampanye kesadaran publik tentang AI Islami</li>
+</ul>
+</li>
+<li>
+<p><strong>Tim Pendidikan dan Riset</strong></p>
+<ul>
+<li>Mengembangkan kurikulum AI Islami untuk berbagai jenjang</li>
+<li>Membangun pusat penelitian AI Islami</li>
+<li>Menyelenggarakan program fellowship untuk peneliti muda</li>
+<li>Menerbitkan jurnal akademik tentang Islamisasi AI</li>
+</ul>
+</li>
+<li>
+<p><strong>Tim Koordinasi &amp; Implementasi</strong></p>
+<ul>
+<li>Menyusun roadmap implementasi Islamisasi AI</li>
+<li>Mengelola kolaborasi antar pemangku kepentingan</li>
+<li>Memantau dan evaluasi proyek-proyek AI Islami</li>
+<li>Mengadakan kompetisi dan hackathon pengembangan AI Islami</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="2-proposal-strategis-islamisasi-ai"><strong>2. Proposal Strategis Islamisasi AI</strong></h2>
+<h3 id="a-judul-proposal"><strong>A. Judul Proposal</strong></h3>
+<p><em>Manifesto Islamisasi AI: Prinsip, Tantangan, dan Implementasi</em></p>
+<h3 id="b-latar-belakang"><strong>B. Latar Belakang</strong></h3>
+<ul>
+<li>Perkembangan AI yang pesat sering tidak mempertimbangkan nilai-nilai Islam.</li>
+<li>Risiko bias algoritma yang dapat merugikan komunitas Muslim.</li>
+<li>Kebutuhan akan standar etika AI berbasis maqashid syariah.</li>
+</ul>
+<h3 id="c-tujuan"><strong>C. Tujuan</strong></h3>
+<ol>
+<li>Menyusun prinsip etika Islam dalam pengembangan AI.</li>
+<li>Merancang regulasi AI yang sesuai dengan hukum Islam.</li>
+<li>Mendorong penelitian dan pengembangan AI Islami.</li>
+<li>Mengintegrasikan AI dalam ekonomi, pendidikan, dan dakwah Islam.</li>
+</ol>
+<h3 id="d-metode--pendekatan"><strong>D. Metode &amp; Pendekatan</strong></h3>
+<ul>
+<li><strong>Riset Terapan:</strong> Pengembangan prototipe AI Islami (chatbot dakwah, sistem deteksi konten haram, dll)</li>
+<li><strong>Benchmarking Global:</strong> Analisis kritis terhadap standar etika AI Barat dan alternatif Islam</li>
+<li><strong>Pengembangan Kapasitas:</strong> Pelatihan ulama tentang AI dan pelatihan engineer tentang syariah</li>
+<li><strong>Regulasi Dinamis:</strong> Penyusunan kebijakan yang adaptif terhadap perkembangan teknologi</li>
+<li><strong>Ekosistem Terbuka:</strong> Membangun komunitas developer AI Muslim global</li>
+<li><strong>Implementasi Bertahap:</strong> Pilot project di sektor pendidikan, keuangan, dan media</li>
+</ul>
+<h3 id="e-hasil-yang-diharapkan"><strong>E. Hasil yang Diharapkan</strong></h3>
+<ol>
+<li>Standar etika AI Islami yang dapat diadopsi secara global.</li>
+<li>Regulasi AI berbasis Islam untuk diterapkan di negara Muslim.</li>
+<li>Riset akademik dan publikasi ilmiah tentang Islamisasi AI.</li>
+<li>Pengembangan AI Islami dalam sektor ekonomi, pendidikan, dan sosial.</li>
+</ol>
+<h3 id="f-rencana-tindak-lanjut"><strong>F. Rencana Tindak Lanjut</strong></h3>
+<ol>
+<li>Pembentukan pusat riset dan laboratorium AI Islami.</li>
+<li>Publikasi manifesto Islamisasi AI dalam berbagai bahasa.</li>
+<li>Kolaborasi dengan universitas, industri, dan pemerintah.</li>
+<li>Pengembangan ekosistem startup AI Islami.</li>
+</ol>
+
+</body>
+</html>

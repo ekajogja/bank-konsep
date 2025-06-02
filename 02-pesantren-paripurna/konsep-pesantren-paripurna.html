@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>konsep-pesantren-paripurna.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="pesantren-paripurna-menyatukan-harmoni-akidah-akhlak-ilmu-dan-keterampilan-abad-21">Pesantren Paripurna: Menyatukan Harmoni Akidah, Akhlak, Ilmu, dan Keterampilan Abad 21</h1>
+<p>Pesantren, sebagai lembaga pendidikan Islam yang telah berakar dalam tradisi, memiliki peran strategis dalam mencetak generasi yang unggul. Tidak hanya harus matang secara spiritual, santri juga perlu dipersiapkan agar kompeten menghadapi tantangan zaman modern.</p>
+<p>Untuk itu, kurikulum pesantren harus dirancang secara komprehensif, seimbang, dan relevan dengan perkembangan zaman, dengan mengintegrasikan pendidikan agama klasik dan ilmu umum modern.</p>
+<p>Pendekatan ini menggabungkan beberapa komponen utama: akidah, akhlak, keterampilan non-teknis (<em>soft skills</em>) serta penguasaan ilmu pengetahuan dan teknologi. Semuanya didukung oleh lingkungan yang kondusif dan pengembangan sumber daya pendidik yang berkesinambungan.</p>
+<hr>
+<h2 id="1-fondasi-pendidikan-akidah-dan-akhlak">1. Fondasi Pendidikan: Akidah dan Akhlak</h2>
+<h3 id="11-akidah---landasan-keimanan">1.1. Akidah - Landasan Keimanan</h3>
+<p>Akidah adalah inti keyakinan atau kepercayaan dalam Islam yang mencakup pengakuan terhadap keesaan Allah, kenabian, hari akhir, dan rukun iman lainnya. Pemahaman akidah yang kuat merupakan fondasi bagi seluruh aspek kehidupan seorang Muslim.</p>
+<p>Sebagai contoh, Al-Qur'an menegaskan:
+&quot;Maka ketahuilah, bahwa sesungguhnya tidak ada Tuhan (yang hak) melainkan Allah&quot;
+(QS. Muhammad: 19).
+Penjelasan ayat ini mengajarkan bahwa seluruh tindakan dan pemikiran seharusnya berpusat pada pengesaan Allah.</p>
+<h3 id="12-akhlak---manifestasi-keimanan-dalam-perilaku">1.2. Akhlak - Manifestasi Keimanan dalam Perilaku</h3>
+<p>Akhlak merujuk pada tata cara, perilaku, dan etika yang harus dimiliki oleh setiap individu. Akhlak yang mulia adalah cermin nyata dari keimanan yang telah terinternalisasi.</p>
+<p>Imam Al-Ghazali dalam karya monumentalnya, <em>Ihya Ulumuddin</em>, menyatakan: &quot;Ilmu tanpa amal adalah pohon tanpa buah.&quot;
+Artinya, pengetahuan yang tidak diiringi dengan perbuatan nyata tidak akan menghasilkan buah kebaikan.</p>
+<h3 id="13-materi-fondasional">1.3. Materi Fondasional</h3>
+<p>Materi akidah yang diajarkan mencakup:</p>
+<ol>
+<li>
+<p><strong>Tauhid</strong> (pengakuan keesaan Allah),</p>
+</li>
+<li>
+<p><strong>Fiqih</strong> (ilmu tentang hukum-hukum syariat), dan</p>
+</li>
+<li>
+<p><strong>Ushuluddin</strong> (prinsip-prinsip dasar keimanan).</p>
+</li>
+</ol>
+<p>Sedangkan pembinaan akhlak melibatkan:</p>
+<ol start="4">
+<li>
+<p><strong>Tasawuf</strong> (dimensi spiritual dan perbaikan hati),</p>
+</li>
+<li>
+<p><strong>Adab</strong> (etika dan tata krama dalam kehidupan), serta</p>
+</li>
+<li>
+<p><strong>Sirah Nabawiyah</strong> (pelajaran dari kehidupan Nabi Muhammad SAW).</p>
+</li>
+</ol>
+<p>Metode pengajaran tradisional seperti hafalan, kajian kitab klasik, praktik ibadah, dan muhasabah (refleksi diri) menjadi cara efektif untuk membangun fondasi keimanan dan karakter yang kokoh.</p>
+<hr>
+<h2 id="2-pengembangan-keterampilan-non-teknis-soft-skills-dan-sosial-profesional">2. Pengembangan Keterampilan Non-Teknis (<em>Soft Skills</em>) dan Sosial Profesional</h2>
+<h3 id="21-definisi-dan-pentingnya-soft-skills">2.1. Definisi dan Pentingnya <em>Soft Skills</em></h3>
+<p><em>Soft skills</em> adalah keterampilan non-teknis yang meliputi kemampuan komunikasi, kepemimpinan, kerja sama, dan kewirausahaan.</p>
+<p>Keterampilan ini esensial untuk beradaptasi di dunia kerja yang kompetitif dan untuk membangun hubungan sosial yang harmonis.</p>
+<h3 id="22-implementasi-dalam-pendidikan-pesantren">2.2. Implementasi dalam Pendidikan Pesantren</h3>
+<p>Santri perlu dilatih melalui:</p>
+<ol>
+<li>
+<p><strong>Pelatihan intensif</strong> untuk mengasah kemampuan berbicara dan menyampaikan ide.</p>
+</li>
+<li>
+<p><strong>Simulasi</strong> dan <em><strong>role-playing</strong></em> untuk menghadapi situasi nyata di lingkungan kerja.</p>
+</li>
+<li>
+<p><strong>Proyek kolaboratif</strong> yang mendorong kerja tim dan kepemimpinan.</p>
+</li>
+<li>
+<p><strong>Pendampingan (<em>mentoring</em>)</strong> oleh praktisi dan alumni yang telah sukses.</p>
+</li>
+</ol>
+<p>Sebagai landasan moral, Nabi Muhammad SAW pernah bersabda: &quot;Sebaik-baik manusia adalah yang paling bermanfaat bagi orang lain&quot;.</p>
+<p>Hadits ini mengingatkan bahwa manfaat bagi sesama merupakan indikator keutamaan manusia, yang sejalan dengan tujuan pengembangan <em>soft skills</em> dalam pesantren.</p>
+<hr>
+<h2 id="3-penguasaan-ilmu-pengetahuan-dan-teknologi-di-era-digital">3. Penguasaan Ilmu Pengetahuan dan Teknologi di Era Digital</h2>
+<h3 id="31-integrasi-ilmu-pengetahuan-modern">3.1. Integrasi Ilmu Pengetahuan Modern</h3>
+<p>Di tengah pesatnya kemajuan teknologi, penguasaan sains (ilmu pengetahuan seperti matematika, fisika, kimia, dan biologi) sangat penting.</p>
+<p>Selain itu, keterampilan dalam bidang teknologi seperti pemrograman, desain grafis, multimedia, dan literasi digital menjadi modal utama untuk berinovasi dan menyelesaikan berbagai permasalahan.</p>
+<h3 id="32-metode-pembelajaran-inovatif">3.2. Metode Pembelajaran Inovatif</h3>
+<p>Pendekatan yang digunakan antara lain:</p>
+<ol>
+<li>
+<p><strong>Pembelajaran berbasis proyek.</strong> Santri mengerjakan proyek nyata untuk mengaplikasikan teori ke dalam praktik.</p>
+</li>
+<li>
+<p><strong>Eksperimen dan studi kasus.</strong> Memperkuat pemahaman konsep melalui percobaan dan analisis situasi nyata.</p>
+</li>
+<li>
+<p><strong><em>Coding camp</em>.</strong> Pelatihan intensif dalam pemrograman komputer untuk membangun aplikasi atau solusi digital.</p>
+</li>
+</ol>
+<p>Dalam tradisi Islam, semangat menuntut ilmu ditekankan melalui ungkapan, &quot;Menuntut ilmu adalah kewajiban bagi setiap Muslim.&quot; Ini menggambarkan bahwa pencarian ilmu, baik untuk kemajuan dunia maupun akhirat, merupakan tanggung jawab setiap Muslim.</p>
+<hr>
+<h2 id="4-penguasaan-bahasa-dan-keterampilan-komunikasi-global">4. Penguasaan Bahasa dan Keterampilan Komunikasi Global</h2>
+<h3 id="41-pentingnya-bahasa-dalam-pembelajaran">4.1. Pentingnya Bahasa dalam Pembelajaran</h3>
+<p>Bahasa adalah jembatan yang membuka wawasan dan memudahkan akses ke berbagai sumber ilmu.</p>
+<p>Bahasa Arab memiliki peran vital sebagai bahasa Al-Qur'an dan hadits. Memahami bahasa ini memungkinkan santri mengakses teks-teks keagamaan secara langsung.</p>
+<p>Bahasa Inggris dan bahasa internasional lainnya penting untuk berkomunikasi di tingkat global, mengakses informasi, serta mengikuti perkembangan ilmu pengetahuan dan teknologi.</p>
+<h3 id="42-metode-pengajaran-bahasa">4.2. Metode Pengajaran Bahasa</h3>
+<p>Beberapa metode efektif meliputi:</p>
+<ol>
+<li>
+<p><strong>Immersive learning.</strong> Metode pembelajaran dengan membenamkan diri dalam lingkungan bahasa target.</p>
+</li>
+<li>
+<p><strong>Conversation club.</strong> Sesi diskusi untuk meningkatkan kemampuan berbicara.</p>
+</li>
+<li>
+<p><strong>Debat dan diskusi.</strong> Melatih kemampuan berpikir kritis dan berbicara di depan umum.</p>
+</li>
+<li>
+<p><strong>Media interaktif.</strong> Menonton film, mendengarkan musik, dan membaca literatur dalam bahasa asing guna meningkatkan pemahaman konteks budaya.</p>
+</li>
+</ol>
+<p>Sebuah arahan yang sering disampaikan oleh Umar bin Khattab adalah: &quot;Pelajarilah bahasa Arab, karena ia bagian dari agamamu.&quot; Arahan tersebut menggarisbawahi pentingnya bahasa Arab sebagai kunci untuk memahami esensi ajaran Islam.</p>
+<hr>
+<h2 id="5-metode-pembelajaran-holistik-dan-personal">5. Metode Pembelajaran Holistik dan Personal</h2>
+<h3 id="51-pendekatan-terpadu-antara-ilmu-agama-dan-ilmu-umum">5.1. Pendekatan Terpadu antara Ilmu Agama dan Ilmu Umum</h3>
+<p>Pendidikan pesantren harus menggabungkan ilmu agama dengan ilmu umum agar santri tidak hanya menguasai aspek spiritual, tetapi juga mampu bersaing dalam dunia modern.</p>
+<p>Pendekatan holistik berarti setiap mata pelajaran—baik keagamaan maupun umum—disampaikan secara terintegrasi dengan memperhatikan kebutuhan dan minat individu.</p>
+<h3 id="52-metode-pembelajaran-yang-efektif">5.2. Metode Pembelajaran yang Efektif</h3>
+<p>Metode yang diterapkan meliputi:</p>
+<ol>
+<li>
+<p><strong>Pembelajaran berbasis masalah</strong> <em>(problem-based learning)</em>. Santri diajak mencari solusi atas permasalahan nyata, sehingga meningkatkan keterampilan analitis dan kreatif.</p>
+</li>
+<li>
+<p><strong>Pembelajaran kolaboratif.</strong> Menekankan kerja sama dalam kelompok untuk membangun semangat kebersamaan.</p>
+</li>
+<li>
+<p><strong>Proyek dan pengalaman lapangan.</strong> Menghubungkan teori dengan praktik melalui kegiatan nyata.</p>
+</li>
+<li>
+<p><strong>Evaluasi berkelanjutan.</strong> Menggunakan evaluasi formatif (umpan balik secara berkala) dan evaluasi sumatif (penilaian akhir) untuk mengukur pencapaian belajar serta perkembangan akhlak.</p>
+</li>
+</ol>
+<p>Ungkapan yang sering terdengar dalam tradisi pendidikan Islam, &quot;Carilah ilmu dari buaian hingga liang lahat,&quot;
+menekankan bahwa proses pembelajaran adalah perjalanan seumur hidup yang harus terus dilakukan, baik dalam aspek spiritual maupun intelektual.</p>
+<hr>
+<h2 id="6-sistem-evaluasi-dan-penjaminan-kualitas-pendidikan">6. Sistem Evaluasi dan Penjaminan Kualitas Pendidikan</h2>
+<h3 id="evaluasi-akademik-dan-pengembangan-karakter">Evaluasi Akademik dan Pengembangan Karakter</h3>
+<p>Sistem evaluasi di pesantren harus mencakup:</p>
+<ol>
+<li>
+<p><strong>Evaluasi Formatif.</strong> Umpan balik secara berkala yang membantu santri memperbaiki diri selama proses belajar.</p>
+</li>
+<li>
+<p><strong>Evaluasi Sumatif.</strong> Penilaian pada akhir suatu periode atau materi untuk mengukur pencapaian belajar.</p>
+</li>
+<li>
+<p><strong>Penilaian Akhlak.</strong> Evaluasi berkelanjutan atas perilaku, etika, dan karakter santri.</p>
+</li>
+<li>
+<p><strong>Evaluasi Program.</strong> Tinjauan menyeluruh terhadap metode dan kurikulum yang diterapkan, guna memastikan pendidikan selalu relevan dan berkualitas.</p>
+</li>
+</ol>
+<p>Sistem evaluasi ini tidak hanya mengukur aspek akademik, tetapi juga membina kepribadian santri secara menyeluruh.</p>
+<hr>
+<h2 id="7-lingkungan-pesantren-yang-inspiratif-dan-pengembangan-staf">7. Lingkungan Pesantren yang Inspiratif dan Pengembangan Staf</h2>
+<h3 id="71-lingkungan-yang-kondusif-untuk-pertumbuhan">7.1. Lingkungan yang Kondusif untuk Pertumbuhan</h3>
+<p>Suasana di pesantren harus mendukung terciptanya suasana belajar yang disiplin, kreatif, dan penuh kebersamaan. Guru, ustadz, dan pengelola pesantren harus menjadi teladan dalam sikap dan perilaku.</p>
+<p>Seperti yang disampaikan oleh Sayyidina Ali bin Abi Thalib: &quot;Adab lebih tinggi daripada ilmu.&quot; Pesan ini mengingatkan bahwa tata krama dan sikap yang baik memiliki peran yang sangat penting dalam membentuk karakter santri.</p>
+<h3 id="72-pengembangan-dan-profesionalisme-pendidik">7.2. Pengembangan dan Profesionalisme Pendidik</h3>
+<p>Keberhasilan pendidikan pesantren tidak lepas dari kualitas pendidik. Oleh karena itu, guru dan ustadz perlu:</p>
+<ol>
+<li>
+<p>Direkrut secara selektif dengan kualifikasi yang tinggi.</p>
+</li>
+<li>
+<p>Diberikan pelatihan dan pendampingan secara berkala.</p>
+</li>
+<li>
+<p>Dievaluasi kinerjanya secara rutin agar selalu ada ruang untuk perbaikan.</p>
+</li>
+<li>
+<p>Mendapatkan kesempatan untuk mengembangkan karir dan keahlian melalui seminar, workshop, serta studi lanjut.</p>
+</li>
+</ol>
+<p>Pendekatan profesional ini memastikan bahwa para pendidik mampu memberikan contoh nyata dan menginspirasi santri untuk terus belajar dan berkembang.</p>
+<hr>
+<h2 id="catatan-akhir">Catatan Akhir</h2>
+<p>Dengan mengintegrasikan pendidikan akidah (keimanan) dan akhlak (perilaku), pengembangan soft skills (keterampilan non-teknis), penguasaan ilmu pengetahuan dan teknologi, serta keterampilan bahasa, pesantren dapat mencetak santri yang paripurna.</p>
+<p>Pendekatan holistik dan personal dalam pembelajaran, didukung oleh evaluasi yang komprehensif dan lingkungan yang mendukung, akan menghasilkan individu yang seimbang—mampu bersaing di dunia modern tanpa meninggalkan nilai-nilai keislaman.</p>
+<p>Generasi santri ini diharapkan tidak hanya unggul secara intelektual dan profesional, tetapi juga memiliki karakter dan spiritualitas yang kuat untuk memberikan kontribusi positif bagi masyarakat, agama, dan negara.</p>
+<hr>
+
+</body>
+</html>

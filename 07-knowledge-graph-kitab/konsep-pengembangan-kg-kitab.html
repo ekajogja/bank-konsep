@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>konsep-pengembangan-kg-kitab.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="metode-pengembangan-knowledge-graph-untuk-kitab-kitab-islam">Metode Pengembangan Knowledge Graph untuk Kitab-Kitab Islam</h1>
+<h2 id="tentang-knowledge-graph-untuk-kitab">Tentang Knowledge Graph untuk Kitab</h2>
+<h3 id="pendahuluan">Pendahuluan</h3>
+<p>Metode knowledge graph merupakan pendekatan holistik untuk mengelola dan mengaitkan informasi keilmuan dari kitab-kitab Islam. Dengan memanfaatkan struktur graf, sistem ini mengorganisasikan entitas–entitas utama seperti:</p>
+<ul>
+<li><strong>Kitab</strong>: Menyimpan informasi tentang teks asli, transliterasi, terjemahan, anotasi, dan Q&amp;A.</li>
+<li><strong>Mushonif</strong>: Data penulis kitab yang mencakup biografi, latar belakang keilmuan, serta konteks sosial dan budaya.</li>
+<li><strong>Mazhab</strong>: Aliran pemikiran dan interpretasi keilmuan, yang memberikan kerangka bagi perbedaan pendapat.</li>
+<li><strong>Bidang Studi dan Tematik Islam</strong>: Kategori seperti fiqh, ushul fiqh, tasawuf, nahwu, dan lain-lain.</li>
+<li><strong>Konteks Sosial</strong>: Informasi historis, budaya, dan politik yang mempengaruhi penulisan kitab dan pemikiran mushonif.</li>
+</ul>
+<p>Pendekatan ini tidak hanya mengaitkan data secara struktural tetapi juga menyediakan dasar untuk validasi, pencarian intertekstual, dan integrasi dengan sistem Q&amp;A serta AI.</p>
+<hr>
+<h3 id="argumentasi-dan-keunggulan-knowledge-graph">Argumentasi dan Keunggulan Knowledge Graph</h3>
+<ol>
+<li>
+<p><strong>Interkonektivitas Data</strong><br>
+Knowledge graph memetakan hubungan antar entitas (misal: kitab terhubung ke mushonif, yang pada gilirannya berasosiasi dengan mazhab dan bidang studi tertentu). Hal ini memungkinkan penelusuran lintas sumber yang kaya dan mendalam.</p>
+</li>
+<li>
+<p><strong>Validasi dan Otentisitas</strong><br>
+Dengan mengintegrasikan anotasi dan Q&amp;A yang telah tervalidasi oleh ulama ke dalam node kitab, sistem dapat memastikan keakuratan informasi serta menjaga integritas sanad keilmuan.</p>
+</li>
+<li>
+<p><strong>Dukungan Multibahasa dan Multiformat</strong><br>
+Node kitab mendukung teks asli dalam berbagai aksara (Arab, Pegon, Jawi) dan bahasa (Arab, Jawa, Sunda, Melayu), beserta transliterasi ke huruf Latin dan terjemahan dalam bahasa Indonesia. Ini meningkatkan aksesibilitas dan pemahaman.</p>
+</li>
+<li>
+<p><strong>Pengelolaan Dinamis dan Revisi</strong><br>
+Knowledge graph memungkinkan penyimpanan versi historis dan metadata seperti edisi, tanggal penulisan, serta konteks sosial, sehingga memudahkan pembaruan seiring dengan perkembangan ilmu dan penemuan naskah baru.</p>
+</li>
+<li>
+<p><strong>Integrasi dengan Sistem AI</strong><br>
+Struktur yang terhubung secara semantik mendukung sistem Q&amp;A, Retrieval-Augmented Generation (RAG), dan modul validasi berbasis aturan, sehingga AI dapat menghasilkan jawaban yang terverifikasi dan kontekstual.</p>
+</li>
+</ol>
+<hr>
+<h3 id="cara-kerja-sistem">Cara Kerja Sistem</h3>
+<h4 id="struktur-node-utama">Struktur Node Utama</h4>
+<p><strong>Node Kitab:</strong></p>
+<ul>
+<li><strong>Teks Asli:</strong> Teks kitab dalam aksara asli (misalnya Arab, Pegon, Jawi).</li>
+<li><strong>Transliterasi:</strong> Konversi teks ke huruf Latin.</li>
+<li><strong>Terjemahan:</strong> Versi dalam bahasa Indonesia atau bahasa lain.</li>
+<li><strong>Anotasi:</strong> Catatan penjelasan, komentar, dan referensi ulama.</li>
+<li><strong>Q&amp;A:</strong> Data pertanyaan dan jawaban yang telah tervalidasi.</li>
+</ul>
+<p><strong>Node Mushonif:</strong></p>
+<ul>
+<li><strong>Biografi:</strong> Riwayat hidup dan latar belakang pendidikan.</li>
+<li><strong>Konteks Sosial:</strong> Informasi mengenai kondisi sosial dan budaya pada masa penulisan.</li>
+</ul>
+<p><strong>Node Mazhab:</strong></p>
+<ul>
+<li><strong>Definisi &amp; Prinsip:</strong> Karakteristik dan metodologi masing-masing mazhab.</li>
+<li><strong>Relasi:</strong> Hubungan dengan mushonif dan pengaruh terhadap kitab.</li>
+</ul>
+<p><strong>Node Bidang Studi dan Tematik:</strong></p>
+<ul>
+<li><strong>Kategori Utama:</strong> Fiqh, ushul fiqh, tasawuf, nahwu, dll.</li>
+<li><strong>Sub-kategori:</strong> Topik-topik lebih spesifik dalam setiap bidang studi.</li>
+</ul>
+<p><strong>Node Konteks Sosial:</strong></p>
+<ul>
+<li><strong>Historis:</strong> Kondisi politik, ekonomi, dan sosial pada masa kitab ditulis.</li>
+<li><strong>Budaya:</strong> Nilai-nilai dan norma yang mempengaruhi pemikiran keilmuan.</li>
+</ul>
+<h3 id="diagram-hubungan-node">Diagram Hubungan Node</h3>
+<pre><code class="language-mermaid"><div class="mermaid">graph LR;
+    A[Kitab]
+    B[Mushonif]
+    C[Mazhab]
+    D[Bidang Studi & Tematik]
+    E[Konteks Sosial]
+    F[Teks Asli, Transliterasi, Terjemahan, Anotasi, Q&A]
+
+    A --> F
+    A --> B
+    B --> E
+    A --> C
+    C --> D
+    D --> E
+</div></code></pre>
+<hr>
+<h3 id="alur-pengembangan-knowledge-graph">Alur Pengembangan Knowledge Graph</h3>
+<ol>
+<li>
+<p><strong>Koleksi Data:</strong></p>
+<ul>
+<li><strong>Pengumpulan Sumber Primer:</strong> Mengumpulkan teks kitab, manuskrip, data biografi mushonif, referensi mazhab, dan metadata historis.</li>
+<li><strong>Digitalisasi:</strong> Proses digitalisasi naskah dan data yang tersedia.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ekstraksi dan Normalisasi:</strong></p>
+<ul>
+<li><strong>Ekstraksi Teks:</strong> Mengambil teks asli, transliterasi, dan terjemahan menggunakan teknik OCR dan pemrosesan teks.</li>
+<li><strong>Normalisasi Data:</strong> Menstandarisasi format data untuk konsistensi antar sumber.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pembuatan Node dan Relasi:</strong></p>
+<ul>
+<li><strong>Definisi Node:</strong> Membangun entitas untuk setiap elemen (kitab, mushonif, dsb.) dengan atribut metadata lengkap.</li>
+<li><strong>Penentuan Relasi:</strong> Menghubungkan node berdasarkan hubungan historis, keilmuan, dan kontekstual (misalnya, kitab &quot;ditulis oleh&quot; mushonif, mushonif &quot;berafiliasi dengan&quot; mazhab).</li>
+</ul>
+</li>
+<li>
+<p><strong>Integrasi Q&amp;A dan Anotasi:</strong></p>
+<ul>
+<li><strong>Validasi Ulama:</strong> Menyertakan data Q&amp;A yang telah tervalidasi oleh para ahli dan mengaitkannya dengan node kitab.</li>
+<li><strong>Anotasi Tambahan:</strong> Menambahkan komentar dan catatan ulama pada teks kitab untuk mendukung pemahaman.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pengembangan Ontologi Keilmuan Islam:</strong></p>
+<ul>
+<li><strong>Definisi Konsep:</strong> Menyusun ontologi yang mendefinisikan hubungan antar konsep keilmuan seperti ijtihad, qiyas, dan istihsan.</li>
+<li><strong>Semantic Tagging:</strong> Mengimplementasikan semantic tagging dengan RDF atau OWL agar data dapat diproses secara otomatis dan interoperabel.</li>
+</ul>
+</li>
+<li>
+<p><strong>Iterasi dan Feedback:</strong></p>
+<ul>
+<li><strong>Review Berkala:</strong> Proses evaluasi dan revisi oleh ulama dan pengguna.</li>
+<li><strong>Pembaruan Dinamis:</strong> Menyimpan versi-versi revisi untuk menjaga integritas data seiring dengan perkembangan ilmu.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="contoh-pseudocode-pengembangan-node">Contoh Pseudocode Pengembangan Node</h3>
+<pre class="hljs"><code><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, id, type, attributes)</span>:</span>
+        self.id = id
+        self.type = type  <span class="hljs-comment"># Misal: 'kitab', 'mushonif', 'mazhab'</span>
+        self.attributes = attributes
+        self.relations = {}
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_relation</span><span class="hljs-params">(self, relation_type, node)</span>:</span>
+        <span class="hljs-keyword">if</span> relation_type <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> self.relations:
+            self.relations[relation_type] = []
+        self.relations[relation_type].append(node)
+
+<span class="hljs-comment"># Pembuatan node untuk sebuah kitab</span>
+kitab_node = Node(<span class="hljs-string">"K001"</span>, <span class="hljs-string">"kitab"</span>, {
+    <span class="hljs-string">"teks_asli"</span>: <span class="hljs-string">"نص الكتاب الأصلي..."</span>,
+    <span class="hljs-string">"transliterasi"</span>: <span class="hljs-string">"Nas al-kitab al-asli..."</span>,
+    <span class="hljs-string">"terjemahan"</span>: <span class="hljs-string">"Teks terjemahan dalam Bahasa Indonesia"</span>,
+    <span class="hljs-string">"anotasi"</span>: <span class="hljs-string">"Catatan-catatan penting dan referensi ulama..."</span>,
+    <span class="hljs-string">"qna"</span>: [{<span class="hljs-string">"pertanyaan"</span>: <span class="hljs-string">"Apa makna X?"</span>, <span class="hljs-string">"jawaban"</span>: <span class="hljs-string">"Penjelasan Y"</span>}]
+})
+
+<span class="hljs-comment"># Pembuatan node untuk mushonif</span>
+mushonif_node = Node(<span class="hljs-string">"M001"</span>, <span class="hljs-string">"mushonif"</span>, {
+    <span class="hljs-string">"nama"</span>: <span class="hljs-string">"Imam XYZ"</span>,
+    <span class="hljs-string">"biografi"</span>: <span class="hljs-string">"Riwayat hidup, pendidikan, dan latar belakang..."</span>
+})
+
+<span class="hljs-comment"># Menambahkan relasi antara kitab dan mushonif</span>
+kitab_node.add_relation(<span class="hljs-string">"ditulis_oleh"</span>, mushonif_node)
+</div></code></pre>
+<hr>
+<h3 id="integrasi-dengan-sistem-ai-dan-qa">Integrasi dengan Sistem AI dan Q&amp;A</h3>
+<p>Setelah knowledge graph dibangun, sistem AI dapat menggunakannya untuk:</p>
+<ul>
+<li><strong>Penelusuran Kontekstual:</strong> Mengambil informasi relevan dari node–node yang saling terhubung untuk menjawab pertanyaan secara mendalam.</li>
+<li><strong>Validasi Jawaban:</strong> Menggunakan data Q&amp;A dan anotasi untuk memastikan jawaban yang dihasilkan konsisten dengan otoritas keilmuan.</li>
+<li><strong>Augmented Generation:</strong> Menggabungkan teks asli, anotasi, dan metadata dari graph sebagai konteks dalam generative model untuk menghasilkan jawaban yang terverifikasi.</li>
+</ul>
+<h4 id="alur-kerja-query-response">Alur Kerja Query-Response</h4>
+<ol>
+<li>
+<p><strong>Input Pertanyaan:</strong><br>
+Pengguna mengajukan pertanyaan melalui antarmuka sistem.</p>
+</li>
+<li>
+<p><strong>Penelusuran Graph:</strong><br>
+Sistem mencari node relevan (misal, kitab dan mushonif terkait) berdasarkan kata kunci dan relasi semantik.</p>
+</li>
+<li>
+<p><strong>Pengumpulan Konteks:</strong><br>
+Data dari berbagai node (teks asli, anotasi, Q&amp;A) diintegrasikan untuk membentuk konteks yang lengkap.</p>
+</li>
+<li>
+<p><strong>Penyusunan Jawaban:</strong><br>
+Sistem AI, misalnya RAG atau model generatif lainnya, mengolah konteks tersebut untuk menyusun jawaban.</p>
+</li>
+<li>
+<p><strong>Validasi dan Feedback:</strong><br>
+Jawaban yang dihasilkan diverifikasi melalui mekanisme validasi (ulasan ulama dan sistem rating pengguna), lalu diperbarui jika diperlukan ke dalam knowledge graph.</p>
+</li>
+</ol>
+<hr>
+<h3 id="catatan-tentang-kg-untuk-kitab">Catatan Tentang KG untuk Kitab</h3>
+<p>Metode knowledge graph untuk kitab-kitab Islam ini menyediakan kerangka kerja yang komprehensif dan dinamis untuk mengelola serta mengaitkan berbagai sumber keilmuan.</p>
+<p>Dengan menggabungkan data teks asli, transliterasi, terjemahan, anotasi, dan Q&amp;A yang tervalidasi, sistem mampu memberikan jawaban yang otentik dan kontekstual.</p>
+<p>Pendekatan ini tidak hanya meningkatkan keakuratan dan transparansi, tetapi juga mendukung integrasi dengan teknologi AI modern untuk menghasilkan output yang berkualitas dan adaptif terhadap perkembangan ilmu keislaman.</p>
+<hr>
+<h2 id="proses-penyusunan-knowledge-graph-peran-tim-it-dan-tim-riset-data">Proses Penyusunan Knowledge Graph: Peran Tim IT dan Tim Riset Data</h2>
+<p>Penyusunan knowledge graph untuk kitab-kitab Islam merupakan upaya kolaboratif yang melibatkan dua tim utama: <strong>Tim IT</strong> dan <strong>Tim Riset Data</strong>. Masing-masing tim memiliki peran spesifik dalam setiap tahap, mulai dari pengumpulan data hingga implementasi dan pemeliharaan sistem. Berikut adalah detil proses penyusunan secara teknis:</p>
+<hr>
+<h3 id="1-pengumpulan-dan-ekstraksi-data">1. Pengumpulan dan Ekstraksi Data</h3>
+<h4 id="peran-tim-riset-data-dalam-pengumpulan-dan-ekstraksi-data">Peran Tim Riset Data dalam Pengumpulan dan Ekstraksi Data</h4>
+<ul>
+<li>
+<p><strong>Identifikasi Sumber</strong>: Mengumpulkan data dari berbagai sumber primer dan sekunder, seperti manuskrip, edisi digital, katalog perpustakaan, database hadis, biografi mushonif, dan referensi fatwa.</p>
+</li>
+<li>
+<p><strong>Kualifikasi Sumber</strong>: Menentukan keabsahan dan relevansi data yang diperoleh dengan melakukan review literatur dan konsultasi dengan ahli keilmuan.</p>
+</li>
+<li>
+<p><strong>Ekstraksi Informasi</strong>: Menggunakan teknik NLP (Natural Language Processing) untuk mengekstrak entitas utama seperti:</p>
+<ul>
+<li>Nama kitab, mushonif, mazhab, bidang studi, dan konteks historis.</li>
+<li>Teks asli, transliterasi, dan terjemahan.</li>
+<li>Anotasi, catatan kaki, dan Q&amp;A dari ulama.</li>
+</ul>
+</li>
+</ul>
+<h4 id="peran-tim-it-dalam-pengumpulan-dan-ekstraksi-data">Peran Tim IT dalam Pengumpulan dan Ekstraksi Data</h4>
+<ul>
+<li>
+<p><strong>Pengumpulan Digital</strong>: Memastikan data yang dikumpulkan telah didigitalkan dengan format yang sesuai (misal: PDF, XML, JSON).</p>
+</li>
+<li>
+<p><strong>Integrasi Data</strong>: Menyusun pipeline untuk mengimpor data mentah ke dalam sistem basis data untuk proses selanjutnya.</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-pre-processing-dan-normalisasi-data">2. Pre-processing dan Normalisasi Data</h3>
+<h4 id="peran-tim-riset-data-dalam-pre-processing-dan-normalisasi-data">Peran Tim Riset Data dalam Pre-processing dan Normalisasi Data</h4>
+<ul>
+<li>
+<p><strong>Pembersihan Data</strong>: Membersihkan teks dari noise (kesalahan OCR, karakter yang tidak valid) dan melakukan normalisasi (misalnya konversi aksara Pegon/Jawi ke format standar).</p>
+</li>
+<li>
+<p><strong>Standardisasi Metadata</strong>: Menetapkan format metadata seperti tanggal penulisan, lokasi, dan kategori keilmuan agar konsisten antar sumber.</p>
+</li>
+</ul>
+<h4 id="peran-tim-it-dalam-pre-processing-dan-normalisasi-data">Peran Tim IT dalam Pre-processing dan Normalisasi Data</h4>
+<ul>
+<li>
+<p><strong>Implementasi Pipeline ETL</strong>: Merancang dan mengembangkan proses Extract, Transform, Load (ETL) untuk memproses data mentah menjadi data yang siap diintegrasikan ke dalam knowledge graph.</p>
+</li>
+<li>
+<p><strong>Automasi Pre-processing</strong>: Menggunakan skrip dan tools (misal: Python, Apache Spark) untuk mengotomatisasi pembersihan dan transformasi data.</p>
+</li>
+</ul>
+<hr>
+<h3 id="3-ekstraksi-entitas-dan-anotasi">3. Ekstraksi Entitas dan Anotasi</h3>
+<h4 id="peran-tim-riset-data-dalam-ekstraksi-entitas-dan-anotasi">Peran Tim Riset Data dalam Ekstraksi Entitas dan Anotasi</h4>
+<ul>
+<li>
+<p><strong>Named Entity Recognition (NER)</strong>: Menggunakan model NLP untuk mengidentifikasi entitas seperti nama kitab, mushonif, mazhab, dan istilah keilmuan.</p>
+</li>
+<li>
+<p><strong>Anotasi Manual dan Semi-Otomatis</strong>: Melakukan validasi entitas hasil ekstraksi dengan melibatkan ahli (ulama) untuk memberikan anotasi dan validasi Q&amp;A.</p>
+</li>
+<li>
+<p><strong>Pemetaan Relasi Awal</strong>: Menentukan hubungan antar entitas berdasarkan konteks historis, isi kitab, dan ulasan para ahli.</p>
+</li>
+</ul>
+<h4 id="peran-tim-it-dalam-ekstraksi-entitas-dan-anotasi">Peran Tim IT dalam Ekstraksi Entitas dan Anotasi</h4>
+<ul>
+<li>
+<p><strong>Integrasi Model NLP</strong>: Mengimplementasikan model machine learning untuk NER dan ekstraksi relasi dalam pipeline data.</p>
+</li>
+<li>
+<p><strong>API dan Tools Anotasi</strong>: Mengembangkan antarmuka untuk kolaborasi antara tim riset data dan ulama dalam menambahkan atau mengoreksi anotasi.</p>
+</li>
+</ul>
+<hr>
+<h3 id="4-penyusunan-ontologi-dan-struktur-graph">4. Penyusunan Ontologi dan Struktur Graph</h3>
+<h4 id="peran-tim-riset-data-dalam-penyusunan-ontologi-dan-struktur-graph">Peran Tim Riset Data dalam Penyusunan Ontologi dan Struktur Graph</h4>
+<ul>
+<li>
+<p><strong>Perancangan Ontologi</strong>: Menyusun ontologi keilmuan Islam yang mendefinisikan kelas (kitab, mushonif, mazhab, dsb.) dan properti antar entitas. Ontologi ini menentukan:</p>
+<ul>
+<li>
+<p><strong>Hierarki</strong>: Misalnya, kategori utama seperti fiqh yang memiliki sub-kategori (ibadah, muamalah, dsb.).</p>
+</li>
+<li>
+<p><strong>Relasi</strong>: Hubungan seperti &quot;ditulis oleh&quot;, &quot;terkait dengan&quot;, dan &quot;dikutip dari&quot;.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="peran-tim-it-dalam-penyusunan-ontologi-dan-struktur-graph">Peran Tim IT dalam Penyusunan Ontologi dan Struktur Graph</h4>
+<ul>
+<li>
+<p><strong>Modeling Graph</strong>: Mengkonversi ontologi yang telah disusun menjadi skema graph. Tools seperti Neo4j, GraphDB, atau RDF store (misalnya, Apache Jena) digunakan untuk menyimpan dan mengelola data.</p>
+</li>
+<li>
+<p><strong>Pembuatan Schema</strong>: Menentukan node, edge, dan atribut yang akan digunakan. Contoh struktur node:</p>
+<ul>
+<li>
+<p><strong>Node Kitab</strong>: Berisi teks asli, transliterasi, terjemahan, anotasi, dan Q&amp;A.</p>
+</li>
+<li>
+<p><strong>Node Mushonif</strong>: Berisi biografi, konteks sosial, dan karya-karya lain.</p>
+</li>
+<li>
+<p><strong>Node Mazhab &amp; Bidang Studi</strong>: Menjelaskan kategori dan prinsip keilmuan.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagram Sederhana Ontologi:</strong></p>
+<pre><code class="language-mermaid"><div class="mermaid">graph LR;
+    A[Kitab] -- "ditulis oleh" --> B[Mushonif]
+    A -- "berdasarkan" --> C[Mazhab]
+    A -- "berkaitan dengan" --> D[Bidang Studi & Tematik]
+    B -- "berafiliasi dengan" --> C
+    D -- "dipengaruhi oleh" --> E[Konteks Sosial]
+</div></code></pre>
+<hr>
+<h3 id="5-implementasi-dan-pengembangan-knowledge-graph">5. Implementasi dan Pengembangan Knowledge Graph</h3>
+<h4 id="peran-tim-it-dalam-implementasi-dan-pengembangan-knowledge-graph">Peran Tim IT dalam Implementasi dan Pengembangan Knowledge Graph</h4>
+<ul>
+<li>
+<p><strong>Pembangunan Graph Database</strong>: Menginstal dan mengkonfigurasi graph database (misalnya, Neo4j) dan mengimpor data menggunakan format yang disepakati (CSV, JSON, RDF).</p>
+</li>
+<li>
+<p><strong>Integrasi API</strong>: Mengembangkan API untuk akses, query, dan update knowledge graph oleh aplikasi front-end atau modul AI (misal: sistem Q&amp;A dan RAG).</p>
+</li>
+<li>
+<p><strong>Automasi Sinkronisasi Data</strong>: Membuat sistem yang mengintegrasikan data terbaru dari pipeline ETL secara berkala agar graph selalu terbarui.</p>
+</li>
+</ul>
+<h4 id="peran-tim-riset-data-dalam-implementasi-dan-pengembangan-knowledge-graph">Peran Tim Riset Data dalam Implementasi dan Pengembangan Knowledge Graph</h4>
+<ul>
+<li>
+<p><strong>Validasi Konten</strong>: Bekerja sama dengan tim IT untuk memastikan integritas data yang diimpor sesuai dengan ontologi dan relasi yang telah dirancang.</p>
+</li>
+<li>
+<p><strong>Uji Coba dan Evaluasi</strong>: Melakukan evaluasi kualitas graph dengan simulasi query dan feedback dari ahli untuk memastikan relevansi dan akurasi.</p>
+</li>
+</ul>
+<hr>
+<h3 id="6-validasi-umpan-balik-dan-iterasi">6. Validasi, Umpan Balik, dan Iterasi</h3>
+<h4 id="kolaborasi-bersama">Kolaborasi Bersama</h4>
+<ul>
+<li>
+<p><strong>Review Periodik</strong>: Tim IT dan tim riset data secara berkala mengadakan review bersama dengan melibatkan para ulama untuk menilai keakuratan knowledge graph.</p>
+</li>
+<li>
+<p><strong>Feedback Loop</strong>: Umpan balik dari pengguna dan ahli diterima melalui sistem rating, komentar, dan sesi validasi langsung. Perubahan dan revisi diterapkan dalam iterasi berikutnya.</p>
+</li>
+<li>
+<p><strong>Penyimpanan Versi</strong>: Setiap perubahan direkam sehingga versi historis graph dapat diakses untuk keperluan audit dan analisis perkembangan.</p>
+</li>
+</ul>
+<hr>
+<h3 id="7-dokumentasi-dan-pemeliharaan">7. Dokumentasi dan Pemeliharaan</h3>
+<h4 id="tim-it">Tim IT</h4>
+<ul>
+<li>
+<p><strong>Dokumentasi Teknis</strong>: Menyusun dokumentasi lengkap mengenai skema graph, API, pipeline ETL, dan integrasi sistem.</p>
+</li>
+<li>
+<p><strong>Monitoring dan Maintenance</strong>: Mengimplementasikan sistem monitoring untuk performa database dan melakukan backup serta pemeliharaan rutin.</p>
+</li>
+</ul>
+<h4 id="tim-riset-data">Tim Riset Data</h4>
+<ul>
+<li>
+<p><strong>Dokumentasi Data</strong>: Menyusun dokumentasi terkait sumber data, proses ekstraksi, metodologi anotasi, dan revisi konten.</p>
+</li>
+<li>
+<p><strong>Pelatihan dan Sosialisasi</strong>: Menyediakan training bagi pengguna internal dan ahli untuk memahami cara kerja knowledge graph dan bagaimana mengakses informasi.</p>
+</li>
+</ul>
+<hr>
+<h3 id="kesimpulan-proses-penyusunan-kg">Kesimpulan Proses Penyusunan KG</h3>
+<p>Proses penyusunan knowledge graph untuk kitab-kitab Islam adalah inisiatif multidisipliner yang melibatkan:</p>
+<ul>
+<li>
+<p><strong>Tim Riset Data</strong>: Fokus pada pengumpulan, ekstraksi, anotasi, dan validasi konten keilmuan.</p>
+</li>
+<li>
+<p><strong>Tim IT</strong>: Bertanggung jawab atas implementasi teknis, pengembangan pipeline, penyusunan database graph, dan integrasi sistem.</p>
+</li>
+</ul>
+<p>Kolaborasi erat antara kedua tim, didukung oleh feedback dari para ulama dan pengguna, menjamin bahwa knowledge graph yang dibangun tidak hanya komprehensif dan terstruktur, tetapi juga akurat dan relevan dengan kebutuhan keilmuan Islam masa kini.</p>
+<hr>
+<h2 id="logika-pemrosesan-query-hingga-respons-dengan-knowledge-graph">Logika Pemrosesan Query hingga Respons dengan Knowledge Graph</h2>
+<p>Metode ini mengandalkan struktur knowledge graph untuk menyatukan berbagai entitas keilmuan, sehingga dapat menghasilkan jawaban yang kontekstual dan terverifikasi. Berikut penjelasan lengkap mengenai algoritma dan logika pemrosesan query, beserta argumen mengenai efektivitas pendekatan ini.</p>
+<hr>
+<h3 id="1-alur-kerja-pemrosesan-query">1. Alur Kerja Pemrosesan Query</h3>
+<h4 id="langkah-langkah-utama">Langkah-langkah Utama</h4>
+<ol>
+<li>
+<p><strong>Input Query Pengguna</strong><br>
+Pengguna mengajukan pertanyaan melalui antarmuka sistem. Contoh: &quot;Apa penjelasan tentang konsep ijtihad dalam kitab X?&quot;</p>
+</li>
+<li>
+<p><strong>Pre-processing dan Analisis Intent</strong></p>
+<ul>
+<li><strong>Tokenisasi dan Normalisasi:</strong> Query dipecah menjadi kata-kata kunci, dilakukan normalisasi (misal, penghilangan tanda baca, konversi ke format standar).</li>
+<li><strong>Analisis Semantik:</strong> Menggunakan model NLP untuk memahami maksud dan konteks pertanyaan serta mengekstrak entitas kunci (misalnya, nama kitab, istilah keilmuan).</li>
+</ul>
+</li>
+<li>
+<p><strong>Pencarian Semantic di Knowledge Graph</strong></p>
+<ul>
+<li><strong>Identifikasi Node Relevan:</strong> Berdasarkan entitas yang diekstraksi, sistem mencari node yang relevan dalam graph, seperti node <em>kitab</em>, <em>mushonif</em>, <em>bidang studi</em>, atau <em>mazhab</em>.</li>
+<li><strong>Graph Traversal:</strong> Algoritma traversal berjalan untuk mengambil semua node terkait berdasarkan relasi yang telah ditetapkan, misalnya &quot;ditulis oleh&quot;, &quot;berkaitan dengan&quot;, atau &quot;berdasarkan&quot;.</li>
+</ul>
+</li>
+<li>
+<p><strong>Integrasi Informasi dan Penyusunan Konteks</strong></p>
+<ul>
+<li><strong>Penggabungan Data:</strong> Data dari node terkait (teks asli, transliterasi, terjemahan, anotasi, Q&amp;A) diintegrasikan untuk membentuk konteks komprehensif.</li>
+<li><strong>Penyusunan Draft Jawaban:</strong> Berdasarkan konteks yang terkumpul, sistem menyusun draft jawaban yang mencakup referensi dan catatan pendukung.</li>
+</ul>
+</li>
+<li>
+<p><strong>Validasi Jawaban</strong></p>
+<ul>
+<li><strong>Automated Verification:</strong> Proses verifikasi otomatis memeriksa konsistensi dan relevansi jawaban. Bila perlu, flag untuk review manual oleh ulama.</li>
+<li><strong>Feedback Loop:</strong> Jawaban yang telah divalidasi dapat disimpan sebagai bagian dari data Q&amp;A, memperkaya graph untuk query berikutnya.</li>
+</ul>
+</li>
+<li>
+<p><strong>Output Jawaban ke Pengguna</strong><br>
+Jawaban akhir disajikan kepada pengguna, disertai dengan referensi ke sumber dalam knowledge graph untuk transparansi.</p>
+</li>
+</ol>
+<hr>
+<h3 id="2-diagram-alur-pemrosesan-query">2. Diagram Alur Pemrosesan Query</h3>
+<pre><code class="language-mermaid"><div class="mermaid">graph TD;
+    A[Input Query Pengguna] --> B[Pre-processing & Analisis Intent];
+    B --> C[Ekstraksi Entitas & Kata Kunci];
+    C --> D[Pencarian Node Relevan di Knowledge Graph];
+    D --> E[Graph Traversal & Semantic Matching];
+    E --> F[Integrasi Informasi dari Node Terkait];
+    F --> G[Generasi Draft Jawaban];
+    G --> H[Validasi Otomatis & Manual];
+    H --> I[Output Jawaban ke Pengguna];
+</div></code></pre>
+<hr>
+<h3 id="3-pseudocode-algoritma-pemrosesan-query">3. Pseudocode Algoritma Pemrosesan Query</h3>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_query</span><span class="hljs-params">(query)</span>:</span>
+    <span class="hljs-comment"># 1. Pre-processing Query</span>
+    processed_query = preprocess(query)  <span class="hljs-comment"># Tokenisasi, normalisasi, dan ekstraksi kata kunci</span>
+    
+    <span class="hljs-comment"># 2. Analisis Intent dan Ekstraksi Entitas</span>
+    intent, key_entities = analyze_intent(processed_query)
+    
+    <span class="hljs-comment"># 3. Pencarian di Knowledge Graph berdasarkan entitas kunci</span>
+    relevant_nodes = semantic_search_kg(key_entities)
+    
+    <span class="hljs-comment"># 4. Graph Traversal: Mengambil seluruh informasi terkait dari node-node yang relevan</span>
+    context_nodes = traverse_graph(relevant_nodes)
+    
+    <span class="hljs-comment"># 5. Integrasi Informasi: Menggabungkan data dari teks asli, anotasi, Q&amp;A, dan metadata lainnya</span>
+    integrated_context = integrate_information(context_nodes)
+    
+    <span class="hljs-comment"># 6. Penyusunan Draft Jawaban berdasarkan konteks dan intent</span>
+    draft_answer = generate_answer(integrated_context, intent)
+    
+    <span class="hljs-comment"># 7. Validasi: Otomatis (dan flag untuk review jika perlu)</span>
+    <span class="hljs-keyword">if</span> validate_answer(draft_answer):
+        <span class="hljs-keyword">return</span> draft_answer
+    <span class="hljs-keyword">else</span>:
+        flag_for_review(query, draft_answer)
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"Jawaban sedang dalam proses validasi oleh ulama."</span>
+</div></code></pre>
+<hr>
+<h3 id="4-argumen-dan-efektivitas-metode-knowledge-graph">4. Argumen dan Efektivitas Metode Knowledge Graph</h3>
+<h4 id="a-akurasi-dan-kontekstualitas">A. Akurasi dan Kontekstualitas</h4>
+<ul>
+<li>
+<p><strong>Keterkaitan Semantik:</strong> Dengan mengaitkan entitas seperti kitab, mushonif, mazhab, dan bidang studi, sistem dapat menyajikan jawaban yang tidak hanya berdasarkan pencocokan kata, tetapi juga mempertimbangkan konteks historis dan keilmuan.</p>
+</li>
+<li>
+<p><strong>Validasi Multi-Sumber:</strong> Informasi yang diintegrasikan dari berbagai node meningkatkan akurasi karena jawaban didukung oleh data asli, terjemahan, dan anotasi dari para ulama.</p>
+</li>
+</ul>
+<h4 id="b-fleksibilitas-dan-skalabilitas">B. Fleksibilitas dan Skalabilitas</h4>
+<ul>
+<li>
+<p><strong>Modularitas:</strong> Struktur graph memungkinkan penambahan entitas atau relasi baru tanpa mengubah keseluruhan sistem.</p>
+</li>
+<li>
+<p><strong>Adaptif Terhadap Revisi:</strong> Sistem dapat diperbarui secara berkala melalui feedback loop dan revisi manual oleh ulama, sehingga tetap relevan dengan perkembangan ilmu keislaman.</p>
+</li>
+</ul>
+<h4 id="c-efisiensi-pencarian">C. Efisiensi Pencarian</h4>
+<ul>
+<li>
+<p><strong>Semantic Search:</strong> Teknik pencarian berbasis semantik memungkinkan sistem menemukan node relevan meski terdapat variasi istilah atau bahasa.</p>
+</li>
+<li>
+<p><strong>Graph Traversal Cepat:</strong> Algoritma traversal yang dioptimalkan meminimalkan waktu pencarian dan memastikan respons yang cepat kepada pengguna.</p>
+</li>
+</ul>
+<h4 id="d-transparansi-dan-auditabilitas">D. Transparansi dan Auditabilitas</h4>
+<ul>
+<li>
+<p><strong>Referensi Terintegrasi:</strong> Jawaban yang dihasilkan dapat ditelusuri kembali ke node-node sumber, memberikan transparansi dan memudahkan audit keilmuan.</p>
+</li>
+<li>
+<p><strong>Riwayat Revisi:</strong> Sistem menyimpan versi jawaban sebelumnya, sehingga perubahan dan validasi dapat ditinjau kembali bila diperlukan.</p>
+</li>
+</ul>
+<hr>
+<h3 id="catatan-logika-pemrosesan-query">Catatan Logika Pemrosesan Query</h3>
+<p>Metode pemrosesan query menggunakan knowledge graph ini efektif karena:</p>
+<ul>
+<li>
+<p><strong>Menggabungkan konteks yang luas dan beragam entitas keilmuan</strong>, sehingga jawaban yang dihasilkan lebih mendalam dan terverifikasi.</p>
+</li>
+<li>
+<p><strong>Memanfaatkan teknologi semantic search dan graph traversal</strong> untuk pencarian informasi yang cepat dan relevan.</p>
+</li>
+<li>
+<p><strong>Menyediakan sistem validasi terintegrasi</strong> yang memastikan jawaban selalu diperiksa oleh para ahli, meningkatkan kepercayaan dan transparansi.</p>
+</li>
+<li>
+<p><strong>Bersifat modular dan adaptif</strong>, memungkinkan integrasi data baru dan revisi berkelanjutan sesuai perkembangan ilmu keislaman.</p>
+</li>
+</ul>
+<p>Dengan pendekatan ini, sistem tidak hanya mampu menjawab pertanyaan dengan tepat tetapi juga mendukung penelusuran keilmuan yang komprehensif, menjadikannya solusi yang efektif untuk pengembangan aplikasi AI keislaman yang otoritatif.</p>
+<hr>
+<h2 id="pseudocode-metode-knowledge-graph-untuk-kitab-islam"><strong>Pseudocode Metode Knowledge Graph untuk Kitab Islam</strong></h2>
+<h3 id="1-struktur-knowledge-graph"><strong>1. Struktur Knowledge Graph</strong></h3>
+<p>Metode ini menggunakan <strong>Knowledge Graph (KG)</strong> dengan node utama:</p>
+<ol>
+<li>
+<p><strong>Kitab</strong> (berisi teks asli, transliterasi, terjemahan, anotasi, dan Q&amp;A)</p>
+</li>
+<li>
+<p><strong>Mushonif (Penulis Kitab)</strong></p>
+</li>
+<li>
+<p><strong>Mazhab dan Bidang Studi</strong></p>
+</li>
+<li>
+<p><strong>Konteks Sosial Kitab</strong></p>
+</li>
+<li>
+<p><strong>Relasi antar kitab</strong> (kitab syarah, mukhtashar, dll.)</p>
+</li>
+</ol>
+<hr>
+<h3 id="2-pseudocode-untuk-penyusunan-knowledge-graph"><strong>2. Pseudocode untuk Penyusunan Knowledge Graph</strong></h3>
+<pre class="hljs"><code><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">KnowledgeGraph</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.graph = {}  <span class="hljs-comment"># Struktur utama untuk menyimpan node dan relasi</span>
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_kitab</span><span class="hljs-params">(self, kitab_id, title, author, mazhab, bidang_studi, konteks_sosial)</span>:</span>
+        <span class="hljs-string">"""Menambahkan node kitab ke knowledge graph"""</span>
+        self.graph[kitab_id] = {
+            <span class="hljs-string">"title"</span>: title,
+            <span class="hljs-string">"author"</span>: author,
+            <span class="hljs-string">"mazhab"</span>: mazhab,
+            <span class="hljs-string">"bidang_studi"</span>: bidang_studi,
+            <span class="hljs-string">"konteks_sosial"</span>: konteks_sosial,
+            <span class="hljs-string">"teks"</span>: [],
+            <span class="hljs-string">"qa_pairs"</span>: [],
+            <span class="hljs-string">"relations"</span>: []
+        }
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_text_to_kitab</span><span class="hljs-params">(self, kitab_id, text_id, original_text, transliteration, translation, annotations)</span>:</span>
+        <span class="hljs-string">"""Menambahkan teks asli, transliterasi, terjemahan, dan anotasi ke node kitab"""</span>
+        <span class="hljs-keyword">if</span> kitab_id <span class="hljs-keyword">in</span> self.graph:
+            self.graph[kitab_id][<span class="hljs-string">"teks"</span>].append({
+                <span class="hljs-string">"text_id"</span>: text_id,
+                <span class="hljs-string">"original_text"</span>: original_text,
+                <span class="hljs-string">"transliteration"</span>: transliteration,
+                <span class="hljs-string">"translation"</span>: translation,
+                <span class="hljs-string">"annotations"</span>: annotations
+            })
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_qa_to_kitab</span><span class="hljs-params">(self, kitab_id, question, answer, validated=True)</span>:</span>
+        <span class="hljs-string">"""Menambahkan pasangan Q&amp;A ke node kitab"""</span>
+        <span class="hljs-keyword">if</span> kitab_id <span class="hljs-keyword">in</span> self.graph:
+            self.graph[kitab_id][<span class="hljs-string">"qa_pairs"</span>].append({
+                <span class="hljs-string">"question"</span>: question,
+                <span class="hljs-string">"answer"</span>: answer,
+                <span class="hljs-string">"validated"</span>: validated  <span class="hljs-comment"># Jika False, akan masuk ke backlog tashih</span>
+            })
+    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">connect_kitab</span><span class="hljs-params">(self, kitab_id1, kitab_id2, relation_type)</span>:</span>
+        <span class="hljs-string">"""Menambahkan hubungan antar kitab, misalnya kitab syarah, ringkasan, dll."""</span>
+        <span class="hljs-keyword">if</span> kitab_id1 <span class="hljs-keyword">in</span> self.graph <span class="hljs-keyword">and</span> kitab_id2 <span class="hljs-keyword">in</span> self.graph:
+            self.graph[kitab_id1][<span class="hljs-string">"relations"</span>].append({
+                <span class="hljs-string">"target"</span>: kitab_id2,
+                <span class="hljs-string">"relation_type"</span>: relation_type
+            })
+
+<span class="hljs-comment"># Inisialisasi Knowledge Graph</span>
+kg = KnowledgeGraph()
+
+<span class="hljs-comment"># Contoh Penambahan Data</span>
+kg.add_kitab(<span class="hljs-string">"001"</span>, <span class="hljs-string">"Fathul Qarib"</span>, <span class="hljs-string">"Ibnu Qasim"</span>, <span class="hljs-string">"Syafi'i"</span>, <span class="hljs-string">"Fiqh"</span>, <span class="hljs-string">"Pesantren Jawa"</span>)
+kg.add_text_to_kitab(<span class="hljs-string">"001"</span>, <span class="hljs-string">"T001"</span>, <span class="hljs-string">"بِسْمِ اللَّهِ"</span>, <span class="hljs-string">"Bismillah"</span>, <span class="hljs-string">"Dengan nama Allah"</span>, <span class="hljs-string">"Mukadimah kitab"</span>)
+kg.add_qa_to_kitab(<span class="hljs-string">"001"</span>, <span class="hljs-string">"Apa makna 'bismillah' dalam fiqh?"</span>, <span class="hljs-string">"Maknanya adalah ..."</span>, validated=<span class="hljs-literal">True</span>)
+
+<span class="hljs-comment"># Menampilkan struktur graph</span>
+<span class="hljs-keyword">import</span> pprint
+pprint.pprint(kg.graph)
+</div></code></pre>
+<hr>
+<h3 id="3-proses-query-dan-generasi-jawaban-dalam-knowledge-graph"><strong>3. Proses Query dan Generasi Jawaban dalam Knowledge Graph</strong></h3>
+<p>Ketika pengguna bertanya, sistem akan:</p>
+<ol>
+<li>
+<p><strong>Mencari di database Q&amp;A</strong> apakah pertanyaan sudah memiliki jawaban tervalidasi.</p>
+</li>
+<li>
+<p><strong>Jika tidak ditemukan, mencari teks kitab yang relevan</strong> untuk dikirim ke LLM.</p>
+</li>
+<li>
+<p><strong>Jika jawaban dihasilkan model, diberi label &quot;Autogenerated &amp; Belum Ditashih&quot;.</strong></p>
+</li>
+<li>
+<p><strong>Jawaban ini masuk backlog untuk dikoreksi dan ditashih oleh ulama.</strong></p>
+</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">search_knowledge_graph</span><span class="hljs-params">(query)</span>:</span>
+    <span class="hljs-string">"""Mencari pertanyaan dalam Q&amp;A Knowledge Graph"""</span>
+    <span class="hljs-keyword">for</span> kitab_id, data <span class="hljs-keyword">in</span> kg.graph.items():
+        <span class="hljs-keyword">for</span> qa <span class="hljs-keyword">in</span> data[<span class="hljs-string">"qa_pairs"</span>]:
+            <span class="hljs-keyword">if</span> query.lower() <span class="hljs-keyword">in</span> qa[<span class="hljs-string">"question"</span>].lower():
+                <span class="hljs-keyword">return</span> qa[<span class="hljs-string">"answer"</span>], qa[<span class="hljs-string">"validated"</span>]
+    
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">None</span>, <span class="hljs-literal">False</span>  <span class="hljs-comment"># Jika tidak ditemukan, anggap sebagai autogenerated</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">retrieve_kitab_context</span><span class="hljs-params">(kitab_id)</span>:</span>
+    <span class="hljs-string">"""Mengambil teks terkait dari kitab dalam knowledge graph"""</span>
+    <span class="hljs-keyword">if</span> kitab_id <span class="hljs-keyword">in</span> kg.graph:
+        <span class="hljs-keyword">return</span> kg.graph[kitab_id][<span class="hljs-string">"teks"</span>]
+    <span class="hljs-keyword">return</span> []
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_query</span><span class="hljs-params">(query)</span>:</span>
+    <span class="hljs-string">"""Alur utama pencarian jawaban berbasis Knowledge Graph"""</span>
+    answer, validated = search_knowledge_graph(query)
+
+    <span class="hljs-keyword">if</span> answer:
+        <span class="hljs-keyword">if</span> validated:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">f"Jawaban (Tervalidasi): <span class="hljs-subst">{answer}</span>"</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">f"Jawaban (Autogenerated &amp; Belum Ditashih): <span class="hljs-subst">{answer}</span>"</span>
+    
+    <span class="hljs-comment"># Jika tidak ada di Q&amp;A, cari dalam teks kitab yang relevan</span>
+    retrieved_texts = []
+    <span class="hljs-keyword">for</span> kitab_id <span class="hljs-keyword">in</span> kg.graph.keys():
+        retrieved_texts.extend(retrieve_kitab_context(kitab_id))
+
+    <span class="hljs-comment"># Gunakan LLM untuk menjawab berdasarkan teks yang ditemukan</span>
+    context = <span class="hljs-string">" "</span>.join([text[<span class="hljs-string">"original_text"</span>] <span class="hljs-keyword">for</span> text <span class="hljs-keyword">in</span> retrieved_texts[:<span class="hljs-number">5</span>]])  <span class="hljs-comment"># Ambil 5 teks pertama</span>
+    generated_answer = <span class="hljs-string">f"Jawaban berdasarkan konteks: <span class="hljs-subst">{context}</span>"</span>  <span class="hljs-comment"># LLM seharusnya dipanggil di sini</span>
+    
+    <span class="hljs-comment"># Simpan ke backlog tashih</span>
+    kg.add_qa_to_kitab(kitab_id, query, generated_answer, validated=<span class="hljs-literal">False</span>)
+
+    <span class="hljs-keyword">return</span> <span class="hljs-string">f"Jawaban (Autogenerated &amp; Belum Ditashih): <span class="hljs-subst">{generated_answer}</span>"</span>
+
+<span class="hljs-comment"># Contoh Query</span>
+print(process_query(<span class="hljs-string">"Apa makna 'bismillah' dalam fiqh?"</span>))
+</div></code></pre>
+<hr>
+<h3 id="4-keunggulan-metode-knowledge-graph"><strong>4. Keunggulan Metode Knowledge Graph</strong></h3>
+<p>✅ <strong>Memetakan relasi antar kitab</strong> (misal kitab syarah, kitab muqarrin, dll.)<br>
+✅ <strong>Struktur data lebih eksplisit</strong>, memungkinkan penelusuran sanad keilmuan<br>
+✅ <strong>Mudah diperluas</strong> untuk memasukkan kitab baru &amp; anotasi tambahan<br>
+✅ <strong>Sistem validasi &amp; backlog otomatis</strong> untuk pertanyaan yang belum ditashih</p>
+<h3 id="catatan-pseudocode-kg">Catatan Pseudocode KG</h3>
+<p>Metode Knowledge Graph lebih sistematis untuk mengelola kitab dan Q&amp;A, terutama untuk <strong>memastikan sanad keilmuan tetap utuh</strong>. Namun, secara komputasi lebih kompleks dibandingkan metode <strong>Q&amp;A+RAG</strong>.</p>
+<p>Jika sumber daya memadai, <strong>Knowledge Graph adalah pilihan terbaik untuk sistem yang akurat dan terpercaya</strong> dalam penyajian ilmu Islam.</p>
+
+</body>
+</html>

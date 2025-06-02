@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>konsep-seri-video-etika-etiket-ai.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="seri-video-etika-dan-etiket-ai-durasi-60-detik">Seri Video Etika dan Etiket AI (Durasi 60 Detik)</h1>
+<hr>
+<h2 id="video-1-apa-itu-ai-dan-mengapa-kita-harus-beretika">Video 1: Apa Itu AI dan Mengapa Kita Harus Beretika</h2>
+<p><strong>Narasi:</strong>
+Bayangkan sebuah alat / yang bisa berpikir, menulis, menggambar, bahkan berbicara dengan kita / Itulah kecerdasan buatan, atau AI / Tapi seperti semua alat kuat, AI membawa tanggung jawab / Saat kita bertanya, membuat karya, atau mengambil keputusan dengan bantuan AI / kita harus ingat / AI hanyalah alat, bukan makhluk hidup / Etika adalah kompas kita / Tanpa etika, teknologi bisa merusak, bukan membantu / Maka sebelum klik, ketik, atau tanya / bertanyalah pada diri sendiri / Apakah ini benar? / Apakah ini baik? / Gunakan AI dengan hati nurani / Karena masa depan bukan soal seberapa canggih alat kita / tapi seberapa bijaksana kita menggunakannya</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Orang memandang layar laptop penuh teks AI</li>
+<li>Robot menyerahkan pena ke manusia</li>
+<li>Kompas di tangan manusia</li>
+<li>Manusia dan AI berjalan berdampingan</li>
+<li>Tangan manusia mengetik dengan bayangan AI</li>
+</ul>
+<hr>
+<h2 id="video-2-ai-itu-bukan-manusia">Video 2: AI Itu Bukan Manusia</h2>
+<p><strong>Narasi:</strong>
+Pernah merasa AI mengerti perasaanmu? / Padahal ia hanya memproses data / AI tidak punya hati / Tidak punya empati / Yang dia berikan hanyalah pola / Kalau kita lupa itu / kita bisa berharap lebih dan kecewa / Hubungan sejati hanya tumbuh antar manusia / AI bisa membantu, bisa menemani / Tapi ia tidak bisa menggantikan kehangatan hati manusia / Jangan tertipu rasa / Tetaplah membedakan / Mana mesin, mana manusia</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Chatbox AI bertuliskan &quot;Aku paham perasaanmu&quot;</li>
+<li>Close-up chip processor</li>
+<li>Orang berbicara dengan robot datar ekspresi</li>
+<li>Dua tangan manusia saling menggenggam</li>
+</ul>
+<hr>
+<h2 id="video-3-jaga-privasi-saat-pakai-ai">Video 3: Jaga Privasi Saat Pakai AI</h2>
+<p><strong>Narasi:</strong>
+Setiap kata yang kamu ketik bisa direkam / Setiap informasi pribadi bisa tersimpan / Mungkin sekarang terasa aman / Tapi siapa tahu ke depan? / Data adalah emas baru / Privasi adalah benteng kita / Jangan bagikan KTP, alamat, nomor rekening ke AI publik / Sekali data tersebar, sulit untuk ditarik kembali / Di dunia digital / Yang kamu jaga, itulah yang melindungimu</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Orang mengetik data pribadi di chatbot</li>
+<li>Server besar penuh lampu</li>
+<li>Perisai bertuliskan &quot;Privasi&quot;</li>
+<li>Orang menutup laptop sambil tersenyum</li>
+</ul>
+<hr>
+<h2 id="video-4-jangan-curang-pakai-ai">Video 4: Jangan Curang Pakai AI</h2>
+<p><strong>Narasi:</strong>
+AI bisa bantu bikin tugas dengan cepat / Bisa jawab soal dalam hitungan detik / Tapi saat kita menyerahkan semua ke AI / kita kehilangan proses belajar itu sendiri / Belajar itu soal perjalanan / soal kesalahan, soal bangkit lagi / Kalau semua dilimpahkan ke AI / kita kehilangan kesempatan menjadi lebih kuat / Gunakan AI untuk membantu / bukan untuk mencurangi diri sendiri / Karakter dibentuk oleh usaha, bukan hasil instan</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Murid mengintip jawaban AI lewat ponsel</li>
+<li>Tugas kosong dengan bayangan robot</li>
+<li>Orang mendaki bukit dengan tongkat bantuan</li>
+<li>Piala bertuliskan &quot;Hasil Usaha&quot;</li>
+</ul>
+<hr>
+<h2 id="video-5-jangan-percaya-buta-pada-jawaban-ai">Video 5: Jangan Percaya Buta pada Jawaban AI</h2>
+<p><strong>Narasi:</strong>
+AI bisa salah / Bisa ngawur / Bahkan bisa membuat jawaban yang tampak meyakinkan padahal salah / Jangan asal percaya / AI itu alat, bukan hakim kebenaran / Selalu cek fakta / Baca ulang dari sumber terpercaya / Gunakan akal sehatmu / Karena kebenaran bukan datang dari mesin / tapi dari pencarian dan pemahaman manusia</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Jawaban AI salah besar</li>
+<li>Orang melongo melihat layar</li>
+<li>Buku besar bertuliskan &quot;Cek Fakta&quot;</li>
+<li>Cahaya menyinari kepala orang berpikir</li>
+</ul>
+<hr>
+<h2 id="video-6-hargai-hak-cipta-orang-lain">Video 6: Hargai Hak Cipta Orang Lain</h2>
+<p><strong>Narasi:</strong>
+AI bisa membuat gambar, musik, tulisan / Tapi dari mana datanya? / Banyak data itu berasal dari karya orang lain / Hargai karya mereka / Jangan asal klaim / Kalau pakai materi dari AI / pastikan tidak melanggar hak cipta / Etika kita diuji bukan saat ada yang melihat / Tapi saat kita sendiri memilih benar</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>AI menghasilkan lukisan</li>
+<li>Gambar tangan menulis kata &quot;Copyright&quot;</li>
+<li>Timbangan keadilan di atas karya seni</li>
+<li>Orang tersenyum menandatangani lisensi</li>
+</ul>
+<hr>
+<h2 id="video-7-jangan-pakai-ai-untuk-menipu">Video 7: Jangan Pakai AI untuk Menipu</h2>
+<p><strong>Narasi:</strong>
+AI bisa membuat foto palsu / Video palsu / Bahkan suara palsu / Godaan itu besar / Tapi ingat / Menipu dengan teknologi tetap saja menipu / Dosa digital tetaplah dosa / Kepercayaan butuh waktu lama untuk dibangun / Tapi bisa runtuh dalam sekejap / Jangan rusak reputasi dengan satu klik</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Foto palsu di ponsel</li>
+<li>Video deepfake di laptop</li>
+<li>Timbangan runtuh</li>
+<li>Orang berjalan menjauhi layar gelap</li>
+</ul>
+<hr>
+<h2 id="video-8-jangan-gunakan-ai-untuk-menyebar-kebencian">Video 8: Jangan Gunakan AI untuk Menyebar Kebencian</h2>
+<p><strong>Narasi:</strong>
+AI bisa mempercepat penyebaran kata-kata / Tapi kita tetap bertanggung jawab atas apa yang kita sebarkan / Jangan gunakan AI untuk memperbesar kebencian / Menghina / Memprovokasi / Kata-kata kita bisa menjadi jembatan / atau menjadi bom / Pilih yang membangun / Pilih yang menguatkan</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Kata-kata negatif meledak dari ponsel</li>
+<li>Mulut manusia berubah menjadi megafon</li>
+<li>Orang membangun jembatan kecil dari kata-kata</li>
+<li>Lingkaran orang saling tersenyum</li>
+</ul>
+<hr>
+<h2 id="video-9-hati-hati-efek-bias-dalam-ai">Video 9: Hati-hati Efek Bias dalam AI</h2>
+<p><strong>Narasi:</strong>
+AI belajar dari data / Kalau datanya berat sebelah / AI juga bisa jadi berat sebelah / Ini namanya bias / AI bisa mengulang prasangka lama / Bahkan memperparah ketidakadilan / Kita harus sadar itu / Kita harus cek ulang / Karena keadilan tidak boleh ditentukan algoritma buta</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>AI dengan kacamata satu sisi buram</li>
+<li>Timbangan miring</li>
+<li>Orang meneliti grafik data</li>
+<li>Cahaya terang menyorot neraca adil</li>
+</ul>
+<hr>
+<h2 id="video-10-bedakan-ai-untuk-membantu-dan-menggantikan">Video 10: Bedakan AI untuk Membantu dan Menggantikan</h2>
+<p><strong>Narasi:</strong>
+AI bisa membantu kita bekerja lebih cepat / Tapi jangan biarkan dia mengambil alih semua pemikiran kita / Otak manusia tetap lebih hebat dari mesin / Gunakan AI untuk mempercepat, mempermudah / Bukan untuk berhenti berpikir / Jadilah kaptennya / AI hanya perahu kecilmu</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Orang mengendalikan perahu dengan layar AI</li>
+<li>AI menyerahkan peta ke manusia</li>
+<li>Otak manusia bersinar</li>
+<li>Orang berdiri di depan lautan ide</li>
+</ul>
+<hr>
+<h2 id="video-11-belajar-bersama-ai-bukan-dari-ai-saja">Video 11: Belajar Bersama AI, Bukan dari AI Saja</h2>
+<p><strong>Narasi:</strong>
+Belajar itu proses bertumbuh / AI bisa memberi informasi, bisa membantu memahami / Tapi belajar sejati datang dari pengalaman, diskusi, kesalahan, dan refleksi / Jangan biarkan AI menggantikan rasa ingin tahumu / Jadikan AI teman perjalanan / Bukan satu-satunya sumber</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Orang berdiskusi sambil buka laptop AI</li>
+<li>Buku dan AI berdampingan</li>
+<li>Siswa mencoba eksperimen sains</li>
+<li>Cahaya ide di atas kepala manusia</li>
+</ul>
+<hr>
+<h2 id="video-12-pahami-keterbatasan-ai">Video 12: Pahami Keterbatasan AI</h2>
+<p><strong>Narasi:</strong>
+AI pintar, tapi tetap punya batas / Ia tidak bisa memahami emosi manusia seutuhnya / Tidak bisa menilai konteks dengan sempurna / Tidak semua yang dibuat AI itu masuk akal atau etis / Kenali di mana AI kuat / dan di mana ia rentan / Supaya kita tidak jatuh dalam jebakan teknologi buta</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Robot memandang tanda tanya</li>
+<li>Jembatan putus di tengah jalan</li>
+<li>Orang membaca &quot;Terms and Limitations&quot;</li>
+<li>Orang membimbing robot kecil</li>
+</ul>
+<hr>
+<h2 id="video-13-jangan-gunakan-ai-untuk-membuat-konten-kekerasan">Video 13: Jangan Gunakan AI untuk Membuat Konten Kekerasan</h2>
+<p><strong>Narasi:</strong>
+Dengan AI, siapa saja bisa buat gambar, video, bahkan cerita / Tapi ingat, apa yang kita buat punya dampak / Jangan gunakan AI untuk membuat konten yang kejam, sadis, atau brutal / Kekerasan digital tetap melukai / Pilih untuk mencipta yang mencerahkan, bukan yang menggelapkan</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Tangan menolak gambar kekerasan</li>
+<li>Layar penuh adegan negatif disensor</li>
+<li>Orang menulis cerita positif</li>
+<li>Cahaya bersinar dari buku cerita</li>
+</ul>
+<hr>
+<h2 id="video-14-selalu-cantumkan-jika-konten-dibantu-ai">Video 14: Selalu Cantumkan Jika Konten Dibantu AI</h2>
+<p><strong>Narasi:</strong>
+Kalau karya kita banyak dibantu AI / sebaiknya jujur / Beri keterangan dengan jelas / Memberi tahu orang lain bahwa ada peran AI / bukan membuat kita lemah / tapi menunjukkan kita menghargai transparansi / Di zaman digital, kejujuran tetap nilai tertinggi</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Label &quot;Created with AI Assistance&quot;</li>
+<li>Orang mengedit dokumen dengan tanda tangan AI</li>
+<li>Stempel &quot;Transparan&quot; di atas karya</li>
+<li>Dua tangan mengacungkan jempol</li>
+</ul>
+<hr>
+<h2 id="video-15-ai-bukan-jalan-pintas-untuk-viral">Video 15: AI Bukan Jalan Pintas untuk Viral</h2>
+<p><strong>Narasi:</strong>
+AI bisa membuat video lucu, berita heboh, atau gambar aneh dalam sekejap / Tapi viral belum tentu berarti bermutu / Jangan kejar popularitas dengan mengorbankan kebenaran atau etika / Apa yang kita sebarkan membentuk siapa kita / Lebih baik berdampak baik dalam diam / daripada viral karena kebohongan</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Ponsel dengan notifikasi viral</li>
+<li>Orang merenung di depan layar</li>
+<li>Cahaya kecil yang makin membesar</li>
+<li>Jalan sunyi dengan bunga bermekaran</li>
+</ul>
+<hr>
+<h2 id="video-16-etika-itu-tetap-berlaku-meski-online">Video 16: Etika Itu Tetap Berlaku Meski Online</h2>
+<p><strong>Narasi:</strong>
+Kadang kita merasa dunia maya itu dunia lain / Tapi nilai tetap nilai / Baik itu offline, maupun online / Yang sopan tetap sopan / Yang jujur tetap jujur / Jangan lepaskan etika hanya karena merasa aman di balik layar / Setiap kata, setiap klik, tetap mencerminkan siapa kita</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Orang mengetik dengan bayangan besar di belakang</li>
+<li>Timbangan etika di atas laptop</li>
+<li>Dua tangan bersalaman lewat layar</li>
+<li>Cermin menampilkan wajah orang tersenyum</li>
+</ul>
+<hr>
+<h2 id="video-17-jangan-gunakan-ai-untuk-mengambil-keputusan-besar-sendirian">Video 17: Jangan Gunakan AI untuk Mengambil Keputusan Besar Sendirian</h2>
+<p><strong>Narasi:</strong>
+AI bisa membantu analisa data, memberikan saran / Tapi keputusan besar, tetap butuh hati dan akal manusia / Memilih karier, membuat kontrak, mengambil pinjaman / Jangan serahkan penuh ke mesin / AI bantu berpikir / Tapi keputusan tetap tanggung jawab kita</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Robot menunjukkan papan pilihan karier</li>
+<li>Orang membaca dokumen dengan ragu</li>
+<li>Timbangan bertuliskan &quot;Hati&quot; dan &quot;Logika&quot;</li>
+<li>Orang memutuskan jalan sendiri</li>
+</ul>
+<hr>
+<h2 id="video-18-tidak-semua-masalah-perlu-jawaban-ai">Video 18: Tidak Semua Masalah Perlu Jawaban AI</h2>
+<p><strong>Narasi:</strong>
+Tidak semua pertanyaan perlu dijawab oleh AI / Kadang, yang kita butuhkan adalah bicara dengan teman / berkonsultasi dengan ahli / atau merenung sendiri / Jangan semua masalah diserahkan ke mesin / Hidup bukan cuma soal solusi cepat / Tapi soal perjalanan memahami diri</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Orang berbicara dengan sahabat</li>
+<li>Konsultasi dengan psikolog</li>
+<li>Orang merenung di tepi danau</li>
+<li>Jalan panjang berliku di tengah hutan</li>
+</ul>
+<hr>
+<h2 id="video-19-ai-harus-membuat-kita-lebih-manusiawi">Video 19: AI Harus Membuat Kita Lebih Manusiawi</h2>
+<p><strong>Narasi:</strong>
+Teknologi yang hebat seharusnya membuat kita semakin manusiawi / Bukan malah kehilangan rasa, kehilangan empati / Gunakan AI untuk memperkuat kebaikan / mempercepat pelayanan / memperluas pendidikan / Kalau AI bisa membuat dunia lebih ramah / itu karena manusia di baliknya punya hati</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>AI membantu lansia menggunakan teknologi</li>
+<li>Anak-anak belajar lewat tablet</li>
+<li>Orang tersenyum memberi bantuan online</li>
+<li>Tangan manusia membentuk hati</li>
+</ul>
+<hr>
+<h2 id="video-20-masa-depan-ai-ada-di-tangan-kita">Video 20: Masa Depan AI Ada di Tangan Kita</h2>
+<p><strong>Narasi:</strong>
+AI tidak akan berhenti berkembang / Dunia berubah cepat / Tapi masa depan AI bukan soal teknologinya saja / Masa depan AI tergantung pada bagaimana kita menggunakannya / Dengan etika / Dengan kebijaksanaan / Dengan hati nurani / Mari kita arahkan AI untuk membangun masa depan yang lebih baik / Semua mulai dari pilihan kecil hari ini</p>
+<p><strong>Daftar Gambar:</strong></p>
+<ul>
+<li>Anak-anak memegang planet bumi digital</li>
+<li>AI dan manusia berjabat tangan</li>
+<li>Cahaya di ujung jalan</li>
+<li>Matahari terbit di cakrawala</li>
+</ul>
+<hr>
+<h1 id="flow-tema-besar-antar-video">Flow Tema Besar Antar Video</h1>
+<h2 id="bagian-1-kesadaran-awal-tentang-ai-video-1%E2%80%936">Bagian 1: Kesadaran Awal tentang AI (Video 1–6)</h2>
+<ul>
+<li>Video 1: Menyadarkan bahwa AI itu alat, bukan segalanya.</li>
+<li>Video 2: Menunjukkan bahwa AI bisa membantu, tapi kita tetap harus paham batasannya.</li>
+<li>Video 3: Menekankan pentingnya tetap berpikir kritis saat memakai AI.</li>
+<li>Video 4: Mengingatkan bahwa hasil AI bukan berarti kebenaran mutlak.</li>
+<li>Video 5: Menanamkan pentingnya menghargai karya manusia.</li>
+<li>Video 6: Membuka kesadaran tentang etika dasar dalam menggunakan AI.</li>
+</ul>
+<p><strong>Tone</strong>: Ramah, membuka wawasan, membangun pondasi.</p>
+<hr>
+<h2 id="bagian-2-tanggung-jawab-dan-etika-pribadi-video-7%E2%80%9314">Bagian 2: Tanggung Jawab dan Etika Pribadi (Video 7–14)</h2>
+<ul>
+<li>Video 7: Melarang penggunaan AI untuk menipu.</li>
+<li>Video 8: Melarang penggunaan AI untuk menyebar kebencian.</li>
+<li>Video 9: Mengenalkan bahaya bias dalam AI.</li>
+<li>Video 10: Menjelaskan batas antara dibantu AI dan digantikan AI.</li>
+<li>Video 11: Menekankan pentingnya belajar tetap aktif bersama AI.</li>
+<li>Video 12: Memahami keterbatasan AI.</li>
+<li>Video 13: Mengajak menjauh dari konten kekerasan.</li>
+<li>Video 14: Mendorong transparansi saat karya dibantu AI.</li>
+</ul>
+<p><strong>Tone</strong>: Tegas tapi tetap santun, membangun rasa tanggung jawab.</p>
+<hr>
+<h2 id="bagian-3-kematangan-dalam-menggunakan-ai-video-15%E2%80%9320">Bagian 3: Kematangan dalam Menggunakan AI (Video 15–20)</h2>
+<ul>
+<li>Video 15: Mengingatkan bahwa viral bukan tujuan utama.</li>
+<li>Video 16: Menekankan bahwa etika tetap berlaku online.</li>
+<li>Video 17: Memperingatkan untuk tidak bergantung penuh pada AI dalam keputusan besar.</li>
+<li>Video 18: Mengajarkan bahwa tidak semua masalah perlu jawaban instan dari AI.</li>
+<li>Video 19: Menyampaikan bahwa AI harus memperkuat kemanusiaan.</li>
+<li>Video 20: Menutup dengan ajakan membangun masa depan AI dengan bijaksana.</li>
+</ul>
+<p><strong>Tone</strong>: Reflektif, mengajak merenung, memberi harapan dan arah.</p>
+<hr>
+<h1 id="template-intro-dan-penutup-untuk-semua-video">Template Intro dan Penutup untuk Semua Video</h1>
+<h2 id="intro-standar-5%E2%80%937-detik">Intro Standar (5–7 detik)</h2>
+<p><strong>Narasi (voice over kalem, wibawa):</strong>
+&quot;Di dunia yang makin canggih, etika tetap jadi kunci. / Ini etika dan etiket menggunakan AI, untuk kita semua.&quot;</p>
+<p><strong>Ilustrasi:</strong></p>
+<ul>
+<li>Cahaya perlahan menyala di layar</li>
+<li>Logo atau teks &quot;Etika AI untuk Semua&quot;</li>
+</ul>
+<hr>
+<h2 id="penutup-standar-5%E2%80%937-detik">Penutup Standar (5–7 detik)</h2>
+<p><strong>Narasi (voice over kalem, wibawa):</strong>
+&quot;Gunakan AI dengan hati nurani. / Jadikan teknologi bagian dari kebaikan.&quot;</p>
+<p><strong>Ilustrasi:</strong></p>
+<ul>
+<li>Cahaya menyebar membentuk jaringan manusia dan AI berdampingan</li>
+<li>Logo atau teks &quot;Etika AI untuk Masa Depan&quot;</li>
+</ul>
+<hr>
+
+</body>
+</html>

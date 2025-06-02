@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>kurikulum-mahad-pemikiran.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="kurikulum-mahad-aly-pemikiran-islam">KURIKULUM MAHAD ALY PEMIKIRAN ISLAM</h1>
+<p><a href="https://docs.google.com/document/d/1rdByxwMpdibEkYufRnqo8xTofaKLn-B5h9kwHmU4xig/edit?usp=sharing">Versi Google Doc</a></p>
+<h3 id="program-1-tahun">Program 1 Tahun</h3>
+<p>(40 pekan efektif)</p>
+<table>
+<thead>
+<tr>
+<th>pekan</th>
+<th>Modul</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Modul 1: Fondasi Pemikiran Islam</td>
+<td>Unit 1.1: Pengantar dan Konsep Dasar</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Modul 1: Fondasi Pemikiran Islam</td>
+<td>Unit 1.2: Metakognisi dalam Tradisi Islam</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Modul 1: Fondasi Pemikiran Islam</td>
+<td>Unit 1.2: Metakognisi dalam Tradisi Islam</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Modul 1: Fondasi Pemikiran Islam</td>
+<td>Unit 1.3: Berpikir Sistematis dalam Fiqh dan Ushul Fiqh</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Modul 1: Fondasi Pemikiran Islam</td>
+<td>Unit 1.3: Berpikir Sistematis dalam Fiqh dan Ushul Fiqh</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.1: Pengantar Metodologi Pemikiran Islam</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.2: Analisis Teks (Tahlil an-Nushush)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.2: Analisis Teks (Tahlil an-Nushush)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.3: Pengenalan Pola dalam Syariah</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.4: Abstraksi dalam Pemikiran Islam</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.5: Logika Islam (Mantiq)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Modul 2: Metodologi Pemikiran Islam</td>
+<td>Unit 2.5: Logika Islam (Mantiq)</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.1: Dasar Pemikiran Kritis Islami</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.1: Dasar Pemikiran Kritis Islami</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.2: Analisis Argumen dalam Konteks Islam</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.2: Analisis Argumen dalam Konteks Islam</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.3: Evaluasi Sumber dalam Tradisi Islam</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.3: Evaluasi Sumber dalam Tradisi Islam</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.4: Pengambilan Keputusan dalam Fiqh</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Modul 3: Pemikiran Kritis dalam Islam</td>
+<td>Unit 3.4: Pengambilan Keputusan dalam Fiqh</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.1: Dasar Kreativitas Islami</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.1: Dasar Kreativitas Islami</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.2: Teknik Kreativitas dalam Konteks Islam</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.2: Teknik Kreativitas dalam Konteks Islam</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.3: Design Thinking untuk Solusi Islami</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.3: Design Thinking untuk Solusi Islami</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Modul 4: Pemikiran Kreatif dalam Islam</td>
+<td>Unit 4.3: Design Thinking untuk Solusi Islami</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Modul 5: Pemikiran Integratif dalam Islam</td>
+<td>Unit 5.1: Sintesis Pemikiran Islam</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Modul 5: Pemikiran Integratif dalam Islam</td>
+<td>Unit 5.1: Sintesis Pemikiran Islam</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Modul 5: Pemikiran Integratif dalam Islam</td>
+<td>Unit 5.2: Collaborative Thinking dalam Tradisi Islam</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Modul 5: Pemikiran Integratif dalam Islam</td>
+<td>Unit 5.2: Collaborative Thinking dalam Tradisi Islam</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Modul 5: Pemikiran Integratif dalam Islam</td>
+<td>Unit 5.3: Innovative Thinking untuk Kemajuan Umat</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Modul 5: Pemikiran Integratif dalam Islam</td>
+<td>Unit 5.3: Innovative Thinking untuk Kemajuan Umat</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.1: Aplikasi Riil Pemikiran Islam</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.1: Aplikasi Riil Pemikiran Islam</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.1: Aplikasi Riil Pemikiran Islam</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.2: Proyek Akhir</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.2: Proyek Akhir</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.2: Proyek Akhir</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Modul 6: Aplikasi dan Proyek Pemikiran Islam</td>
+<td>Unit 6.2: Proyek Akhir</td>
+</tr>
+</tbody>
+</table>
+<h3 id="semester-1-20-pekan">Semester 1 (20 pekan)</h3>
+<h4 id="modul-1-fondasi-pemikiran-islam-5-pekan">Modul 1: Fondasi Pemikiran Islam (5 pekan)</h4>
+<h5 id="pekan-1">pekan 1</h5>
+<h6 id="unit-11-pengantar-dan-konsep-dasar">Unit 1.1: Pengantar dan Konsep Dasar</h6>
+<ul>
+<li>Definisi berpikir menurut Al-Qur'an dan Hadits</li>
+<li>Tingkatan berpikir dalam tradisi Islam: tafakkur, tadabbur, tadabbur, dan ta'ammul</li>
+<li>Proses tafakkur (refleksi) dan tadabbur (perenungan) dalam pemikiran Islam</li>
+<li>Perkembangan kemampuan berpikir dalam sejarah Islam: dari masa Nabi, Sahabat, Tabi'in, hingga ulama kontemporer</li>
+</ul>
+<h5 id="pekan-2-3">pekan 2-3</h5>
+<h6 id="unit-12-metakognisi-dalam-tradisi-islam">Unit 1.2: Metakognisi dalam Tradisi Islam</h6>
+<ul>
+<li>Pengertian dan konsep metakognisi dalam konteks Islamic scholarship</li>
+<li>Komponen metakognisi dalam pemikiran Islam: pengetahuan tentang kognisi, regulasi kognisi, dan pengalaman kognisi</li>
+<li>Strategi metakognitif berdasarkan ajaran ulama: muhasabah, muraqabah, dan mujahadah</li>
+<li>Refleksi dan evaluasi diri (muhasabah) dalam ibadah dan muamalah</li>
+</ul>
+<h5 id="pekan-4-5">pekan 4-5</h5>
+<h6 id="unit-13-berpikir-sistematis-dalam-fiqh-dan-ushul-fiqh">Unit 1.3: Berpikir Sistematis dalam Fiqh dan Ushul Fiqh</h6>
+<ul>
+<li>Definisi dan karakteristik berpikir sistematis dalam fiqh: memahami hukum Islam sebagai sistem yang saling terkait</li>
+<li>Pemikiran linear vs pemikiran sistemik dalam ushul fiqh: mengidentifikasi komponen-komponen dalam maqashid syariah</li>
+<li>Analisis hubungan antar komponen hukum Islam: sebab-akibat, timbal balik, dan umpan balik</li>
+<li>Implementasi berpikir sistematis dalam ijtihad: pemetaan sistem hukum Islam, pembuatan diagram sebab-akibat, dan pemodelan mental</li>
+</ul>
+<h4 id="modul-2-metodologi-pemikiran-islam-7-pekan">Modul 2: Metodologi Pemikiran Islam (7 pekan)</h4>
+<h5 id="pekan-6">pekan 6</h5>
+<h6 id="unit-21-pengantar-metodologi-pemikiran-islam">Unit 2.1: Pengantar Metodologi Pemikiran Islam</h6>
+<ul>
+<li>Definisi dan sejarah perkembangan metodologi pemikiran Islam</li>
+<li>Komponen utama dalam ushul fiqh (sumber hukum, metode istinbath) dan mantiq (logika)</li>
+<li>Manfaat dan aplikasi metodologi pemikiran Islam dalam konteks modern</li>
+<li>Hubungan metodologi pemikiran Islam dengan bidang keilmuan Islam lainnya: tafsir, hadits, fiqh, dan lain-lain</li>
+</ul>
+<h5 id="pekan-7-8">pekan 7-8</h5>
+<h6 id="unit-22-analisis-teks-tahlil-an-nushush">Unit 2.2: Analisis Teks (Tahlil an-Nushush)</h6>
+<ul>
+<li>Pengertian dan konsep dasar tahlil an-nushush (analisis teks)</li>
+<li>Teknik memahami nash Al-Qur'an dan Hadits: identifikasi makna zahir dan batin, asbabun nuzul/wurud</li>
+<li>Strategi ta'wil (interpretasi) dan tafsir (eksplanasi) untuk memahami teks secara komprehensif</li>
+<li>Praktik analisis ayat-ayat ahkam, pemetaan makna dalam hadits, prioritas memahami nash, dan integrasi pemahaman antar nash</li>
+</ul>
+<h5 id="pekan-9">pekan 9</h5>
+<h6 id="unit-23-pengenalan-pola-dalam-syariah">Unit 2.3: Pengenalan Pola dalam Syariah</h6>
+<ul>
+<li>Pengertian pola (al-qawa'id) dalam hukum Islam: jenis-jenis 'illah (alasan hukum) dan hikmah (tujuan hukum)</li>
+<li>Teknik pengenalan maqashid syariah (tujuan-tujuan syariah) untuk mengidentifikasi pola</li>
+<li>Analisis keteraturan (nizam) dalam fiqh: mengenali pola-pola yang berulang</li>
+</ul>
+<h5 id="pekan-10">pekan 10</h5>
+<h6 id="unit-24-abstraksi-dalam-pemikiran-islam">Unit 2.4: Abstraksi dalam Pemikiran Islam</h6>
+<ul>
+<li>Konsep abstraksi (at-ta'mim) dalam ushul fiqh: memahami hukum secara umum dari kasus khusus</li>
+<li>Level abstraksi dalam ijtihad: dari partikular ke universal, dari spesifik ke general</li>
+<li>Pemilihan informasi relevan dalam proses fatwa: menyederhanakan masalah kompleks</li>
+<li>Penerapan abstraksi: pemodelan masalah fiqhiyah, representasi konsep aqidah, generalisasi hukum (ta'mim al-ahkam), dan abstraksi dalam pemahaman tasawuf</li>
+</ul>
+<h5 id="pekan-11-12">pekan 11-12</h5>
+<h6 id="unit-25-logika-islam-mantiq">Unit 2.5: Logika Islam (Mantiq)</h6>
+<ul>
+<li>Pengertian mantiq (logika) dalam tradisi Islam: karakteristik dan perbedaannya dengan logika Barat</li>
+<li>Qiyas mantiqiy (logis) vs qiyas fiqhiy (juridis): proses penalaran yang berbeda</li>
+<li>Analisis argumen dalam perdebatan dan diskusi keislaman</li>
+<li>Desain argumen yang efektif dalam dakwah, penggunaan syllogisme, optimasi hujjah (argumentasi), serta pengujian dan evaluasi argumen syar'i</li>
+</ul>
+<h3 id="semester-2-20-pekan">Semester 2 (20 pekan)</h3>
+<h4 id="modul-3-pemikiran-kritis-dalam-islam-8-pekan">Modul 3: Pemikiran Kritis dalam Islam (8 pekan)</h4>
+<h5 id="pekan-13-14">pekan 13-14</h5>
+<h6 id="unit-31-dasar-pemikiran-kritis-islami">Unit 3.1: Dasar Pemikiran Kritis Islami</h6>
+<ul>
+<li>Definisi dan karakteristik pemikiran kritis menurut ulama Islam</li>
+<li>Komponen-komponen pemikiran kritis dalam khazanah Islam: penalaran, analisis, evaluasi, dan refleksi</li>
+<li>Standar berpikir kritis menurut Al-Ghazali: obyektivitas, keadilan, dan kebijaksanaan</li>
+<li>Hambatan berpikir kritis dan solusinya dalam Islam: dogmatisme, prasangka, dan tertutup pikiran</li>
+</ul>
+<h5 id="pekan-15-16">pekan 15-16</h5>
+<h6 id="unit-32-analisis-argumen-dalam-konteks-islam">Unit 3.2: Analisis Argumen dalam Konteks Islam</h6>
+<ul>
+<li>Struktur argumen dalam ushul fiqh: premis mayor, premis minor, dan kesimpulan</li>
+<li>Identifikasi asumsi-asumsi tersembunyi dalam fatwa dan ijtihad</li>
+<li>Analisis logika dan validitas dalil dalam pemikiran Islam</li>
+<li>Evaluasi argumen syar'i: identifikasi logical fallacies, pengembangan counter-argument yang etis</li>
+</ul>
+<h5 id="pekan-17-18">pekan 17-18</h5>
+<h6 id="unit-33-evaluasi-sumber-dalam-tradisi-islam">Unit 3.3: Evaluasi Sumber dalam Tradisi Islam</h6>
+<ul>
+<li>Kredibilitas dan objektivitas sumber-sumber dalam hadits, riwayat, dan tafsir</li>
+<li>Verifikasi fakta dalam sirah dan tarikh (sejarah Islam)</li>
+<li>Cross-referencing (perbandingan antar sumber) dalam studi Islam</li>
+<li>Interpretasi data dalam konteks fiqh, analisis statistik untuk fenomena sosial-keagamaan</li>
+</ul>
+<h5 id="pekan-19-20">pekan 19-20</h5>
+<h6 id="unit-34-pengambilan-keputusan-dalam-fiqh">Unit 3.4: Pengambilan Keputusan dalam Fiqh</h6>
+<ul>
+<li>Model pengambilan keputusan dalam ushul fiqh: analisis maslahat-mafsadat (manfaat-mudharat)</li>
+<li>Penilaian risiko dalam fatwa kontemporer berdasarkan maqashid syariah</li>
+<li>Matriks keputusan: pembobotan kriteria sesuai tujuan syariah</li>
+<li>Pengumpulan informasi yang komprehensif, evaluasi alternatif hukum, eksekusi keputusan dengan hikmah, serta monitoring dan evaluasi penerapan fatwa</li>
+</ul>
+<h4 id="modul-4-pemikiran-kreatif-dalam-islam-7-pekan">Modul 4: Pemikiran Kreatif dalam Islam (7 pekan)</h4>
+<h5 id="pekan-21-22">pekan 21-22</h5>
+<h6 id="unit-41-dasar-kreativitas-islami">Unit 4.1: Dasar Kreativitas Islami</h6>
+<ul>
+<li>Konsep kreativitas dalam perspektif Islam</li>
+<li>Prinsip-prinsip kreativitas Islami yang berlandaskan tauhid</li>
+<li>Teknik tafakkur (refleksi) dan tadabbur (perenungan) untuk merangsang kreativitas</li>
+<li>Mengatasi hambatan kreativitas dengan pendekatan Islami</li>
+</ul>
+<h5 id="pekan-23-24">pekan 23-24</h5>
+<h6 id="unit-42-teknik-kreativitas-dalam-konteks-islam">Unit 4.2: Teknik Kreativitas dalam Konteks Islam</h6>
+<ul>
+<li>Adaptasi teknik kreativitas modern seperti brainstorming dan mind mapping dalam kerangka Islam</li>
+<li>Metode pengembangan ide berdasarkan syariah</li>
+<li>Evaluasi dan seleksi ide dengan kriteria Islami</li>
+<li>Implementasi ide kreatif dalam dakwah dan pendidikan Islam</li>
+</ul>
+<h5 id="pekan-25-27">pekan 25-27</h5>
+<h6 id="unit-43-design-thinking-untuk-solusi-islami">Unit 4.3: Design Thinking untuk Solusi Islami</h6>
+<ul>
+<li>Pengantar design thinking dalam konteks Islam</li>
+<li>Empathize: memahami kebutuhan umat melalui teknik observasi Islami</li>
+<li>Define: merumuskan masalah sesuai dengan perspektif syariah</li>
+<li>Ideate: teknik brainstorming untuk menghasilkan solusi kreatif yang sesuai syariah</li>
+<li>Prototype dan Test: pengembangan dan evaluasi solusi berbasis feedback dari umat</li>
+</ul>
+<h4 id="modul-5-pemikiran-integratif-dalam-islam-6-pekan">Modul 5: Pemikiran Integratif dalam Islam (6 pekan)</h4>
+<h5 id="pekan-28-29">pekan 28-29</h5>
+<h6 id="unit-51-sintesis-pemikiran-islam">Unit 5.1: Sintesis Pemikiran Islam</h6>
+<ul>
+<li>Integrasi berbagai disiplin ilmu Islam untuk pemahaman komprehensif</li>
+<li>Pemahaman nash (teks) dari perspektif multidimensi</li>
+<li>Pendekatan holistik dalam studi Islam</li>
+<li>Analisis sistem dalam hukum Islam untuk menangani masalah kompleks</li>
+</ul>
+<h5 id="pekan-30-31">pekan 30-31</h5>
+<h6 id="unit-52-collaborative-thinking-dalam-tradisi-islam">Unit 5.2: Collaborative Thinking dalam Tradisi Islam</h6>
+<ul>
+<li>Prinsip syura dan penerapannya dalam pengambilan keputusan kolektif</li>
+<li>Distribusi peran dan tanggung jawab dalam organisasi Islam</li>
+<li>Pola komunikasi dalam lembaga fatwa yang efektif</li>
+<li>Kecerdasan kolektif (jama'iyyah) dalam ijtihad jama'i (ijtihad kolektif)</li>
+</ul>
+<h5 id="pekan-32-33">pekan 32-33</h5>
+<h6 id="unit-53-innovative-thinking-untuk-kemajuan-umat">Unit 5.3: Innovative Thinking untuk Kemajuan Umat</h6>
+<ul>
+<li>Jenis-jenis inovasi dalam sejarah peradaban Islam: inovasi produk, proses, dan paradigma</li>
+<li>Prinsip-prinsip inovasi yang sesuai syariah</li>
+<li>Pemikiran disruptif dalam konteks tajdid (pembaharuan) hukum Islam</li>
+<li>Pemikiran futuristik untuk mengantisipasi tantangan umat di masa depan</li>
+</ul>
+<h4 id="modul-6-aplikasi-dan-proyek-pemikiran-islam-8-pekan">Modul 6: Aplikasi dan Proyek Pemikiran Islam (8 pekan)</h4>
+<h5 id="pekan-34-36">pekan 34-36</h5>
+<h6 id="unit-61-aplikasi-riil-pemikiran-islam">Unit 6.1: Aplikasi Riil Pemikiran Islam</h6>
+<ul>
+<li>Studi kasus: analisis isu-isu fiqh kontemporer, problematika sosial umat, tantangan dakwah modern, dan isu-isu global dalam perspektif Islam</li>
+<li>Proyek lapangan: identifikasi masalah di komunitas Muslim, pengembangan solusi berbasis syariah, implementasi program dakwah inovatif, serta evaluasi dampak terhadap umat</li>
+</ul>
+<h5 id="pekan-37-40">pekan 37-40</h5>
+<h6 id="unit-62-proyek-akhir">Unit 6.2: Proyek Akhir</h6>
+<ul>
+<li>Perencanaan proyek: pemilihan topik sesuai kebutuhan umat, desain riset syar'i, pemilihan metodologi yang sesuai prinsip Islam, serta penyusunan timeline</li>
+<li>Pelaksanaan proyek: implementasi solusi Islami, dokumentasi proses dan hasil, presentasi kepada ulama dan komunitas, serta evaluasi berdasarkan maqashid syariah</li>
+<li>Refleksi dan tindak lanjut: analisis pembelajaran dari proyek dan perencanaan implementasi jangka panjang hasil proyek</li>
+</ul>
+<h3 id="metode-evaluasi">Metode Evaluasi</h3>
+<ol>
+<li>
+<p><strong>Penilaian Berkelanjutan</strong></p>
+<ul>
+<li>Quiz pekanan tentang konsep Islam</li>
+<li>Tugas individu terkait pemikiran Islam</li>
+<li>Proyek kelompok aplikasi syariah</li>
+<li>Partisipasi dalam diskusi ilmiah</li>
+</ul>
+</li>
+<li>
+<p><strong>Penilaian Tengah Semester</strong></p>
+<ul>
+<li>Ujian tertulis komprehensif</li>
+<li>Presentasi proyek dakwah</li>
+<li>Penilaian portofolio karya tulis Islami</li>
+</ul>
+</li>
+<li>
+<p><strong>Penilaian Akhir Semester</strong></p>
+<ul>
+<li>Ujian akhir tertulis dan lisan</li>
+<li>Proyek akhir implementasi pemikiran Islam</li>
+<li>Evaluasi komprehensif oleh dewan asatidz</li>
+</ul>
+</li>
+</ol>
+<h3 id="rincian-materi">Rincian Materi</h3>
+<h3 id="modul-1-fondasi-pemikiran-islam">Modul 1: Fondasi Pemikiran Islam</h3>
+<p>(5 pekan)</p>
+<h4 id="unit-11-pengantar-dan-konsep-dasar-1-pekan">Unit 1.1: Pengantar dan Konsep Dasar (1 pekan)</h4>
+<h5 id="1-definisi-berpikir-menurut-al-quran-dan-hadits">1. Definisi Berpikir menurut Al-Qur'an dan Hadits</h5>
+<ul>
+<li>Ayat-ayat Al-Qur'an tentang berpikir (e.g. Ali Imran: 190-191, Az-Zumar: 9)</li>
+<li>Hadits-hadits tentang keutamaan berpikir dan mencari ilmu</li>
+<li>Tafsir ulama tentang konsep berpikir dalam Islam</li>
+</ul>
+<h5 id="2-tingkatan-berpikir-dalam-tradisi-islam">2. Tingkatan Berpikir dalam Tradisi Islam</h5>
+<ul>
+<li>Tafakkur (refleksi): definisi, karakteristik, dan contoh</li>
+<li>Tadabbur (perenungan): definisi, karakteristik, dan contoh</li>
+<li>Tafaqquh (pemahaman mendalam): definisi, karakteristik, dan contoh</li>
+<li>Ta'ammul (kontemplasi): definisi, karakteristik, dan contoh</li>
+</ul>
+<h5 id="3-proses-tafakkur-dan-tadabbur-dalam-pemikiran-islam">3. Proses Tafakkur dan Tadabbur dalam Pemikiran Islam</h5>
+<ul>
+<li>Tahapan-tahapan tafakkur menurut Al-Ghazali</li>
+<li>Metode tadabbur Al-Qur'an menurut Ibnu Qayyim</li>
+<li>Aplikasi tafakkur dan tadabbur dalam ibadah dan muamalah</li>
+</ul>
+<h5 id="4-perkembangan-kemampuan-berpikir-dalam-sejarah-islam">4. Perkembangan Kemampuan Berpikir dalam Sejarah Islam</h5>
+<ul>
+<li>Era Nabi Muhammad SAW: wahyu sebagai sumber pemikiran</li>
+<li>Masa Sahabat: ijtihad dan qiyas dalam penyelesaian masalah baru</li>
+<li>Periode Tabi'in: berkembangnya mazhab-mazhab fiqh</li>
+<li>Zaman Keemasan Islam: integrasi ilmu agama dan sains</li>
+<li>Ulama Kontemporer: respons terhadap modernitas dan globalisasi</li>
+</ul>
+<h4 id="unit-12-metakognisi-dalam-tradisi-islam-2-pekan">Unit 1.2: Metakognisi dalam Tradisi Islam (2 pekan)</h4>
+<h5 id="1-pengertian-dan-konsep-metakognisi-dalam-konteks-islamic-scholarship">1. Pengertian dan Konsep Metakognisi dalam Konteks Islamic Scholarship</h5>
+<ul>
+<li>Definisi metakognisi dari perspektif Islam</li>
+<li>Relevansi metakognisi dengan konsep 'ilm al-yaqin, 'ain al-yaqin, dan haqq al-yaqin</li>
+<li>Metakognisi sebagai alat untuk meningkatkan kualitas ibadah dan akhlak</li>
+</ul>
+<h5 id="2-komponen-metakognisi-dalam-pemikiran-islam">2. Komponen Metakognisi dalam Pemikiran Islam</h5>
+<ul>
+<li>Pengetahuan tentang kognisi: ma'rifah an-nafs (pengenalan diri)</li>
+<li>Regulasi kognisi: mujahadah an-nafs (pengendalian diri)</li>
+<li>Pengalaman kognisi: kashf (penyingkapan spiritual)</li>
+</ul>
+<h5 id="3-strategi-metakognitif-berdasarkan-ajaran-ulama">3. Strategi Metakognitif Berdasarkan Ajaran Ulama</h5>
+<ul>
+<li>Muhasabah (introspeksi diri): definisi, metode, dan manfaat</li>
+<li>Muraqabah (pengawasan diri): konsep, praktik, dan dampak spiritual</li>
+<li>Mujahadah (perjuangan melawan hawa nafsu): tahapan dan teknik</li>
+</ul>
+<h5 id="4-refleksi-dan-evaluasi-diri-muhasabah-dalam-ibadah-dan-muamalah">4. Refleksi dan Evaluasi Diri (Muhasabah) dalam Ibadah dan Muamalah</h5>
+<ul>
+<li>Muhasabah sebelum, selama, dan setelah ibadah</li>
+<li>Evaluasi diri dalam interaksi sosial dan bisnis</li>
+<li>Teknik pencatatan amal dan analisis perkembangan spiritual</li>
+</ul>
+<h4 id="unit-13-berpikir-sistematis-dalam-fiqh-dan-ushul-fiqh-2-pekan">Unit 1.3: Berpikir Sistematis dalam Fiqh dan Ushul Fiqh (2 pekan)</h4>
+<h5 id="1-definisi-dan-karakteristik-berpikir-sistematis-dalam-fiqh">1. Definisi dan Karakteristik Berpikir Sistematis dalam Fiqh</h5>
+<ul>
+<li>Pengertian sistem dalam konteks hukum Islam</li>
+<li>Fiqh sebagai sistem yang saling terkait: ibadah, muamalah, jinayah, siyasah</li>
+<li>Prinsip-prinsip berpikir sistematis dalam fiqh: holistic view, interkoneksi, dan dinamika</li>
+</ul>
+<h5 id="2-pemikiran-linear-vs-pemikiran-sistemik-dalam-ushul-fiqh">2. Pemikiran Linear vs Pemikiran Sistemik dalam Ushul Fiqh</h5>
+<ul>
+<li>Karakteristik pemikiran linear dalam pendekatan tekstual</li>
+<li>Pendekatan sistemik dalam memahami maqashid syariah</li>
+<li>Identifikasi komponen-komponen dalam maqashid syariah: dharuriyyat, hajiyyat, tahsiniyyat</li>
+</ul>
+<h5 id="3-analisis-hubungan-antar-komponen-hukum-islam">3. Analisis Hubungan Antar Komponen Hukum Islam</h5>
+<ul>
+<li>Hubungan sebab-akibat dalam penetapan hukum</li>
+<li>Interaksi timbal balik antara 'illah (alasan hukum) dan hukm (ketentuan hukum)</li>
+<li>Umpan balik dalam sistem hukum Islam: dampak fatwa terhadap realitas sosial</li>
+</ul>
+<h5 id="4-implementasi-berpikir-sistematis-dalam-ijtihad">4. Implementasi Berpikir Sistematis dalam Ijtihad</h5>
+<ul>
+<li>Pemetaan sistem hukum Islam: visualisasi keterkaitan antar komponen</li>
+<li>Pembuatan diagram sebab-akibat dalam analisis masalah fiqh kontemporer</li>
+<li>Pemodelan mental: simulasi dampak fatwa dalam berbagai skenario</li>
+<li>Pendekatan sistem dalam fatwa kolektif (ijtihad jama'i)</li>
+</ul>
+<h3 id="modul-2-metodologi-pemikiran-islam">Modul 2: Metodologi Pemikiran Islam</h3>
+<p>(7 pekan)</p>
+<h4 id="unit-21-pengantar-metodologi-pemikiran-islam-1-pekan">Unit 2.1: Pengantar Metodologi Pemikiran Islam (1 pekan)</h4>
+<h5 id="1-definisi-dan-sejarah-perkembangan-metodologi-pemikiran-islam">1. Definisi dan Sejarah Perkembangan Metodologi Pemikiran Islam</h5>
+<ul>
+<li>Pengertian metodologi dalam konteks Islamic studies</li>
+<li>Evolusi metodologi pemikiran Islam: dari era Nabi hingga kontemporer</li>
+<li>Kontribusi ulama klasik dalam pengembangan metodologi</li>
+</ul>
+<h5 id="2-komponen-utama-dalam-ushul-fiqh-dan-mantiq">2. Komponen Utama dalam Ushul Fiqh dan Mantiq</h5>
+<ul>
+<li>Sumber hukum Islam: Al-Qur'an, Sunnah, Ijma', Qiyas</li>
+<li>Metode istinbath: bayani, ta'lili, istishlahi</li>
+<li>Dasar-dasar logika Islam (mantiq): definisi, silogisme, analogi</li>
+</ul>
+<h5 id="3-manfaat-dan-aplikasi-metodologi-pemikiran-islam-dalam-konteks-modern">3. Manfaat dan Aplikasi Metodologi Pemikiran Islam dalam Konteks Modern</h5>
+<ul>
+<li>Relevansi metodologi klasik untuk isu-isu kontemporer</li>
+<li>Adaptasi metodologi dalam menghadapi tantangan globalisasi</li>
+<li>Studi kasus: penerapan metodologi dalam fatwa kontemporer</li>
+</ul>
+<h5 id="4-hubungan-metodologi-pemikiran-islam-dengan-bidang-keilmuan-islam-lainnya">4. Hubungan Metodologi Pemikiran Islam dengan Bidang Keilmuan Islam Lainnya</h5>
+<ul>
+<li>Integrasi metodologi dengan ilmu tafsir</li>
+<li>Aplikasi metodologi dalam studi hadits</li>
+<li>Sinergi metodologi dengan pengembangan fiqh kontemporer</li>
+</ul>
+<h4 id="unit-22-analisis-teks-tahlil-an-nushush-2-pekan">Unit 2.2: Analisis Teks (Tahlil an-Nushush) (2 pekan)</h4>
+<h5 id="1-pengertian-dan-konsep-dasar-tahlil-an-nushush">1. Pengertian dan Konsep Dasar Tahlil an-Nushush</h5>
+<ul>
+<li>Definisi dan ruang lingkup analisis teks dalam tradisi Islam</li>
+<li>Urgensi tahlil an-nushush dalam memahami syariah</li>
+<li>Prinsip-prinsip dasar dalam analisis teks Islam</li>
+</ul>
+<h5 id="2-teknik-memahami-nash-al-quran-dan-hadits">2. Teknik Memahami Nash Al-Qur'an dan Hadits</h5>
+<ul>
+<li>Identifikasi makna zahir (literal) dan batin (tersembunyi)</li>
+<li>Analisis asbabun nuzul (konteks pewahyuan) Al-Qur'an</li>
+<li>Pemahaman asbabul wurud (konteks munculnya) Hadits</li>
+</ul>
+<h5 id="3-strategi-tawil-dan-tafsir">3. Strategi Ta'wil dan Tafsir</h5>
+<ul>
+<li>Metode ta'wil dalam memahami ayat-ayat mutasyabihat</li>
+<li>Pendekatan tafsir bi al-ma'tsur dan bi al-ra'yi</li>
+<li>Integrasi berbagai metode tafsir untuk pemahaman komprehensif</li>
+</ul>
+<h5 id="4-praktik-analisis-teks-islam">4. Praktik Analisis Teks Islam</h5>
+<ul>
+<li>Analisis ayat-ayat ahkam: ekstraksi hukum dari Al-Qur'an</li>
+<li>Pemetaan makna dalam hadits: identifikasi matan, sanad, dan matn</li>
+<li>Prioritas dalam memahami nash: muhkam vs mutasyabih, 'am vs khash</li>
+<li>Teknik integrasi pemahaman antar nash yang tampak kontradiktif</li>
+</ul>
+<h4 id="unit-23-pengenalan-pola-dalam-syariah-1-pekan">Unit 2.3: Pengenalan Pola dalam Syariah (1 pekan)</h4>
+<h5 id="1-pengertian-pola-al-qawaid-dalam-hukum-islam">1. Pengertian Pola (Al-Qawa'id) dalam Hukum Islam</h5>
+<ul>
+<li>Definisi dan karakteristik qawa'id fiqhiyyah</li>
+<li>Jenis-jenis 'illah (alasan hukum) dalam syariah</li>
+<li>Konsep hikmah (tujuan hukum) dan relevansinya dengan pola</li>
+</ul>
+<h5 id="2-teknik-pengenalan-maqashid-syariah">2. Teknik Pengenalan Maqashid Syariah</h5>
+<ul>
+<li>Identifikasi lima tujuan utama syariah (kulliyat al-khams)</li>
+<li>Metode mengungkap maqashid dari nash dan hukum</li>
+<li>Analisis hierarki maqashid: dharuriyyat, hajiyyat, tahsiniyyat</li>
+</ul>
+<h5 id="3-analisis-keteraturan-nizam-dalam-fiqh">3. Analisis Keteraturan (Nizam) dalam Fiqh</h5>
+<ul>
+<li>Identifikasi pola-pola yang berulang dalam hukum Islam</li>
+<li>Teknik clustering hukum berdasarkan kesamaan pola</li>
+<li>Aplikasi pengenalan pola dalam ijtihad kontemporer</li>
+</ul>
+<h4 id="unit-24-abstraksi-dalam-pemikiran-islam-1-pekan">Unit 2.4: Abstraksi dalam Pemikiran Islam (1 pekan)</h4>
+<h5 id="1-konsep-abstraksi-at-tamim-dalam-ushul-fiqh">1. Konsep Abstraksi (At-Ta'mim) dalam Ushul Fiqh</h5>
+<ul>
+<li>Definisi dan urgensi abstraksi dalam pemikiran Islam</li>
+<li>Proses generalisasi hukum dari kasus spesifik</li>
+<li>Batasan dan etika dalam melakukan abstraksi hukum</li>
+</ul>
+<h5 id="2-level-abstraksi-dalam-ijtihad">2. Level Abstraksi dalam Ijtihad</h5>
+<ul>
+<li>Abstraksi dari partikular ke universal dalam fiqh</li>
+<li>Teknik mengidentifikasi prinsip umum dari hukum spesifik</li>
+<li>Aplikasi abstraksi dalam pengembangan teori hukum Islam</li>
+</ul>
+<h5 id="3-pemilihan-informasi-relevan-dalam-proses-fatwa">3. Pemilihan Informasi Relevan dalam Proses Fatwa</h5>
+<ul>
+<li>Metode menyaring informasi esensial dalam kasus fiqh</li>
+<li>Teknik simplifikasi masalah kompleks untuk analisis</li>
+<li>Prioritas informasi dalam pengambilan keputusan hukum</li>
+</ul>
+<h5 id="4-penerapan-abstraksi-dalam-berbagai-bidang">4. Penerapan Abstraksi dalam Berbagai Bidang</h5>
+<ul>
+<li>Pemodelan masalah fiqhiyah: dari kasus konkret ke model abstrak</li>
+<li>Representasi konsep aqidah: visualisasi konsep-konsep abstrak</li>
+<li>Generalisasi hukum (ta'mim al-ahkam): dari spesifik ke umum</li>
+<li>Abstraksi dalam pemahaman tasawuf: dari zahir ke makna batin</li>
+</ul>
+<h4 id="unit-25-logika-islam-mantiq-2-pekan">Unit 2.5: Logika Islam (Mantiq) (2 pekan)</h4>
+<h5 id="1-pengertian-mantiq-dalam-tradisi-islam">1. Pengertian Mantiq dalam Tradisi Islam</h5>
+<ul>
+<li>Definisi dan ruang lingkup mantiq</li>
+<li>Sejarah perkembangan logika dalam peradaban Islam</li>
+<li>Perbandingan mantiq dengan logika Aristotelian</li>
+</ul>
+<h5 id="2-qiyas-mantiqiy-vs-qiyas-fiqhiy">2. Qiyas Mantiqiy vs Qiyas Fiqhiy</h5>
+<ul>
+<li>Struktur dan komponen qiyas mantiqiy (silogisme logis)</li>
+<li>Karakteristik qiyas fiqhiy (analogi hukum)</li>
+<li>Aplikasi kedua jenis qiyas dalam penalaran Islam</li>
+</ul>
+<h5 id="3-analisis-argumen-dalam-perdebatan-islam">3. Analisis Argumen dalam Perdebatan Islam</h5>
+<ul>
+<li>Identifikasi premis dan kesimpulan dalam argumen Islam</li>
+<li>Evaluasi validitas dan soundness argumen syar'i</li>
+<li>Teknik mengungkap asumsi tersembunyi dalam argumen</li>
+</ul>
+<h5 id="4-desain-argumen-yang-efektif">4. Desain Argumen yang Efektif</h5>
+<ul>
+<li>Struktur argumen yang kuat dalam dakwah</li>
+<li>Penggunaan syllogisme dalam presentasi hukum Islam</li>
+<li>Optimasi hujjah (argumentasi) untuk audiens yang berbeda</li>
+<li>Metode pengujian dan evaluasi argumen syar'i</li>
+</ul>
+<h3 id="modul-3-pemikiran-kritis-dalam-islam">Modul 3: Pemikiran Kritis dalam Islam</h3>
+<p>(8 pekan)</p>
+<h4 id="unit-31-dasar-pemikiran-kritis-islami-2-pekan">Unit 3.1: Dasar Pemikiran Kritis Islami (2 pekan)</h4>
+<h5 id="1-definisi-dan-karakteristik-pemikiran-kritis-menurut-ulama-islam">1. Definisi dan Karakteristik Pemikiran Kritis Menurut Ulama Islam</h5>
+<ul>
+<li>Konsep pemikiran kritis dalam Al-Qur'an dan Hadits</li>
+<li>Pandangan ulama klasik tentang naqd al-fikr (kritik pemikiran)</li>
+<li>Karakteristik pemikir kritis dalam tradisi Islam</li>
+</ul>
+<h5 id="2-komponen-komponen-pemikiran-kritis-dalam-khazanah-islam">2. Komponen-komponen Pemikiran Kritis dalam Khazanah Islam</h5>
+<ul>
+<li>Penalaran ('aql) dalam tradisi Islam: definisi dan batasan</li>
+<li>Analisis (tahlil) dalam studi Islam: metode dan aplikasi</li>
+<li>Evaluasi (taqyim) dalam pemikiran Islam: kriteria dan proses</li>
+<li>Refleksi (ta'ammul) sebagai elemen pemikiran kritis Islami</li>
+</ul>
+<h5 id="3-standar-berpikir-kritis-menurut-al-ghazali">3. Standar Berpikir Kritis Menurut Al-Ghazali</h5>
+<ul>
+<li>Obyektivitas (al-mawdu'iyyah) dalam penalaran</li>
+<li>Keadilan (al-'adalah) dalam evaluasi argumen</li>
+<li>Kebijaksanaan (al-hikmah) dalam pengambilan kesimpulan</li>
+</ul>
+<h5 id="4-hambatan-berpikir-kritis-dan-solusinya-dalam-islam">4. Hambatan Berpikir Kritis dan Solusinya dalam Islam</h5>
+<ul>
+<li>Dogmatisme (jumud): definisi, dampak, dan cara mengatasinya</li>
+<li>Prasangka (zhann): jenis-jenis dan metode menghindarinya</li>
+<li>Tertutup pikiran (taqlid a'ma): karakteristik dan solusi Islami</li>
+</ul>
+<h4 id="unit-32-analisis-argumen-dalam-konteks-islam-2-pekan">Unit 3.2: Analisis Argumen dalam Konteks Islam (2 pekan)</h4>
+<h5 id="1-struktur-argumen-dalam-ushul-fiqh">1. Struktur Argumen dalam Ushul Fiqh</h5>
+<ul>
+<li>Komponen argumen syar'i: muqaddimah (premis) dan natijah (kesimpulan)</li>
+<li>Jenis-jenis premis dalam argumentasi Islam: naqli dan 'aqli</li>
+<li>Hubungan antara dalil, 'illah, dan hukm dalam argumen fiqh</li>
+</ul>
+<h5 id="2-identifikasi-asumsi-asumsi-tersembunyi">2. Identifikasi Asumsi-asumsi Tersembunyi</h5>
+<ul>
+<li>Teknik mengungkap asumsi dalam fatwa dan ijtihad</li>
+<li>Analisis kritis terhadap qiyas khafi (analogi tersembunyi)</li>
+<li>Evaluasi mafhum mukhalafah (pemahaman terbalik) dalam argumen</li>
+</ul>
+<h5 id="3-analisis-logika-dan-validitas-dalil">3. Analisis Logika dan Validitas Dalil</h5>
+<ul>
+<li>Metode verifikasi keabsahan dalil naqli (tekstual)</li>
+<li>Evaluasi koherensi logis dalam argumentasi 'aqli (rasional)</li>
+<li>Identifikasi fallacy (kekeliruan logis) dalam perdebatan Islam</li>
+</ul>
+<h5 id="4-evaluasi-argumen-syari">4. Evaluasi Argumen Syar'i</h5>
+<ul>
+<li>Teknik identifikasi logical fallacies dalam fatwa</li>
+<li>Metode pengembangan counter-argument yang etis dan ilmiah</li>
+<li>Proses peer review dalam evaluasi argumen keislaman</li>
+</ul>
+<h4 id="unit-33-evaluasi-sumber-dalam-tradisi-islam-2-pekan">Unit 3.3: Evaluasi Sumber dalam Tradisi Islam (2 pekan)</h4>
+<h5 id="1-kredibilitas-dan-objektivitas-sumber">1. Kredibilitas dan Objektivitas Sumber</h5>
+<ul>
+<li>Kriteria evaluasi perawi dalam ilmu hadits</li>
+<li>Metode kritik matan (isi) hadits dan riwayat</li>
+<li>Analisis objektivitas mufassir (penafsir Al-Qur'an)</li>
+</ul>
+<h5 id="2-verifikasi-fakta-dalam-sirah-dan-tarikh">2. Verifikasi Fakta dalam Sirah dan Tarikh</h5>
+<ul>
+<li>Teknik cross-checking riwayat sejarah Islam</li>
+<li>Metode kritik sumber dalam historiografi Islam</li>
+<li>Pendekatan ilmiah dalam verifikasi mukjizat dan karamah</li>
+</ul>
+<h5 id="3-cross-referencing-dalam-studi-islam">3. Cross-referencing dalam Studi Islam</h5>
+<ul>
+<li>Metode perbandingan tafsir antar ulama</li>
+<li>Teknik analisis komparatif antar mazhab fiqh</li>
+<li>Integrasi sumber-sumber lintas disiplin dalam studi Islam</li>
+</ul>
+<h5 id="4-interpretasi-data-dalam-konteks-fiqh">4. Interpretasi Data dalam Konteks Fiqh</h5>
+<ul>
+<li>Metode interpretasi statistik untuk fenomena sosial-keagamaan</li>
+<li>Analisis tren dan pola dalam perilaku umat</li>
+<li>Aplikasi data empiris dalam pengembangan fiqh kontemporer</li>
+</ul>
+<h4 id="unit-34-pengambilan-keputusan-dalam-fiqh-2-pekan">Unit 3.4: Pengambilan Keputusan dalam Fiqh (2 pekan)</h4>
+<h5 id="1-model-pengambilan-keputusan-dalam-ushul-fiqh">1. Model Pengambilan Keputusan dalam Ushul Fiqh</h5>
+<ul>
+<li>Konsep maslahat dan mafsadat dalam pengambilan keputusan</li>
+<li>Hierarki prioritas dalam maqashid syariah</li>
+<li>Metode tarjih (penentuan pendapat terkuat) dalam fiqh</li>
+</ul>
+<h5 id="2-penilaian-risiko-dalam-fatwa-kontemporer">2. Penilaian Risiko dalam Fatwa Kontemporer</h5>
+<ul>
+<li>Analisis dampak jangka pendek dan panjang fatwa</li>
+<li>Teknik mitigasi risiko dalam penerapan hukum Islam</li>
+<li>Pendekatan precautionary principle dalam ijtihad kontemporer</li>
+</ul>
+<h5 id="3-matriks-keputusan-berdasarkan-maqashid-syariah">3. Matriks Keputusan Berdasarkan Maqashid Syariah</h5>
+<ul>
+<li>Desain matriks keputusan dengan kriteria syar'i</li>
+<li>Metode pembobotan faktor berdasarkan prioritas maqashid</li>
+<li>Aplikasi decision tree dalam analisis masalah fiqh kompleks</li>
+</ul>
+<h5 id="4-proses-pengambilan-keputusan-syari">4. Proses Pengambilan Keputusan Syar'i</h5>
+<ul>
+<li>Tahapan pengumpulan informasi komprehensif</li>
+<li>Teknik evaluasi alternatif hukum</li>
+<li>Metode eksekusi keputusan dengan hikmah</li>
+<li>Sistem monitoring dan evaluasi penerapan fatwa</li>
+</ul>
+<h3 id="modul-4-pemikiran-kreatif-dalam-islam">Modul 4: Pemikiran Kreatif dalam Islam</h3>
+<p>(7 pekan)</p>
+<h4 id="unit-41-dasar-kreativitas-islami-2-pekan">Unit 4.1: Dasar Kreativitas Islami (2 pekan)</h4>
+<h5 id="1-konsep-kreativitas-dalam-perspektif-islam">1. Konsep Kreativitas dalam Perspektif Islam</h5>
+<ul>
+<li>Definisi ibda' (kreasi) dan ibtikaar (inovasi) dalam Islam</li>
+<li>Ayat-ayat Al-Qur'an dan Hadits tentang kreativitas</li>
+<li>Kreativitas sebagai manifestasi khalifah fil ardh</li>
+</ul>
+<h5 id="2-prinsip-prinsip-kreativitas-islami">2. Prinsip-prinsip Kreativitas Islami</h5>
+<ul>
+<li>Tauhid sebagai fondasi kreativitas</li>
+<li>Konsep fitrah dan potensi kreatif manusia</li>
+<li>Batasan syar'i dalam berkreasi dan berinovasi</li>
+</ul>
+<h5 id="3-teknik-pengembangan-kreativitas-dalam-tradisi-islam">3. Teknik Pengembangan Kreativitas dalam Tradisi Islam</h5>
+<ul>
+<li>Metode tafakkur (refleksi) untuk memicu ide kreatif</li>
+<li>Teknik tadabbur alam sebagai sumber inspirasi</li>
+<li>Pendekatan zikir-fikir dalam proses kreatif</li>
+</ul>
+<h5 id="4-hambatan-kreativitas-dan-solusinya-dalam-konteks-islam">4. Hambatan Kreativitas dan Solusinya dalam Konteks Islam</h5>
+<ul>
+<li>Identifikasi faktor-faktor penghambat kreativitas</li>
+<li>Metode mengatasi mental block secara Islami</li>
+<li>Strategi membangun lingkungan yang mendukung kreativitas</li>
+</ul>
+<h4 id="unit-42-teknik-kreativitas-dalam-konteks-islam-2-pekan">Unit 4.2: Teknik Kreativitas dalam Konteks Islam (2 pekan)</h4>
+<h5 id="1-adaptasi-teknik-kreativitas-modern-dalam-kerangka-islam">1. Adaptasi Teknik Kreativitas Modern dalam Kerangka Islam</h5>
+<ul>
+<li>Islamisasi brainstorming: aturan dan etika</li>
+<li>Modifikasi mind mapping untuk visualisasi konsep Islam</li>
+<li>Teknik lateral thinking dalam konteks ijtihad</li>
+</ul>
+<h5 id="2-metode-generasi-ide-berbasis-syariah">2. Metode Generasi Ide Berbasis Syariah</h5>
+<ul>
+<li>SCAMPER dalam pengembangan produk halal</li>
+<li>Analogi dan metafora Qur'ani untuk solusi kreatif</li>
+<li>Teknik forced connection dengan konsep-konsep Islam</li>
+</ul>
+<h5 id="3-evaluasi-dan-seleksi-ide-sesuai-prinsip-islam">3. Evaluasi dan Seleksi Ide Sesuai Prinsip Islam</h5>
+<ul>
+<li>Kriteria evaluasi ide berdasarkan maqashid syariah</li>
+<li>Metode penyaringan ide dengan filter akhlak Islami</li>
+<li>Teknik prioritisasi ide menggunakan maslahah-mafsadah</li>
+</ul>
+<h5 id="4-implementasi-ide-kreatif-dalam-dakwah-dan-pendidikan-islam">4. Implementasi Ide Kreatif dalam Dakwah dan Pendidikan Islam</h5>
+<ul>
+<li>Strategi pengemasan pesan dakwah secara kreatif</li>
+<li>Inovasi metode pengajaran Islam yang interaktif</li>
+<li>Pengembangan media dakwah berbasis teknologi</li>
+</ul>
+<h4 id="unit-43-design-thinking-untuk-solusi-islami-3-pekan">Unit 4.3: Design Thinking untuk Solusi Islami (3 pekan)</h4>
+<h5 id="1-pengenalan-design-thinking-dalam-konteks-islam">1. Pengenalan Design Thinking dalam Konteks Islam</h5>
+<ul>
+<li>Konsep design thinking dan relevansinya dengan ijtihad</li>
+<li>Tahapan design thinking: empathize, define, ideate, prototype, test</li>
+<li>Integrasi nilai-nilai Islam dalam proses design thinking</li>
+</ul>
+<h5 id="2-empathize-memahami-kebutuhan-umat">2. Empathize: Memahami Kebutuhan Umat</h5>
+<ul>
+<li>Teknik observasi dan wawancara sesuai adab Islam</li>
+<li>Metode pemetaan empati untuk masalah sosial-keagamaan</li>
+<li>Analisis kebutuhan umat dengan pendekatan maqashid</li>
+</ul>
+<h5 id="3-define-merumuskan-masalah-dalam-perspektif-syariah">3. Define: Merumuskan Masalah dalam Perspektif Syariah</h5>
+<ul>
+<li>Teknik framing masalah dengan sudut pandang Islam</li>
+<li>Metode point-of-view (POV) dalam konteks fiqh</li>
+<li>Pengembangan how-might-we questions yang sesuai syariah</li>
+</ul>
+<h5 id="4-ideate-generasi-solusi-kreatif-islami">4. Ideate: Generasi Solusi Kreatif Islami</h5>
+<ul>
+<li>Teknik brainstorming syar'i untuk menghasilkan ide</li>
+<li>Metode analogical reasoning dengan kisah-kisah Islami</li>
+<li>Pendekatan biomimicry dalam Al-Qur'an untuk inovasi</li>
+</ul>
+<h5 id="5-prototype-pengembangan-model-solusi">5. Prototype: Pengembangan Model Solusi</h5>
+<ul>
+<li>Teknik rapid prototyping untuk produk dan layanan halal</li>
+<li>Metode storyboarding untuk program dakwah inovatif</li>
+<li>Pengembangan mockup aplikasi Islam yang user-friendly</li>
+</ul>
+<h5 id="6-test-evaluasi-dan-iterasi-berbasis-feedback">6. Test: Evaluasi dan Iterasi Berbasis Feedback</h5>
+<ul>
+<li>Metode user testing yang sesuai dengan etika Islam</li>
+<li>Teknik pengumpulan dan analisis feedback dari umat</li>
+<li>Proses iterasi dan penyempurnaan solusi berdasarkan maslahat</li>
+</ul>
+<h5 id="7-implementasi-design-thinking-dalam-proyek-islami">7. Implementasi Design Thinking dalam Proyek Islami</h5>
+<ul>
+<li>Studi kasus: aplikasi design thinking dalam pengembangan masjid ramah disabilitas</li>
+<li>Proyek: merancang program pemberdayaan ekonomi umat berbasis design thinking</li>
+<li>Evaluasi: mengukur dampak solusi terhadap kemaslahatan umat</li>
+</ul>
+<h3 id="modul-5-pemikiran-integratif-dalam-islam">Modul 5: Pemikiran Integratif dalam Islam</h3>
+<p>(6 pekan)</p>
+<h4 id="unit-51-sintesis-pemikiran-islam-2-pekan">Unit 5.1: Sintesis Pemikiran Islam (2 pekan)</h4>
+<h5 id="1-integrasi-berbagai-disiplin-ilmu-islam">1. Integrasi Berbagai Disiplin Ilmu Islam</h5>
+<ul>
+<li>Konsep kesatuan ilmu (wahdat al-'ulum) dalam Islam</li>
+<li>Metode integrasi fiqh, ushul fiqh, dan maqashid syariah</li>
+<li>Teknik sintesis antara ilmu naqliyah dan 'aqliyah</li>
+</ul>
+<h5 id="2-pemahaman-nash-dari-multi-perspektif">2. Pemahaman Nash dari Multi-Perspektif</h5>
+<ul>
+<li>Pendekatan interdisipliner dalam tafsir Al-Qur'an</li>
+<li>Integrasi pemahaman vertikal (wahyu) dan horizontal (realitas)</li>
+<li>Metode analisis hadits dengan perspektif multidimensi</li>
+</ul>
+<h5 id="3-pendekatan-holistik-dalam-studi-islam">3. Pendekatan Holistik dalam Studi Islam</h5>
+<ul>
+<li>Konsep holistik dalam pemahaman syariah</li>
+<li>Teknik pemetaan interkoneksi antar disiplin ilmu Islam</li>
+<li>Aplikasi pendekatan sistem dalam pengembangan hukum Islam</li>
+</ul>
+<h5 id="4-pemikiran-sistem-dalam-hukum-islam">4. Pemikiran Sistem dalam Hukum Islam</h5>
+<ul>
+<li>Teori sistem dan aplikasinya dalam fiqh</li>
+<li>Analisis masalah kompleks secara terpadu dalam fatwa</li>
+<li>Pengembangan model sistem untuk isu-isu kontemporer</li>
+</ul>
+<h4 id="unit-52-collaborative-thinking-dalam-tradisi-islam-2-pekan">Unit 5.2: Collaborative Thinking dalam Tradisi Islam (2 pekan)</h4>
+<h5 id="1-dinamika-tim-dalam-pengambilan-keputusan-kolektif">1. Dinamika Tim dalam Pengambilan Keputusan Kolektif</h5>
+<ul>
+<li>Konsep syura dalam Islam: prinsip dan praktik</li>
+<li>Struktur dan fungsi majlis syura dalam lembaga fatwa</li>
+<li>Teknik fasilitasi diskusi ilmiah yang produktif</li>
+</ul>
+<h5 id="2-distribusi-peran-dan-tanggung-jawab-dalam-organisasi-islam">2. Distribusi Peran dan Tanggung Jawab dalam Organisasi Islam</h5>
+<ul>
+<li>Model kepemimpinan kolektif dalam Islam</li>
+<li>Pembagian tugas dalam tim ijtihad jama'i</li>
+<li>Manajemen konflik dalam tim berdasarkan akhlak Islami</li>
+</ul>
+<h5 id="3-pola-komunikasi-dalam-lembaga-fatwa">3. Pola Komunikasi dalam Lembaga Fatwa</h5>
+<ul>
+<li>Strategi komunikasi efektif dalam diskusi fiqh</li>
+<li>Teknik presentasi argumen syar'i yang persuasif</li>
+<li>Manajemen arus informasi dalam proses ijtihad kolektif</li>
+</ul>
+<h5 id="4-kecerdasan-kolektif-dalam-ijtihad-jamai">4. Kecerdasan Kolektif dalam Ijtihad Jama'i</h5>
+<ul>
+<li>Konsep 'aql jama'i (kecerdasan kolektif) dalam Islam</li>
+<li>Metode optimalisasi sinergi intelektual dalam tim ulama</li>
+<li>Teknik pengambilan keputusan konsensus dalam fatwa</li>
+</ul>
+<h4 id="unit-53-innovative-thinking-untuk-kemajuan-umat-2-pekan">Unit 5.3: Innovative Thinking untuk Kemajuan Umat (2 pekan)</h4>
+<h5 id="1-jenis-jenis-inovasi-dalam-sejarah-peradaban-islam">1. Jenis-jenis Inovasi dalam Sejarah Peradaban Islam</h5>
+<ul>
+<li>Inovasi produk: dari astrolabe hingga algoritma</li>
+<li>Inovasi proses: pengembangan metode ilmiah Islam</li>
+<li>Inovasi paradigma: revolusi pemikiran dalam era keemasan Islam</li>
+</ul>
+<h5 id="2-prinsip-prinsip-inovasi-yang-sesuai-syariah">2. Prinsip-prinsip Inovasi yang Sesuai Syariah</h5>
+<ul>
+<li>Kriteria inovasi berbasis maslahat</li>
+<li>Batasan inovasi: tidak bertentangan dengan nash qath'i</li>
+<li>Fleksibilitas syariah dalam mengakomodasi perkembangan zaman</li>
+</ul>
+<h5 id="3-pemikiran-disruptif-dalam-konteks-tajdid">3. Pemikiran Disruptif dalam Konteks Tajdid</h5>
+<ul>
+<li>Konsep tajdid (pembaharuan) dalam pemikiran Islam</li>
+<li>Strategi inovasi radikal yang sesuai maqashid syariah</li>
+<li>Studi kasus inovasi disruptif dalam sejarah Islam</li>
+</ul>
+<h5 id="4-pemikiran-futuristik-untuk-mengantisipasi-tantangan-umat">4. Pemikiran Futuristik untuk Mengantisipasi Tantangan Umat</h5>
+<ul>
+<li>Teknik foresight dalam perencanaan dakwah</li>
+<li>Analisis tren dan skenario masa depan umat Islam</li>
+<li>Pengembangan strategi jangka panjang untuk kemajuan Islam</li>
+</ul>
+<h3 id="modul-6-aplikasi-dan-proyek-pemikiran-islam">Modul 6: Aplikasi dan Proyek Pemikiran Islam</h3>
+<p>(8 pekan)</p>
+<h4 id="unit-61-aplikasi-riil-pemikiran-islam-3-pekan">Unit 6.1: Aplikasi Riil Pemikiran Islam (3 pekan)</h4>
+<h5 id="1-studi-kasus-analisis-isu-isu-fiqh-kontemporer">1. Studi Kasus: Analisis Isu-isu Fiqh Kontemporer</h5>
+<ul>
+<li>Bioetika Islam: kloning, euthanasia, transplantasi organ</li>
+<li>Fiqh keuangan modern: cryptocurrency, fintech syariah</li>
+<li>Fiqh lingkungan: konservasi, energi terbarukan</li>
+</ul>
+<h5 id="2-problematika-sosial-umat">2. Problematika Sosial Umat</h5>
+<ul>
+<li>Analisis akar masalah kemiskinan dalam perspektif Islam</li>
+<li>Strategi pemberdayaan ekonomi umat berbasis syariah</li>
+<li>Solusi Islami untuk isu-isu keluarga modern</li>
+</ul>
+<h5 id="3-tantangan-dakwah-modern">3. Tantangan Dakwah Modern</h5>
+<ul>
+<li>Strategi dakwah digital: optimalisasi media sosial</li>
+<li>Pendekatan dakwah lintas budaya dalam masyarakat plural</li>
+<li>Metode counter-narrative terhadap ekstremisme agama</li>
+</ul>
+<h5 id="4-isu-isu-global-dalam-perspektif-islam">4. Isu-isu Global dalam Perspektif Islam</h5>
+<ul>
+<li>Respons Islam terhadap perubahan iklim</li>
+<li>Konsep keadilan global dan HAM dalam perspektif syariah</li>
+<li>Diplomasi Islam dalam politik internasional</li>
+</ul>
+<h4 id="unit-62-proyek-akhir-5-pekan">Unit 6.2: Proyek Akhir (5 pekan)</h4>
+<h5 id="1-perencanaan-proyek">1. Perencanaan Proyek</h5>
+<ul>
+<li>Pemilihan topik sesuai kebutuhan umat</li>
+<li>Desain riset syar'i: metodologi yang sesuai prinsip Islam</li>
+<li>Penyusunan proposal proyek: objektif, metode, timeline</li>
+</ul>
+<h5 id="2-pelaksanaan-proyek">2. Pelaksanaan Proyek</h5>
+<ul>
+<li>Implementasi solusi Islami di lapangan</li>
+<li>Pengumpulan dan analisis data sesuai etika penelitian Islam</li>
+<li>Evaluasi berkelanjutan dan penyesuaian proyek</li>
+</ul>
+<h5 id="3-dokumentasi-dan-pelaporan">3. Dokumentasi dan Pelaporan</h5>
+<ul>
+<li>Penulisan laporan ilmiah sesuai standar Islamic studies</li>
+<li>Penyusunan artikel jurnal untuk publikasi</li>
+<li>Pembuatan infografis dan media presentasi</li>
+</ul>
+<h5 id="4-presentasi-dan-evaluasi">4. Presentasi dan Evaluasi</h5>
+<ul>
+<li>Teknik presentasi efektif kepada dewan ulama</li>
+<li>Metode diseminasi hasil proyek kepada komunitas</li>
+<li>Evaluasi dampak proyek berdasarkan maqashid syariah</li>
+</ul>
+<h5 id="5-refleksi-dan-tindak-lanjut">5. Refleksi dan Tindak Lanjut</h5>
+<ul>
+<li>Analisis pembelajaran dan insight dari proyek</li>
+<li>Identifikasi area pengembangan untuk riset lanjutan</li>
+<li>Perencanaan implementasi jangka panjang hasil proyek</li>
+</ul>
+
+</body>
+</html>

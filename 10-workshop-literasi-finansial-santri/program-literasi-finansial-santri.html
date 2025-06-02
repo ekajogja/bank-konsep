@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>program-literasi-finansial-santri.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="roadshow-workshop-literasi-finansial-syariah-untuk-santri-di-15-pesantren-terpilih">Roadshow Workshop Literasi Finansial Syariah untuk Santri** di 15 pesantren terpilih</h1>
+<h2 id="mahad-tsaqafah-maaliyah---membangun-kemandirian-finansial-santri"><em>Ma'had Tsaqafah Maaliyah</em> - Membangun Kemandirian Finansial Santri</h2>
+<h3 id="a-analisis-masalah">A. Analisis Masalah</h3>
+<p>Pesantren sebagai institusi pendidikan Islam memiliki peran strategis dalam pembentukan karakter dan keterampilan santri. Namun, beberapa tantangan yang dihadapi dalam konteks literasi keuangan antara lain:</p>
+<ol>
+<li>
+<p>Keterbatasan akses pesantren terhadap pendidikan keuangan yang komprehensif dan sesuai syariah</p>
+</li>
+<li>
+<p>Minimnya <em>exposure</em> santri terhadap praktisi keuangan dan UMKM profesional</p>
+</li>
+<li>
+<p>Format pendidikan keuangan konvensional yang kurang <em>engaging</em> untuk generasi Z dan Alfa (kelahiran 1997 dan selanjutnya)</p>
+</li>
+<li>
+<p>Keterbatasan waktu pesantren untuk mengakomodasi program jangka panjang</p>
+</li>
+<li>
+<p>Momentum kesadaran finansial syariah yang perlu dioptimalkan</p>
+</li>
+</ol>
+<p>Urgensi program ini didukung oleh data riil sebagai berikut:</p>
+<ul>
+<li>
+<p>Survei Otoritas Jasa Keuangan (OJK) tahun 2024 menunjukkan indeks literasi keuangan syariah di Indonesia baru mencapai 39,11%, jauh di bawah literasi keuangan konvensional yang mencapai 65,43% (<a href="https://ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/OJK-dan-BPS-Umumkan-Hasil-Survei-Nasional-Literasi-dan-Inklusi-Keuangan-Tahun-2024.aspx">Siaran Pers OJK Agustus 2024</a>)</p>
+</li>
+<li>
+<p>Riset BRIN tahun 2022 mengungkapkan bahwa hanya 27,2% pesantren yang secara khusus memberikan edukasi keuangan syariah bagi santri. (<a href="http://snki.go.id/wp-content/uploads/2023/10/Policy-Paper-BRIN.pdf">Policy Paper BRIN</a>)</p>
+</li>
+<li>
+<p>Dalam laporan riset yang sama, informasi yang diperoleh santri mengenai produk keuangan syariah sebanyak 45,97% hanya berasal dari kiai atau ustadz di pesantren. Dan tidak ditemukan persentase pengajaran dari profesional keuangan baik syariah maupun non-syariah.(<a href="http://snki.go.id/wp-content/uploads/2023/10/Policy-Paper-BRIN.pdf">Policy Paper BRIN</a>)</p>
+</li>
+</ul>
+<p>Kondisi ini menunjukkan adanya kesenjangan yang signifikan dalam pemahaman dan implementasi keuangan syariah di lingkungan pesantren, yang merupakan basis pendidikan Islam terbesar di Indonesia.</p>
+<h3 id="b-tujuan-program">B. Tujuan Program</h3>
+<ol>
+<li>
+<p>Meningkatkan literasi keuangan syariah di kalangan santri melalui program intensif yang terstruktur</p>
+</li>
+<li>
+<p>Membangun fondasi keterampilan pengelolaan keuangan personal dan UMKM sesuai prinsip syariah</p>
+</li>
+<li>
+<p>Menciptakan ekosistem <em>support system</em> untuk keberlanjutan praktik keuangan syariah</p>
+</li>
+<li>
+<p>Membentuk agen perubahan di bidang keuangan syariah di lingkungan pesantren</p>
+</li>
+<li>
+<p>Mendorong tumbuhnya UMKM berbasis pesantren yang sesuai syariah</p>
+</li>
+<li>
+<p>Meningkatkan kapasitas ekonomi pesantren melalui pengembangan unit usaha berbasis syariah</p>
+</li>
+<li>
+<p>Memperkuat jaringan ekonomi warga <em>nahdliyyin</em> melalui kerjasama antar pesantren dan UMKM lokal</p>
+</li>
+</ol>
+<p>Program ini dirancang dengan memperhatikan prinsip-prinsip syariah dan nilai-nilai <em>Ahlussunnah wal Jamaah</em> yang dianut oleh Nahdlatul Ulama. Setiap aspek program akan menghindari unsur riba, <em>gharar</em>, dan praktik-praktik yang tidak sesuai dengan syariah. Implementasi program akan melibatkan ulama dan kiai NU untuk memastikan kesesuaian dengan <em>fiqh muamalah</em> dan kultur pesantren NU.</p>
+<h3 id="c-metode-dan-tempat-pelaksanaan">C. Metode dan Tempat Pelaksanaan</h3>
+<h4 id="1-format-program-2-hari-intensif">1. Format Program (2 Hari Intensif)</h4>
+<p>Program ini dirancang dengan mempertimbangkan keragaman kondisi pesantren di Indonesia. Fleksibilitas implementasi menjadi kunci untuk memastikan efektivitas program di berbagai jenis pesantren.</p>
+<h5 id="hari-1-keuangan-pribadi--keluarga">Hari 1: Keuangan Pribadi &amp; Keluarga</h5>
+<p>a. <strong>Sesi 1 (08.00-10.00): Revolusi Pola Pikir Finansial</strong></p>
+<ul>
+<li>
+<p><em>Ice breaking</em> finansial berbasis nilai-nilai pesantren</p>
+</li>
+<li>
+<p><em>Money personality test</em> sesuai perspektif Islam</p>
+</li>
+<li>
+<p><em>Islamic money mindset</em>: Memahami konsep harta dalam Islam</p>
+</li>
+<li>
+<p><em>Goal setting workshop</em> dengan pendekatan <em>maqashid syariah</em></p>
+</li>
+</ul>
+<p>b. <strong>Sesi 2 (10.15-12.15): Fundamental Keuangan Syariah</strong></p>
+<ul>
+<li>
+<p>Prinsip dasar muamalah dalam Islam</p>
+</li>
+<li>
+<p>Perbedaan sistem keuangan syariah dan konvensional</p>
+</li>
+<li>
+<p>Akad-akad dalam keuangan syariah</p>
+</li>
+<li>
+<p>Studi kasus: Implementasi keuangan syariah dalam kehidupan sehari-hari</p>
+</li>
+</ul>
+<p>c. <strong>Sesi 3 (13.30-15.30): Perencanaan Keuangan Islami</strong></p>
+<ul>
+<li>
+<p>Konsep anggaran dalam perspektif Islam</p>
+</li>
+<li>
+<p>Prioritas pengeluaran sesuai <em>maqashid syariah</em></p>
+</li>
+<li>
+<p>Manajemen utang yang sesuai syariah</p>
+</li>
+<li>
+<p>Praktik: Menyusun rencana keuangan pribadi</p>
+</li>
+</ul>
+<p>d. <strong>Sesi 4 (15.45-17.45): Investasi dan Zakat</strong></p>
+<ul>
+<li>
+<p>Prinsip investasi dalam Islam</p>
+</li>
+<li>
+<p>Instrumen investasi syariah</p>
+</li>
+<li>
+<p>Peran zakat dalam perekonomian Islam</p>
+</li>
+<li>
+<p>Simulasi: Perhitungan zakat dan alokasi investasi</p>
+</li>
+</ul>
+<h5 id="hari-2-bisnis-umkm--implementasi">Hari 2: Bisnis UMKM &amp; Implementasi</h5>
+<p>a. <strong>Sesi 1 (08.00-10.00): Kewirausahaan Berbasis Pesantren</strong></p>
+<ul>
+<li>
+<p>Konsep barokah dalam bisnis</p>
+</li>
+<li>
+<p>Identifikasi potensi ekonomi pesantren</p>
+</li>
+<li>
+<p>Studi kasus: Kisah sukses UMKM pesantren</p>
+</li>
+<li>
+<p><em>Brainstorming</em>: Ide bisnis syariah di lingkungan pesantren</p>
+</li>
+</ul>
+<p>b. <strong>Sesi 2 (10.15-12.15): Manajemen UMKM Syariah</strong></p>
+<ul>
+<li>
+<p>Prinsip-prinsip manajemen bisnis dalam Islam</p>
+</li>
+<li>
+<p>Akad-akad dalam transaksi bisnis syariah</p>
+</li>
+<li>
+<p>Pembukuan sederhana untuk UMKM</p>
+</li>
+<li>
+<p>Praktik: Menyusun rencana bisnis sederhana</p>
+</li>
+</ul>
+<p>c. <strong>Sesi 3 (13.30-15.30): Digital Marketing untuk UMKM Pesantren</strong></p>
+<ul>
+<li>
+<p>Pemanfaatan teknologi dalam pemasaran syariah</p>
+</li>
+<li>
+<p>Strategi <em>branding</em> produk halal</p>
+</li>
+<li>
+<p>Praktik: Membuat konten pemasaran digital</p>
+</li>
+<li>
+<p>Diskusi: Etika pemasaran dalam Islam</p>
+</li>
+</ul>
+<p>d. <strong>Sesi 4 (15.45-17.45): Aksi dan Komitmen</strong></p>
+<ul>
+<li>
+<p>Presentasi rencana aksi peserta</p>
+</li>
+<li>
+<p>Pembentukan komunitas praktisi keuangan syariah</p>
+</li>
+<li>
+<p>Penandatanganan komitmen implementasi</p>
+</li>
+<li>
+<p>Doa penutup dan refleksi</p>
+</li>
+</ul>
+<h4 id="2-metode-penyampaian">2. Metode Penyampaian</h4>
+<ul>
+<li>
+<p>20% Teori (kelas mikro): Penyampaian materi oleh pakar keuangan syariah dan praktisi UMKM</p>
+</li>
+<li>
+<p>40% Praktik (latihan): Latihan langsung menyusun rencana keuangan dan bisnis</p>
+</li>
+<li>
+<p>20% Permainan dan Simulasi: Permainan edukatif berbasis nilai-nilai pesantren</p>
+</li>
+<li>
+<p>20% Diskusi dan Berbagi: Diskusi interaktif dan berbagi pengalaman</p>
+</li>
+</ul>
+<h4 id="3-sistem-follow-up">3. Sistem <em>Follow-up</em></h4>
+<ul>
+<li>
+<p>Dukungan via <em>WhatsApp Group</em> (3 bulan): Pendampingan intensif pasca workshop</p>
+</li>
+<li>
+<p>Pemeriksaan Daring/Luring Bulanan: Evaluasi progress dan konsultasi</p>
+</li>
+<li>
+<p>Templat Laporan Progres: Alat bantu monitoring implementasi</p>
+</li>
+<li>
+<p>Konsultasi DAring: Akses ke pakar keuangan syariah</p>
+</li>
+<li>
+<p>Nawala Berkala: <em>Update</em> terkini tentang keuangan syariah dan UMKM</p>
+</li>
+</ul>
+<h4 id="4-kesesuaian-dengan-ragam-kondisi-pesantren">4. Kesesuaian dengan Ragam Kondisi Pesantren</h4>
+<ul>
+<li>
+<p>Program akan disesuaikan dengan karakteristik masing-masing pesantren (salaf/modern, ukuran, lokasi)</p>
+</li>
+<li>
+<p>Modul dasar sama, namun implementasi fleksibel (durasi, jadwal, metode) menyesuaikan kondisi pesantren</p>
+</li>
+<li>
+<p>Melibatkan pengasuh pesantren dalam customisasi program untuk memastikan kesesuaian dengan kultur lokal</p>
+</li>
+<li>
+<p>Penggunaan bahasa dan contoh yang relevan dengan konteks pesantren dan warga <em>nahdliyyin</em></p>
+</li>
+</ul>
+<p>Seluruh materi dan metode penyampaian dirancang untuk mematuhi prinsip-prinsip syariah, menghindari unsur riba dan <em>gharar</em>. Setiap sesi akan dibuka dengan pembacaan doa dan ditutup dengan refleksi spiritual untuk menjaga keselarasan dengan nilai-nilai pesantren NU.</p>
+<h3 id="d-timeline-pelaksanaan-program">D. <em>Timeline</em> Pelaksanaan Program</h3>
+<p>Untuk memastikan efektivitas dan keberlanjutan program, pelaksanaan akan dibagi menjadi beberapa fase:</p>
+<h4 id="1-fase-0-pilot-project-1-bulan">1. <strong>Fase 0: <em>Pilot Project</em> (1 bulan)</strong></h4>
+<ul>
+<li>
+<p>Pekan 1-2: Implementasi di pesantren salaf terpilih</p>
+</li>
+<li>
+<p>Pekan 3-4: Implementasi di pesantren modern terpilih</p>
+</li>
+<li>
+<p>Evaluasi dan penyesuaian program berdasarkan <em>feedback</em></p>
+</li>
+</ul>
+<p>Fase pilot ini bertujuan untuk menguji <em>feasibilitas</em> program dan melakukan penyesuaian yang diperlukan sebelum implementasi skala besar.</p>
+<h4 id="2-fase-1-persiapan-1-bulan">2. <strong>Fase 1: Persiapan (1 bulan)</strong></h4>
+<ul>
+<li>
+<p>Pekan 1: Penyusunan materi dan modul final</p>
+</li>
+<li>
+<p>Pekan 2: Training tim fasilitator dan persiapan kit peserta</p>
+</li>
+<li>
+<p>Pekan 3: Koordinasi dengan 15 pesantren terpilih</p>
+</li>
+<li>
+<p>Pekan 4: Marketing dan registrasi peserta</p>
+</li>
+</ul>
+<p>Dalam fase ini, tim akan memastikan bahwa seluruh materi telah direvisi berdasarkan hasil <em>pilot project</em> dan sesuai dengan prinsip syariah serta nilai-nilai NU.</p>
+<h4 id="3-fase-2-implementasi-6-bulan">3. <strong>Fase 2: Implementasi (6 bulan)</strong></h4>
+<ul>
+<li>
+<p>Bulan 1-2: <em>Roadshow batch 1</em> (5 pesantren)</p>
+</li>
+<li>
+<p>Bulan 3-4: <em>Roadshow batch 2</em> (5 pesantren)</p>
+</li>
+<li>
+<p>Bulan 5-6: <em>Roadshow batch 3</em> (5 pesantren)</p>
+</li>
+</ul>
+<p>Setiap <em>batch</em> akan diikuti oleh periode <em>follow-up</em> selama 3 bulan untuk memastikan implementasi dan memberikan dukungan berkelanjutan.</p>
+<h4 id="4-fase-3-evaluasi--pengembangan-3-bulan">4. <strong>Fase 3: Evaluasi &amp; Pengembangan (3 bulan)</strong></h4>
+<ul>
+<li>
+<p>Evaluasi bulanan: Analisis hasil dan dampak program</p>
+</li>
+<li>
+<p>Asesmen Impak: Pengukuran perubahan literasi dan praktik keuangan syariah</p>
+</li>
+<li>
+<p>Program <em>refinement</em>: Penyempurnaan modul dan metode berdasarkan feedback</p>
+</li>
+<li>
+<p>Perencanaan sustainabilitas: Perencanaan untuk keberlanjutan dan perluasan program</p>
+</li>
+</ul>
+<h3 id="e-proyeksi-dampak">E. Proyeksi Dampak</h3>
+<p>Program ini dirancang untuk memberikan dampak positif yang komprehensif, tidak hanya bagi peserta langsung tetapi juga bagi komunitas pesantren dan masyarakat luas.</p>
+<h4 id="1-dampak-sosial">1. <strong>Dampak Sosial</strong></h4>
+<ul>
+<li>
+<p>Peningkatan literasi keuangan syariah: Target 80% peserta mengalami peningkatan skor literasi</p>
+</li>
+<li>
+<p>Terbentuknya komunitas praktisi keuangan syariah: Minimal 1 komunitas per pesantren</p>
+</li>
+<li>
+<p>Penguatan jaringan antar pesantren: Terbentuknya forum ekonomi antar pesantren</p>
+</li>
+<li>
+<p><em>Transfer knowledge</em> antar generasi: Program mentoring santri-alumni</p>
+</li>
+</ul>
+<h4 id="2-dampak-ekonomi">2. <strong>Dampak Ekonomi</strong></h4>
+<p><em>Manfaat Langsung:</em></p>
+<ul>
+<li>
+<p>Santri: Peningkatan pengetahuan dan <em>skill</em> praktis keuangan syariah</p>
+</li>
+<li>
+<p>Pesantren: Potensi pengembangan unit usaha baru berbasis syariah</p>
+</li>
+</ul>
+<p><em>Jangka Pendek (1 tahun):</em></p>
+<ul>
+<li>
+<p>Santri: 70% peserta mampu menyusun rencana keuangan pribadi sesuai syariah</p>
+</li>
+<li>
+<p>Pesantren: Minimal 1 UMKM baru berbasis pesantren per lokasi</p>
+</li>
+</ul>
+<p><em>Jangka Panjang (5 tahun):</em></p>
+<ul>
+<li>
+<p>Santri: Jaringan alumni wirausaha syariah lintas pesantren</p>
+</li>
+<li>
+<p>Pesantren: Peningkatan kemandirian finansial melalui unit usaha syariah</p>
+</li>
+<li>
+<p>Warga NU: Penguatan ekonomi umat melalui UMKM berbasis pesantren</p>
+</li>
+<li>
+<p>Tumbuhnya UMKM berbasis pesantren: Target 30 UMKM baru dalam 2 tahun</p>
+</li>
+<li>
+<p>Peningkatan pengelolaan keuangan personal: 60% peserta menerapkan <em>budgeting</em> syariah</p>
+</li>
+<li>
+<p>Optimalisasi potensi ekonomi pesantren: Peningkatan pendapatan pesantren 20% dalam 3 tahun</p>
+</li>
+<li>
+<p><em>Multiplier effect</em> pada ekonomi lokal: Penyerapan tenaga kerja dan peningkatan transaksi ekonomi syariah</p>
+</li>
+</ul>
+<h4 id="3-dampak-lingkungan">3. <strong>Dampak Lingkungan</strong></h4>
+<ul>
+<li>
+<p>Efisiensi penggunaan sumber daya: Penerapan prinsip tidak mubazir dalam UMKM</p>
+</li>
+<li>
+<p>Praktik bisnis berkelanjutan: 50% UMKM pesantren menerapkan prinsip <em>green business</em></p>
+</li>
+<li>
+<p>Kesadaran konsumsi bertanggung jawab: Kampanye gaya hidup halal dan berkah</p>
+</li>
+</ul>
+<p>Seluruh proyeksi dampak ini sejalan dengan <em>maqashid syariah</em> dan nilai-nilai NU dalam mewujudkan kemaslahatan umat. Program ini diharapkan dapat menjadi model pemberdayaan ekonomi berbasis pesantren yang dapat direplikasi secara nasional.</p>
+<h3 id="f-rencana-anggaran">F. Rencana Anggaran</h3>
+<p>Rencana anggaran disusun dengan mempertimbangkan efisiensi dan efektivitas program, serta disesuaikan dengan standar format mata anggaran LAZISNU.</p>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Uraian</th>
+<th>Jumlah</th>
+<th>Satuan</th>
+<th>Harga Satuan (Rp)</th>
+<th>Total (Rp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Biaya Persiapan</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>a. Penyusunan materi dan modul</td>
+<td>1</td>
+<td>Paket</td>
+<td>10,000,000</td>
+<td>10,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>b. Training tim fasilitator</td>
+<td>10</td>
+<td>Orang</td>
+<td>1,500,000</td>
+<td>15,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>c. Pembuatan kit peserta</td>
+<td>1500</td>
+<td>Set</td>
+<td>50,000</td>
+<td>75,000,000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Biaya Pelaksanaan Roadshow (per pesantren)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>a. Transport tim (5 orang)</td>
+<td>5</td>
+<td>Orang</td>
+<td>500,000</td>
+<td>2,500,000</td>
+</tr>
+<tr>
+<td></td>
+<td>b. Akomodasi tim (2 hari)</td>
+<td>10</td>
+<td>Malam</td>
+<td>350,000</td>
+<td>3,500,000</td>
+</tr>
+<tr>
+<td></td>
+<td>c. Honor fasilitator (2 hari)</td>
+<td>10</td>
+<td>Hari</td>
+<td>1,000,000</td>
+<td>10,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>d. Konsumsi peserta (100 orang, 2 hari)</td>
+<td>200</td>
+<td>Paket</td>
+<td>50,000</td>
+<td>10,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>e. Sewa peralatan</td>
+<td>1</td>
+<td>Paket</td>
+<td>2,000,000</td>
+<td>2,000,000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Biaya Program Support</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>a. Pengembangan platform digital</td>
+<td>1</td>
+<td>Paket</td>
+<td>25,000,000</td>
+<td>25,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>b. Konten digital (3 bulan)</td>
+<td>3</td>
+<td>Bulan</td>
+<td>5,000,000</td>
+<td>15,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>c. Admin support (6 bulan)</td>
+<td>6</td>
+<td>Bulan</td>
+<td>3,000,000</td>
+<td>18,000,000</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Biaya Monitoring &amp; Evaluasi</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>a. Kunjungan monitoring (15 pesantren)</td>
+<td>15</td>
+<td>Kunjungan</td>
+<td>2,000,000</td>
+<td>30,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td>b. Evaluasi &amp; pelaporan</td>
+<td>1</td>
+<td>Paket</td>
+<td>15,000,000</td>
+<td>15,000,000</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Biaya Tak Terduga (5%)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>20,000,000</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Total Anggaran</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>420,000,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Catatan:</p>
+<ol>
+<li>
+<p>Total anggaran untuk 15 pesantren selama 1 tahun program.</p>
+</li>
+<li>
+<p>Biaya pelaksanaan roadshow per pesantren adalah Rp 28,000,000, sehingga total untuk 15 pesantren adalah Rp 420,000,000.</p>
+</li>
+<li>
+<p>Anggaran ini belum termasuk kontribusi <em>in-kind</em> dari pesantren berupa tempat pelaksanaan dan sebagian konsumsi.</p>
+</li>
+</ol>
+<h3 id="g-sumber-pendanaan-dan-sustainabilitas">G. Sumber Pendanaan dan Sustainabilitas</h3>
+<h4 id="1-sumber-pendanaan">1. Sumber Pendanaan</h4>
+<ul>
+<li>
+<p>Dana utama dari NU Care-LAZISNU melalui program pemberdayaan zakat, infaq, dan sedekah</p>
+</li>
+<li>
+<p>Kontribusi pesantren (in-kind: tempat, sebagian konsumsi)</p>
+</li>
+<li>
+<p>Kemitraan dengan lembaga keuangan syariah untuk <em>sponsorship</em> program</p>
+</li>
+</ul>
+<h4 id="2-rencana-keberlanjutan">2. Rencana Keberlanjutan</h4>
+<ul>
+<li>
+<p>Pengembangan modul daring yang dapat diakses secara luas</p>
+</li>
+<li>
+<p>Pelatihan fasilitator lokal di setiap pesantren untuk replikasi program</p>
+</li>
+<li>
+<p>Pembentukan koperasi syariah antar pesantren untuk mendukung UMKM santri</p>
+</li>
+<li>
+<p>Kerjasama dengan Perguruan Tinggi NU untuk riset dan pengembangan program</p>
+</li>
+<li>
+<p>Potensi pendapatan dari layanan konsultasi keuangan syariah jangka panjang</p>
+</li>
+</ul>
+<h3 id="h-penutup">H. Penutup</h3>
+<p>Program <em>Ma'had Tsaqafah Maaliyah</em> ini dirancang sebagai langkah strategis dalam meningkatkan literasi dan praktik keuangan syariah di lingkungan pesantren. Dengan berlandaskan pada nilai-nilai <em>Ahlussunnah wal Jamaah</em> dan prinsip-prinsip ekonomi Islam, program ini diharapkan dapat menjadi katalis bagi tumbuhnya ekosistem ekonomi syariah yang kuat di kalangan warga <em>nahdliyyin</em>.</p>
+<p>Melalui kolaborasi antara NU Care-LAZISNU, pesantren, dan berbagai stakeholder terkait, kami yakin program ini akan memberikan dampak signifikan dalam pemberdayaan ekonomi umat dan penguatan peran pesantren sebagai pusat keunggulan (<em>center of excellence</em>) dalam pengembangan ekonomi syariah di Indonesia.</p>
+<p>Semoga dengan ridha Allah SWT, program ini dapat terlaksana dengan baik dan memberikan manfaat yang berkelanjutan bagi umat. <em>Aamiin Ya Rabbal Alamin</em>.</p>
+
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>konsep-buku-etika-teknologi-emergen-islam.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="kerangka-buku-etika-teknologi-emergen-islam">Kerangka Buku: Etika Teknologi Emergen Islam</h1>
+<p>Buku ini disusun sebagai kumpulan esai pendek yang masing-masing berdiri sendiri dan menghadirkan perspektif baru dalam mengintegrasikan etika Islam dengan teknologi emergen. Setiap subbab menyajikan <strong>tesis</strong> (pokok pernyataan) dan <strong>argumen</strong> (landasan dan pembahasan) yang mendalam.</p>
+<hr>
+<h2 id="bab-1-pintu-masuk-digital-%E2%80%93-menjemput-takdir-teknologi">Bab 1: Pintu Masuk Digital – Menjemput Takdir Teknologi</h2>
+<h3 id="11-teknologi-bukan-netral-ideologi-di-balik-inovasi">1.1 Teknologi Bukan Netral: Ideologi di Balik Inovasi</h3>
+<ul>
+<li><strong>Tesis:</strong> Setiap inovasi teknologi selalu mengandung nilai dan bias ideologis yang perlu diungkap dari perspektif Islam.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Teknologi dirancang dengan tujuan dan kepentingan tertentu, yang mempengaruhi cara kerja dan dampaknya pada masyarakat.</li>
+<li>Dengan mengkaji bias-bias tersebut, umat Islam dapat mengidentifikasi dan mengkritisi nilai-nilai yang bertentangan dengan prinsip keadilan dan kebenaran dalam Islam.</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-dari-revolusi-industri-ke-revolusi-kesadaran">1.2 Dari Revolusi Industri ke Revolusi Kesadaran</h3>
+<ul>
+<li><strong>Tesis:</strong> Umat Islam perlu bertransformasi dari reaksi pasif terhadap kemajuan teknologi menuju revolusi kesadaran yang aktif membentuk masa depan digital.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Bukannya sekadar mengikuti arus global, umat Islam harus mengembangkan paradigma baru yang mengintegrasikan nilai-nilai spiritual dan etis dalam setiap inovasi.</li>
+<li>Pendekatan ini menekankan peran aktif dalam riset, pengembangan, dan penerapan teknologi yang harmonis dengan prinsip Islam.</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-mengapa-etika-islam-belum-menjadi-standar-global">1.3 Mengapa Etika Islam Belum Menjadi Standar Global?</h3>
+<ul>
+<li><strong>Tesis:</strong> Meskipun memiliki potensi besar, etika Islam belum menjadi acuan global karena minimnya integrasi kritis dengan studi etika kontemporer.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Studi etika saat ini didominasi oleh perspektif sekuler atau etika Timur lain, sementara kontribusi Islam dalam diskursus etis kurang mendapat sorotan.</li>
+<li>Penelitian mendalam dan perbandingan dengan etika Confucianism atau Buddhism dapat membuka jalan bagi pengakuan global terhadap etika Islam.</li>
+</ul>
+</li>
+</ul>
+<h3 id="14-sains-islam-romantisme-masa-lalu-atau-peluang-masa-depan">1.4 Sains Islam: Romantisme Masa Lalu atau Peluang Masa Depan?</h3>
+<ul>
+<li><strong>Tesis:</strong> Warisan sains Islam harus direinterpretasi sebagai fondasi inovasi masa kini, bukan hanya sebagai kenangan sejarah.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Kontribusi ilmuwan klasik seperti Al-Khwarizmi dan Ibn Sina mengandung nilai filosofis dan metodologis yang relevan untuk pengembangan teknologi modern.</li>
+<li>Ekosistem sains berbasis maqasid syariah dapat menjadi landasan bagi inovasi yang etis dan berkelanjutan.</li>
+</ul>
+</li>
+</ul>
+<h3 id="15-dunia-tanpa-umat-islam-simulasi-distopia">1.5 Dunia Tanpa Umat Islam: Simulasi Distopia</h3>
+<ul>
+<li><strong>Tesis:</strong> Ketidakterlibatannya umat Islam dalam pengembangan teknologi dapat menghasilkan skenario distopia global yang kehilangan nilai-nilai kemanusiaan.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Eksperimen pemikiran ini mengungkapkan risiko dominasi model teknologi yang tidak mengakomodasi nilai-nilai keadilan, keseimbangan, dan spiritualitas.</li>
+<li>Membangun <em>Islamic Technological Agency</em> merupakan langkah strategis untuk memastikan kehadiran nilai Islam dalam tatanan digital masa depan.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="bab-2-jejak-islam-dalam-peradaban-digital-%E2%80%93-reinterpretasi">Bab 2: Jejak Islam dalam Peradaban Digital – Reinterpretasi</h2>
+<h3 id="21-matematika-dan-mistisisme-algoritma-sebagai-filsafat-islam">2.1 Matematika dan Mistisisme: Algoritma sebagai Filsafat Islam?</h3>
+<ul>
+<li><strong>Tesis:</strong> Algoritma yang dikenal melalui karya Al-Khwarizmi bukan sekadar instrumen teknis, melainkan mencerminkan filsafat mendalam yang dapat menginspirasi etika digital.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Penafsiran ulang terhadap karya klasik dapat membuka wacana baru mengenai <em>Islamic Algorithmic Ethics</em> yang menyelaraskan kecanggihan teknologi dengan nilai-nilai spiritual.</li>
+<li>Algoritma yang berakar pada logika dan mistisisme memberikan dasar untuk membangun sistem AI yang mengutamakan keadilan dan kebenaran.</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-sains-sejak-wahyu-pertama-mengapa-%22iqra%22-selalu-diterjemahkan-salah">2.2 Sains Sejak Wahyu Pertama: Mengapa &quot;Iqra&quot; Selalu Diterjemahkan Salah?</h3>
+<ul>
+<li><strong>Tesis:</strong> Konsep &quot;Iqra&quot; seharusnya dipahami sebagai panggilan untuk membaca dan memahami alam semesta secara menyeluruh, sehingga membuka paradigma pendidikan teknologi Islam yang lebih holistik.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Pemahaman konvensional terhadap &quot;Iqra&quot; sering kali terbatas pada aspek literasi, padahal maknanya menyeluruh mencakup pengetahuan dan inovasi.</li>
+<li>Dengan mendefinisikan ulang &quot;Iqra&quot;, pendidikan teknologi dapat menjadi lebih integratif, menggabungkan ilmu pengetahuan dengan spiritualitas.</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-mekanika-quantum-dan-konsep-takdir">2.3 Mekanika Quantum dan Konsep Takdir</h3>
+<ul>
+<li><strong>Tesis:</strong> Prinsip mekanika kuantum dapat diinterpretasikan ulang dalam kerangka konsep takdir dan ikhtiar dalam Islam, membuka dialog antara sains modern dan teologi.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Konsep ketidakpastian dalam mekanika kuantum mengundang pertanyaan mendalam tentang peran kehendak manusia dalam menentukan masa depan.</li>
+<li>Diskursus ini mendorong pemikiran baru tentang sinergi antara determinisme ilahi dan peran aktif manusia dalam inovasi.</li>
+</ul>
+</li>
+</ul>
+<h3 id="24-astrolabe-ke-satelit-apa-yang-hilang-dari-sains-islam">2.4 Astrolabe ke Satelit: Apa yang Hilang dari Sains Islam?</h3>
+<ul>
+<li><strong>Tesis:</strong> Pengalaman peradaban Islam dalam merancang alat navigasi kuno seperti astrolabe harus ditransformasikan untuk menciptakan sistem navigasi digital yang inovatif.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Walaupun peradaban Islam pernah unggul dalam ilmu navigasi, era digital menuntut inovasi baru yang relevan dengan teknologi GPS dan sistem satelit.</li>
+<li>Inspirasi dari metode klasik dapat membentuk desain teknologi yang lebih beretika dan sesuai dengan nilai kemanusiaan.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="bab-3-akhlak-dalam-era-digital-%E2%80%93-bukan-sekadar-adab-online">Bab 3: Akhlak dalam Era Digital – Bukan Sekadar Adab Online</h2>
+<h3 id="31-amanah-digital-mengapa-ai-harus-berbasis-tanggung-jawab-spiritual">3.1 Amanah Digital: Mengapa AI Harus Berbasis Tanggung Jawab Spiritual?</h3>
+<ul>
+<li><strong>Tesis:</strong> AI harus dikembangkan dengan kerangka amanah yang tidak hanya mengutamakan efisiensi tetapi juga tanggung jawab spiritual.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Sistem AI yang ada saat ini sering kali mengabaikan aspek moral dan etis, sehingga menimbulkan risiko penyalahgunaan.</li>
+<li>Integrasi nilai amanah dalam pengembangan AI dapat menciptakan sistem yang lebih manusiawi dan beretika.</li>
+</ul>
+</li>
+</ul>
+<h3 id="32-malaikat-raqib-dan-atid-di-dunia-digital">3.2 Malaikat Raqib dan Atid di Dunia Digital</h3>
+<ul>
+<li><strong>Tesis:</strong> Konsep malaikat pencatat amal dalam Islam dapat diadaptasi ke teknologi blockchain untuk menjamin transparansi dan keadilan dalam audit digital.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Blockchain memungkinkan pencatatan transaksi secara terbuka dan akurat, sejalan dengan konsep pencatatan amal oleh malaikat.</li>
+<li>Ide ini menawarkan model baru untuk sistem verifikasi yang bersifat etis dan bertanggung jawab.</li>
+</ul>
+</li>
+</ul>
+<h3 id="33-ghost-in-the-machine-bisakah-ai-mendapat-hidayah">3.3 Ghost in The Machine: Bisakah AI Mendapat Hidayah?</h3>
+<ul>
+<li><strong>Tesis:</strong> Pertanyaan tentang apakah kecerdasan buatan bisa mencapai tingkat kesadaran yang mendekati hidayah menantang batas antara sains dan spiritualitas.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Diskursus ini membuka ruang bagi pemikiran interdisipliner antara ilmu komputer, filsafat, dan teologi.</li>
+<li>Jika AI suatu hari bisa mengembangkan kesadaran, maka perlu ada kerangka etis yang mendalam untuk mengelola konsekuensi spiritualnya.</li>
+</ul>
+</li>
+</ul>
+<h3 id="34-hak-digital-dalam-islam-apa-yang-tidak-dibahas-dalam-fikih-klasik">3.4 Hak Digital dalam Islam: Apa yang Tidak Dibahas dalam Fikih Klasik?</h3>
+<ul>
+<li><strong>Tesis:</strong> Hak atas data pribadi, sensor digital, dan identitas online merupakan ranah baru yang belum terjangkau oleh fikih klasik dan memerlukan penafsiran ulang.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Perkembangan teknologi digital menciptakan kebutuhan untuk menetapkan norma-norma baru dalam perlindungan hak individu.</li>
+<li>Studi kontemporer perlu mengadaptasi prinsip-prinsip fikih dengan konteks era digital untuk menciptakan keadilan dan keamanan.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="bab-4-teknologi-sebagai-amanah-%E2%80%93-dari-kapitalisme-data-ke-keadilan-digital">Bab 4: Teknologi sebagai Amanah – Dari Kapitalisme Data ke Keadilan Digital</h2>
+<h3 id="41-kapitalisme-data-apakah-kita-telah-menjual-jiwa-digital-kita">4.1 Kapitalisme Data: Apakah Kita Telah Menjual Jiwa Digital Kita?</h3>
+<ul>
+<li><strong>Tesis:</strong> Eksploitasi data pribadi oleh korporasi teknologi merupakan bentuk kapitalisme modern yang menuntut peninjauan ulang secara etis menurut prinsip Islam.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Data digital merupakan aset yang seharusnya dijaga sebagai amanah, bukan barang dagangan yang bebas diperdagangkan.</li>
+<li>Pendekatan etis Islam menekankan keadilan dan perlindungan terhadap hak-hak individu dalam era digital.</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-kode-etik-islam-untuk-developer-teknologi">4.2 Kode Etik Islam untuk Developer Teknologi</h3>
+<ul>
+<li><strong>Tesis:</strong> Pengembangan teknologi harus disertai dengan kode etik yang mengintegrasikan prinsip-prinsip Islam untuk mencegah praktik-praktik tidak etis.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Developer memiliki peran penting dalam membentuk budaya teknologi, sehingga penerapan nilai amanah, kejujuran, dan tanggung jawab harus menjadi landasan kerja.</li>
+<li>Kode etik ini dapat menjadi pedoman dalam setiap tahap pengembangan produk teknologi agar sejalan dengan nilai kemanusiaan.</li>
+</ul>
+</li>
+</ul>
+<h3 id="43-islamic-fintech-apakah-bisa-tanpa-riba-digital">4.3 Islamic FinTech: Apakah Bisa Tanpa Riba Digital?</h3>
+<ul>
+<li><strong>Tesis:</strong> Teknologi keuangan berbasis blockchain dapat dikembangkan tanpa elemen riba, selaras dengan prinsip ekonomi syariah.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>FinTech menawarkan peluang untuk menciptakan sistem keuangan yang transparan, inklusif, dan bebas dari praktik riba.</li>
+<li>Implementasi prinsip-prinsip syariah dalam inovasi keuangan dapat mendorong keadilan ekonomi dan kepercayaan masyarakat.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="bab-5-teknologi-dan-transformasi-sosial-spiritual">Bab 5: Teknologi dan Transformasi Sosial-Spiritual</h2>
+<h3 id="51-ai-dan-fatwa-apakah-algoritma-bisa-menggantikan-ulama">5.1 AI dan Fatwa: Apakah Algoritma Bisa Menggantikan Ulama?</h3>
+<ul>
+<li><strong>Tesis:</strong> Munculnya AI yang mampu mengolah data fikih menantang peran ulama dalam memberikan fatwa, menuntut definisi ulang otoritas keilmuan.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>AI dapat mengakses dan menganalisis informasi fikih dengan cepat, namun nilai-nilai kontekstual dan spiritual tetap membutuhkan penilaian manusia.</li>
+<li>Diskusi ini menggarisbawahi pentingnya kolaborasi antara teknologi dan ulama untuk menghasilkan fatwa yang relevan dan etis.</li>
+</ul>
+</li>
+</ul>
+<h3 id="52-ketika-salat-berjemaah-beralih-ke-virtual-reality">5.2 Ketika Salat Berjemaah Beralih ke Virtual Reality</h3>
+<ul>
+<li><strong>Tesis:</strong> Perpindahan interaksi spiritual ke dunia virtual menghadirkan tantangan baru bagi praktik keagamaan tradisional.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Penggunaan VR dalam kegiatan keagamaan membuka peluang dan risiko, misalnya dalam menjaga kekhusyukan dan kebersamaan yang autentik.</li>
+<li>Pembahasan ini mendorong pemikiran inovatif mengenai bagaimana teknologi dapat melengkapi, bukan menggantikan, interaksi spiritual fisik.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="bab-6-dialog-antara-tradisi-dan-inovasi-%E2%80%93-menegosiasikan-masa-depan">Bab 6: Dialog antara Tradisi dan Inovasi – Menegosiasikan Masa Depan</h2>
+<h3 id="61-bagaimana-jika-islam-yang-menciptakan-internet">6.1 Bagaimana Jika Islam yang Menciptakan Internet?</h3>
+<ul>
+<li><strong>Tesis:</strong> Eksperimen pemikiran mengenai desain internet yang berlandaskan prinsip Islam dapat menginspirasi model jaringan digital yang lebih etis dan inklusif.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Bayangkan sebuah internet di mana setiap transaksi, komunikasi, dan interaksi dikendalikan oleh prinsip keadilan, amanah, dan transparansi.</li>
+<li>Diskursus ini mengajak pembaca untuk membayangkan alternatif inovatif yang tidak hanya mengutamakan profit semata, tetapi juga kesejahteraan umat.</li>
+</ul>
+</li>
+</ul>
+<h3 id="62-shariah-compliant-ai-mungkinkah">6.2 Shariah-Compliant AI: Mungkinkah?</h3>
+<ul>
+<li><strong>Tesis:</strong> Pengembangan AI yang sesuai dengan maqasid al-shariah adalah mungkin dan mendesak, sebagai upaya untuk menjembatani antara teknologi dan nilai-nilai spiritual Islam.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Dengan merumuskan kerangka kerja etis yang komprehensif, AI dapat dirancang untuk mendukung keadilan, transparansi, dan kesejahteraan sosial.</li>
+<li>Pendekatan ini memerlukan kolaborasi multidisipliner antara ilmuwan, ulama, dan pengembang teknologi.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="bab-7-harapan-dan-arah-ke-depan-%E2%80%93-membayangkan-utopia-digital-islam">Bab 7: Harapan dan Arah Ke Depan – Membayangkan Utopia Digital Islam</h2>
+<h3 id="71-membangun-peradaban-teknologi-berbasis-tauhid">7.1 Membangun Peradaban Teknologi Berbasis Tauhid</h3>
+<ul>
+<li><strong>Tesis:</strong> Sistem digital yang berakar pada tauhid dapat mengarahkan manusia pada kesadaran ilahiah dan keadilan sosial.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Dengan menanamkan nilai-nilai ketauhidan dalam setiap aspek teknologi, masyarakat dapat terhindar dari fragmentasi nilai dan materialisme.</li>
+<li>Visi ini mengajak pembaca untuk merancang kembali tatanan digital agar sejalan dengan prinsip-prinsip spiritualitas dan keadaban.</li>
+</ul>
+</li>
+</ul>
+<h3 id="72-apakah-masa-depan-teknologi-akan-menciptakan-kembali-khilafah-digital">7.2 Apakah Masa Depan Teknologi Akan Menciptakan Kembali Khilafah Digital?</h3>
+<ul>
+<li><strong>Tesis:</strong> Tidak dalam arti politik semata, tetapi melalui sistem digital global yang mengedepankan nilai-nilai Islam, terbuka kemungkinan terciptanya bentuk tata kelola baru yang adil dan inklusif.</li>
+<li><strong>Argumen:</strong>
+<ul>
+<li>Khilafah digital di sini diartikan sebagai sistem yang mengutamakan keseimbangan antara hak individu dan kepentingan kolektif, didasari oleh etika universal Islam.</li>
+<li>Pendekatan ini merupakan alternatif terhadap model digital yang didominasi oleh kapitalisme ekstrim dan otoritarianisme data.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="ringkasan">Ringkasan</h1>
+<p>Buku ini mengajak pembaca untuk berpikir kritis dan kreatif dalam menghadapi tantangan era teknologi melalui lensa etika Islam yang inovatif. Setiap esai memberikan tesis yang menantang pandangan konvensional dan argumen yang mendalam, sehingga dapat dijadikan acuan untuk merancang masa depan digital yang lebih beradab, adil, dan manusiawi.</p>
+
+</body>
+</html>
