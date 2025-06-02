@@ -2,11 +2,12 @@
 
 [Versi Google Doc](https://docs.google.com/document/d/1rdByxwMpdibEkYufRnqo8xTofaKLn-B5h9kwHmU4xig/edit?usp=sharing)
 
-### Program 1 Tahun
+## Program 1 Tahun
 
-(40 pekan efektif)
+<details>
+<summary>Klik untuk melihat jadwal 40 pekan</summary>
 
-| pekan | Modul | Unit |
+| Pekan | Modul | Unit |
 | ------ | ----- | ---- |
 | 1  | Modul 1: Fondasi Pemikiran Islam | Unit 1.1: Pengantar dan Konsep Dasar |
 | 2  | Modul 1: Fondasi Pemikiran Islam | Unit 1.2: Metakognisi dalam Tradisi Islam |
@@ -49,11 +50,13 @@
 | 39 | Modul 6: Aplikasi dan Proyek Pemikiran Islam | Unit 6.2: Proyek Akhir |
 | 40 | Modul 6: Aplikasi dan Proyek Pemikiran Islam | Unit 6.2: Proyek Akhir |
 
+</details>
+
 ### Semester 1 (20 pekan)
 
 #### Modul 1: Fondasi Pemikiran Islam (5 pekan)
 
-##### pekan 1
+##### Pekan 1
 
 ###### Unit 1.1: Pengantar dan Konsep Dasar
 
@@ -62,7 +65,7 @@
 - Proses tafakkur (refleksi) dan tadabbur (perenungan) dalam pemikiran Islam
 - Perkembangan kemampuan berpikir dalam sejarah Islam: dari masa Nabi, Sahabat, Tabi'in, hingga ulama kontemporer
 
-##### pekan 2-3
+##### Pekan 2-3
 
 ###### Unit 1.2: Metakognisi dalam Tradisi Islam
 
@@ -71,7 +74,7 @@
 - Strategi metakognitif berdasarkan ajaran ulama: muhasabah, muraqabah, dan mujahadah
 - Refleksi dan evaluasi diri (muhasabah) dalam ibadah dan muamalah
 
-##### pekan 4-5
+##### Pekan 4-5
 
 ###### Unit 1.3: Berpikir Sistematis dalam Fiqh dan Ushul Fiqh
 
@@ -82,7 +85,7 @@
 
 #### Modul 2: Metodologi Pemikiran Islam (7 pekan)
 
-##### pekan 6
+##### Pekan 6
 
 ###### Unit 2.1: Pengantar Metodologi Pemikiran Islam
 
@@ -91,7 +94,7 @@
 - Manfaat dan aplikasi metodologi pemikiran Islam dalam konteks modern
 - Hubungan metodologi pemikiran Islam dengan bidang keilmuan Islam lainnya: tafsir, hadits, fiqh, dan lain-lain
 
-##### pekan 7-8
+##### Pekan 7-8
 
 ###### Unit 2.2: Analisis Teks (Tahlil an-Nushush)
 
@@ -100,7 +103,7 @@
 - Strategi ta'wil (interpretasi) dan tafsir (eksplanasi) untuk memahami teks secara komprehensif
 - Praktik analisis ayat-ayat ahkam, pemetaan makna dalam hadits, prioritas memahami nash, dan integrasi pemahaman antar nash
 
-##### pekan 9
+##### Pekan 9
 
 ###### Unit 2.3: Pengenalan Pola dalam Syariah
 
@@ -108,7 +111,7 @@
 - Teknik pengenalan maqashid syariah (tujuan-tujuan syariah) untuk mengidentifikasi pola
 - Analisis keteraturan (nizam) dalam fiqh: mengenali pola-pola yang berulang
 
-##### pekan 10
+##### Pekan 10
 
 ###### Unit 2.4: Abstraksi dalam Pemikiran Islam
 
@@ -117,7 +120,7 @@
 - Pemilihan informasi relevan dalam proses fatwa: menyederhanakan masalah kompleks
 - Penerapan abstraksi: pemodelan masalah fiqhiyah, representasi konsep aqidah, generalisasi hukum (ta'mim al-ahkam), dan abstraksi dalam pemahaman tasawuf
 
-##### pekan 11-12
+##### Pekan 11-12
 
 ###### Unit 2.5: Logika Islam (Mantiq)
 
@@ -130,7 +133,7 @@
 
 #### Modul 3: Pemikiran Kritis dalam Islam (8 pekan)
 
-##### pekan 13-14
+##### Pekan 13-14
 
 ###### Unit 3.1: Dasar Pemikiran Kritis Islami
 
@@ -139,7 +142,7 @@
 - Standar berpikir kritis menurut Al-Ghazali: obyektivitas, keadilan, dan kebijaksanaan
 - Hambatan berpikir kritis dan solusinya dalam Islam: dogmatisme, prasangka, dan tertutup pikiran
 
-##### pekan 15-16
+##### Pekan 15-16
 
 ###### Unit 3.2: Analisis Argumen dalam Konteks Islam
 
@@ -148,7 +151,7 @@
 - Analisis logika dan validitas dalil dalam pemikiran Islam
 - Evaluasi argumen syar'i: identifikasi logical fallacies, pengembangan counter-argument yang etis
 
-##### pekan 17-18
+##### Pekan 17-18
 
 ###### Unit 3.3: Evaluasi Sumber dalam Tradisi Islam
 
@@ -157,7 +160,7 @@
 - Cross-referencing (perbandingan antar sumber) dalam studi Islam
 - Interpretasi data dalam konteks fiqh, analisis statistik untuk fenomena sosial-keagamaan
 
-##### pekan 19-20
+##### Pekan 19-20
 
 ###### Unit 3.4: Pengambilan Keputusan dalam Fiqh
 
@@ -168,7 +171,7 @@
 
 #### Modul 4: Pemikiran Kreatif dalam Islam (7 pekan)
 
-##### pekan 21-22
+##### Pekan 21-22
 
 ###### Unit 4.1: Dasar Kreativitas Islami
 
@@ -177,7 +180,7 @@
 - Teknik tafakkur (refleksi) dan tadabbur (perenungan) untuk merangsang kreativitas
 - Mengatasi hambatan kreativitas dengan pendekatan Islami
 
-##### pekan 23-24
+##### Pekan 23-24
 
 ###### Unit 4.2: Teknik Kreativitas dalam Konteks Islam
 
@@ -186,7 +189,7 @@
 - Evaluasi dan seleksi ide dengan kriteria Islami
 - Implementasi ide kreatif dalam dakwah dan pendidikan Islam
 
-##### pekan 25-27
+##### Pekan 25-27
 
 ###### Unit 4.3: Design Thinking untuk Solusi Islami
 
@@ -198,7 +201,7 @@
 
 #### Modul 5: Pemikiran Integratif dalam Islam (6 pekan)
 
-##### pekan 28-29
+##### Pekan 28-29
 
 ###### Unit 5.1: Sintesis Pemikiran Islam
 
@@ -207,7 +210,7 @@
 - Pendekatan holistik dalam studi Islam
 - Analisis sistem dalam hukum Islam untuk menangani masalah kompleks
 
-##### pekan 30-31
+##### Pekan 30-31
 
 ###### Unit 5.2: Collaborative Thinking dalam Tradisi Islam
 
@@ -216,7 +219,7 @@
 - Pola komunikasi dalam lembaga fatwa yang efektif
 - Kecerdasan kolektif (jama'iyyah) dalam ijtihad jama'i (ijtihad kolektif)
 
-##### pekan 32-33
+##### Pekan 32-33
 
 ###### Unit 5.3: Innovative Thinking untuk Kemajuan Umat
 
@@ -227,14 +230,14 @@
 
 #### Modul 6: Aplikasi dan Proyek Pemikiran Islam (8 pekan)
 
-##### pekan 34-36
+##### Pekan 34-36
 
 ###### Unit 6.1: Aplikasi Riil Pemikiran Islam
 
 - Studi kasus: analisis isu-isu fiqh kontemporer, problematika sosial umat, tantangan dakwah modern, dan isu-isu global dalam perspektif Islam
 - Proyek lapangan: identifikasi masalah di komunitas Muslim, pengembangan solusi berbasis syariah, implementasi program dakwah inovatif, serta evaluasi dampak terhadap umat
 
-##### pekan 37-40
+##### Pekan 37-40
 
 ###### Unit 6.2: Proyek Akhir
 
