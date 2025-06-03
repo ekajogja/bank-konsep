@@ -38,11 +38,11 @@ Materi akidah yang diajarkan mencakup:
 
 Sedangkan pembinaan akhlak melibatkan:
 
-4. **Tasawuf** (dimensi spiritual dan perbaikan hati),
+1. **Tasawuf** (dimensi spiritual dan perbaikan hati),
 
-5. **Adab** (etika dan tata krama dalam kehidupan), serta
+2. **Adab** (etika dan tata krama dalam kehidupan), serta
 
-6. **Sirah Nabawiyah** (pelajaran dari kehidupan Nabi Muhammad SAW).
+3. **Sirah Nabawiyah** (pelajaran dari kehidupan Nabi Muhammad SAW).
 
 Metode pengajaran tradisional seperti hafalan, kajian kitab klasik, praktik ibadah, dan muhasabah (refleksi diri) menjadi cara efektif untuk membangun fondasi keimanan dan karakter yang kokoh.
 
