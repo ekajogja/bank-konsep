@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategi Prompting AI untuk Analisis Riset</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+        .card {
+            transition: all 0.3s ease;
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            cursor: pointer;
+            padding: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-content {
+            padding: 0 1.25rem 1.25rem;
+            display: none; /* Default collapsed */
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #3b82f6;
+        }
+        .toggle-icon {
+            transition: transform 0.3s ease;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Strategi Prompting AI untuk Analisis Riset</h1>
+            <p class="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+                Panduan lengkap untuk riset berbasis AI dengan pendekatan kritis dan sistematis
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto py-8 px-4">
+        <!-- Section A: Analisis Teoretis -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 section-title">A. Pertanyaan Analisis Teoretis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card A.1 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">1. Pertanyaan Analisis Kritis</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana hubungan antara [teori/konsep 1] dan [teori/konsep 2] dalam konteks [fenomena/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa implikasi dari [kebijakan/praktik] terhadap [kelompok/spesifik] dalam jangka panjang?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana [metode/pendekatan] dapat digunakan untuk menganalisis [fenomena/masalah] dalam [konteks tertentu]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.2 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">2. Pertanyaan Sintesis</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu menggabungkan [teori/metode] dari [bidang A] dan [bidang B] untuk mengembangkan [pendekatan/teori] yang baru?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana sintesis dari [studi/penelitian] sebelumnya dapat digunakan untuk menjawab [pertanyaan riset] yang ada?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu bisa mengintegrasikan berbagai perspektif untuk membentuk [framework/model] yang komprehensif tentang [subjek]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.3 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">3. Pertanyaan Eksplorasi Teoritis</h3>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa dasar teori yang mendukung [fenomena] dan bagaimana kamu bisa menguji kebenarannya dalam konteks [situasi/lingkungan] yang berbeda?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana teori [X] dapat diadaptasi atau dikembangkan lebih lanjut untuk menjelaskan [fenomena/masalah] yang baru muncul?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana asumsi-asumsi dasar dalam [teori/metode] dapat mempengaruhi hasil penelitian di [bidang/spesifik]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.4 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">4. Pertanyaan Evaluasi Metodologis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Sejauh mana [metode] dapat dianggap valid untuk penelitian di [konteks/spesifik]? Apa keterbatasannya?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu bisa memastikan reliabilitas dan validitas data ketika menggunakan [metode] dalam penelitian [fenomena]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa kelebihan dan kekurangan dari penggunaan [metode A] dibandingkan [metode B] dalam menganalisis [subjek]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.5 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">5. Pertanyaan Hipotetis Kompleks</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa yang mungkin terjadi jika [variabel] dalam [teori/eksperimen] diubah? Bagaimana perubahan ini mempengaruhi [hasil/konklusi]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana hasil penelitian akan berbeda jika [asumsi] utama dalam [pendekatan] diubah atau dihilangkan?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa konsekuensi etis dari penerapan [teknologi/kebijakan] dalam [konteks spesifik]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.6 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">6. Pertanyaan Meta-Analisis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu bisa melakukan meta-analisis dari berbagai studi tentang [topik] untuk menemukan tren atau pola yang mendasari?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa faktor-faktor kunci yang muncul dari meta-analisis [studi] yang mempengaruhi [hasil/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu bisa menyusun meta-analisis untuk mengevaluasi efektivitas [intervensi/strategi] dalam [bidang]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.7 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">7. Pertanyaan Inovasi dan Aplikasi</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu bisa mengembangkan aplikasi baru dari [teori/metode] untuk memecahkan [masalah/spesifik] dalam [konteks]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana pendekatan inovatif dalam [bidang] dapat diimplementasikan untuk meningkatkan [proses/hasil] dalam [spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana [teknologi/metode] terbaru dapat diadaptasi untuk mengatasi tantangan di [konteks/spesifik]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card A.8 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-blue-50 border-b border-blue-100">
+                        <h3 class="text-blue-700">8. Pertanyaan Refleksi Kritis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana perubahan dalam [kebijakan/global] mempengaruhi dinamika [fenomena/spesifik] pada level lokal/nasional?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Apa dampak dari evolusi teori [X] terhadap pengembangan ilmu pengetahuan dalam [bidang]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana perspektifmu tentang [teori/konsep] telah berubah setelah penelitian mendalam tentang [subjek]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section B: Eksplorasi Intelektual -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 section-title">B. Pertanyaan Eksplorasi Intelektual</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card B.1 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-green-700">1. Pertanyaan Pembingkaian Ulang</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana jika [konsep/teori] dibingkai ulang dari perspektif [alternatif]? Apa implikasinya untuk [bidang/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana pengetahuan tentang [topik] berubah jika kita memandangnya dari perspektif [kultur/historis] yang berbeda?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1">•</span>
+                                <span>Jika kita mempertimbangkan [fenomena] sebagai hasil dari [faktor lain], bagaimana kita harus mengubah pendekatan kita terhadap [masalah/spesifik]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.2 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-green-700">2. Pertanyaan Teori Revolusioner</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kamu bisa menciptakan teori baru yang menggabungkan [teori A] dan [teori B] untuk memecahkan [paradoks/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1">•</span>
+                                <span>Apa yang diperlukan untuk mengembangkan paradigma baru dalam [bidang/spesifik] yang bisa menggantikan teori-teori yang ada?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa merumuskan ulang konsep [inti/fundamental] sehingga lebih sesuai dengan [temuan/spesifik] terbaru?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.3 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-indigo-700">3. Pertanyaan Metateoritis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana [teori] yang ada saat ini merefleksikan keterbatasan pemikiran manusia dalam memahami [fenomena/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa mengembangkan pendekatan metateoritis yang mengakomodasi berbagai perspektif dalam [bidang] untuk menjelaskan [fenomena/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apakah batasan-batasan teoritis dalam [bidang] menunjukkan perlunya pendekatan yang sepenuhnya baru?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.4 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-indigo-700">4. Pertanyaan Asumsi Tersembunyi</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa asumsi-asumsi mendasar yang tersembunyi di balik [teori/pendekatan] dalam [bidang] dan bagaimana jika asumsi-asumsi ini ditantang?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana hasil penelitian bisa berubah jika kita mempertanyakan asumsi [fundamental] dalam [metode/pendekatan] yang digunakan?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa asumsi epistemologis atau ontologis yang mempengaruhi cara kita memahami [fenomena] dalam [konteks]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.5 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-indigo-700">5. Pertanyaan Paradigma Transformatif</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana [bidang/penelitian] bisa berkembang jika paradigma saat ini diganti dengan [paradigma alternatif]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa dampak transformatif dari memperkenalkan [konsep/spesifik] baru ke dalam [bidang]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa merancang ulang pendekatan penelitian di [bidang] untuk mengakomodasi tantangan di masa depan?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.6 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-indigo-700">6. Pertanyaan Moral dan Etika Tingkat Lanjut</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana etika [spesifik] berubah ketika diterapkan dalam konteks [baru/konteks lain]? Apakah pendekatan etis kita perlu disesuaikan?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa implikasi moral dari menolak atau menerima [teknologi/teori] baru dalam konteks [masyarakat/kultur] tertentu?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa menavigasi dilema etis yang muncul dari penerapan [inovasi/teknologi] yang melibatkan [fenomena/spesifik]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.7 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-indigo-700">7. Pertanyaan Ontologis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa arti keberadaan [fenomena/spesifik] dari perspektif ontologis yang berbeda?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana pandangan ontologis kita mempengaruhi pemahaman kita tentang [spesifik] dan bagaimana ini bisa diubah?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr极客 mt-1">•</span>
+                                <span>Bagaimana definisi kita tentang "realitas" dalam [bidang] berubah seiring perkembangan [teknologi/penemuan] baru?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card B.8 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-indigo-50 border-b border-indigo-100">
+                        <h3 class="text-indigo-700">8. Pertanyaan Epistemologis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa batas-batas pengetahuan kita tentang [spesifik]? Bagaimana kita bisa melampaui batas-batas ini?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana cara kita mengetahui atau memperoleh pengetahuan tentang [fenomena] mempengaruhi interpretasi kita?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-2 mt-1">•</span>
+                                <span>Apa sumber pengetahuan yang paling valid untuk memahami [spesifik], dan bagaimana kita bisa menguji validitasnya?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section C: Abstrak dan Spekulatif -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 section-title">C. Pertanyaan Abstrak dan Spekulatif</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card C.1 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">1. Pertanyaan Eksplorasi Ontologis-Radikalis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Jika kita mengubah fundamental ontologi kita, apa implikasinya terhadap cara kita memahami semua aspek [realitas/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana konsep "keberadaan" atau "kebenaran" bisa dirumuskan ulang dari dasar untuk mengakomodasi [temuan baru/realitas spekulatif]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Apa yang terjadi jika kita sepenuhnya menolak prinsip-prinsip ontologis yang ada dan mencoba membangun realitas yang sepenuhnya baru?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.2 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">2. Pertanyaan Paradigma Meta-Paradigmatik</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa menciptakan meta-paradigma yang melampaui dan mengintegrasikan semua paradigma yang ada dalam [bidang/spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa mendefinisikan ulang konsep paradigma itu sendiri untuk menyertakan dimensi yang saat ini tidak terhitung dalam [diskursus akademik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Apa kemungkinan masa depan untuk meta-paradigma baru yang tidak hanya mengatasi tantangan saat ini tetapi juga mendefinisikan ulang batasan pengetahuan itu sendiri?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.3 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">3. Pertanyaan Eksplorasi Dimensi Non-Konvensional</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana realitas kita akan terlihat jika kita memperkenalkan atau mengakui dimensi [spesifik/non-fisik] yang saat ini belum dieksplorasi?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa memformulasikan pendekatan multidimensional untuk memahami [fenomena] yang sepenuhnya melampaui pemahaman tiga dimensi tradisional?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa menyelidiki dan mengintegrasikan dimensi waktu sebagai entitas yang lebih dari sekadar linier, dalam kaitannya dengan [fenomena/spesifik]?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.4 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">4. Pertanyaan Spekulatif Filosofis Tingkat Lanjut</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa merumuskan sebuah sistem etika atau nilai yang sepenuhnya baru yang didasarkan pada asumsi fundamental yang berbeda dari semua sistem etika yang ada?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Jika kita menolak prinsip dualisme yang mendasari banyak pemikiran filosofis, apa alternatifnya dan bagaimana mereka bisa diterapkan dalam [spesifik]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa mengembangkan teori pengetahuan yang sepenuhnya baru yang mempertimbangkan kemungkinan keberadaan multiverse atau realitas paralel?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.5 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">5. Pertanyaan Eksplorasi Kosmologis-Radikal</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana konsep alam semesta dapat diredefinisi berdasarkan temuan spekulatif terbaru di [fisika/astronomi]? (Contoh: teori string atau gravitasi kuantum)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana pemahaman realitas berubah jika kita menerima keberadaan [entitas non-fisik]? (Contoh: dimensi tambahan atau kesadaran kosmik)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Apa peran kesadaran dalam penciptaan atau pemahaman alam semesta, dan bagaimana kita bisa menguji atau memodelkan ini?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.6 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">6. Pertanyaan Eksplorasi Post-Humanis</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana konsep identitas atau kesadaran berubah dalam konteks transhumanisme atau post-humanisme?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa merumuskan ulang batasan antara manusia, mesin, dan alam dalam dunia post-humanis yang benar-benar baru?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa membayangkan masa depan di mana kategori "manusia" sepenuhnya diubah atau bahkan ditinggalkan?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.7 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">7. Pertanyaan Penyelidikan Etika Meta-Etik</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa mengembangkan kerangka kerja meta-etika yang mampu mengatasi dilema moral dari perspektif yang benar-benar baru, melampaui pendekatan tradisional?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Apa yang terjadi jika kita mencoba menciptakan prinsip-prinsip etika yang didasarkan pada logika yang sepenuhnya berbeda dari logika manusia saat ini?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa mempertimbangkan kesetaraan moral bagi entitas non-manusia atau entitas yang belum ada (misalnya, AI super-intelligent)?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.8 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">8. Pertanyaan Pembingkaian Realitas Baru</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa menciptakan realitas alternatif secara teoritis yang memungkinkan cara-cara baru dalam memahami atau berinteraksi dengan [konsep/fenomena]?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Apa implikasi dari menciptakan atau mendefinisikan ulang realitas dalam konteks [kultur/sains/filsafat] yang sepenuhnya baru?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana kita bisa merumuskan kembali hubungan antara realitas fisik dan non-fisik dalam cara yang menantang atau melampaui semua asumsi yang ada?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C.9 -->
+                <div class="card bg-white shadow-md">
+                    <div class="card-header bg-purple-50 border-b border-purple-100">
+                        <h3 class="text-purple-700">9. Pertanyaan Eksperimen Pemikiran Radikal</h3>
+                        <span class="toggle-icon">►</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana hasil eksperimen pemikiran yang mengabaikan hukum alam dalam [bidang] mempengaruhi pemahaman kita?<br>(Contoh: Bagaimana jika gravitasi bekerja terbalik di dunia fiksi?)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Bagaimana merancang eksperimen pemikiran dengan kemungkinan ekstrem untuk menguji batas pemikiran?<br>(Contoh: Apa yang terjadi jika waktu mengalir mundur dalam sistem sosial?)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-purple-500 mr-2 mt-1">•</span>
+                                <span>Apa konsekuensi menolak kerangka epistemologis yang ada dan membangun yang baru?<br>(Contoh: Menciptakan sistem pengetahuan tanpa asumsi kausalitas)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2">© 2025 Bank Konsep - Forum AI Assisted Research</p>
+            <p class="text-gray-400 text-sm">Strategi Prompting AI untuk Analisis Riset Lanjutan</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize all cards as collapsed
+            $('.toggle-icon').text('►');
+            
+            $('.card-header').click(function() {
+                const cardContent = $(this).next('.card-content');
+                const toggleIcon = $(this).find('.toggle-icon');
+                
+                cardContent.slideToggle(300);
+                toggleIcon.text(toggleIcon.text() === '►' ? '▼' : '►');
+            });
+        });
+    </script>
+</body>
+</html>
