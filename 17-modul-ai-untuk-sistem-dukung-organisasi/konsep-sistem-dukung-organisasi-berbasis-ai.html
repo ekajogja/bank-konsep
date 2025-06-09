@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>konsep-sistem-dukung-organisasi-berbasis-ai.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="sistem-dukung-lembagaorganisasi-dengan-bantuan-kecerdasan-artifisial">Sistem Dukung Lembaga/Organisasi dengan Bantuan Kecerdasan Artifisial</h1>
+<h2 id="0-abstrak">0. Abstrak</h2>
+<p>Dokumen ini menjelaskan konsep dan framework sistem dukung organisasi berbasis kecerdasan artifisial (AI). Pembahasan mencakup pemahaman dasar tentang bagaimana AI dapat diintegrasikan dalam berbagai level organisasi untuk meningkatkan kualitas pengambilan keputusan dan efektivitas operasional. Materi ini ditujukan untuk membangun pemahaman stakeholder tentang potensi, aplikasi, dan pertimbangan dalam adopsi teknologi AI untuk organisasi.</p>
+<p>Kata kunci: kecerdasan artifisial, sistem informasi manajemen, transformasi digital, pengambilan keputusan</p>
+<h2 id="1-pengantar">1. Pengantar</h2>
+<h3 id="11-apa-itu-sistem-dukung-berbasis-ai">1.1. Apa itu Sistem Dukung Berbasis AI?</h3>
+<h4 id="111-definisi-dan-konsep-dasar">1.1.1. Definisi dan konsep dasar</h4>
+<p>a. Sistem informasi yang menggunakan teknologi AI untuk membantu proses pengambilan keputusan</p>
+<p>b. Integrasi antara data, algoritma, dan interface pengguna</p>
+<p>c. Perbedaan dengan sistem informasi konvensional</p>
+<h4 id="112-mengapa-penting-saat-ini">1.1.2. Mengapa penting saat ini</h4>
+<p>a. Era big data dan kompleksitas organisasi modern</p>
+<p>b. Kebutuhan respons cepat terhadap perubahan lingkungan</p>
+<p>c. Tuntutan efisiensi dan akurasi dalam pengambilan keputusan</p>
+<h3 id="12-evolusi-sistem-informasi-organisasi">1.2. Evolusi Sistem Informasi Organisasi</h3>
+<p>Subbab ini menguraikan evolusi sistem dari manual ke digital.</p>
+<p>a. Sistem berbasis kertas → Database → Business Intelligence → AI-powered systems</p>
+<p>b. Perkembangan capability: descriptive → diagnostic → predictive → prescriptive analytics</p>
+<h3 id="13-komponen-kecerdasan-artifisial-dalam-organisasi">1.3. Komponen Kecerdasan Artifisial dalam Organisasi</h3>
+<p>Subbab ini menguraikan komponen teknologi utama kecerdasan artifisial untuk manajemen organisasi.</p>
+<p>a. Machine Learning untuk pattern recognition</p>
+<p>b. Natural Language Processing untuk analisis dokumen</p>
+<p>c. Computer Vision untuk analisis visual</p>
+<p>d. Predictive Analytics untuk forecasting</p>
+<h2 id="2-framework-sistem-dukung-4-level">2. Framework Sistem Dukung 4-Level</h2>
+<p>Bab ini menguraikan konsep hierarki organisasi dan kebutuhan informasi.</p>
+<h3 id="21-level-strategis-sistem-informasi-eksekutif-eis">2.1. Level Strategis: Sistem Informasi Eksekutif (EIS)</h3>
+<h4 id="211-pemahaman-konsep">2.1.1. Pemahaman konsep</h4>
+<p>a. Target pengguna: C-level executives, board of directors</p>
+<p>b. Karakteristik informasi: high-level, trend-focused, exception-based</p>
+<p>c. Format output: dashboard, summary reports, key indicators</p>
+<h4 id="212-aplikasi-ai-pada-level-ini">2.1.2. Aplikasi AI pada level ini</h4>
+<p>a. Predictive modeling untuk strategic planning</p>
+<p>b. Sentiment analysis dari berbagai sumber informasi</p>
+<p>c. Competitive intelligence dan market analysis</p>
+<p>d. Risk assessment dan scenario planning</p>
+<h4 id="213-contoh-implementasi">2.1.3. Contoh implementasi</h4>
+<p>a. Dashboard yang menampilkan health score organisasi</p>
+<p>b. Alert system untuk perubahan signifikan di lingkungan bisnis</p>
+<p>c. Forecasting model untuk perencanaan jangka panjang</p>
+<h3 id="22-level-taktis-sistem-dukung-pengambilan-keputusan-dss">2.2. Level Taktis: Sistem Dukung Pengambilan Keputusan (DSS)</h3>
+<h4 id="221-pemahaman-konsep">2.2.1. Pemahaman konsep</h4>
+<p>a. Target pengguna: middle management, department heads</p>
+<p>b. Karakteristik informasi: analytical, comparative, scenario-based</p>
+<p>c. Format output: reports, analysis, recommendations</p>
+<h4 id="222-aplikasi-ai-pada-level-ini">2.2.2. Aplikasi AI pada level ini</h4>
+<p>a. Optimization algorithms untuk resource allocation</p>
+<p>b. What-if analysis dengan machine learning models</p>
+<p>c. Performance benchmarking dengan statistical analysis</p>
+<p>d. Recommendation systems untuk policy decisions</p>
+<h4 id="223-contoh-implementasi">2.2.3. Contoh implementasi</h4>
+<p>a. Sistem optimasi jadwal dan alokasi SDM</p>
+<p>b. Model analisis dampak kebijakan</p>
+<p>c. Tools untuk budget planning dan forecasting</p>
+<h3 id="23-level-operasional-instrumen-intelijen-bisnis-bi-tool">2.3. Level Operasional: Instrumen Intelijen Bisnis (BI Tool)</h3>
+<h4 id="231-pemahaman-konsep">2.3.1. Pemahaman konsep</h4>
+<p>a. Target pengguna: supervisors, operational staff</p>
+<p>b. Karakteristik informasi: detailed, real-time, action-oriented</p>
+<p>c. Format output: operational dashboards, alerts, work instructions</p>
+<h4 id="232-aplikasi-ai-pada-level-ini">2.3.2. Aplikasi AI pada level ini</h4>
+<p>a. Process automation dan workflow optimization</p>
+<p>b. Quality control dengan computer vision</p>
+<p>c. Anomaly detection dalam operational metrics</p>
+<p>d. Chatbots untuk customer service</p>
+<h4 id="233-contoh-implementasi">2.3.3. Contoh implementasi</h4>
+<p>a. Monitoring real-time performa layanan</p>
+<p>b. Automated quality assurance systems</p>
+<p>c. Predictive maintenance untuk peralatan</p>
+<h3 id="24-level-arsip-data-sistem-manajemen-pengetahuan-kms">2.4. Level Arsip Data: Sistem Manajemen Pengetahuan (KMS)</h3>
+<h4 id="241-pemahaman-konsep">2.4.1. Pemahaman konsep</h4>
+<p>a. Target pengguna: seluruh organisasi</p>
+<p>b. Karakteristik informasi: historical, searchable, contextual</p>
+<p>c. Format output: knowledge base, best practices, expert networks</p>
+<h4 id="242-aplikasi-ai-pada-level-ini">2.4.2. Aplikasi AI pada level ini</h4>
+<p>a. Intelligent document management</p>
+<p>b. Knowledge extraction dari unstructured data</p>
+<p>c. Expert system untuk troubleshooting</p>
+<p>d. Automated tagging dan categorization</p>
+<h4 id="243-contoh-implementasi">2.4.3. Contoh implementasi</h4>
+<p>a. Smart search engine untuk internal documents</p>
+<p>b. FAQ systems dengan natural language processing</p>
+<p>c. Knowledge mapping dan expert identification</p>
+<h2 id="3-memahami-manfaat-dan-nilai-tambah">3. Memahami Manfaat dan Nilai Tambah</h2>
+<h3 id="31-peningkatan-kualitas-keputusan">3.1. Peningkatan Kualitas Keputusan</h3>
+<h4 id="311-bagaimana-ai-membantu">3.1.1. Bagaimana AI membantu</h4>
+<p>a. Mengurangi bias dalam pengambilan keputusan</p>
+<p>b. Menyediakan insight berbasis data yang komprehensif</p>
+<p>c. Memungkinkan analisis skenario yang kompleks</p>
+<h4 id="312-contoh-praktis">3.1.2. Contoh praktis</h4>
+<p>a. Prediksi demand untuk perencanaan inventory</p>
+<p>b. Risk scoring untuk evaluasi kredit atau investasi</p>
+<p>c. Sentiment analysis untuk kebijakan publik</p>
+<h3 id="32-efisiensi-operasional">3.2. Efisiensi Operasional</h3>
+<p>Subbab ini menguraikan mekanisme peningkatan efisiensi operasional.</p>
+<p>a. Automasi task-task repetitif</p>
+<p>b. Optimasi proses berdasarkan historical data</p>
+<p>c. Predictive maintenance untuk mencegah downtime</p>
+<h3 id="33-competitive-advantage">3.3. Competitive Advantage</h3>
+<p>Subbab ini menguraikan keunggulan kompetitif penggunaan AI.</p>
+<p>a. Faster time-to-market untuk produk/layanan baru</p>
+<p>b. Personalisasi layanan berdasarkan data customer</p>
+<p>c. Inovasi dalam business model</p>
+<h2 id="4-pertimbangan-dan-tantangan">4. Pertimbangan dan Tantangan</h2>
+<h3 id="41-tantangan-teknis">4.1. Tantangan Teknis</h3>
+<p>Subbab ini menguraikan tantangan teknis yang perlu dipahami.</p>
+<p>a. Data quality dan data governance</p>
+<p>b. Integration complexity dengan sistem existing</p>
+<p>c. Scalability dan performance issues</p>
+<p>d. Security dan privacy concerns</p>
+<h3 id="42-tantangan-organisasional">4.2. Tantangan Organisasional</h3>
+<p>Subbab ini menguraikan tantangan dari sisi manusia (human factor).</p>
+<p>a. Change resistance dari employees</p>
+<p>b. Skill gap dalam AI literacy</p>
+<p>c. Cultural transformation needs</p>
+<p>d. Leadership commitment requirements</p>
+<h3 id="43-tantangan-etis-dan-hukum">4.3. Tantangan Etis dan Hukum</h3>
+<p>Subbab ini menguraikan sejumlah isu penting dari perspektif etika dan regulasi.</p>
+<p>a. Bias dalam algoritma AI</p>
+<p>b. Transparency dan explainability</p>
+<p>c. Accountability dalam automated decisions</p>
+<p>d. Compliance dengan regulasi data protection</p>
+<h2 id="5-kondisi-dan-prasyarat-keberhasilan">5. Kondisi dan Prasyarat Keberhasilan</h2>
+<h3 id="51-kesiapan-organisasi">5.1. Kesiapan Organisasi</h3>
+<p>Subbab ini menguraikan ceklis asesmen kesiapan organisasi.</p>
+<p>a. Digital maturity level</p>
+<p>b. Data infrastructure availability</p>
+<p>c. Leadership support dan vision clarity</p>
+<p>d. Resource allocation capability</p>
+<h3 id="52-kesiapan-teknologi">5.2. Kesiapan Teknologi</h3>
+<p>Subbab ini menguraikan prasyarat infrastruktur teknologi.</p>
+<p>a. Computing power dan storage capacity</p>
+<p>b. Network connectivity dan bandwidth</p>
+<p>c. Integration capabilities</p>
+<p>d. Security framework</p>
+<h3 id="53-kesiapan-sdm">5.3. Kesiapan SDM</h3>
+<p>Subbab ini menguraikan pertimbangan kesiapan sumber daya manusia.</p>
+<p>a. Digital literacy level</p>
+<p>b. Training dan development programs</p>
+<p>c. Change management capability</p>
+<p>d. Talent acquisition strategy</p>
+<h2 id="6-tren-dan-perkembangan-masa-depan">6. Tren dan Perkembangan Masa Depan</h2>
+<h3 id="61-emerging-technologies">6.1. Emerging Technologies</h3>
+<p>Subbab ini menguraikan teknologi-teknologi emergen yang patut diamati perkembangannya.</p>
+<p>a. Generative AI dan Large Language Models</p>
+<p>b. Edge computing untuk real-time processing</p>
+<p>c. Quantum computing untuk complex optimization</p>
+<p>d. Augmented analytics untuk citizen data scientists</p>
+<h3 id="62-industry-applications">6.2. Industry Applications</h3>
+<p>Subbab ini menguraikan sejumlah leading sector yang telah mengimplementasikan AI dan teknologi emergen lainnya.</p>
+<p>a. Financial services: fraud detection, robo-advisors</p>
+<p>b. Healthcare: diagnostic imaging, drug discovery</p>
+<p>c. Manufacturing: predictive maintenance, quality control</p>
+<p>d. Government: smart cities, policy analysis</p>
+<h2 id="7-kesimpulan-dan-refleksi">7. Kesimpulan dan Refleksi</h2>
+<h3 id="71-key-takeaways">7.1. Key Takeaways</h3>
+<p>Subbab ini menyajikan sejumlah poin yang paling penting untuk dicatat.</p>
+<p>a. AI bukan magic bullet, tetapi powerful tool bila digunakan dengan tepat</p>
+<p>b. Success depends more on organizational readiness than technology sophistication</p>
+<p>c. Implementation harus bertahap dan berbasis pada clear business objectives</p>
+<p>d. Human element tetap critical dalam AI-augmented organizations</p>
+<h3 id="72-implikasi-untuk-berbagai-stakeholder">7.2. Implikasi untuk Berbagai Stakeholder</h3>
+<h4 id="721-untuk-pemimpin-organisasi">7.2.1. Untuk pemimpin organisasi</h4>
+<p>a. Pentingnya strategic vision dan long-term commitment</p>
+<p>b. Investment in people sama pentingnya dengan investment in technology</p>
+<h4 id="722-untuk-praktisi-it">7.2.2. Untuk praktisi IT</h4>
+<p>a. Perlu memahami business context, bukan hanya technical aspects</p>
+<p>b. Collaboration dengan business units menjadi kunci sukses</p>
+<h4 id="723-untuk-end-users">7.2.3. Untuk end users</h4>
+<p>a. AI akan mengubah nature of work, bukan menggantikan pekerja</p>
+<p>b. Continuous learning menjadi necessity</p>
+<h3 id="73-pandangan-ke-depan">7.3. Pandangan ke Depan</h3>
+<p>Subbab ini menguraikan prediksi evolusi teknologi dalam relasinya dengan manajemen organisasi.</p>
+<p>a. AI akan semakin embedded dalam daily operations</p>
+<p>b. Decision-making akan semakin data-driven dan automated</p>
+<p>c. New skills dan competencies akan terus bermunculan</p>
+<p>d. Organizational structures mungkin akan berubah fundamental</p>
+<hr>
+<h2 id="glosarium">Glosarium</h2>
+<ul>
+<li>
+<p><strong>Kecerdasan Artifisial (AI)</strong></p>
+<p>Kemampuan mesin untuk meniru fungsi kognitif manusia seperti belajar dan pemecahan masalah</p>
+</li>
+<li>
+<p><strong>Machine Learning</strong></p>
+<p>Subset dari AI yang memungkinkan sistem belajar dan improve dari experience tanpa explicit programming</p>
+</li>
+<li>
+<p><strong>Business Intelligence</strong></p>
+<p>Teknologi dan strategi untuk menganalisis data bisnis dan menyajikan actionable information</p>
+</li>
+<li>
+<p><strong>Predictive Analytics</strong></p>
+<p>Penggunaan data, algoritma statistik dan machine learning untuk mengidentifikasi kemungkinan outcome masa depan</p>
+</li>
+<li>
+<p><strong>Digital Transformation</strong></p>
+<p>Integrasi teknologi digital ke semua area bisnis yang mengubah cara beroperasi dan deliver value</p>
+</li>
+</ul>
+
+</body>
+</html>
