@@ -123,6 +123,10 @@ Sebagai *living document*, manifesto ini akan terus berkembang mengikuti dinamik
   - [Lampiran](#lampiran)
     - [Lampiran 1. Dokumen pendukung dan sumber data](#lampiran-1-dokumen-pendukung-dan-sumber-data)
     - [Lampiran 2. Daftar istilah dan glosarium](#lampiran-2-daftar-istilah-dan-glosarium)
+      - [Konsep Teologis](#konsep-teologis)
+      - [Prinsip Etika](#prinsip-etika)
+      - [Teknologi AI](#teknologi-ai)
+      - [Metodologi](#metodologi)
     - [Lampiran 3. Referensi dan bibliografi](#lampiran-3-referensi-dan-bibliografi)
   - [Indeks](#indeks)
 
@@ -170,7 +174,7 @@ Dominasi nilai-nilai liberal dalam dataset pelatihan menciptakan distorsi kognit
 
 Fenomena ini memerlukan respons kritis berbasis kerangka *maqashid syariah* untuk melindungi komunitas Muslim dari dampak negatif teknologi.
 
-#### 1.2.2. Prinsip-prinsip Islamisasi Pengetahuan dan relevansinya dengan AI 
+#### 1.2.2. Prinsip-prinsip Islamisasi Pengetahuan dan relevansinya dengan AI
 
 Kerangka [Islamisasi Pengetahuan al-Faruqi](https://pwmjateng.com/konsep-dan-langkah-al-faruqi-dalam-islamisasi-ilmu-pengetahuan/) menawarkan metodologi sistematis melalui tahapan penguasaan disiplin modern, evaluasi kritis, dan integrasi kreatif dengan warisan Islam.
 
@@ -536,7 +540,7 @@ Transparansi dalam AI Islami melampaui keterbukaan kode (*open source*) menuju k
 
 Sistem harus menjelaskan bukan hanya "bagaimana" ia bekerja tetapi juga "mengapa" ia dirancang demikian.
 
-Akuntabilitas mencakup pertanggungjawaban horizontal (kepada masyarakat) dan vertikal (kepada Allah). 
+Akuntabilitas mencakup pertanggungjawaban horizontal (kepada masyarakat) dan vertikal (kepada Allah).
 
 Mekanisme yang dikembangkan antara lain: registrasi dampak algoritma, hak banding manusiawi, dan dewan pengawas kepatuhan syariah.
 
@@ -788,7 +792,7 @@ Rekomendasi utamanya adalah pengembangan standar konten keagamaan berbasis AI ya
 
 #### 6.3.3. Analisis bias kultural dalam dataset pelatihan AI
 
-Kajian kritis terhadap representasi nilai-nilai Islam dalam dataset AI global, mengungkap ketidakseimbangan dalam penggambaran Muslim dan praktik keagamaan. 
+Kajian kritis terhadap representasi nilai-nilai Islam dalam dataset AI global, mengungkap ketidakseimbangan dalam penggambaran Muslim dan praktik keagamaan.
 
 Penelitian ini mengembangkan metode evaluasi dataset berbasis *maqashid syariah* dan merekomendasikan pembuatan korpus data alternatif yang lebih representatif, serta teknik debiasing yang sesuai dengan perspektif Islam.
 
@@ -818,7 +822,7 @@ Pendekatan ini menjembatani antara kecepatan inovasi teknologi dengan kehati-hat
 
 ## Bab 7: Tantangan dan Prospek Masa Depan  
 
-### 7.1. Tantangan teknis dan non-teknis dalam Islamisasi AI 
+### 7.1. Tantangan teknis dan non-teknis dalam Islamisasi AI
 
 Implementasi AI berbasis nilai Islam menghadapi tantangan kompleks di berbagai bidang.
 
@@ -864,7 +868,7 @@ Strateginya meliputi:
 
 2. pengembangan varian Islami dari teknologi emerging (seperti fintech syariah berbasis AI), dan
 
-3. kontribusi aktif dalam standarisasi global dengan membawa perspektif Islam. 
+3. kontribusi aktif dalam standarisasi global dengan membawa perspektif Islam.
 
 Pendekatan "*al-muhafazah 'ala al-qadim as-shalih wal akhdzu bil-jadid al-aslah*" menjadi panduan dalam menyeleksi inovasi yang sesuai.
 
@@ -892,7 +896,7 @@ Peta jalan kebijakan AI Islami dirancang dalam tiga fase utama:
 
 2. Fase implementasi (2028-2032): Peluncuran kebijakan di tingkat nasional dan regional
 
-3. Fase globalisasi (2033-2035): Kontribusi aktif dalam standar internasional 
+3. Fase globalisasi (2033-2035): Kontribusi aktif dalam standar internasional
 
 Setiap fase mencakup penyempurnaan aspek hukum syariah dan teknis, dengan mekanisme evaluasi tahunan oleh dewan ahli multidisiplin.
 
@@ -1000,7 +1004,279 @@ Dengan implementasi yang konsisten, visi AI sebagai alat mencapai *maqashid syar
 
 ### Lampiran 1. Dokumen pendukung dan sumber data  
 
-### Lampiran 2. Daftar istilah dan glosarium  
+### Lampiran 2. Daftar istilah dan glosarium
+
+#### Konsep Teologis
+
+1. **Tauhid Teknologi**
+
+    - **Arab**: توحيد التكنولوجيا  
+
+    - **Inggris**: Technological Tawhid  
+
+    - **Deskripsi**: Paradigma dasar yang menegaskan bahwa semua pengembangan teknologi harus mengakui keesaan Allah sebagai sumber segala pengetahuan. Konsep ini menolak deifikasi teknologi dan menempatkan inovasi sebagai sarana ibadah, bukan tujuan akhir. Dalam konteks AI, implementasinya meliputi desain sistem yang menghindari atribut ketuhanan pada mesin dan mengarahkan manfaat teknologi untuk kemaslahatan umat manusia sesuai petunjuk ilahi.  
+
+2. **Khilafah Digital**
+
+    - **Arab**: الخلافة الرقمية  
+
+    - **Inggris**: Digital Khilafah  
+
+    - **Deskripsi**: Kerangka tanggung jawab manusia sebagai wakil Allah dalam mengelola ekosistem digital. Konsep ini menekankan amanah penguasaan teknologi untuk kemaslahatan bersama, termasuk prinsip keberlanjutan lingkungan dan keadilan sosial. Implementasinya dalam tata kelola AI mencakup mekanisme audit syariah dan akuntabilitas publik atas sistem algoritmik.  
+
+3. **Maqashid Syariah**
+
+    - **Arab**: مقاصد الشريعة  
+
+    - **Inggris**: Maqasid al-Shariah  
+
+    - **Deskripsi**: Tujuan fundamental syariah Islam yang menjadi kompas etis pengembangan teknologi. Meliputi perlindungan lima hak dasar: agama (hifzh ad-din), jiwa (hifzh an-nafs), akal (hifzh al-aql), keturunan (hifzh an-nasl), dan harta (hifzh al-mal). Dalam AI, kerangka ini digunakan untuk mengevaluasi dampak sistem algoritmik melalui lensa kemaslahatan universal.  
+
+4. **Epistemologi Islam**
+
+    - **Arab**: نظرية المعرفة الإسلامية  
+
+    - **Inggris**: Islamic Epistemology  
+
+    - **Deskripsi**: Sistem pengetahuan yang menyatukan sumber naqli (wahyu tekstual) dan aqli (rasionalitas) dalam kerangka tauhid. Berbeda dengan epistemologi Barat sekuler, pendekatan ini mengakui hierarki ilmu dengan wahyu sebagai otoritas tertinggi. Dalam AI, diimplementasikan melalui model yang memadukan analisis data dengan filter syariah berbasis teks otoritatif.  
+
+5. **Naqli-Aqli Integratif**
+
+    - **Arab**: النقلي والعقلي المتكامل  
+
+    - **Inggris**: Integrative Naqli-Aqli  
+
+    - **Deskripsi**: Metodologi pengembangan teknologi yang menyelaraskan sumber tekstual Islam (Al-Qur'an, Hadis) dengan analisis rasional dan empiris. Pendekatan ini menghindari ekstremitas literalis maupun rasionalis murni. Dalam rekayasa AI, diwujudkan melalui sistem yang memadukan algoritma kecerdasan buatan dengan modul interpretasi teks keagamaan berbasis ushul fiqh.  
+
+6. **Qalb Komputasional**
+
+    - **Arab**: القلب الحسابي  
+
+    - **Inggris**: Computational Qalb  
+
+    - **Deskripsi**: Model integrasi fungsi qalb (hati nurani) dalam arsitektur sistem cerdas. Konsep ini mengatasi keterbatasan AI yang hanya mengandalkan logika dengan menambahkan dimensi moral-spiritual. Implementasinya meliputi mekanisme filter etika berbasis maqashid syariah dan sistem evaluasi dampak spiritual sebelum pengambilan keputusan algoritmik.  
+
+7. **Ma'rifah Algoritmik**
+
+    - **Arab**: المعرفة الخوارزمية  
+
+    - **Inggris**: Algorithmic Ma'rifah  
+
+    - **Deskripsi**: Pendekatan pengetahuan yang melampaui informasi kognitif menuju pemahaman holistik (ma'rifah) dalam sistem AI. Berbeda dengan machine learning konvensional, model ini mengintegrasikan dimensi kontekstual dan hikmah, menghasilkan keputusan yang tidak hanya akurat tetapi juga penuh kebijaksanaan. Contoh aplikasi termasuk sistem diagnosa medis yang mempertimbangkan aspek spiritual pasien.  
+
+8. **Hikmah Teknologi**
+
+    - **Arab**: حكمة التكنولوجيا  
+
+    - **Inggris**: Technological Wisdom  
+
+    - **Deskripsi**: Prinsip penerapan kebijaksanaan praktis (hikmah) dalam siklus hidup teknologi. Konsep ini menekankan keseimbangan antara inovasi dan dampak sosial, dengan mempertimbangkan maslahah jangka panjang. Dalam pengembangan AI, diwujudkan melalui mekanisme evaluasi multi-dimensi yang mempertimbangkan aspek ukhrawi selain duniawi.  
+
+9. **Taklif Digital**
+
+    - **Arab**: التكليف الرقمي  
+
+    - **Inggris**: Digital Taklif  
+
+    - **Deskripsi**: Doktrin tanggung jawab moral manusia di era digital berdasarkan konsep taklif dalam Islam. Prinsip ini menegaskan bahwa kebebasan berteknologi diiringi akuntabilitas di hadapan Allah. Implementasinya mencakup desain sistem yang memperkuat ikhtiyar (kebebasan memilih) manusia dan mencegah determinisme teknologi (jabr).  
+
+10. **Maslahah Mursalah**
+
+    - **Arab**: المصلحة المرسلة  
+
+    - **Inggris**: Unrestricted Maslahah  
+
+    - **Deskripsi**: Metode penetapan hukum untuk isu teknologi baru berdasarkan prinsip kemaslahatan universal, meskipun tidak diatur eksplisit dalam nash. Konsep ini digunakan ketika menghadapi perkembangan teknologi seperti AI generatif atau metaverse, dengan syarat tidak bertentangan dengan maqashid syariah. Contoh aplikasi: fatwa tentang NFT dalam ekonomi Islam.
+
+#### Prinsip Etika
+
+11. **Adl Algoritmik**
+
+    - **Arab**: العدل الخوارزمي  
+
+    - **Inggris**: Algorithmic Justice  
+
+    - **Deskripsi**: Prinsip penerapan keadilan Islam (al-'adl) dalam seluruh siklus pengembangan AI. Melampaui kesetaraan statistik dengan mempertimbangkan konteks sosio-kultural dan kebutuhan khusus kelompok marginal. Implementasinya mencakup teknik debiasing dataset, mekanisme afirmatif dalam sistem rekomendasi, dan protokol pemeriksaan bias melalui lensa fiqh.  
+
+12. **Al-Bayan (Transparansi)**
+
+    - **Arab**: البيان  
+
+    - **Inggris**: Transparency  
+
+    - **Deskripsi**: Prinsip keterbukaan menyeluruh dalam sistem AI yang mencakup tiga level: teknis (cara kerja algoritma), etis (nilai yang dianut), dan hukum (dasar syariah keputusan). Konsep ini menjamin hak pengguna untuk memahami proses pengambilan keputusan mesin (haqq al-ma'lumah) dan mencegah manipulasi terselubung.  
+
+13. **Al-Mas'uliyyah (Akuntabilitas)**
+
+    - **Arab**: المسؤولية  
+
+    - **Inggris**: Accountability  
+
+    - **Deskripsi**: Sistem pertanggungjawaban komprehensif dalam pengembangan AI yang mencakup dimensi vertikal (kepada Allah) dan horizontal (kepada masyarakat). Implementasinya meliputi mekanisme audit syariah berkala, sistem dokumentasi keputusan algoritmik, dan saluran banding manusiawi ketika terjadi kesalahan sistem.  
+
+14. **Ihsan Teknologi**
+
+    - **Arab**: إحسان التكنولوجيا  
+
+    - **Inggris**: Technological Excellence  
+
+    - **Deskripsi**: Pendekatan pengembangan teknologi yang mengintegrasikan standar kesempurnaan (ihsan) dalam setiap aspek. Konsep ini mendorong inovasi melebihi kewajiban minimal dengan mempertimbangkan estetika, keberlanjutan, dan dampak jangka panjang. Dalam AI, diwujudkan melalui desain antarmuka yang manusiawi, kode yang elegan, dan sistem yang memberikan pengalaman spiritual positif.  
+
+15. **Wasathiyah Digital**
+
+    - **Arab**: الوسطية الرقمية  
+
+    - **Inggris**: Digital Moderation  
+
+    - **Deskripsi**: Prinsip moderasi dalam transformasi digital yang menyeimbangkan antara adopsi inovasi dan pelestarian nilai inti. Konsep ini menolak ekstremitas baik teknofilia maupun teknofobia. Implementasinya mencakup filter budaya lokal dalam globalisasi teknologi dan mekanisme adaptasi bertahap untuk masyarakat tradisional.  
+
+16. **Himayatul 'Aqidah**
+
+    - **Arab**: حماية العقيدة  
+
+    - **Inggris**: Protection of Faith  
+
+    - **Deskripsi**: Sistem perlindungan menyeluruh terhadap akidah umat dalam ekosistem digital. Meliputi mekanisme deteksi konten menyimpang, filter anti-syirik dalam algoritma rekomendasi, dan edukasi digital berbasis aqidah ahlussunnah wal jamaah. Implementasinya mencakup sertifikasi konten keagamaan dan sistem rating berbasis manhaj yang benar.  
+
+17. **Siyasah Syar'iyah**
+
+    - **Arab**: السياسة الشرعية  
+
+    - **Inggris**: Sharia Policy  
+
+    - **Deskripsi**: Kerangka kebijakan teknologi yang mengacu pada prinsip siyasah syar'iyah (kebijakan berdasarkan syariat). Konsep ini mengintegrasikan maqashid syariah dalam regulasi digital, termasuk tata kelola data, standar AI islami, dan perlindungan konsumen muslim. Contoh implementasi: undang-undang perlindungan data pribadi berbasis konsep hijab digital.  
+
+18. **Fiqh Prioritas Teknologi**
+
+    - **Arab**: فقه الأولويات التكنولوجية  
+
+    - **Inggris**: Technology Priority Fiqh  
+
+    - **Deskripsi**: Metode penetapan prioritas dalam pengembangan teknologi berdasarkan prinsip fiqh al-awlawiyat. Kerangka ini membantu menentukan alokasi sumber daya dengan mempertimbangkan skala maslahat (dharuriyyat > hajiyyat > tahsiniyyat) dan tingkat urgensi sosial. Contoh aplikasi: prioritisasi pengembangan AI untuk kesehatan umat daripada hiburan.
+
+#### Teknologi AI
+
+19. **Machine Learning Syar'i**
+
+    - **Arab**: تعلم الآلة الشرعي  
+
+    - **Inggris**: Sharia-compliant Machine Learning  
+
+    - **Deskripsi**: Pendekatan pembelajaran mesin yang mengintegrasikan prinsip syariah dalam seluruh pipeline: dari koleksi data halal, preprocessing yang menghindari bias haram, hingga model yang menghasilkan output sesuai nilai Islam. Teknik khusus termasuk filter dataset berbasis fatwa dan mekanisme validasi syariah pada lapisan output.  
+
+20. **NLP Fiqh**
+
+    - **Arab**: معالجة اللغة الطبيعية الفقهية  
+
+    - **Inggris**: Fiqh-based NLP  
+
+    - **Deskripsi**: Sistem pemrosesan bahasa alami yang mengaplikasikan metodologi fiqh dalam memahami dan menghasilkan teks. Meliputi modul tafsir kontekstual, deteksi makna ganda (musytarak), dan klasifikasi hukum berdasarkan mazhab. Contoh aplikasi: chatbot fatwa yang mempertimbangkan qawaid fiqhiyyah dan perbedaan pendapat ulama.  
+
+21. **Computer Vision Halal**
+
+    - **Arab**: رؤية الحاسوب الحلال  
+
+    - **Inggris**: Halal Computer Vision  
+
+    - **Deskripsi**: Teknologi penglihatan komputer yang dirancang khusus untuk mengidentifikasi dan memfilter konten visual berdasarkan prinsip syariah. Sistem ini mampu mendeteksi unsur haram dalam gambar/video, mengenali aktivitas tidak senonoh, dan memverifikasi kesesuaian produk dengan standar halal. Menggunakan dataset khusus yang dikurasi ulama dan teknik deep learning yang sesuai etika Islam.  
+
+22. **AI Governance Islami**
+
+    - **Arab**: حوكمة الذكاء الاصطناعي الإسلامي  
+
+    - **Inggris**: Islamic AI Governance  
+
+    - **Deskripsi**: Kerangka tata kelola AI komprehensif yang mengintegrasikan prinsip syariah dalam aspek regulasi, pengawasan, dan akuntabilitas. Meliputi pembentukan dewan pengawas syariah, standar sertifikasi sistem AI, dan mekanisme audit berkala. Kerangka ini menjamin keselarasan teknologi dengan maqashid syariah dan melindungi hak-hak pengguna muslim.  
+
+23. **Chatbot Dakwah**
+
+    - **Arab**: روبوت المحادثة الدعوي  
+
+    - **Inggris**: Dakwah Chatbot  
+
+    - **Deskripsi**: Asisten virtual cerdas yang menyediakan layanan dakwah Islam dengan mekanisme penyaringan syariah otomatis. Dilengkapi dengan database fatwa terverifikasi, kemampuan memahami konteks pertanyaan keagamaan, dan filter untuk mencegah penyebaran ajaran menyimpang. Fitur uniknya termasuk deteksi pertanyaan kritis dan pengalihan ke ahli manusia ketika diperlukan.  
+
+24. **Sistem Rekomendasi Syariah**
+
+    - **Arab**: نظام التوصية الشرعي  
+
+    - **Inggris**: Sharia Recommendation System  
+
+    - **Deskripsi**: Algoritma rekomendasi yang dirancang khusus untuk menyarankan produk, layanan, dan konten sesuai prinsip syariah. Sistem ini mengintegrasikan filter halal-haram, memprioritaskan kemaslahatan pengguna, dan menghindari promosi konten bermasalah secara akidah. Menggunakan teknik machine learning dengan dataset yang telah divalidasi oleh dewan syariah.  
+
+25. **Knowledge Graph Kitab**
+
+    - **Arab**: رسم المعرفة للكتب  
+
+    - **Inggris**: Islamic Text Knowledge Graph  
+
+    - **Deskripsi**: Basis pengetahuan terstruktur yang memetakan hubungan konseptual dalam kitab-kitab Islam klasik. Menggunakan teknologi graph database untuk menghubungkan ayat, hadis, pendapat ulama, dan konsep fiqh. Memfasilitasi penelitian mendalam dengan kemampuan penelusuran silang otomatis dan visualisasi hubungan keilmuan Islam.
+
+#### Metodologi
+
+26. **Islamisasi Algoritma**
+
+    - **Arab**: أسلمة الخوارزميات  
+
+    - **Inggris**: Algorithm Islamization  
+
+    - **Deskripsi**: Proses sistematis mengintegrasikan nilai-nilai Islam ke dalam struktur algoritma, meliputi fase analisis kritis terhadap bias sekuler, integrasi prinsip syariah, dan validasi syariah output. Contoh: modifikasi algoritma rekomendasi untuk memprioritaskan konten yang meneguhkan tauhid dan memfilter materi syirik.  
+
+27. **Dekonstruksi Kritis**
+
+    - **Arab**: التفكيك النقدي  
+
+    - **Inggris**: Critical Deconstruction  
+
+    - **Deskripsi**: Metode analisis mendalam untuk mengungkap asumsi filosofis, bias kultural, dan nilai tersembunyi dalam teknologi. Dalam konteks AI Islami, digunakan untuk mengidentifikasi unsur-unsur sekuler, materialistik, atau bertentangan dengan tauhid dalam arsitektur sistem dan dataset.  
+
+28. **Integrasi Kreatif**
+
+    - **Arab**: التكامل الإبداعي  
+
+    - **Inggris**: Creative Integration  
+
+    - **Deskripsi**: Proses sintesis inovatif antara khazanah keilmuan Islam dan kemajuan teknologi modern. Meliputi adaptasi konsep fiqh klasik untuk solusi digital dan transformasi teknologi Barat melalui filter syariah. Contoh: penerapan konsep hisbah dalam sistem moderasi konten otomatis.  
+
+29. **Validasi Syariah Model**
+
+    - **Arab**: التحقق الشرعي للنموذج  
+
+    - **Inggris**: Sharia Model Validation  
+
+    - **Deskripsi**: Prosedur verifikasi formal untuk memastikan model AI mematuhi prinsip syariah sebelum deploy. Meliputi audit oleh ahli fiqh dan ilmuwan data, pengujian skenario berbasis kasus fiqh, dan sertifikasi kelayakan syariah. Menjadi gerbang akhir sebelum implementasi sistem.  
+
+30. **Audit Etika AI Islami**
+
+    - **Arab**: مراجعة أخلاقيات الذكاء الاصطناعي الإسلامي  
+
+    - **Inggris**: Islamic AI Ethics Audit  
+
+    - **Deskripsi**: Proses evaluasi periodik terhadap sistem AI aktif berdasarkan kerangka etika Islam. Memeriksa kesesuaian dengan maqashid syariah, dampak sosial-spiritual, dan kepatuhan terhadap fatwa kontemporer. Hasil audit menentukan kelanjutan operasi sistem.  
+
+31. **Framework Maqashid AI**
+
+    - **Arab**: إطار مقاصد الذكاء الاصطناعي  
+
+    - **Inggris**: Maqashid AI Framework  
+
+    - **Deskripsi**: Kerangka pengembangan AI komprehensif yang mengoperasionalkan maqashid syariah dalam siklus hidup teknologi. Menyediakan panduan teknis untuk implementasi perlindungan agama, jiwa, akal, keturunan, dan harta dalam sistem algoritmik.  
+
+32. **Takhrij Digital**
+
+    - **Arab**: التخريج الرقمي  
+
+    - **Inggris**: Digital Takhrij  
+
+    - **Deskripsi**: Metode otomatis untuk melacak sumber asli teks keagamaan menggunakan teknologi AI. Sistem ini mampu mengidentifikasi kitab rujukan, halaman, dan derajat hadis secara instan, meningkatkan akurasi penelitian keislaman dan menghindari kesalahan kutipan.  
+
+33. **Ijtihad Teknologi**
+
+    - **Arab**: الاجتهاد التكنولوجي  
+
+    - **Inggris**: Technological Ijtihad  
+
+    - **Deskripsi**: Metodologi istinbath hukum baru untuk tantangan teknologi terkini yang belum diatur dalam nash eksplisit. Melibatkan mujtahid multidisiplin (ulama, insinyur, etikawan) dengan berpedoman pada maqashid syariah dan qawaid fiqhiyyah. Contoh topik: status hukum AI generator konten kreatif.
 
 ### Lampiran 3. Referensi dan bibliografi  
 
