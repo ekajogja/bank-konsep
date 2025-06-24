@@ -28,82 +28,24 @@ Bergabunglah dengan kami! Masa depan teknologi Islam dimulai hari ini.
 
 ## Daftar Isi
 
-### **I. FONDASI IDEOLOGIS**
-
-1. **Visi Islamisasi AI**
-   - Definisi dan Ruang Lingkup
-   - Perbedaan dengan Pendekatan Sekuler
-   - Tujuan Transformatif
-
-2. **Landasan Teologis dan Filosofis**
-   - Konsep Khalifah dalam Era Digital
-   - Prinsip Tauhid sebagai Kerangka Epistemologi
-   - Maqashid Syariah sebagai Panduan Pengembangan
-
-3. **Genealogi Intelektual**
-   - Warisan Islamisasi Pengetahuan al-Faruqi
-   - Adaptasi untuk Era Kecerdasan Artifisial
-   - Kontribusi Pemikir Muslim Kontemporer
-
-### **II. KRITIK TERHADAP AI MAINSTREAM**
-
-4. **Diagnosis Krisis Epistemologi**
-   - Sekularisme dalam Arsitektur AI
-   - Bias Kultural dan Hegemoni Barat
-   - Reduksionisme Materialistik
-
-5. **Dampak terhadap Umat Islam**
-   - Marginalisasi Perspektif Islam
-   - Ancaman terhadap Identitas dan Nilai
-   - Ketergantungan Teknologi yang Problematis
-
-### **III. KERANGKA ISLAMISASI AI**
-
-6. **Prinsip-Prinsip Fundamental**
-   - Tauhid sebagai Arsitektur Sistem
-   - Keadilan Algoritmik Berbasis Syariah
-   - Transparansi dan Akuntabilitas Islami
-
-7. **Metodologi Islamisasi**
-   - Dekonstruksi Sistem AI Eksisting
-   - Evaluasi Berdasarkan Kriteria Islam
-   - Rekonstruksi dengan Nilai Islami
-
-8. **Model Tata Kelola**
-   - Struktur Pengawasan Syariah
-   - Mekanisme Audit dan Evaluasi
-   - Partisipasi Umat dalam Pengembangan
-
-### **IV. VISI IMPLEMENTASI**
-
-9. **Strategi Transformasi Bertahap**
-   - Jangka Pendek: Fondasi dan Kesadaran
-   - Jangka Menengah: Ekspansi dan Konsolidasi
-   - Jangka Panjang: Transformasi Global
-
-10. **Kerangka Kelembagaan**
-    - Struktur Organisasi Ideal
-    - Mekanisme Koordinasi Antar Stakeholder
-    - Sistem Akuntabilitas dan Transparansi
-
-11. **Indikator Keberhasilan**
-    - Metrik Dampak Spiritual dan Sosial
-    - Pencapaian Target Teknologi
-    - Pengukuran Transformasi Paradigma
-
-### **V. PANGGILAN UNTUK BERTINDAK**
-
-12. **Peran Setiap Stakeholder**
-    - Ulama dan Cendekiawan
-    - Teknolog dan Developer
-    - Investor dan Entrepreneur
-    - Pemerintah dan Institusi
-    - Umat Secara Keseluruhan
-
-13. **Langkah Konkret Segera**
-    - Inisiatif yang Dapat Dimulai Hari Ini
-    - Platform Kolaborasi dan Networking
-    - Roadmap Personal dan Institusional
+1. [I. FONDASI IDEOLOGIS](#bagian-i-fondasi-ideologis)
+   1. [1. Visi Islamisasi AI](#1-visi-islamisasi-ai)
+   2. [2. Landasan Teologis dan Filosofis](#2-landasan-teologis-dan-filosofis)
+   3. [3. Genealogi Intelektual](#3-genealogi-intelektual)
+2. [II. KRITIK TERHADAP AI MAINSTREAM](#bagian-ii-kritik-terhadap-ai-mainstream)
+   1. [4. Diagnosis Krisis Epistemologi](#4-diagnosis-krisis-epistemologi)
+   2. [5. Dampak terhadap Umat Islam](#5-dampak-terhadap-umat-islam)
+3. [III. KERANGKA ISLAMISASI AI](#bagian-iii-kerangka-islamisasi-ai)
+   1. [6. Prinsip-Prinsip Fundamental](#6-prinsip-prinsip-fundamental)
+   2. [7. Metodologi Islamisasi](#7-metodologi-islamisasi)
+   3. [8. Model Tata Kelola](#8-model-tata-kelola)
+4. [IV. VISI IMPLEMENTASI](#bagian-iv-visi-implementasi)
+   1. [9. Strategi Transformasi Bertahap](#9-strategi-transformasi-bertahap)
+   2. [10. Kerangka Kelembagaan](#10-kerangka-kelembagaan)
+   3. [11. Indikator Keberhasilan](#11-indikator-keberhasilan)
+5. [V. PANGGILAN UNTUK BERTINDAK](#bagian-v-panggilan-untuk-bertindak)
+   1. [12. Peran Setiap Stakeholder](#12-peran-setiap-stakeholder)
+   2. [13. Langkah Konkret Segera](#13-langkah-konkret-segera)
 
 ---
 
