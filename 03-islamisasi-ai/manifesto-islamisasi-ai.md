@@ -156,6 +156,11 @@ Dataset pelatihan AI didominasi konten berbahasa Inggris dan perspektif Barat, m
 - **Proportional Response**: Keputusan algoritmik harus proporsional dengan input dan konteks
 - **Restorative Justice**: Sistem harus memiliki mekanisme koreksi dan perbaikan
 
+#### **Validasi Bertingkat (Tashih)**
+
+- **Prinsip Isnad Digital**: Setiap informasi yang disajikan oleh AI, terutama yang berkaitan dengan hukum atau teologi, harus dapat dilacak kembali ke sumber primernya.
+- **Status Validasi**: Sistem akan membedakan antara output mentah AI dan output yang telah diverifikasi (*ditashih*) oleh dewan ulama. Setiap konten yang telah divalidasi akan ditandai dengan jelas, lengkap dengan nama-nama validator (*mushahih*), untuk memberikan tingkat kepercayaan yang lebih tinggi.
+
 ### **7. Metodologi Islamisasi**
 
 #### **Tahap Dekonstruksi**
@@ -175,6 +180,26 @@ Dataset pelatihan AI didominasi konten berbahasa Inggris dan perspektif Barat, m
 - Pengembangan alternatif yang Islami
 - Integrasi nilai-nilai Islam dalam arsitektur sistem
 - Testing dan validasi dengan komunitas Muslim
+
+#### **Arsitektur Teknis Awal**
+
+- **Pendekatan Graph-RAG**: Untuk tahap awal, arsitektur yang dipilih adalah *Graph-based Retrieval-Augmented Generation* (Graph-RAG). Pendekatan ini memungkinkan sistem untuk memberikan jawaban yang relevan dan terstruktur dengan mengambil informasi dari basis data pengetahuan Islam (*Islamic Knowledge Graph*) yang terkurasi, tanpa harus melatih model bahasa raksasa dari nol.
+- **Pemanfaatan Model Open-Source**: Sistem akan dibangun di atas *foundation model* yang bersifat *open-source*, yang kemudian dihubungkan dengan *knowledge graph* tersebut. Ini merupakan strategi yang efisien dari segi biaya dan waktu pengembangan.
+- **Infrastruktur Cloud**: Pengembangan awal akan memanfaatkan sumber daya dari penyedia layanan *cloud* yang menawarkan program untuk organisasi non-profit, guna menekan biaya infrastruktur awal.
+
+### **8. Model Tata Kelola**
+
+#### **Tanggung Jawab Terdistribusi**
+
+- **Prinsip Akuntabilitas Berlapis**: Tanggung jawab atas output sistem tidak dibebankan pada satu entitas tunggal, melainkan didistribusikan secara berlapis:
+    - **Pengembang**: Bertanggung jawab atas stabilitas teknis dan akurasi algoritma.
+    - **Dewan Syariah**: Bertanggung jawab atas metodologi, kurasi data, dan proses validasi (*tashih*).
+    - **Pengguna Akhir (Ulama)**: Bertanggung jawab atas interpretasi akhir dan penggunaan informasi dalam konteks spesifik.
+
+#### **Privasi Berbasis Maqashid Syariah**
+
+- **Kedaulatan Data**: Data pengguna, terutama pertanyaan-pertanyaan yang diajukan kepada sistem, akan dikelola di bawah kerangka kerja privasi yang digali dari prinsip-prinsip *Maqashid Syariah*.
+- **Fokus pada Hifdz al-'Irdh**: Perlindungan kehormatan dan privasi pengguna menjadi prioritas utama, melampaui sekadar kepatuhan pada standar hukum sekuler. Ini akan diwujudkan melalui kebijakan retensi data yang ketat dan anonimisasi jika memungkinkan.
 
 ---
 
@@ -199,6 +224,18 @@ Dataset pelatihan AI didominasi konten berbahasa Inggris dan perspektif Barat, m
 - Kompetisi global dengan model mainstream
 - Influence dalam standar internasional
 - Transformasi paradigma teknologi global
+
+#### **Proyek Percontohan: Asisten Riset Ulama**
+
+- **Fokus Awal**: Sebagai bukti konsep, proyek ini akan memprioritaskan pengembangan **AI Chatbot internal** yang berfungsi sebagai asisten riset untuk kelompok ulama terdaftar.
+- **Tujuan**: Alat ini dirancang untuk mempercepat proses riset, verifikasi dalil, dan analisis perbandingan mazhab, memposisikan AI sebagai pendukung ijtihad, bukan pengganti ulama.
+- **Lingkup Tertutup**: Dengan membatasi akses pada tahap awal, proyek dapat memitigasi risiko, mengumpulkan umpan balik berkualitas tinggi, dan membangun kredibilitas sebelum diperkenalkan ke publik yang lebih luas.
+
+#### **Model Keberlanjutan: Social Enterprise**
+
+- **Skema Freemium**: Untuk menjamin keberlanjutan jangka panjang, inisiatif ini akan dioperasikan dengan model *social enterprise*. Akses dasar ke alat AI akan diberikan secara **gratis** untuk para ulama perorangan dan peneliti.
+- **Layanan Institusional**: Pendanaan akan diperoleh melalui penawaran **layanan premium berbayar** kepada institusi yang mampu (seperti bank syariah, lembaga fatwa, universitas, dan korporasi) yang membutuhkan fitur-fitur kustomisasi, skalabilitas, dan dukungan teknis tingkat lanjut.
+- **Reinvetasi Keuntungan**: Seluruh keuntungan yang diperoleh akan diinvestasikan kembali untuk membiayai riset, pengembangan, dan pemeliharaan infrastruktur.
 
 ### **10. Kerangka Kelembagaan**
 

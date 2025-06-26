@@ -16,35 +16,26 @@ Manifesto telah disampaikan. Visi telah dideklarasikan. Kini saatnya bergerak da
 
 ## **Daftar Isi**
 
-### **I. OPERASIONALISASI VISI MANIFESTO**
-
-1. **Dari Konsep ke Aksi**
-2. **Penerjemahan Prinsip Menjadi SOP**
-3. **Alignment dengan Framework Manifesto**
-
-### **II. PEMBENTUKAN WORKING GROUP**
-
-4. **Mandat dan Visi Operasional**
-5. **Struktur Komando Strategis**
-6. **Tim Multidisiplin dan Spesialisasi**
-
-### **III. METODOLOGI TRANSFORMASI**
-
-7. **Sembilan Tahapan Islamisasi Sistematis**
-8. **Framework Evaluasi dan Monitoring**
-9. **Mekanisme Adaptasi Berkelanjutan**
-
-### **IV. ROADMAP IMPLEMENTASI**
-
-10. **Fase I: Fondasi dan Standar (1-2 tahun)**
-11. **Fase II: Ekspansi dan Konsolidasi (3-5 tahun)**
-12. **Fase III: Transformasi Global (5-10 tahun)**
-
-### **V. KOORDINASI DAN EKSEKUSI**
-
-13. **Mekanisme Tata Kelola**
-14. **Platform Kolaborasi dan Networking**
-15. **Sistem Akuntabilitas dan Pelaporan**
+- [I. OPERASIONALISASI VISI MANIFESTO](#i-operasionalisasi-visi-manifesto)
+  - [1. Dari Konsep ke Aksi](#1-dari-konsep-ke-aksi)
+  - [2. Penerjemahan Prinsip Menjadi SOP](#2-penerjemahan-prinsip-menjadi-sop)
+  - [3. Alignment dengan Framework Manifesto](#3-alignment-dengan-framework-manifesto)
+- [II. PEMBENTUKAN WORKING GROUP](#ii-pembentukan-working-group)
+  - [4. Mandat dan Visi Operasional](#4-mandat-dan-visi-operasional)
+  - [5. Struktur Komando Strategis](#5-struktur-komando-strategis)
+  - [6. Tim Multidisiplin dan Spesialisasi](#6-tim-multidisiplin-dan-spesialisasi)
+- [III. METODOLOGI TRANSFORMASI](#iii-metodologi-transformasi)
+  - [7. Sembilan Tahapan Islamisasi Sistematis](#7-sembilan-tahapan-islamisasi-sistematis)
+  - [8. Framework Evaluasi dan Monitoring](#8-framework-evaluasi-dan-monitoring)
+  - [9. Mekanisme Adaptasi Berkelanjutan](#9-mekanisme-adaptasi-berkelanjutan)
+- [IV. ROADMAP IMPLEMENTASI](#iv-roadmap-implementasi)
+  - [10. Fase I: Fondasi dan Standar (1-2 tahun)](#10-fase-i-fondasi-dan-standar-1-2-tahun)
+  - [11. Fase II: Ekspansi dan Konsolidasi (3-5 tahun)](#11-fase-ii-ekspansi-dan-konsolidasi-3-5-tahun)
+  - [12. Fase III: Transformasi Global (5-10 tahun)](#12-fase-iii-transformasi-global-5-10-tahun)
+- [V. KOORDINASI DAN EKSEKUSI](#v-koordinasi-dan-eksekusi)
+  - [13. Mekanisme Tata Kelola](#13-mekanisme-tata-kelola)
+  - [14. Platform Kolaborasi dan Networking](#14-platform-kolaborasi-dan-networking)
+  - [15. Sistem Akuntabilitas dan Pelaporan](#15-sistem-akuntabilitas-dan-pelaporan)
 
 ---
 
@@ -52,7 +43,7 @@ Manifesto telah disampaikan. Visi telah dideklarasikan. Kini saatnya bergerak da
 
 ### **1. Dari Konsep ke Aksi**
 
-Manifesto Islamisasi AI telah menetapkan fondasi ideologis dan visi transformatif. Dokumen ini berfungsi sebagai "jembatan" yang menghubungkan visi filosofis dengan implementasi praktis. 
+Manifesto Islamisasi AI telah menetapkan fondasi ideologis dan visi transformatif. Dokumen ini berfungsi sebagai "jembatan" yang menghubungkan visi filosofis dengan implementasi praktis.
 
 **Prinsip Operasionalisasi:**
 
@@ -100,6 +91,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 - Mengawasi kesesuaian implementasi dengan nilai Islam
 
 **Komposisi:**
+
 - 7 Ulama senior dengan expertise teknologi
 - 3 Teknolog Muslim dengan background syariah
 - 2 Pakar etika dan filosofi Islam
@@ -130,7 +122,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 
 **Deliverables:**
 
-- Islamic AI Foundation Models (Q2 2025)
+- Graph-RAG based Islamic AI Assistant v1.0 (Q2 2025)
 - Halal Content Verification System (Q4 2025)
 - Syariah-Compliant Recommendation Engine (Q1 2026)
 
@@ -145,6 +137,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 - Mengembangkan Syariah AI Governance Framework
 - Menyusun panduan implementasi maqashid dalam algoritma
 - Membangun sistem audit syariah untuk produk AI
+- Mengelola proses validasi (Tashih) untuk output AI
 - Menciptakan sertifikasi halal untuk teknologi AI
 
 **Deliverables:**
@@ -180,6 +173,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 
 **Tugas Strategis:**
 
+- Merancang dan mengimplementasikan model bisnis Social Enterprise dengan skema freemium
 - Mengembangkan model bisnis syariah untuk startup AI
 - Membangun ekosistem investasi dan funding Islami
 - Menciptakan marketplace untuk produk dan layanan AI halal
@@ -261,6 +255,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Deep mastery of AI state-of-the-art
 
 **Implementasi:**
+
 - Intensive training program untuk core team
 - Subscription ke top-tier AI research databases
 - Regular paper review sessions dan technical workshops
@@ -273,6 +268,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Comprehensive understanding of Islamic intellectual tradition
 
 **Implementasi:**
+
 - Structured study program dalam ushul fiqh dan maqashid syariah
 - Workshop intensif dengan ulama dan fuqaha
 - Digitalisasi khazanah intelektual Islam klasik
@@ -285,6 +281,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Identifikasi gap antara AI mainstream dan kebutuhan umat
 
 **Implementasi:**
+
 - Comprehensive audit terhadap AI products existing
 - Survei kepuasan dan kebutuhan komunitas Muslim global
 - Analysis bias dan problematika dalam dataset AI
@@ -297,6 +294,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Synthesis novel antara Islam dan AI
 
 **Implementasi:**
+
 - Innovation workshops menggabungkan ulama dan teknolog
 - Development of Islamic AI design patterns
 - Creation of maqashid-based evaluation frameworks
@@ -309,6 +307,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Integration seamless antara nilai Islam dan teknologi AI
 
 **Implementasi:**
+
 - Development of Islamic AI architecture patterns
 - Creation of Syariah-compliant algorithms
 - Integration testing dengan Islamic knowledge systems
@@ -321,6 +320,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Demonstrasi superioritas model AI Islami
 
 **Implementasi:**
+
 - Public demonstration dan showcase events
 - Academic publications di top-tier conferences
 - Industry partnerships dan pilot implementations
@@ -333,6 +333,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Adoption sistemik dalam institusi Muslim
 
 **Implementasi:**
+
 - Pilot programs di universitas dan lembaga keuangan Islam
 - Government partnerships untuk public services
 - Integration dengan Islamic fintech dan halal industry
@@ -345,6 +346,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Paradigm shift dalam Muslim intellectual discourse
 
 **Implementasi:**
+
 - Curriculum integration di seluruh institusi pendidikan Islam
 - Public intellectual campaign dan debates
 - Community education programs di masjid dan pesantren
@@ -357,6 +359,7 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 **Target:** Influence terhadap standards dan regulations global
 
 **Implementasi:**
+
 - Participation dalam international AI governance forums
 - Development of global Islamic AI standards
 - Diplomatic advocacy untuk Islamic AI principles
@@ -422,18 +425,21 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Q1-Q2 2025: Mobilization Phase**
 
 **Organizational Setup:**
+
 - Formation of Dewan Syariah Teknologi
 - Recruitment key personnel untuk semua tim
 - Establishment of headquarters dan operational centers
 - Initial funding mobilization ($10M target)
 
 **Core Deliverables:**
+
 - Islamic AI Governance Framework v1.0
 - Syariah Compliance Audit Methodology
 - Initial dataset dengan Islamic content curation
-- Prototype Islamic AI assistant (limited scope)
+- Prototype 'Asisten Riset Ulama' (internal, limited scope)
 
 **Community Building:**
+
 - Launch of collaboration platform
 - First Islamic AI Conference dengan 500+ participants
 - University partnerships program (10 initial partners)
@@ -442,18 +448,21 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Q3-Q4 2025: Foundation Building**
 
 **Technology Development:**
+
 - Islamic Large Language Model v1.0 (Arabic/English)
 - Halal Content Classification System
 - Islamic Finance AI Advisory System
 - Privacy-preserving Islamic AI frameworks
 
 **Standards and Certification:**
+
 - Halal AI Certification Program launch
 - Islamic AI Development Guidelines v1.0
 - Industry adoption pilot programs (5 companies)
 - Regulatory engagement dengan OIC member states
 
 **Ecosystem Development:**
+
 - Islamic AI Investment Fund establishment
 - Startup incubation program launch (20 startups)
 - Academic research grants program ($2M allocation)
@@ -464,18 +473,21 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **2026-2027: Market Expansion**
 
 **Product Portfolio:**
+
 - Islamic AI suite untuk education sector
 - Halal e-commerce recommendation engines
 - Islamic content creation dan curation tools
 - Smart mosque dan Islamic center management systems
 
 **Geographic Expansion:**
+
 - Regional offices di MENA, Southeast Asia, dan South Asia
 - Localization untuk 10+ languages
 - Government partnerships dengan 15+ negara
 - Community outreach programs di 50+ cities
 
 **Industry Penetration:**
+
 - Islamic financial services AI adoption (80% market penetration)
 - Halal industry supply chain optimization
 - Islamic media dan entertainment platforms
@@ -484,12 +496,14 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **2028-2029: Market Leadership**
 
 **Technology Leadership:**
+
 - Islamic AI research publications (100+ per year)
 - Patent portfolio development (50+ patents)
 - Open source Islamic AI frameworks
 - Advanced Islamic AI applications (AR/VR, IoT integration)
 
 **Ecosystem Maturity:**
+
 - Self-sustaining developer ecosystem (10,000+ developers)
 - Comprehensive Islamic AI curriculum adoption (100+ universities)
 - Industry standards recognition globally
@@ -500,12 +514,14 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **2030-2032: Global Influence**
 
 **Technology Innovation:**
+
 - Next-generation Islamic AI architectures
 - Quantum computing applications untuk Islamic finance
 - Advanced Islamic knowledge reasoning systems
 - Global Islamic AI infrastructure backbone
 
 **Paradigm Transformation:**
+
 - Islamic AI principles dalam UN AI governance
 - Global Islamic AI ethics standards adoption
 - Academic discipline establishment di major universities
@@ -514,12 +530,14 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **2033-2035: Civilization Impact**
 
 **Systemic Change:**
+
 - Islamic AI governance models adopted globally
 - Transformation of technology development paradigms
 - New generation of Muslim technologists leading global innovation
 - Islamic values integrated dalam global AI ecosystem
 
 **Legacy Building:**
+
 - Permanent institutions untuk Islamic AI development
 - Sustainable funding mechanisms dan endowments
 - Knowledge transfer systems untuk future generations
@@ -534,11 +552,13 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Struktur Decision Making**
 
 **Strategic Level:**
+
 - Dewan Syariah Teknologi: Final authority on Islamic compliance
 - Executive Committee: Strategic direction dan resource allocation
 - Advisory Board: External expertise dan stakeholder representation
 
 **Operational Level:**
+
 - Working Group Coordinators: Day-to-day management
 - Project Managers: Specific deliverable execution
 - Technical Leads: Quality assurance dan innovation
@@ -546,18 +566,21 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Decision Making Protocols**
 
 **Syariah Compliance Decisions:**
+
 - Must have unanimous approval dari Dewan Syariah
 - Consultation process dengan broader ulama community
 - Documentation of reasoning dan precedent establishment
 - Appeal mechanism untuk contested decisions
 
 **Strategic Decisions:**
+
 - Executive Committee majority vote
 - Input dari all Working Group coordinators
 - Stakeholder impact assessment
 - Risk analysis dan mitigation planning
 
 **Operational Decisions:**
+
 - Delegated authority berdasarkan scope dan impact
 - Clear escalation procedures
 - Documentation requirements
@@ -568,18 +591,21 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Digital Collaboration Infrastructure**
 
 **Central Hub Platform:**
+
 - Integrated project management dan collaboration tools
 - Knowledge repository dengan searchable Islamic AI content
 - Community forums untuk discussion dan problem-solving
 - Resource sharing dan best practices documentation
 
 **Communication Systems:**
+
 - Multi-language support (Arabic, English, Urdu, Bahasa, Turkish)
 - Video conferencing dengan Islamic etiquette guidelines
 - Secure messaging untuk sensitive discussions
 - Public broadcasting untuk community updates
 
 **Knowledge Management:**
+
 - Version-controlled document systems
 - Islamic AI knowledge graph development
 - Research publication repository
@@ -588,18 +614,21 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Community Engagement Mechanisms**
 
 **Regular Events:**
+
 - Monthly webinars dengan expert speakers
 - Quarterly hackathons dan innovation challenges
 - Annual conferences dengan international participation
 - Regional meetups dan local community building
 
 **Educational Programs:**
+
 - Online courses dalam Islamic AI principles
 - Certification programs untuk developers dan practitioners
 - Research fellowship opportunities
 - Youth engagement programs
 
 **Partnership Networks:**
+
 - Academic institution partnerships
 - Industry collaboration agreements
 - Government relationship management
@@ -610,12 +639,14 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Performance Monitoring Framework**
 
 **Real-time Dashboards:**
+
 - Progress tracking terhadap roadmap milestones
 - Resource utilization dan budget management
 - Community engagement metrics
 - Impact measurement indicators
 
 **Regular Reporting Cycles:**
+
 - Monthly operational reports untuk internal stakeholders
 - Quarterly progress reports untuk funders dan partners
 - Annual impact assessment untuk public transparency
@@ -624,12 +655,14 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Transparency Mechanisms**
 
 **Public Accountability:**
+
 - Annual public reports dengan comprehensive metrics
 - Open source development untuk appropriate components
 - Community feedback collection dan response
 - Independent audit processes
 
 **Stakeholder Communication:**
+
 - Regular updates untuk funding organizations
 - Progress briefings untuk government partners
 - Community newsletters dan announcements
@@ -638,12 +671,14 @@ Working Group Islamisasi AI bukanlah sekadar komite akademik—ini adalah **koma
 #### **Quality Assurance Systems**
 
 **Internal Controls:**
+
 - Project management methodology compliance
 - Technical quality standards enforcement
 - Islamic compliance verification processes
 - Financial management dan audit requirements
 
 **External Validation:**
+
 - Independent technical assessments
 - Syariah compliance audits by external ulama
 - User satisfaction surveys dan feedback analysis
@@ -668,6 +703,7 @@ Kita berada di titik infleksi sejarah. Keputusan yang kita ambil hari ini akan m
 ### **Vision of Success**
 
 Dalam 10 tahun, kita akan melihat:
+
 - AI systems yang memperkuat, bukan mengancam, nilai-nilai Islam
 - Generasi Muslim technologists yang memimpin innovation global
 - Islamic principles terintegrasi dalam global AI governance
@@ -684,8 +720,9 @@ Dalam 10 tahun, kita akan melihat:
 *Last Updated: 23 Juni 2025*
 
 **للتواصل والمشاركة:**
+
 - Platform: [Islamic AI Collaboration Hub]
-- Email: workinggroup@islamicai.org
+- Email: <workinggroup@islamicai.org>
 - Social: @IslamicAI_Global
 
 **بارك الله فيكم وجزاكم الله خيراً**

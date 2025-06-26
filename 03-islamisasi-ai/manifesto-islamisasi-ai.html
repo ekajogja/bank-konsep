@@ -1,409 +1,532 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>manifesto-islamisasi-ai.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title>manifesto-islamisasi-ai.md</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  /* Base styles */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 { 
-    color: #2c3e50; 
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-top: 0;
-  }
-  
-  h2 { 
-    color: #2980b9; 
-    margin-top: 30px;
-  }
-  
-  /* Table styling */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    min-width: 600px; /* Minimum width before scrolling */
-  }
-  
-  th {
-    background-color: #3498db;
-    color: white;
-    text-align: left;
-    padding: 12px 15px;
-    position: sticky;
-    left: 0;
-  }
-  
-  td {
-    padding: 10px 15px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f8f9fa;
-  }
-  
-  /* Priority column styling */
-  td:nth-child(5) {
-    font-weight: bold;
-    color: #e74c3c;
-  }
-  
-  /* Mermaid chart sizing */
-  .mermaid {
-    display: block;
-    min-height: 400px;
-  }
-  
-  /* Notes section */
-  ul {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) {
-    body {
-      padding: 10px;
-      font-size: 14px;
-    }
-    
-    h1 { 
-      font-size: 1.5rem; 
-      padding-bottom: 8px;
-    }
-    
-    h2 { 
-      font-size: 1.3rem; 
-      margin-top: 20px;
-    }
-    
-    table {
-      display: block;
-      overflow-x: auto;
-      min-width: unset;
-    }
-    
-    .mermaid {
-      min-height: 300px;
-      transform: scale(0.85);
-      transform-origin: top left;
-    }
-  }
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		/* Base styles */
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
 
-  @media (max-width: 480px) {
-    body {
-      padding: 8px;
-    }
-    
-    th, td {
-      padding: 8px 10px;
-    }
-    
-    .mermaid {
-      transform: scale(0.75);
-    }
-  }
-</style>
+		h1 {
+			color: #2c3e50;
+			border-bottom: 2px solid #3498db;
+			padding-bottom: 10px;
+			margin-top: 0;
+		}
 
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+		h2 {
+			color: #2980b9;
+			margin-top: 30px;
+		}
+
+		/* Table styling */
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 20px 0;
+			min-width: 600px;
+			/* Minimum width before scrolling */
+		}
+
+		th {
+			background-color: #3498db;
+			color: white;
+			text-align: left;
+			padding: 12px 15px;
+			position: sticky;
+			left: 0;
+		}
+
+		td {
+			padding: 10px 15px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f8f9fa;
+		}
+
+		/* Priority column styling */
+		td:nth-child(5) {
+			font-weight: bold;
+			color: #e74c3c;
+		}
+
+		/* Mermaid chart sizing */
+		.mermaid {
+			display: block;
+			min-height: 400px;
+		}
+
+		/* Notes section */
+		ul {
+			background-color: #f8f9fa;
+			padding: 20px;
+			border-radius: 5px;
+		}
+
+		/* Mobile responsiveness */
+		@media (max-width: 768px) {
+			body {
+				padding: 10px;
+				font-size: 14px;
+			}
+
+			h1 {
+				font-size: 1.5rem;
+				padding-bottom: 8px;
+			}
+
+			h2 {
+				font-size: 1.3rem;
+				margin-top: 20px;
+			}
+
+			table {
+				display: block;
+				overflow-x: auto;
+				min-width: unset;
+			}
+
+			.mermaid {
+				min-height: 300px;
+				transform: scale(0.85);
+				transform-origin: top left;
+			}
+		}
+
+		@media (max-width: 480px) {
+			body {
+				padding: 8px;
+			}
+
+			th,
+			td {
+				padding: 8px 10px;
+			}
+
+			.mermaid {
+				transform: scale(0.75);
+			}
+		}
+	</style>
+
+	<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
 </head>
+
 <body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<h1 id="manifesto-islamisasi-ai-prinsip-umum-dan-rencana-kerja">Manifesto Islamisasi AI: Prinsip Umum dan Rencana Kerja</h1>
-<h2 id="prakata">Prakata</h2>
-<p><em>Bismillahirrahmanirrahim.</em></p>
-<p>Kita berada di sebuah era yang menuntut ketepatan dan kecepatan manusia dalam menentukan pilihan. Kecerdasan artifisial bukan lagi sekadar mimpi, melainkan telah menjadi kenyataan yang, diakui atau tidak, mempengaruhi dan membentuk cara kita berpikir, berinteraksi, dan memahami dunia.</p>
-<p>Pertanyaannya, <a href="https://www.eweek.com/artificial-intelligence/ai-companies/">siapa yang mengontrol</a> narasi teknologi ini?</p>
-<p><a href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#27">Nilai-nilai mana</a> saja yang ditanamkan dalam algoritma yang berpotensi mengatur kehidupan miliaran manusia?</p>
-<p>Hari ini, kita menyaksikan bagaimana AI dikembangkan dan dikuasai oleh paradigma sekuler yang hampir pasti abai akan dimensi spiritual. Sistem AI yang secara masif dipergunakan untuk menentukan siapa yang mendapat pekerjaan, bagaimana berita disajikan, dan bahkan cara kita memahami kebenaran, dibangun di atas <a href="https://scribe.rip/m/global-identity-2?redirectUrl=https%3A%2F%2Fpub.towardsai.net%2Fexploring-religious-biases-in-6-genai-llms-f054970f828f">fondasi epistemologi yang asing bagi nilai-nilai Islam</a>.</p>
-<p><strong>Kita menolak untuk menjadi penonton pasif.</strong></p>
-<p>Manifesto ini adalah seruan untuk bertindak. Ini adalah deklarasi bahwa umat Islam tidak akan membiarkan teknologi paling berpengaruh di abad ini berkembang tanpa suara dan kontribusi kita. Seperti halnya <a href="https://en.wikipedia.org/wiki/Ismail_al-Faruqi">Ismail al-Faruqi</a> dan <a href="https://en.wikipedia.org/wiki/Abdul_Hamid_AbuSulayman">Abdul Hamid AbuSulayman</a> yang — melalui karya monumental mereka <a href="https://en.wikipedia.org/wiki/Islamization_of_Knowledge_(book)"><em>Islamization of Knowledge: General Principles and Work Plan</em></a> — mempelopori <a href="https://en.wikipedia.org/wiki/Islamization_of_knowledge">Islamisasi Pengetahuan</a> untuk merespons tantangan modernitas, kini saatnya kita merespons tantangan era digital dengan Islamisasi AI.</p>
-<p>Ini bukanlah seruan untuk menolak kemajuan teknologi, melainkan ajakan untuk memastikan kemajuan itu sejalan dengan fitrah manusia dan kehendak Allah SWT. Implementasinya adalah pengembangan AI yang tidak hanya cerdas secara teknis, tetapi juga bijaksana secara spiritual.</p>
-<p><strong>Kita menghendaki revolusi teknologi yang berakar pada kalamullah.</strong></p>
-<p>Manifesto ini adalah peta jalan menuju sebuah masa di mana teknologi melayani kemanusiaan sesuai dengan prinsip-prinsip Islam. Ketika algoritma mencerminkan keadilan ilahi, data dikelola dengan amanah, dan kecerdasan artifisial menjadi alat untuk mewujudkan <em>maqashid syariah</em>.</p>
-<p>Bergabunglah dengan kami! Masa depan teknologi Islam dimulai hari ini.</p>
-<hr>
-<h2 id="daftar-isi">Daftar Isi</h2>
-<ol>
-<li><a href="#bagian-i-fondasi-ideologis">I. FONDASI IDEOLOGIS</a>
-<ol>
-<li><a href="#1-visi-islamisasi-ai">1. Visi Islamisasi AI</a></li>
-<li><a href="#2-landasan-teologis-dan-filosofis">2. Landasan Teologis dan Filosofis</a></li>
-<li><a href="#3-genealogi-intelektual">3. Genealogi Intelektual</a></li>
-</ol>
-</li>
-<li><a href="#bagian-ii-kritik-terhadap-ai-mainstream">II. KRITIK TERHADAP AI MAINSTREAM</a>
-<ol>
-<li><a href="#4-diagnosis-krisis-epistemologi">4. Diagnosis Krisis Epistemologi</a></li>
-<li><a href="#5-dampak-terhadap-umat-islam">5. Dampak terhadap Umat Islam</a></li>
-</ol>
-</li>
-<li><a href="#bagian-iii-kerangka-islamisasi-ai">III. KERANGKA ISLAMISASI AI</a>
-<ol>
-<li><a href="#6-prinsip-prinsip-fundamental">6. Prinsip-Prinsip Fundamental</a></li>
-<li><a href="#7-metodologi-islamisasi">7. Metodologi Islamisasi</a></li>
-<li><a href="#8-model-tata-kelola">8. Model Tata Kelola</a></li>
-</ol>
-</li>
-<li><a href="#bagian-iv-visi-implementasi">IV. VISI IMPLEMENTASI</a>
-<ol>
-<li><a href="#9-strategi-transformasi-bertahap">9. Strategi Transformasi Bertahap</a></li>
-<li><a href="#10-kerangka-kelembagaan">10. Kerangka Kelembagaan</a></li>
-<li><a href="#11-indikator-keberhasilan">11. Indikator Keberhasilan</a></li>
-</ol>
-</li>
-<li><a href="#bagian-v-panggilan-untuk-bertindak">V. PANGGILAN UNTUK BERTINDAK</a>
-<ol>
-<li><a href="#12-peran-setiap-stakeholder">12. Peran Setiap Stakeholder</a></li>
-<li><a href="#13-langkah-konkret-segera">13. Langkah Konkret Segera</a></li>
-</ol>
-</li>
-</ol>
-<hr>
-<h2 id="bagian-i-fondasi-ideologis"><strong>BAGIAN I: FONDASI IDEOLOGIS</strong></h2>
-<h3 id="1-visi-islamisasi-ai"><strong>1. Visi Islamisasi AI</strong></h3>
-<h4 id="definisi-dan-ruang-lingkup"><strong>Definisi dan Ruang Lingkup</strong></h4>
-<p>Islamisasi AI adalah upaya sistematis untuk mentransformasi paradigma pengembangan, implementasi, dan tata kelola kecerdasan artifisial agar selaras dengan nilai-nilai fundamental Islam. Ini bukan sekadar &quot;label halal&quot; pada teknologi eksisting, melainkan rekonstruksi mendasar dari fondasi epistemologi, metodologi, dan tujuan pengembangan AI.</p>
-<p>Ruang lingkup Islamisasi AI mencakup:</p>
-<ul>
-<li><strong>Epistemologi</strong>: Mengintegrasikan sumber pengetahuan Islam (Quran, Hadits, Ijma, Qiyas) dalam pengembangan AI</li>
-<li><strong>Aksiologi</strong>: Memastikan nilai-nilai dan tujuan AI sejalan dengan maqashid syariah</li>
-<li><strong>Metodologi</strong>: Mengembangkan pendekatan pengembangan AI yang menghormati prinsip-prinsip Islam</li>
-<li><strong>Implementasi</strong>: Menciptakan produk dan layanan AI yang memberdayakan umat dan memperkuat keimanan</li>
-</ul>
-<h4 id="perbedaan-dengan-pendekatan-sekuler"><strong>Perbedaan dengan Pendekatan Sekuler</strong></h4>
-<table>
-<thead>
-<tr>
-<th>Aspek</th>
-<th>AI Sekuler</th>
-<th>AI Islami</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Sumber Kebenaran</strong></td>
-<td>Empirisme murni</td>
-<td>Wahyu + Akal + Empiris</td>
-</tr>
-<tr>
-<td><strong>Tujuan Akhir</strong></td>
-<td>Efisiensi dan profit</td>
-<td>Ridha Allah dan kemaslahatan umat</td>
-</tr>
-<tr>
-<td><strong>Etika</strong></td>
-<td>Relativisme moral</td>
-<td>Standar absolut syariah</td>
-</tr>
-<tr>
-<td><strong>Relasi Manusia-Teknologi</strong></td>
-<td>Dominasi teknologi</td>
-<td>Teknologi sebagai amanah</td>
-</tr>
-<tr>
-<td><strong>Pengambilan Keputusan</strong></td>
-<td>Algoritma black-box</td>
-<td>Transparansi dan akuntabilitas</td>
-</tr>
-</tbody>
-</table>
-<h3 id="2-landasan-teologis-dan-filosofis"><strong>2. Landasan Teologis dan Filosofis</strong></h3>
-<h4 id="konsep-khalifah-dalam-era-digital"><strong>Konsep Khalifah dalam Era Digital</strong></h4>
-<p>Manusia adalah khalifah Allah di muka bumi, termasuk dalam dunia digital. Konsep khalifah memberikan framework teologis untuk memahami peran manusia dalam mengembangkan dan mengelola teknologi AI:</p>
-<ul>
-<li><strong>Amanah Teknologi</strong>: AI adalah amanah yang harus dikelola sesuai petunjuk Allah</li>
-<li><strong>Tanggung Jawab Moral</strong>: Setiap keputusan algoritmik memiliki dimensi moral yang akan dipertanggungjawabkan</li>
-<li><strong>Tujuan Transenden</strong>: Teknologi harus melayani tujuan yang lebih tinggi dari sekadar kepentingan duniawi</li>
-</ul>
-<h4 id="prinsip-tauhid-sebagai-kerangka-epistemologi"><strong>Prinsip Tauhid sebagai Kerangka Epistemologi</strong></h4>
-<p>Tauhid bukan hanya keyakinan teologis, tetapi paradigma epistemologi yang mengintegrasikan seluruh realitas dalam kesatuan yang harmonis:</p>
-<ul>
-<li><strong>Kesatuan Ilmu</strong>: AI harus mengintegrasikan ilmu-ilmu naqliyah dan aqliyah</li>
-<li><strong>Kesatuan Tujuan</strong>: Semua aplikasi AI harus mendukung tujuan tunggal: ridha Allah</li>
-<li><strong>Kesatuan Metodologi</strong>: Pendekatan holistik yang menyeimbangkan dimensi material dan spiritual</li>
-</ul>
-<h3 id="3-genealogi-intelektual"><strong>3. Genealogi Intelektual</strong></h3>
-<h4 id="warisan-islamisasi-pengetahuan-al-faruqi"><strong>Warisan Islamisasi Pengetahuan al-Faruqi</strong></h4>
-<p>Gerakan Islamisasi AI adalah kelanjutan natural dari proyek Islamisasi Pengetahuan yang diprakarsai al-Faruqi. Adaptasi untuk era AI mencakup:</p>
-<ul>
-<li><strong>Reformulasi metodologi</strong> untuk mengakomodasi karakteristik unik AI</li>
-<li><strong>Pengembangan framework evaluasi</strong> berbasis maqashid syariah</li>
-<li><strong>Integrasi teknologi modern</strong> dengan khazanah intelektual Islam</li>
-</ul>
-<hr>
-<h2 id="bagian-ii-kritik-terhadap-ai-mainstream"><strong>BAGIAN II: KRITIK TERHADAP AI MAINSTREAM</strong></h2>
-<h3 id="4-diagnosis-krisis-epistemologi"><strong>4. Diagnosis Krisis Epistemologi</strong></h3>
-<h4 id="sekularisme-dalam-arsitektur-ai"><strong>Sekularisme dalam Arsitektur AI</strong></h4>
-<p>AI mainstream dibangun di atas fondasi sekularisme yang memisahkan teknologi dari dimensi spiritual dan nilai-nilai transenden. Hal ini termanifestasi dalam:</p>
-<ul>
-<li><strong>Reduksi manusia</strong> menjadi data points dan pola statistik</li>
-<li><strong>Eliminasi dimensi spiritual</strong> dalam model pemahaman realitas</li>
-<li><strong>Hegemoni paradigma materialistik</strong> dalam definisi &quot;kecerdasan&quot; dan &quot;kemajuan&quot;</li>
-</ul>
-<h4 id="bias-kultural-dan-hegemoni-barat"><strong>Bias Kultural dan Hegemoni Barat</strong></h4>
-<p>Dataset pelatihan AI didominasi konten berbahasa Inggris dan perspektif Barat, menghasilkan:</p>
-<ul>
-<li><strong>Marginalisasi nilai dan perspektif Islam</strong> dalam output AI</li>
-<li><strong>Stereotyping dan misrepresentasi</strong> terhadap Muslim dan budaya Islam</li>
-<li><strong>Dominasi worldview sekular</strong> dalam sistem rekomendasi dan decision-making</li>
-</ul>
-<h3 id="5-dampak-terhadap-umat-islam"><strong>5. Dampak terhadap Umat Islam</strong></h3>
-<h4 id="marginalisasi-perspektif-islam"><strong>Marginalisasi Perspektif Islam</strong></h4>
-<ul>
-<li>Sistem AI mainstream sering menghasilkan output yang bertentangan dengan nilai Islam</li>
-<li>Perspektif Islam dianggap &quot;bias&quot; yang harus dieliminasi</li>
-<li>Kontribusi peradaban Islam dalam sejarah sains dan teknologi diabaikan</li>
-</ul>
-<h4 id="ancaman-terhadap-identitas-dan-nilai"><strong>Ancaman terhadap Identitas dan Nilai</strong></h4>
-<ul>
-<li>Generasi muda Muslim terpapar worldview sekular melalui AI</li>
-<li>Erosi gradual terhadap pemahaman dan praktik keagamaan</li>
-<li>Ketergantungan pada sistem yang tidak memahami sensitivitas budaya Islam</li>
-</ul>
-<hr>
-<h2 id="bagian-iii-kerangka-islamisasi-ai"><strong>BAGIAN III: KERANGKA ISLAMISASI AI</strong></h2>
-<h3 id="6-prinsip-prinsip-fundamental"><strong>6. Prinsip-Prinsip Fundamental</strong></h3>
-<h4 id="tauhid-sebagai-arsitektur-sistem"><strong>Tauhid sebagai Arsitektur Sistem</strong></h4>
-<ul>
-<li><strong>Unity of Knowledge</strong>: Integrasi semua sumber pengetahuan dalam sistem AI</li>
-<li><strong>Unity of Purpose</strong>: Semua fitur dan fungsi diarahkan untuk mencapai ridha Allah</li>
-<li><strong>Unity of Method</strong>: Pendekatan holistik yang menyeimbangkan empiris dan normatif</li>
-</ul>
-<h4 id="keadilan-algoritmik-berbasis-syariah"><strong>Keadilan Algoritmik Berbasis Syariah</strong></h4>
-<ul>
-<li><strong>Equal Treatment</strong>: Algoritma tidak boleh diskriminatif berdasarkan ras, gender, atau status sosial</li>
-<li><strong>Proportional Response</strong>: Keputusan algoritmik harus proporsional dengan input dan konteks</li>
-<li><strong>Restorative Justice</strong>: Sistem harus memiliki mekanisme koreksi dan perbaikan</li>
-</ul>
-<h3 id="7-metodologi-islamisasi"><strong>7. Metodologi Islamisasi</strong></h3>
-<h4 id="tahap-dekonstruksi"><strong>Tahap Dekonstruksi</strong></h4>
-<ul>
-<li>Analisis kritis terhadap asumsi dasar AI mainstream</li>
-<li>Identifikasi bias dan problematika dalam sistem eksisting</li>
-<li>Evaluasi dampak negatif terhadap nilai-nilai Islam</li>
-</ul>
-<h4 id="tahap-evaluasi"><strong>Tahap Evaluasi</strong></h4>
-<ul>
-<li>Penilaian kesesuaian dengan maqashid syariah</li>
-<li>Analisis manfaat dan mudarat (maslaha wa mafsada)</li>
-<li>Konsultasi dengan ulama dan pakar syariah</li>
-</ul>
-<h4 id="tahap-rekonstruksi"><strong>Tahap Rekonstruksi</strong></h4>
-<ul>
-<li>Pengembangan alternatif yang Islami</li>
-<li>Integrasi nilai-nilai Islam dalam arsitektur sistem</li>
-<li>Testing dan validasi dengan komunitas Muslim</li>
-</ul>
-<hr>
-<h2 id="bagian-iv-visi-implementasi"><strong>BAGIAN IV: VISI IMPLEMENTASI</strong></h2>
-<h3 id="9-strategi-transformasi-bertahap"><strong>9. Strategi Transformasi Bertahap</strong></h3>
-<h4 id="jangka-pendek-1-2-tahun-fondasi-dan-kesadaran"><strong>Jangka Pendek (1-2 tahun): Fondasi dan Kesadaran</strong></h4>
-<ul>
-<li>Pembangunan kesadaran umat tentang pentingnya Islamisasi AI</li>
-<li>Pengembangan framework dan standar dasar</li>
-<li>Pelatihan SDM awal dan pembentukan komunitas</li>
-</ul>
-<h4 id="jangka-menengah-3-5-tahun-ekspansi-dan-konsolidasi"><strong>Jangka Menengah (3-5 tahun): Ekspansi dan Konsolidasi</strong></h4>
-<ul>
-<li>Implementasi dalam sektor-sektor strategis</li>
-<li>Pengembangan produk dan layanan komersial</li>
-<li>Pembentukan institusi pendukung yang permanen</li>
-</ul>
-<h4 id="jangka-panjang-5-10-tahun-transformasi-global"><strong>Jangka Panjang (5-10 tahun): Transformasi Global</strong></h4>
-<ul>
-<li>Kompetisi global dengan model mainstream</li>
-<li>Influence dalam standar internasional</li>
-<li>Transformasi paradigma teknologi global</li>
-</ul>
-<h3 id="10-kerangka-kelembagaan"><strong>10. Kerangka Kelembagaan</strong></h3>
-<p>Implementasi manifesto ini memerlukan struktur organisasi yang komprehensif dan koordinasi yang efektif. <strong>Detail lengkap mengenai pembentukan Working Group, struktur tim multidisiplin, dan mekanisme operasional dapat ditemukan dalam dokumen terpisah: &quot;Working Group &amp; Strategic Implementation - Islamisasi AI: Dari Manifesto Menuju Aksi&quot;.</strong></p>
-<p>Kerangka kelembagaan ideal mencakup:</p>
-<ul>
-<li><strong>Dewan Syariah Teknologi</strong> sebagai otoritas tertinggi</li>
-<li><strong>Working Group multidisiplin</strong> dengan tujuh spesialisasi</li>
-<li><strong>Mekanisme koordinasi</strong> antar stakeholder</li>
-<li><strong>Sistem akuntabilitas</strong> yang transparan</li>
-</ul>
-<hr>
-<h2 id="bagian-v-panggilan-untuk-bertindak"><strong>BAGIAN V: PANGGILAN UNTUK BERTINDAK</strong></h2>
-<h3 id="12-peran-setiap-stakeholder"><strong>12. Peran Setiap Stakeholder</strong></h3>
-<h4 id="ulama-dan-cendekiawan"><strong>Ulama dan Cendekiawan</strong></h4>
-<ul>
-<li>Memberikan legitimasi syariah dan guidance teologis</li>
-<li>Mengembangkan framework etika berbasis Islam</li>
-<li>Memfasilitasi dialog antara teknologi dan agama</li>
-</ul>
-<h4 id="teknolog-dan-developer"><strong>Teknolog dan Developer</strong></h4>
-<ul>
-<li>Mengimplementasikan prinsip Islam dalam pengembangan AI</li>
-<li>Menciptakan solusi teknologi yang inovatif dan syariah-compliant</li>
-<li>Membangun komunitas developer Muslim yang solid</li>
-</ul>
-<h4 id="investor-dan-entrepreneur"><strong>Investor dan Entrepreneur</strong></h4>
-<ul>
-<li>Menyediakan funding untuk proyek-proyek AI Islami</li>
-<li>Mengembangkan model bisnis yang sustainable dan berkah</li>
-<li>Menciptakan ekosistem investasi halal dalam teknologi</li>
-</ul>
-<h4 id="pemerintah-dan-institusi"><strong>Pemerintah dan Institusi</strong></h4>
-<ul>
-<li>Menyediakan regulatory framework yang mendukung</li>
-<li>Mengintegrasikan AI Islami dalam layanan publik</li>
-<li>Memfasilitasi kolaborasi internasional</li>
-</ul>
-<h4 id="umat-secara-keseluruhan"><strong>Umat Secara Keseluruhan</strong></h4>
-<ul>
-<li>Meningkatkan literasi teknologi berbasis nilai Islam</li>
-<li>Mendukung produk dan layanan AI Islami</li>
-<li>Menjadi early adopters dan ambassadors</li>
-</ul>
-<h3 id="13-langkah-konkret-segera"><strong>13. Langkah Konkret Segera</strong></h3>
-<h4 id="untuk-individu"><strong>Untuk Individu:</strong></h4>
-<ol>
-<li><strong>Pelajari</strong> dasar-dasar AI dan implikasinya terhadap Islam</li>
-<li><strong>Bergabung</strong> dengan komunitas dan inisiatif Islamisasi AI</li>
-<li><strong>Dukung</strong> produk dan layanan AI yang selaras dengan nilai Islam</li>
-<li><strong>Sebarkan</strong> kesadaran tentang pentingnya Islamisasi AI</li>
-</ol>
-<h4 id="untuk-institusi"><strong>Untuk Institusi:</strong></h4>
-<ol>
-<li><strong>Bentuk</strong> tim khusus untuk mengkaji Islamisasi AI</li>
-<li><strong>Alokasikan</strong> anggaran untuk riset dan pengembangan</li>
-<li><strong>Jalin</strong> kemitraan dengan stakeholder lain</li>
-<li><strong>Implementasikan</strong> pilot project dalam skala kecil</li>
-</ol>
-<h4 id="platform-kolaborasi"><strong>Platform Kolaborasi:</strong></h4>
-<p><strong>Untuk informasi terkini, bergabung dengan komunitas, dan akses ke dokumen Working Group, kunjungi platform kolaborasi kami. Detail lengkap mengenai struktur tim, roadmap implementasi, dan mekanisme partisipasi tersedia dalam dokumen &quot;Working Group &amp; Strategic Implementation&quot;.</strong></p>
-<hr>
-<p><strong>&quot;Dan barangsiapa yang bersungguh-sungguh, maka sesungguhnya kesungguhannya itu adalah untuk dirinya sendiri. Sesungguhnya Allah tidak memerlukan (amal) semesta alam.&quot;</strong> <em>(QS. Al-Ankabut: 6)</em></p>
-<p><strong>&quot;Dan Kami jadikan di antara mereka itu pemimpin-pemimpin yang memberi petunjuk dengan perintah Kami selama mereka sabar. Dan adalah mereka meyakini ayat-ayat Kami.&quot;</strong> <em>(QS. As-Sajdah: 24)</em></p>
-<hr>
-<p><strong>Masa depan AI Islam dimulai dengan langkah pertama Anda hari ini.</strong></p>
-<hr>
-<p><em>Dokumen Utama - Versi 2.0</em><br>
-<em>Referensi: Working Group &amp; Strategic Implementation Document</em><br>
-<em>Update terakhir: 23 Juni 2025</em></p>
+	<script>
+		mermaid.initialize({
+			startOnLoad: true,
+			theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+				? 'dark'
+				: 'default'
+		});
+	</script>
+	<h1 id="manifesto-islamisasi-ai-prinsip-umum-dan-rencana-kerja">Manifesto Islamisasi AI: Prinsip Umum dan Rencana
+		Kerja</h1>
+	<h2 id="prakata">Prakata</h2>
+	<p><em>Bismillahirrahmanirrahim.</em></p>
+	<p>Kita berada di sebuah era yang menuntut ketepatan dan kecepatan manusia dalam menentukan pilihan. Kecerdasan
+		artifisial bukan lagi sekadar mimpi, melainkan telah menjadi kenyataan yang, diakui atau tidak, mempengaruhi dan
+		membentuk cara kita berpikir, berinteraksi, dan memahami dunia.</p>
+	<p>Pertanyaannya, <a href="https://www.eweek.com/artificial-intelligence/ai-companies/">siapa yang mengontrol</a>
+		narasi teknologi ini?</p>
+	<p><a
+			href="https://kili-technology.com/large-language-models-llms/9-open-sourced-datasets-for-training-large-language-models#27">Nilai-nilai
+			mana</a> saja yang ditanamkan dalam algoritma yang berpotensi mengatur kehidupan miliaran manusia?</p>
+	<p>Hari ini, kita menyaksikan bagaimana AI dikembangkan dan dikuasai oleh paradigma sekuler yang hampir pasti abai
+		akan dimensi spiritual. Sistem AI yang secara masif dipergunakan untuk menentukan siapa yang mendapat pekerjaan,
+		bagaimana berita disajikan, dan bahkan cara kita memahami kebenaran, dibangun di atas <a
+			href="https://scribe.rip/m/global-identity-2?redirectUrl=https%3A%2F%2Fpub.towardsai.net%2Fexploring-religious-biases-in-6-genai-llms-f054970f828f">fondasi
+			epistemologi yang asing bagi nilai-nilai Islam</a>.</p>
+	<p><strong>Kita menolak untuk menjadi penonton pasif.</strong></p>
+	<p>Manifesto ini adalah seruan untuk bertindak. Ini adalah deklarasi bahwa umat Islam tidak akan membiarkan
+		teknologi paling berpengaruh di abad ini berkembang tanpa suara dan kontribusi kita. Seperti halnya <a
+			href="https://en.wikipedia.org/wiki/Ismail_al-Faruqi">Ismail al-Faruqi</a> dan <a
+			href="https://en.wikipedia.org/wiki/Abdul_Hamid_AbuSulayman">Abdul Hamid AbuSulayman</a> yang — melalui
+		karya monumental mereka <a
+			href="https://en.wikipedia.org/wiki/Islamization_of_Knowledge_(book)"><em>Islamization of Knowledge: General
+				Principles and Work Plan</em></a> — mempelopori <a
+			href="https://en.wikipedia.org/wiki/Islamization_of_knowledge">Islamisasi Pengetahuan</a> untuk merespons
+		tantangan modernitas, kini saatnya kita merespons tantangan era digital dengan Islamisasi AI.</p>
+	<p>Ini bukanlah seruan untuk menolak kemajuan teknologi, melainkan ajakan untuk memastikan kemajuan itu sejalan
+		dengan fitrah manusia dan kehendak Allah SWT. Implementasinya adalah pengembangan AI yang tidak hanya cerdas
+		secara teknis, tetapi juga bijaksana secara spiritual.</p>
+	<p><strong>Kita menghendaki revolusi teknologi yang berakar pada kalamullah.</strong></p>
+	<p>Manifesto ini adalah peta jalan menuju sebuah masa di mana teknologi melayani kemanusiaan sesuai dengan
+		prinsip-prinsip Islam. Ketika algoritma mencerminkan keadilan ilahi, data dikelola dengan amanah, dan kecerdasan
+		artifisial menjadi alat untuk mewujudkan <em>maqashid syariah</em>.</p>
+	<p>Bergabunglah dengan kami! Masa depan teknologi Islam dimulai hari ini.</p>
+	<hr>
+	<h2 id="daftar-isi">Daftar Isi</h2>
+	<ol>
+		<li><a href="#bagian-i-fondasi-ideologis">I. FONDASI IDEOLOGIS</a>
+			<ol>
+				<li><a href="#1-visi-islamisasi-ai">1. Visi Islamisasi AI</a></li>
+				<li><a href="#2-landasan-teologis-dan-filosofis">2. Landasan Teologis dan Filosofis</a></li>
+				<li><a href="#3-genealogi-intelektual">3. Genealogi Intelektual</a></li>
+			</ol>
+		</li>
+		<li><a href="#bagian-ii-kritik-terhadap-ai-mainstream">II. KRITIK TERHADAP AI MAINSTREAM</a>
+			<ol>
+				<li><a href="#4-diagnosis-krisis-epistemologi">4. Diagnosis Krisis Epistemologi</a></li>
+				<li><a href="#5-dampak-terhadap-umat-islam">5. Dampak terhadap Umat Islam</a></li>
+			</ol>
+		</li>
+		<li><a href="#bagian-iii-kerangka-islamisasi-ai">III. KERANGKA ISLAMISASI AI</a>
+			<ol>
+				<li><a href="#6-prinsip-prinsip-fundamental">6. Prinsip-Prinsip Fundamental</a></li>
+				<li><a href="#7-metodologi-islamisasi">7. Metodologi Islamisasi</a></li>
+				<li><a href="#8-model-tata-kelola">8. Model Tata Kelola</a></li>
+			</ol>
+		</li>
+		<li><a href="#bagian-iv-visi-implementasi">IV. VISI IMPLEMENTASI</a>
+			<ol>
+				<li><a href="#9-strategi-transformasi-bertahap">9. Strategi Transformasi Bertahap</a></li>
+				<li><a href="#10-kerangka-kelembagaan">10. Kerangka Kelembagaan</a></li>
+				<li><a href="#11-indikator-keberhasilan">11. Indikator Keberhasilan</a></li>
+			</ol>
+		</li>
+		<li><a href="#bagian-v-panggilan-untuk-bertindak">V. PANGGILAN UNTUK BERTINDAK</a>
+			<ol>
+				<li><a href="#12-peran-setiap-stakeholder">12. Peran Setiap Stakeholder</a></li>
+				<li><a href="#13-langkah-konkret-segera">13. Langkah Konkret Segera</a></li>
+			</ol>
+		</li>
+	</ol>
+	<hr>
+	<h2 id="bagian-i-fondasi-ideologis"><strong>BAGIAN I: FONDASI IDEOLOGIS</strong></h2>
+	<h3 id="1-visi-islamisasi-ai"><strong>1. Visi Islamisasi AI</strong></h3>
+	<h4 id="definisi-dan-ruang-lingkup"><strong>Definisi dan Ruang Lingkup</strong></h4>
+	<p>Islamisasi AI adalah upaya sistematis untuk mentransformasi paradigma pengembangan, implementasi, dan tata kelola
+		kecerdasan artifisial agar selaras dengan nilai-nilai fundamental Islam. Ini bukan sekadar &quot;label
+		halal&quot; pada teknologi eksisting, melainkan rekonstruksi mendasar dari fondasi epistemologi, metodologi, dan
+		tujuan pengembangan AI.</p>
+	<p>Ruang lingkup Islamisasi AI mencakup:</p>
+	<ul>
+		<li><strong>Epistemologi</strong>: Mengintegrasikan sumber pengetahuan Islam (Quran, Hadits, Ijma, Qiyas) dalam
+			pengembangan AI</li>
+		<li><strong>Aksiologi</strong>: Memastikan nilai-nilai dan tujuan AI sejalan dengan maqashid syariah</li>
+		<li><strong>Metodologi</strong>: Mengembangkan pendekatan pengembangan AI yang menghormati prinsip-prinsip Islam
+		</li>
+		<li><strong>Implementasi</strong>: Menciptakan produk dan layanan AI yang memberdayakan umat dan memperkuat
+			keimanan</li>
+	</ul>
+	<h4 id="perbedaan-dengan-pendekatan-sekuler"><strong>Perbedaan dengan Pendekatan Sekuler</strong></h4>
+	<table>
+		<thead>
+			<tr>
+				<th>Aspek</th>
+				<th>AI Sekuler</th>
+				<th>AI Islami</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><strong>Sumber Kebenaran</strong></td>
+				<td>Empirisme murni</td>
+				<td>Wahyu + Akal + Empiris</td>
+			</tr>
+			<tr>
+				<td><strong>Tujuan Akhir</strong></td>
+				<td>Efisiensi dan profit</td>
+				<td>Ridha Allah dan kemaslahatan umat</td>
+			</tr>
+			<tr>
+				<td><strong>Etika</strong></td>
+				<td>Relativisme moral</td>
+				<td>Standar absolut syariah</td>
+			</tr>
+			<tr>
+				<td><strong>Relasi Manusia-Teknologi</strong></td>
+				<td>Dominasi teknologi</td>
+				<td>Teknologi sebagai amanah</td>
+			</tr>
+			<tr>
+				<td><strong>Pengambilan Keputusan</strong></td>
+				<td>Algoritma black-box</td>
+				<td>Transparansi dan akuntabilitas</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3 id="2-landasan-teologis-dan-filosofis"><strong>2. Landasan Teologis dan Filosofis</strong></h3>
+	<h4 id="konsep-khalifah-dalam-era-digital"><strong>Konsep Khalifah dalam Era Digital</strong></h4>
+	<p>Manusia adalah khalifah Allah di muka bumi, termasuk dalam dunia digital. Konsep khalifah memberikan framework
+		teologis untuk memahami peran manusia dalam mengembangkan dan mengelola teknologi AI:</p>
+	<ul>
+		<li><strong>Amanah Teknologi</strong>: AI adalah amanah yang harus dikelola sesuai petunjuk Allah</li>
+		<li><strong>Tanggung Jawab Moral</strong>: Setiap keputusan algoritmik memiliki dimensi moral yang akan
+			dipertanggungjawabkan</li>
+		<li><strong>Tujuan Transenden</strong>: Teknologi harus melayani tujuan yang lebih tinggi dari sekadar
+			kepentingan duniawi</li>
+	</ul>
+	<h4 id="prinsip-tauhid-sebagai-kerangka-epistemologi"><strong>Prinsip Tauhid sebagai Kerangka Epistemologi</strong>
+	</h4>
+	<p>Tauhid bukan hanya keyakinan teologis, tetapi paradigma epistemologi yang mengintegrasikan seluruh realitas dalam
+		kesatuan yang harmonis:</p>
+	<ul>
+		<li><strong>Kesatuan Ilmu</strong>: AI harus mengintegrasikan ilmu-ilmu naqliyah dan aqliyah</li>
+		<li><strong>Kesatuan Tujuan</strong>: Semua aplikasi AI harus mendukung tujuan tunggal: ridha Allah</li>
+		<li><strong>Kesatuan Metodologi</strong>: Pendekatan holistik yang menyeimbangkan dimensi material dan spiritual
+		</li>
+	</ul>
+	<h3 id="3-genealogi-intelektual"><strong>3. Genealogi Intelektual</strong></h3>
+	<h4 id="warisan-islamisasi-pengetahuan-al-faruqi"><strong>Warisan Islamisasi Pengetahuan al-Faruqi</strong></h4>
+	<p>Gerakan Islamisasi AI adalah kelanjutan natural dari proyek Islamisasi Pengetahuan yang diprakarsai al-Faruqi.
+		Adaptasi untuk era AI mencakup:</p>
+	<ul>
+		<li><strong>Reformulasi metodologi</strong> untuk mengakomodasi karakteristik unik AI</li>
+		<li><strong>Pengembangan framework evaluasi</strong> berbasis maqashid syariah</li>
+		<li><strong>Integrasi teknologi modern</strong> dengan khazanah intelektual Islam</li>
+	</ul>
+	<hr>
+	<h2 id="bagian-ii-kritik-terhadap-ai-mainstream"><strong>BAGIAN II: KRITIK TERHADAP AI MAINSTREAM</strong></h2>
+	<h3 id="4-diagnosis-krisis-epistemologi"><strong>4. Diagnosis Krisis Epistemologi</strong></h3>
+	<h4 id="sekularisme-dalam-arsitektur-ai"><strong>Sekularisme dalam Arsitektur AI</strong></h4>
+	<p>AI mainstream dibangun di atas fondasi sekularisme yang memisahkan teknologi dari dimensi spiritual dan
+		nilai-nilai transenden. Hal ini termanifestasi dalam:</p>
+	<ul>
+		<li><strong>Reduksi manusia</strong> menjadi data points dan pola statistik</li>
+		<li><strong>Eliminasi dimensi spiritual</strong> dalam model pemahaman realitas</li>
+		<li><strong>Hegemoni paradigma materialistik</strong> dalam definisi &quot;kecerdasan&quot; dan
+			&quot;kemajuan&quot;</li>
+	</ul>
+	<h4 id="bias-kultural-dan-hegemoni-barat"><strong>Bias Kultural dan Hegemoni Barat</strong></h4>
+	<p>Dataset pelatihan AI didominasi konten berbahasa Inggris dan perspektif Barat, menghasilkan:</p>
+	<ul>
+		<li><strong>Marginalisasi nilai dan perspektif Islam</strong> dalam output AI</li>
+		<li><strong>Stereotyping dan misrepresentasi</strong> terhadap Muslim dan budaya Islam</li>
+		<li><strong>Dominasi worldview sekular</strong> dalam sistem rekomendasi dan decision-making</li>
+	</ul>
+	<h3 id="5-dampak-terhadap-umat-islam"><strong>5. Dampak terhadap Umat Islam</strong></h3>
+	<h4 id="marginalisasi-perspektif-islam"><strong>Marginalisasi Perspektif Islam</strong></h4>
+	<ul>
+		<li>Sistem AI mainstream sering menghasilkan output yang bertentangan dengan nilai Islam</li>
+		<li>Perspektif Islam dianggap &quot;bias&quot; yang harus dieliminasi</li>
+		<li>Kontribusi peradaban Islam dalam sejarah sains dan teknologi diabaikan</li>
+	</ul>
+	<h4 id="ancaman-terhadap-identitas-dan-nilai"><strong>Ancaman terhadap Identitas dan Nilai</strong></h4>
+	<ul>
+		<li>Generasi muda Muslim terpapar worldview sekular melalui AI</li>
+		<li>Erosi gradual terhadap pemahaman dan praktik keagamaan</li>
+		<li>Ketergantungan pada sistem yang tidak memahami sensitivitas budaya Islam</li>
+	</ul>
+	<hr>
+	<h2 id="bagian-iii-kerangka-islamisasi-ai"><strong>BAGIAN III: KERANGKA ISLAMISASI AI</strong></h2>
+	<h3 id="6-prinsip-prinsip-fundamental"><strong>6. Prinsip-Prinsip Fundamental</strong></h3>
+	<h4 id="tauhid-sebagai-arsitektur-sistem"><strong>Tauhid sebagai Arsitektur Sistem</strong></h4>
+	<ul>
+		<li><strong>Unity of Knowledge</strong>: Integrasi semua sumber pengetahuan dalam sistem AI</li>
+		<li><strong>Unity of Purpose</strong>: Semua fitur dan fungsi diarahkan untuk mencapai ridha Allah</li>
+		<li><strong>Unity of Method</strong>: Pendekatan holistik yang menyeimbangkan empiris dan normatif</li>
+	</ul>
+	<h4 id="keadilan-algoritmik-berbasis-syariah"><strong>Keadilan Algoritmik Berbasis Syariah</strong></h4>
+	<ul>
+		<li><strong>Equal Treatment</strong>: Algoritma tidak boleh diskriminatif berdasarkan ras, gender, atau status
+			sosial</li>
+		<li><strong>Proportional Response</strong>: Keputusan algoritmik harus proporsional dengan input dan konteks
+		</li>
+		<li><strong>Restorative Justice</strong>: Sistem harus memiliki mekanisme koreksi dan perbaikan</li>
+	</ul>
+	<h4 id="validasi-bertingkat-tashih"><strong>Validasi Bertingkat (Tashih)</strong></h4>
+	<ul>
+		<li><strong>Prinsip Isnad Digital</strong>: Setiap informasi yang disajikan oleh AI, terutama yang berkaitan
+			dengan hukum atau teologi, harus dapat dilacak kembali ke sumber primernya.</li>
+		<li><strong>Status Validasi</strong>: Sistem akan membedakan antara output mentah AI dan output yang telah
+			diverifikasi (<em>ditashih</em>) oleh dewan ulama. Setiap konten yang telah divalidasi akan ditandai dengan
+			jelas, lengkap dengan nama-nama validator (<em>mushahih</em>), untuk memberikan tingkat kepercayaan yang
+			lebih tinggi.</li>
+	</ul>
+	<h3 id="7-metodologi-islamisasi"><strong>7. Metodologi Islamisasi</strong></h3>
+	<h4 id="tahap-dekonstruksi"><strong>Tahap Dekonstruksi</strong></h4>
+	<ul>
+		<li>Analisis kritis terhadap asumsi dasar AI mainstream</li>
+		<li>Identifikasi bias dan problematika dalam sistem eksisting</li>
+		<li>Evaluasi dampak negatif terhadap nilai-nilai Islam</li>
+	</ul>
+	<h4 id="tahap-evaluasi"><strong>Tahap Evaluasi</strong></h4>
+	<ul>
+		<li>Penilaian kesesuaian dengan maqashid syariah</li>
+		<li>Analisis manfaat dan mudarat (maslaha wa mafsada)</li>
+		<li>Konsultasi dengan ulama dan pakar syariah</li>
+	</ul>
+	<h4 id="tahap-rekonstruksi"><strong>Tahap Rekonstruksi</strong></h4>
+	<ul>
+		<li>Pengembangan alternatif yang Islami</li>
+		<li>Integrasi nilai-nilai Islam dalam arsitektur sistem</li>
+		<li>Testing dan validasi dengan komunitas Muslim</li>
+	</ul>
+	<h4 id="arsitektur-teknis-awal"><strong>Arsitektur Teknis Awal</strong></h4>
+	<ul>
+		<li><strong>Pendekatan Graph-RAG</strong>: Untuk tahap awal, arsitektur yang dipilih adalah <em>Graph-based
+				Retrieval-Augmented Generation</em> (Graph-RAG). Pendekatan ini memungkinkan sistem untuk memberikan
+			jawaban yang relevan dan terstruktur dengan mengambil informasi dari basis data pengetahuan Islam
+			(<em>Islamic Knowledge Graph</em>) yang terkurasi, tanpa harus melatih model bahasa raksasa dari nol.</li>
+		<li><strong>Pemanfaatan Model Open-Source</strong>: Sistem akan dibangun di atas <em>foundation model</em> yang
+			bersifat <em>open-source</em>, yang kemudian dihubungkan dengan <em>knowledge graph</em> tersebut. Ini
+			merupakan strategi yang efisien dari segi biaya dan waktu pengembangan.</li>
+		<li><strong>Infrastruktur Cloud</strong>: Pengembangan awal akan memanfaatkan sumber daya dari penyedia layanan
+			<em>cloud</em> yang menawarkan program untuk organisasi non-profit, guna menekan biaya infrastruktur awal.
+		</li>
+	</ul>
+	<h3 id="8-model-tata-kelola"><strong>8. Model Tata Kelola</strong></h3>
+	<h4 id="tanggung-jawab-terdistribusi"><strong>Tanggung Jawab Terdistribusi</strong></h4>
+	<ul>
+		<li><strong>Prinsip Akuntabilitas Berlapis</strong>: Tanggung jawab atas output sistem tidak dibebankan pada
+			satu entitas tunggal, melainkan didistribusikan secara berlapis:
+			<ul>
+				<li><strong>Pengembang</strong>: Bertanggung jawab atas stabilitas teknis dan akurasi algoritma.</li>
+				<li><strong>Dewan Syariah</strong>: Bertanggung jawab atas metodologi, kurasi data, dan proses validasi
+					(<em>tashih</em>).</li>
+				<li><strong>Pengguna Akhir (Ulama)</strong>: Bertanggung jawab atas interpretasi akhir dan penggunaan
+					informasi dalam konteks spesifik.</li>
+			</ul>
+		</li>
+	</ul>
+	<h4 id="privasi-berbasis-maqashid-syariah"><strong>Privasi Berbasis Maqashid Syariah</strong></h4>
+	<ul>
+		<li><strong>Kedaulatan Data</strong>: Data pengguna, terutama pertanyaan-pertanyaan yang diajukan kepada sistem,
+			akan dikelola di bawah kerangka kerja privasi yang digali dari prinsip-prinsip <em>Maqashid Syariah</em>.
+		</li>
+		<li><strong>Fokus pada Hifdz al-'Irdh</strong>: Perlindungan kehormatan dan privasi pengguna menjadi prioritas
+			utama, melampaui sekadar kepatuhan pada standar hukum sekuler. Ini akan diwujudkan melalui kebijakan retensi
+			data yang ketat dan anonimisasi jika memungkinkan.</li>
+	</ul>
+	<hr>
+	<h2 id="bagian-iv-visi-implementasi"><strong>BAGIAN IV: VISI IMPLEMENTASI</strong></h2>
+	<h3 id="9-strategi-transformasi-bertahap"><strong>9. Strategi Transformasi Bertahap</strong></h3>
+	<h4 id="jangka-pendek-1-2-tahun-fondasi-dan-kesadaran"><strong>Jangka Pendek (1-2 tahun): Fondasi dan
+			Kesadaran</strong></h4>
+	<ul>
+		<li>Pembangunan kesadaran umat tentang pentingnya Islamisasi AI</li>
+		<li>Pengembangan framework dan standar dasar</li>
+		<li>Pelatihan SDM awal dan pembentukan komunitas</li>
+	</ul>
+	<h4 id="jangka-menengah-3-5-tahun-ekspansi-dan-konsolidasi"><strong>Jangka Menengah (3-5 tahun): Ekspansi dan
+			Konsolidasi</strong></h4>
+	<ul>
+		<li>Implementasi dalam sektor-sektor strategis</li>
+		<li>Pengembangan produk dan layanan komersial</li>
+		<li>Pembentukan institusi pendukung yang permanen</li>
+	</ul>
+	<h4 id="jangka-panjang-5-10-tahun-transformasi-global"><strong>Jangka Panjang (5-10 tahun): Transformasi
+			Global</strong></h4>
+	<ul>
+		<li>Kompetisi global dengan model mainstream</li>
+		<li>Influence dalam standar internasional</li>
+		<li>Transformasi paradigma teknologi global</li>
+	</ul>
+	<h4 id="proyek-percontohan-asisten-riset-ulama"><strong>Proyek Percontohan: Asisten Riset Ulama</strong></h4>
+	<ul>
+		<li><strong>Fokus Awal</strong>: Sebagai bukti konsep, proyek ini akan memprioritaskan pengembangan <strong>AI
+				Chatbot internal</strong> yang berfungsi sebagai asisten riset untuk kelompok ulama terdaftar.</li>
+		<li><strong>Tujuan</strong>: Alat ini dirancang untuk mempercepat proses riset, verifikasi dalil, dan analisis
+			perbandingan mazhab, memposisikan AI sebagai pendukung ijtihad, bukan pengganti ulama.</li>
+		<li><strong>Lingkup Tertutup</strong>: Dengan membatasi akses pada tahap awal, proyek dapat memitigasi risiko,
+			mengumpulkan umpan balik berkualitas tinggi, dan membangun kredibilitas sebelum diperkenalkan ke publik yang
+			lebih luas.</li>
+	</ul>
+	<h4 id="model-keberlanjutan-social-enterprise"><strong>Model Keberlanjutan: Social Enterprise</strong></h4>
+	<ul>
+		<li><strong>Skema Freemium</strong>: Untuk menjamin keberlanjutan jangka panjang, inisiatif ini akan
+			dioperasikan dengan model <em>social enterprise</em>. Akses dasar ke alat AI akan diberikan secara
+			<strong>gratis</strong> untuk para ulama perorangan dan peneliti.</li>
+		<li><strong>Layanan Institusional</strong>: Pendanaan akan diperoleh melalui penawaran <strong>layanan premium
+				berbayar</strong> kepada institusi yang mampu (seperti bank syariah, lembaga fatwa, universitas, dan
+			korporasi) yang membutuhkan fitur-fitur kustomisasi, skalabilitas, dan dukungan teknis tingkat lanjut.</li>
+		<li><strong>Reinvetasi Keuntungan</strong>: Seluruh keuntungan yang diperoleh akan diinvestasikan kembali untuk
+			membiayai riset, pengembangan, dan pemeliharaan infrastruktur.</li>
+	</ul>
+	<h3 id="10-kerangka-kelembagaan"><strong>10. Kerangka Kelembagaan</strong></h3>
+	<p>Implementasi manifesto ini memerlukan struktur organisasi yang komprehensif dan koordinasi yang efektif.
+		<strong>Detail lengkap mengenai pembentukan Working Group, struktur tim multidisiplin, dan mekanisme operasional
+			dapat ditemukan dalam dokumen terpisah: &quot;Working Group &amp; Strategic Implementation - Islamisasi AI:
+			Dari Manifesto Menuju Aksi&quot;.</strong></p>
+	<p>Kerangka kelembagaan ideal mencakup:</p>
+	<ul>
+		<li><strong>Dewan Syariah Teknologi</strong> sebagai otoritas tertinggi</li>
+		<li><strong>Working Group multidisiplin</strong> dengan tujuh spesialisasi</li>
+		<li><strong>Mekanisme koordinasi</strong> antar stakeholder</li>
+		<li><strong>Sistem akuntabilitas</strong> yang transparan</li>
+	</ul>
+	<hr>
+	<h2 id="bagian-v-panggilan-untuk-bertindak"><strong>BAGIAN V: PANGGILAN UNTUK BERTINDAK</strong></h2>
+	<h3 id="12-peran-setiap-stakeholder"><strong>12. Peran Setiap Stakeholder</strong></h3>
+	<h4 id="ulama-dan-cendekiawan"><strong>Ulama dan Cendekiawan</strong></h4>
+	<ul>
+		<li>Memberikan legitimasi syariah dan guidance teologis</li>
+		<li>Mengembangkan framework etika berbasis Islam</li>
+		<li>Memfasilitasi dialog antara teknologi dan agama</li>
+	</ul>
+	<h4 id="teknolog-dan-developer"><strong>Teknolog dan Developer</strong></h4>
+	<ul>
+		<li>Mengimplementasikan prinsip Islam dalam pengembangan AI</li>
+		<li>Menciptakan solusi teknologi yang inovatif dan syariah-compliant</li>
+		<li>Membangun komunitas developer Muslim yang solid</li>
+	</ul>
+	<h4 id="investor-dan-entrepreneur"><strong>Investor dan Entrepreneur</strong></h4>
+	<ul>
+		<li>Menyediakan funding untuk proyek-proyek AI Islami</li>
+		<li>Mengembangkan model bisnis yang sustainable dan berkah</li>
+		<li>Menciptakan ekosistem investasi halal dalam teknologi</li>
+	</ul>
+	<h4 id="pemerintah-dan-institusi"><strong>Pemerintah dan Institusi</strong></h4>
+	<ul>
+		<li>Menyediakan regulatory framework yang mendukung</li>
+		<li>Mengintegrasikan AI Islami dalam layanan publik</li>
+		<li>Memfasilitasi kolaborasi internasional</li>
+	</ul>
+	<h4 id="umat-secara-keseluruhan"><strong>Umat Secara Keseluruhan</strong></h4>
+	<ul>
+		<li>Meningkatkan literasi teknologi berbasis nilai Islam</li>
+		<li>Mendukung produk dan layanan AI Islami</li>
+		<li>Menjadi early adopters dan ambassadors</li>
+	</ul>
+	<h3 id="13-langkah-konkret-segera"><strong>13. Langkah Konkret Segera</strong></h3>
+	<h4 id="untuk-individu"><strong>Untuk Individu:</strong></h4>
+	<ol>
+		<li><strong>Pelajari</strong> dasar-dasar AI dan implikasinya terhadap Islam</li>
+		<li><strong>Bergabung</strong> dengan komunitas dan inisiatif Islamisasi AI</li>
+		<li><strong>Dukung</strong> produk dan layanan AI yang selaras dengan nilai Islam</li>
+		<li><strong>Sebarkan</strong> kesadaran tentang pentingnya Islamisasi AI</li>
+	</ol>
+	<h4 id="untuk-institusi"><strong>Untuk Institusi:</strong></h4>
+	<ol>
+		<li><strong>Bentuk</strong> tim khusus untuk mengkaji Islamisasi AI</li>
+		<li><strong>Alokasikan</strong> anggaran untuk riset dan pengembangan</li>
+		<li><strong>Jalin</strong> kemitraan dengan stakeholder lain</li>
+		<li><strong>Implementasikan</strong> pilot project dalam skala kecil</li>
+	</ol>
+	<h4 id="platform-kolaborasi"><strong>Platform Kolaborasi:</strong></h4>
+	<p><strong>Untuk informasi terkini, bergabung dengan komunitas, dan akses ke dokumen Working Group, kunjungi
+			platform kolaborasi kami. Detail lengkap mengenai struktur tim, roadmap implementasi, dan mekanisme
+			partisipasi tersedia dalam dokumen &quot;Working Group &amp; Strategic Implementation&quot;.</strong></p>
+	<hr>
+	<p><strong>&quot;Dan barangsiapa yang bersungguh-sungguh, maka sesungguhnya kesungguhannya itu adalah untuk dirinya
+			sendiri. Sesungguhnya Allah tidak memerlukan (amal) semesta alam.&quot;</strong> <em>(QS. Al-Ankabut:
+			6)</em></p>
+	<p><strong>&quot;Dan Kami jadikan di antara mereka itu pemimpin-pemimpin yang memberi petunjuk dengan perintah Kami
+			selama mereka sabar. Dan adalah mereka meyakini ayat-ayat Kami.&quot;</strong> <em>(QS. As-Sajdah: 24)</em>
+	</p>
+	<hr>
+	<p><strong>Masa depan AI Islam dimulai dengan langkah pertama Anda hari ini.</strong></p>
+	<hr>
+	<p><em>Dokumen Utama - Versi 2.0</em><br>
+		<em>Referensi: Working Group &amp; Strategic Implementation Document</em><br>
+		<em>Update terakhir: 23 Juni 2025</em>
+	</p>
 
 </body>
+
 </html>
